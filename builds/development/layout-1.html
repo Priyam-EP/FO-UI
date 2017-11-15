@@ -42,8 +42,9 @@
     <link href="lbd/css/light-bootstrap-dashboard.css" rel="stylesheet" />
     <!--     Temporary css for Layouts     -->
 </head>
-<body class="wp-app layout-1">
+<body class="cp-fo layout-1">
 <div class="wrapper">
+    <!-- Sidebar starts -->
     <div class="sidebar">
         <div class="logo">
             <a href="/">
@@ -51,50 +52,34 @@
             </a>
         </div>
         <div class="sidebar-wrapper">
+            <!-- sidebar nav starts -->
             <ul class="nav">
-                <li class="active">
-                    <a href="javascript:;" class="nav-link" data-toggle="tooltip" data-container="body" data-placement="right" title="Home">
-                        <i class="material-icons">dashboard</i>
-                        <!-- <p>Home</p> -->
+                <li>
+                    <a href="javascript:;" class="nav-link" data-toggle="modal" data-target="#dashboardNotificationsModal">
+                        <i class="material-icons">mode_edit</i>
+                        <p>Offers</p>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;" class="nav-link" data-toggle="tooltip" data-placement="right" data-container="body" title="business">
-                        <i class="material-icons">business</i>
-                        <!-- <p>Clients</p> -->
+                    <a href="javascript:;" class="nav-link" data-toggle="modal" data-target="#dashboardNotificationsModal">
+                        <i class="material-icons">card_travel</i>
+                        <p>My cards</p>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;" class="nav-link" data-toggle="tooltip" data-placement="right" data-container="body" title="Quotes">
-                        <i class="material-icons">monetization_on</i>
-                        <!-- <p>Quotes</p> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="nav-link" data-toggle="tooltip" data-placement="right" data-container="body" title="Contracts">
-                        <i class="material-icons">assignment</i>
-                        <!-- <p>Contracts</p> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="nav-link" data-toggle="tooltip" data-placement="right" data-container="body" title="Missions">
-                        <i class="material-icons">alarm</i>
-                        <!-- <p>Missions</p> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="nav-link" data-toggle="tooltip" data-placement="right" data-container="body" title="Users">
-                        <i class="material-icons">face</i>
-                        <!-- <p>Users</p> -->
+                    <a href="javascript:;" class="nav-link" data-toggle="modal" data-target="#dashboardNotificationsModal">
+                        <i class="material-icons">data_usage</i>
+                        <p>Royalties</p>
                     </a>
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a class="switch-workplace clearfix" href="javascript:;">
-                    <i class="material-icons">crop_rotate</i>
-                    <p>Switch to Workplace</p>
+                <a href="javascript:;" class="switch-workplace" >
+                    <i class="material-icons">notifications_none</i>
+                    <p>Invitations</p>
+                    <span class="notification">3</span>
                 </a>
-                <a class="profile clearfix" href="javascript:;">
+                <a class="profile clearfix" href="javascript:;" data-toggle="modal" data-target="#myprofileEditLogoutModal">
                     <div class="profile_pic">
                         <img src="lbd/img/default-avatar.png" alt="..." class="img-circle profile_img" />
                     </div>

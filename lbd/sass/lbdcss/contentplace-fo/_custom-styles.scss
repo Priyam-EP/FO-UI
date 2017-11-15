@@ -140,8 +140,8 @@ html {
                         display: -ms-flexbox;
                         display: -webkit-flex;
                         display: flex;
-                        width: 30px;
-                        margin: 0 auto 10px;
+                        width: 80px;
+                        margin: 0 auto;
 
                         a {
                             color: #9a9fa9;
@@ -160,12 +160,11 @@ html {
                                 background: transparent;
 
                                 p {
-                                    color: #448aff;
+                                    color: #9a9fa9;
                                 }
                             }
 
                             i {
-                                /* color: #448aff; */
                                 color: #9a9fa9;
                             }
                         }
@@ -177,101 +176,17 @@ html {
                             line-height: 25px;
                             color: #9a9fa9;
                             font-weight: 500;
+                            width: 80px;
                         }
 
                         p {
+                            display: block;
                             width: 80px;
                             font-size: 11px;
                             color: #9a9fa9;
                             font-weight: 500;
                             text-align: center;
-                        }
-
-                        .dropdown-menu {
-                            &.main-nav {
-                                position: fixed;
-                                top: 26px;
-                                left: 104px;
-                                margin: 0;
-                                width: 230px;
-                                border-radius: 4px;
-                                -webkit-filter: drop-shadow(0 1px 2px rgba(63, 63, 68, 0.3));
-                                -moz-filter: drop-shadow(0 1px 2px rgba(63, 63, 68, 0.3));
-                                -ms-filter: drop-shadow(0 1px 2px rgba(63, 63, 68, 0.3));
-                                -o-filter: drop-shadow(0 1px 2px rgba(63, 63, 68, 0.3));
-                                filter: drop-shadow(0 1px 2px rgba(63, 63, 68, 0.3));
-                                box-shadow: none;
-                                border: 0;
-
-                                &:before, &:after {
-                                    border-bottom: 11px solid transparent;
-                                    border-top: 11px solid transparent;
-                                    border-right: 11px solid rgba(0, 0, 0, 0);
-                                    content: "";
-                                    display: inline-block;
-                                    position: absolute;
-                                    left: -23px;
-                                    top: 74px;
-                                }
-
-                                &:after {
-                                    border-right: 11px solid #ffffff;
-                                    left: -22px;
-                                }
-
-                                li {
-                                    width: 100%;
-                                    display: -webkit-flex;
-                                    display: -moz-flex;
-                                    display: -ms-flex;
-                                    display: -o-flex;
-                                    display: flex;
-                                    margin: 0;
-
-                                    a, i {
-                                        color: #9a9fa9;
-                                    }
-
-                                    a {
-                                        padding: 10px 20px;
-                                        margin: 0;
-                                        width: 100%;
-                                        display: -webkit-flex;
-                                        display: -moz-flex;
-                                        display: -ms-flex;
-                                        display: -o-flex;
-                                        display: flex;
-                                        align-items: center;
-                                        font-weight: 600;
-                                    }
-
-                                    i {
-                                        font-size: 20px;
-                                        margin: 0 15px 0 0;
-                                    }
-
-                                    &:hover {
-                                        background: $selected;
-                                        color: #ffffff;
-
-                                        a, i {
-                                            color: #ffffff;
-                                        }
-                                    }
-
-                                    &:first-child {
-                                        padding-top: 5px;
-                                        border-top-left-radius: 4px;
-                                        border-top-right-radius: 4px;
-                                    }
-
-                                    &:last-child {
-                                        border-bottom-left-radius: 4px;
-                                        border-bottom-right-radius: 4px;
-                                        padding-bottom: 5px;
-                                    }
-                                }
-                            }
+                            text-transform: none;
                         }
                     }
 
@@ -314,6 +229,7 @@ html {
                         border-bottom: 1px solid #f5f5f6;
                         text-align: center;
                         color: #9a9fa9;
+                        position: relative;
 
                         p {
                             font-size: 12px;
@@ -321,6 +237,11 @@ html {
                             font-weight: 500;
                             text-align: center;
                             margin-bottom: 0;
+                        }
+
+                        .notification {
+                            top: 8px;
+                            right: 11px;
                         }
                     }
 
