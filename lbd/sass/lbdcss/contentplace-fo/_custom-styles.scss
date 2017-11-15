@@ -348,7 +348,7 @@ html {
 
                             span.notification {
                                 top: -3px;
-                                right: 9px;
+                                right: 6px;
                             }
 
                             img {
@@ -357,6 +357,14 @@ html {
                                 height: 35px;
                                 margin: 0 auto;
                                 object-fit: cover;
+                            }
+                        }
+
+                        &.active {
+                            a {
+                                i, p {
+                                    color: #448AFF;
+                                }
                             }
                         }
                     }
