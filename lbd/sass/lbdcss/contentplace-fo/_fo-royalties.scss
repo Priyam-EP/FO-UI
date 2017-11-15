@@ -7,11 +7,61 @@
       padding: 25px 0;
 
       [class*='-content-main']{
-        height: 200px;
+
+        .royalty-info{
+          h2{
+            color: $main;
+          }
+          .user-image{
+            .user-image-container{
+              img {
+                width: 72px;
+              }
+            }
+          }
+          .royalty-contents{
+            font-size: 12px;
+            .royalty-value{
+              font-size: 30px;
+              color: $selected;
+            }
+          }
+        }
+        .royalty-activities{
+          h3{
+            color: $main;
+          }
+          .royalty-activities-list{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li{
+              @include clearfix;
+              padding-bottom: 15px;
+              margin-bottom: 15px;
+              border-bottom: 2px solid $divider;
+              .activity-content{
+                color: $main;
+              }
+              .show-more-activities{
+                color: $selected;
+                text-decoration: underline;
+              }
+              &:last-child{
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: none;
+              }
+            }
+          }
+        }
+
       }
       [class*='-content-aside']{
-        height: 200px;
+
       }
+
+
     }
 
   }

@@ -3228,3 +3228,10 @@ body.mce-content-body {
 /* Popover Style Ends */
 
 /*New WP STYLES Ends*/
+
+/* New Content Place styels */
+.divider{
+  @include divider();
+}
+/* New Content Place styels ends */
+

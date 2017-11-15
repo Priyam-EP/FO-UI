@@ -1,6 +1,14 @@
 /*-----Media Queries-----*/
 
-@media screen and (max-width: 1400px) {}
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1300px) {
+  .content-container{
+    width: 100% !important;
+  }
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {}
 
@@ -42,7 +50,8 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
     .cp-fo .wrapper .page-wrap {
         margin-left: 0;
     }
@@ -81,4 +90,35 @@
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
+
+    .main-panel-page{
+
+      &.fo-royalties{
+        .content-container{
+
+          [class*='-content-main']{
+
+            .royalty-info{
+              .royalty-contents{
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 2px solid $divider;
+              }
+            }
+            .payment-actions{
+              padding-bottom: 15px;
+            }
+
+          }
+          [class*='-content-aside']{
+
+          }
+
+
+        }
+
+      }
+
+    }
+
 }
