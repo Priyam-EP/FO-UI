@@ -265,9 +265,100 @@ html {
             }
         }
 
+        .sidebar-mobile {
+            display: block;
+            height: 60px;
+            position: fixed;
+            background: #fff;
+            z-index: 9;
+            left: 0;
+            right: auto;
+            top: auto;
+            bottom: 0;
+            visibility: visible;
+            overflow-y: visible;
+            -webkit-box-shadow: 0px -5px 5px 0px rgba(197, 197, 197, 0.2);
+            -moz-box-shadow: 0px 5px -5px 0px rgba(197, 197, 197, 0.2);
+            box-shadow: 0px -5px 5px 0px rgba(197, 197, 197, 0.2);
+            -webkit-transform: translate3d(0, 60px, 0);
+            -moz-transform: translate3d(0, 60px, 0);
+            -o-transform: translate3d(0, 60px, 0);
+            -ms-transform: translate3d(0, 60px, 0);
+            transform: translate3d(0, 60px, 0);
+            -webkit-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            -moz-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            -o-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            -ms-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+
+            .sidebar-mobile-container {
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 60px;
+
+                    li {
+                        list-style-type: none;
+                        width: 50px;
+
+                        a {
+                            display: block;
+                            text-align: center;
+                            position: relative;
+
+                            i {
+                                display: block;
+                                margin-right: 0;
+                                font-size: 25px;
+                                line-height: 25px;
+                                color: #9a9fa9;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                display: block;
+                                margin: 0;
+                                font-size: 11px;
+                                color: #9a9fa9;
+                                font-weight: 500;
+                                text-align: center;
+                                text-transform: none;
+                            }
+
+                            span.notification {
+                                top: -3px;
+                                right: 9px;
+                            }
+
+                            img {
+                                display: block;
+                                width: 35px;
+                                height: 35px;
+                                margin: 0 auto;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .page-wrap {
             margin-left: 80px;
             position: relative;
+            -webkit-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            -moz-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            -o-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            -ms-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
+            transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
 
             .main-panel-wrap {
                 padding: 0;
@@ -311,18 +402,6 @@ html {
                                     z-index: 1;
                                     overflow-x: hidden;
                                     padding: 16px 7px 0 16px;
-
-                                    /* position: fixed;
-                                    width: 31.333%;
-                                    max-height: 100%;
-                                    height: 100%;
-                                    top: 0;
-                                    bottom: 0;
-                                    left: 80px;
-                                    display: block;
-                                    z-index: 1;
-                                    background: #FCFDFD;
-                                    padding: 20px 16px 0 16px; */
 
                                     .navbar-default {
                                         background: none;
