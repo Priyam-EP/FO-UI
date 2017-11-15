@@ -67,19 +67,6 @@ iframe {
     }
 }
 
-.clearfix {
-    &:before {
-        content: '';
-        display: table;
-    }
-
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
-
 /* BASE STYLES */
 
 html {
@@ -294,8 +281,12 @@ html {
                         margin: 0 auto;
                         position: relative;
                         width: 100%;
-                        display: block;
-                        clear: both;
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        justify-content: center;
 
                         .main-container {
                             margin: 81px auto 0;
@@ -1954,7 +1945,7 @@ html {
                                 color: #a3a8b1;
 
                                 // margin-top: 10px;
-                           
+
                             }
                         }
 

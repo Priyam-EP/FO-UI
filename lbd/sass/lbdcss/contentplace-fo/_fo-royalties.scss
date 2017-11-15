@@ -1,0 +1,20 @@
+/* Main panel styles */
+.main-panel-page{
+
+  &.fo-royalties{
+    .content-container{
+      width: 1160px;
+      padding: 25px 0;
+
+      [class*='-content-main']{
+        height: 200px;
+      }
+      [class*='-content-aside']{
+        height: 200px;
+      }
+    }
+
+  }
+
+}
+/* Main panel page styles ends */
