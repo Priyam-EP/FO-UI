@@ -320,11 +320,12 @@ html {
 
                     li {
                         list-style-type: none;
-                        width: 60px;
+                        width: 50px;
 
                         a {
                             display: block;
                             text-align: center;
+                            position: relative;
 
                             i {
                                 display: block;
@@ -346,8 +347,8 @@ html {
                             }
 
                             span.notification {
-                                top: -1px;
-                                right: -6px;
+                                top: -3px;
+                                right: 9px;
                             }
 
                             img {
