@@ -1,7 +1,7 @@
 /* helper utility styles */
 .helper-text {
     font-size: 12px;
-    text-transform: none !important;
+    // text-transform: none !important;
     color: $helper;
     font-weight: 400;
 
@@ -50,6 +50,14 @@ $directions: ("t": "top", "b": "bottom", "r": "right", "l": "left");
         }
     }
 }
+
+// Heading styles
+
+// @for $i from 1 through 6 {
+//   h#{$i} {
+//     color: $main;
+//   }
+// }
 
 // button with 48% styles
 .btn-yes {

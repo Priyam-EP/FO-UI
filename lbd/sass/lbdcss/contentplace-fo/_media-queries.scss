@@ -1,11 +1,9 @@
 /*-----Media Queries-----*/
 
-@media screen and (max-width: 1400px) {
-
-}
+@media screen and (max-width: 1400px) {}
 
 @media screen and (max-width: 1300px) {
-  .content-container{
+  .content-container {
     width: 100% !important;
   }
 }
@@ -13,112 +11,139 @@
 @media screen and (min-width: 1024px) and (max-width: 1300px) {}
 
 @media screen and (max-width: 992px) {
-    .cp-fo .sidebar, .cp-fo .bootstrap-navbar {
-        position: fixed;
-        display: block;
-        top: 0;
-        height: 100%;
-        width: 80px;
-        right: auto;
-        left: 0;
-        z-index: 1032;
-        visibility: visible;
-        overflow-y: visible;
-        padding: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+  .cp-fo .sidebar, .cp-fo .bootstrap-navbar {
+    position: fixed;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    right: auto;
+    left: 0;
+    z-index: 1032;
+    visibility: visible;
+    overflow-y: visible;
+    padding: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    .nav-open .sidebar, .nav-open .bootstrap-navbar {
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+  .nav-open .sidebar, .nav-open .bootstrap-navbar {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    .nav-open .main-panel {
-        left: 0;
-        -webkit-transform: translate3d(80px, 0, 0);
-        -moz-transform: translate3d(80px, 0, 0);
-        -o-transform: translate3d(80px, 0, 0);
-        -ms-transform: translate3d(80px, 0, 0);
-        transform: translate3d(80px, 0, 0);
-    }
+  .nav-open .main-panel {
+    left: 0;
+    -webkit-transform: translate3d(80px, 0, 0);
+    -moz-transform: translate3d(80px, 0, 0);
+    -o-transform: translate3d(80px, 0, 0);
+    -ms-transform: translate3d(80px, 0, 0);
+    transform: translate3d(80px, 0, 0);
+  }
 }
 
 @media (max-width: 767px) {
+  .cp-fo .wrapper .page-wrap {
+    margin-left: 0;
+    padding-bottom: 60px;
+  }
 
-    .cp-fo .wrapper .page-wrap {
-        margin-left: 0;
-    }
+  .cp-fo .sidebar, .cp-fo .bootstrap-navbar {
+    position: fixed;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    right: auto;
+    left: 0;
+    z-index: 1032;
+    visibility: visible;
+    overflow-y: visible;
+    padding: 0;
+    -webkit-transform: translate3d(-80px, 0, 0);
+    -moz-transform: translate3d(-80px, 0, 0);
+    -o-transform: translate3d(-80px, 0, 0);
+    -ms-transform: translate3d(-80px, 0, 0);
+    transform: translate3d(-80px, 0, 0);
+  }
 
-    .cp-fo .sidebar, .cp-fo .bootstrap-navbar {
-        position: fixed;
-        display: block;
-        top: 0;
-        height: 100%;
-        width: 80px;
-        right: auto;
-        left: 0;
-        z-index: 1032;
-        visibility: visible;
-        overflow-y: visible;
-        padding: 0;
-        -webkit-transform: translate3d(-80px, 0, 0);
-        -moz-transform: translate3d(-80px, 0, 0);
-        -o-transform: translate3d(-80px, 0, 0);
-        -ms-transform: translate3d(-80px, 0, 0);
-        transform: translate3d(-80px, 0, 0);
-    }
+  .nav-open .sidebar, .nav-open .bootstrap-navbar {
+    -webkit-transform: translate3d(-80px, 0, 0);
+    -moz-transform: translate3d(-80px, 0, 0);
+    -o-transform: translate3d(-80px, 0, 0);
+    -ms-transform: translate3d(-80px, 0, 0);
+    transform: translate3d(-80px, 0, 0);
+  }
 
-    .nav-open .sidebar, .nav-open .bootstrap-navbar {
-        -webkit-transform: translate3d(-80px, 0, 0);
-        -moz-transform: translate3d(-80px, 0, 0);
-        -o-transform: translate3d(-80px, 0, 0);
-        -ms-transform: translate3d(-80px, 0, 0);
-        transform: translate3d(-80px, 0, 0);
-    }
+  .cp-fo .wrapper .sidebar-mobile {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    .cp-fo .wrapper .sidebar-mobile {
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+  .main-panel-page {
+    &.fo-royalties {
+      .content-container {
+        [class*='-content-main'] {
+          .royalty-info-header {
+            display: block;
 
-    .main-panel-page{
-
-      &.fo-royalties{
-        .content-container{
-
-          [class*='-content-main']{
-
-            .royalty-info{
-              .royalty-contents{
+            .royalty-info {
+              .royalty-contents {
                 padding-bottom: 20px;
                 margin-bottom: 20px;
                 border-bottom: 2px solid $divider;
               }
             }
-            .payment-actions{
+
+            .payment-actions {
               padding-bottom: 15px;
             }
-
-          }
-          [class*='-content-aside']{
-
           }
 
+          .my-accounts {
+            .section-actions {
+              position: relative;
 
+              .edit {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+              }
+            }
+
+            .my-accounts-list {
+              > li {
+                width: calc(100%);
+                margin: 0;
+                padding: 15px 0;
+                display: flex;
+                flex-flow: column wrap;
+                border: none;
+                border-bottom: 2px solid $divider;
+
+                &:last-child {
+                  flex-grow: unset;
+                  margin: 0;
+                  width: calc(100%);
+                  border: none;
+                  padding: 15px 0 0 0;
+                }
+              }
+            }
+          }
         }
 
+        [class*='-content-aside'] {}
       }
-
     }
-
+  }
 }
