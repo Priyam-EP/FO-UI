@@ -2,16 +2,16 @@
 
 @media screen and (max-width: 1400px) {}
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1240px) {
   .content-container {
     width: 100% !important;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1300px) {}
+@media screen and (min-width: 992px) and (max-width: 1239px) {}
 
-@media screen and (max-width: 992px) {
-  .cp-fo .sidebar, .cp-fo .bootstrap-navbar {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+/*   .cp-fo .sidebar, .cp-fo .bootstrap-navbar {
     position: fixed;
     display: block;
     top: 0;
@@ -36,7 +36,7 @@
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-  }
+  } */
 
   .nav-open .main-panel {
     left: 0;
@@ -45,6 +45,9 @@
     -o-transform: translate3d(80px, 0, 0);
     -ms-transform: translate3d(80px, 0, 0);
     transform: translate3d(80px, 0, 0);
+  }
+  .royalties-content-aside{
+    margin-top: 30px;
   }
 }
 
