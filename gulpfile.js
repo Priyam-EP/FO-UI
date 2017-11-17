@@ -21,6 +21,9 @@ var
   source = './',
   dest = devBuild ? 'builds/development/' : 'builds/production/',
 
+  nodeModules = './node_modules/';
+  bootstrapSources = nodeModules + 'bootstrap-sass/assets/stylesheets/**/*.scss';
+
   html = {
     partials: [source + '_partials/**/*'],
     in: [source + '*.html'],
@@ -43,7 +46,8 @@ var
     watch: ['lbd/sass/**/*.scss'],
     out: dest + 'lbd/css/',
     pluginCSS: {
-      in: [source + 'lbd/css/**/*'],
+      in: [source + 'lbd/css/**/*', './node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss'],
+      // bootstrapCss: ['./node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss'],
       watch: ['lbd/css/**/*.css'],
       out: dest + 'lbd/css/'
     },
@@ -112,9 +116,18 @@ var
 
 // show build type
 console.log(pkg.name + ' ' + pkg.version + ', ' + (devBuild ? 'development' : 'production') + ' build');
-
 // Clean tasks
 // clean the build folder
+
+gulp.task('getbootstrap', function(){
+  return gulp.src(css.pluginCSS.bootstrapCss)
+    // .pipe($.plumber())
+    .pipe($.sass(css.sassOpts))
+    .pipe($.rename('bootstrap.css'))
+    .pipe(gulp.dest(css.pluginCSS.out))
+    .pipe(browserSync.stream({match: '**/*.css'}));
+});
+
 gulp.task('clean', function() {
   del([
     dest + '*'
@@ -193,9 +206,11 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest(fonts.out));
 });
 
+
 // copy plugin css
 gulp.task('css', ['fonts'], function() {
   var cssFilter = $.filter(['**/*.css'], {restore: true}),
+      bootstrapFilter = $.filter(['**/bootstrap-custom.scss'], {restore: true}),
       imageFilter = $.filter(['**/*.+(jpg|png|gif|svg)'], {restore: true}),
       imageFilter2 = $.filter(['**/*.+(jpg|png|tiff|webp)'], {restore: true});
   return gulp.src(css.pluginCSS.in)
@@ -213,6 +228,11 @@ gulp.task('css', ['fonts'], function() {
         }))*/
     .pipe($.cleanCss({rebase:false}))
     .pipe(cssFilter.restore)
+    .pipe(bootstrapFilter)
+    .pipe($.plumber())
+    .pipe($.sass(css.sassOpts))
+    .pipe($.rename('bootstrap.min.css'))
+    .pipe(bootstrapFilter.restore)
     .pipe(imageFilter)
     .pipe($.imagemin())
     .pipe(imageFilter.restore)
