@@ -1,4 +1,68 @@
 /* Main panel styles */
+%payment-activities {
+  h3 {
+    color: $main;
+  }
+
+  [class*='-list'] {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      @include clearfix;
+
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid $divider;
+
+      [class*='-content'] {
+        color: $main;
+        span{
+          &[class*='-title']{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $helper;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .show-more-activities {
+        color: $selected;
+        text-decoration: underline;
+      }
+
+      .payment-order-number{
+        font-size: 14px;
+        font-weight: 600;
+        color: $main;
+        margin: 12px 0 5px;
+      }
+
+      .submit-claim{
+        a{
+          color: $delete;
+          text-decoration: underline;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+
+      .payment-actions{
+        margin-top: 10px;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
 .main-panel-page {
   h1, h2, h3, h4, h5, h6 {
     color: $main;
@@ -58,47 +122,8 @@
           }
         }
 
-        .payment-activities {
-          h3 {
-            color: $main;
-          }
-
-          [class*='-list'] {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-
-            li {
-              @include clearfix;
-
-              padding-bottom: 15px;
-              margin-bottom: 15px;
-              border-bottom: 2px solid $divider;
-
-              [class*='-content'] {
-                color: $main;
-                span{
-                  &[class*='-title']{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: $helper;
-                    font-size: 12px;
-                  }
-                }
-              }
-
-              .show-more-activities {
-                color: $selected;
-                text-decoration: underline;
-              }
-
-              &:last-child {
-                padding-bottom: 0;
-                margin-bottom: 0;
-                border-bottom: none;
-              }
-            }
-          }
+        .payment-activities{
+          @extend %payment-activities;
         }
 
         .my-accounts {
@@ -216,71 +241,21 @@
 
       [class*='-content-aside'] {
         .payment-activities {
-          h3 {
-            color: $main;
-          }
-
-          [class*='-list'] {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-
-            li {
-              @include clearfix;
-
-              padding-bottom: 15px;
-              margin-bottom: 15px;
-              border-bottom: 2px solid $divider;
-
-              [class*='-content'] {
-                color: $main;
-                span{
-                  &[class*='-title']{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: $helper;
-                    font-size: 12px;
-                  }
-                }
-              }
-
-              .show-more-activities {
-                color: $selected;
-                text-decoration: underline;
-              }
-
-              .payment-order-number{
-                font-size: 14px;
-                font-weight: 600;
-                color: $main;
-                margin: 12px 0 5px;
-              }
-
-              .submit-claim{
-                a{
-                  color: $delete;
-                  text-decoration: underline;
-                  &:hover{
-                    text-decoration: none;
-                  }
-                }
-              }
-
-              .payment-actions{
-                margin-top: 10px;
-              }
-
-              &:last-child {
-                padding-bottom: 0;
-                margin-bottom: 0;
-                border-bottom: none;
-              }
-            }
-          }
+          @extend %payment-activities;
         }
       }
     }
   }
+
 }
 
 /* Main panel page styles ends */
+
+/* Modal styles */
+.payment-royalty-modal{
+  @extend %modal;
+  .payment-activities{
+    @extend %payment-activities;
+  }
+}
+/* Modal styles ends */
