@@ -1,160 +1,19 @@
 /* Main panel styles */
-.main-panel-page {
-  h1, h2, h3, h4, h5, h6 {
-    color: $main;
-    margin: 0;
-  }
-
-  &.fo-royalties {
+.fo-royalties {
     .content-container {
-      width: 1160px;
-      padding: 25px 0;
+        width: 1160px;
+        padding: 25px 0;
 
-      .card {
-        margin-bottom: 15px;
-        &:last-child{
-          margin-bottom: 0;
-        }
-      }
+        .card {
+            margin-bottom: 15px;
 
-      [class*='-content-main'] {
-        .royalty-info-header {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          align-items: center;
-
-          .royalty-info {
-            h2 {
-              color: $main;
-            }
-
-            .user-image {
-              .user-image-container {
-                img {
-                  width: 72px;
-                }
-              }
-            }
-
-            .royalty-contents {
-              font-size: 12px;
-
-              .royalty-value {
-                font-size: 30px;
-                color: $selected;
-              }
-            }
-          }
-
-          .payment-actions {
-            button {
-              &:last-child {
-                margin: 0 !important;
-              }
-            }
-          }
-        }
-
-        .payment-activities {
-          h3 {
-            color: $main;
-          }
-
-          [class*='-list'] {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-
-            li {
-              @include clearfix;
-
-              padding-bottom: 15px;
-              margin-bottom: 15px;
-              border-bottom: 2px solid $divider;
-
-              [class*='-content'] {
-                color: $main;
-                span{
-                  &[class*='-title']{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: $helper;
-                    font-size: 12px;
-                  }
-                }
-              }
-
-              .show-more-activities {
-                color: $selected;
-                text-decoration: underline;
-              }
-
-              &:last-child {
-                padding-bottom: 0;
+            &:last-child {
                 margin-bottom: 0;
-                border-bottom: none;
-              }
             }
-          }
         }
 
-        .my-accounts {
-          .section-actions {
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            justify-content: flex-end;
-
-            .edit {
-              a {
-                text-decoration: none;
-
-                &:hover {
-                  text-decoration: none;
-
-                  u {
-                    text-decoration: none;
-                  }
-                }
-              }
-
-              i {
-                font-size: 24px;
-                margin-left: 5px;
-              }
-            }
-          }
-
-          .my-accounts-list {
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            padding: 0 15px;
-            margin: 0;
-            list-style-type: none;
-            flex-flow: row wrap;
-
-            > li {
-              border: 1px solid $divider;
-              padding: 15px;
-              margin: 0 16px 16px 0;
-              flex-grow: 1;
-              width: calc(50% - 16px);
-              display: flex;
-              flex-flow: row wrap;
-
-              .account-title {
-                color: $main;
-                font-size: 16px;
-                font-weight: 600;
-                margin-bottom: 5px;
+        [class*='-content-main'] {
+            .royalty-info-header {
                 display: -webkit-flex;
                 display: -moz-flex;
                 display: -ms-flex;
@@ -162,125 +21,264 @@
                 display: flex;
                 align-items: center;
 
-                &.main-account {
-                  &:before {
-                    font-family: 'Material Icons';
-                    content: '\e8d0';
-                    color: $default-bg;
-                    display: inline-flex;
-                    align-items: center;
-                    margin-right: 5px;
-                  }
+                .royalty-info {
+                    h2 {
+                        color: $main;
+                    }
+
+                    .user-image {
+                        .user-image-container {
+                            img {
+                                width: 72px;
+                            }
+                        }
+                    }
+
+                    .royalty-contents {
+                        font-size: 12px;
+
+                        .royalty-value {
+                            font-size: 30px;
+                            color: $selected;
+                        }
+                    }
                 }
 
-                span {
-                  font-style: italic;
-                  color: $not-started;
-                  font-size: 14px;
-                  margin-left: 5px;
-                  font-weight: normal;
+                .payment-actions {
+                    button {
+                        &:last-child {
+                            margin: 0 !important;
+                        }
+                    }
                 }
-              }
-
-              ul {
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-
-                &.account-details {
-                  label {
-                    font-size: 12px;
-                    text-transform: uppercase;
-                  }
-                }
-              }
-
-              &:nth-child(even) {
-                margin-right: 0;
-              }
-
-              &:last-child {
-                flex-grow: unset;
-                margin: 0;
-                width: calc(50% - 8px);
-              }
             }
-          }
-        }
 
-        .working-status {
-          @extend .payment-activities;
-          @extend .my-accounts;
-        }
-      }
-
-      [class*='-content-aside'] {
-        .payment-activities {
-          h3 {
-            color: $main;
-          }
-
-          [class*='-list'] {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-
-            li {
-              @include clearfix;
-
-              padding-bottom: 15px;
-              margin-bottom: 15px;
-              border-bottom: 2px solid $divider;
-
-              [class*='-content'] {
-                color: $main;
-                span{
-                  &[class*='-title']{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: $helper;
-                    font-size: 12px;
-                  }
+            .payment-activities {
+                h3 {
+                    color: $main;
                 }
-              }
 
-              .show-more-activities {
-                color: $selected;
-                text-decoration: underline;
-              }
+                [class*='-list'] {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
 
-              .payment-order-number{
-                font-size: 14px;
-                font-weight: 600;
-                color: $main;
-                margin: 12px 0 5px;
-              }
+                    li {
+                        @include clearfix;
 
-              .submit-claim{
-                a{
-                  color: $delete;
-                  text-decoration: underline;
-                  &:hover{
-                    text-decoration: none;
-                  }
+                        padding-bottom: 15px;
+                        margin-bottom: 15px;
+                        border-bottom: 2px solid $divider;
+
+                        [class*='-content'] {
+                            color: $main;
+
+                            span {
+                                &[class*='-title'] {
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    color: $helper;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .show-more-activities {
+                            color: $selected;
+                            text-decoration: underline;
+                        }
+
+                        &:last-child {
+                            padding-bottom: 0;
+                            margin-bottom: 0;
+                            border-bottom: none;
+                        }
+                    }
                 }
-              }
-
-              .payment-actions{
-                margin-top: 10px;
-              }
-
-              &:last-child {
-                padding-bottom: 0;
-                margin-bottom: 0;
-                border-bottom: none;
-              }
             }
-          }
+
+            .my-accounts {
+                .section-actions {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .edit {
+                        a {
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: none;
+
+                                u {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        i {
+                            font-size: 24px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .my-accounts-list {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    padding: 0 15px;
+                    margin: 0;
+                    list-style-type: none;
+                    flex-flow: row wrap;
+
+                    > li {
+                        border: 1px solid $divider;
+                        padding: 15px;
+                        margin: 0 16px 16px 0;
+                        flex-grow: 1;
+                        width: calc(50% - 16px);
+                        display: flex;
+                        flex-flow: row wrap;
+
+                        .account-title {
+                            color: $main;
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                            display: -webkit-flex;
+                            display: -moz-flex;
+                            display: -ms-flex;
+                            display: -o-flex;
+                            display: flex;
+                            align-items: center;
+
+                            &.main-account {
+                                &:before {
+                                    font-family: 'Material Icons';
+                                    content: '\e8d0';
+                                    color: $default-bg;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            span {
+                                font-style: italic;
+                                color: $not-started;
+                                font-size: 14px;
+                                margin-left: 5px;
+                                font-weight: normal;
+                            }
+                        }
+
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            list-style-type: none;
+
+                            &.account-details {
+                                label {
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+
+                        &:nth-child(even) {
+                            margin-right: 0;
+                        }
+
+                        &:last-child {
+                            flex-grow: unset;
+                            margin: 0;
+                            width: calc(50% - 8px);
+                        }
+                    }
+                }
+            }
+
+            .working-status {
+                @extend .payment-activities;
+
+                @extend .my-accounts;
+            }
         }
-      }
+
+        [class*='-content-aside'] {
+            .payment-activities {
+                h3 {
+                    color: $main;
+                }
+
+                [class*='-list'] {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+
+                    li {
+                        @include clearfix;
+
+                        padding-bottom: 15px;
+                        margin-bottom: 15px;
+                        border-bottom: 2px solid $divider;
+
+                        [class*='-content'] {
+                            color: $main;
+
+                            span {
+                                &[class*='-title'] {
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    color: $helper;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .show-more-activities {
+                            color: $selected;
+                            text-decoration: underline;
+                        }
+
+                        .payment-order-number {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $main;
+                            margin: 12px 0 5px;
+                        }
+
+                        .submit-claim {
+                            a {
+                                color: $delete;
+                                text-decoration: underline;
+
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        .payment-actions {
+                            margin-top: 10px;
+                        }
+
+                        &:last-child {
+                            padding-bottom: 0;
+                            margin-bottom: 0;
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 /* Main panel page styles ends */
