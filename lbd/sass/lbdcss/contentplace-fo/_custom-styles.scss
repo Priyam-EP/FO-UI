@@ -2032,7 +2032,7 @@ html {
                                 color: #a3a8b1;
 
                                 // margin-top: 10px;
-
+                           
                             }
                         }
 
@@ -2369,6 +2369,7 @@ html {
     font-size: 10px;
     color: #fff;
     font-weight: 600;
+
     // line-height: 0;
     padding: 2px 10px;
     -webkit-border-radius: 3px;
@@ -3238,8 +3239,8 @@ body.mce-content-body {
 /*New WP STYLES Ends*/
 
 /* New Content Place styels */
-.divider{
-  @include divider();
+.divider {
+    @include divider;
 }
-/* New Content Place styels ends */
 
+/* New Content Place styels ends */
