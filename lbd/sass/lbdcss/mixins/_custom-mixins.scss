@@ -31,7 +31,7 @@
 
 // Buttons
 @mixin custom-btn($bg-color, $bg-hover, $color: #fff) {
-    width: 48.5% !important;
+    width: 100% !important;
     color: $color !important;
     background: $bg-color !important;
     border: 1px solid $bg-color !important;
@@ -43,7 +43,7 @@
 }
 
 @mixin custom-btn-no-final($bg-color, $bg-hover, $color: #9a9fa9) {
-    width: 48.5% !important;
+    width: 100% !important;
     color: $color !important;
     background: #fff !important;
     border: 1px solid $color !important;
@@ -56,7 +56,7 @@
 }
 
 @mixin custom-btn-nofill-hover($bg-color, $bg-hover, $color: #9a9fa9) {
-    width: 48.5% !important;
+    width: 100% !important;
     color: $color !important;
     background: #fff !important;
     border: 1px solid $color !important;
