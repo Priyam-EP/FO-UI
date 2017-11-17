@@ -47,7 +47,7 @@ var
     out: dest + 'lbd/css/',
     pluginCSS: {
       in: [source + 'lbd/css/**/*', './node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss'],
-      // bootstrapCss: [],
+      // bootstrapCss: ['./node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss'],
       watch: ['lbd/css/**/*.css'],
       out: dest + 'lbd/css/'
     },
@@ -231,7 +231,7 @@ gulp.task('css', ['fonts'], function() {
     .pipe(bootstrapFilter)
     .pipe($.plumber())
     .pipe($.sass(css.sassOpts))
-    .pipe($.rename('bootstrap.css'))
+    .pipe($.rename('bootstrap.min.css'))
     .pipe(bootstrapFilter.restore)
     .pipe(imageFilter)
     .pipe($.imagemin())
