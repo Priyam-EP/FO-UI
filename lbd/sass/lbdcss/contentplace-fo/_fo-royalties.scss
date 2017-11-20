@@ -63,6 +63,155 @@
   }
 }
 
+%my-accounts-royalty {
+  .section-actions {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+
+    .edit {
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+
+          u {
+            text-decoration: none;
+          }
+        }
+      }
+
+      i {
+        font-size: 24px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .my-accounts-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 0 15px;
+    margin: 0;
+    list-style-type: none;
+    flex-flow: row wrap;
+
+    > li {
+      border: 1px solid $divider;
+      padding: 15px;
+      margin: 0 16px 16px 0;
+      flex-grow: 1;
+      width: calc(50% - 16px);
+      display: flex;
+      flex-flow: row wrap;
+
+      @media screen and (max-width: 767px){
+        width: calc(100%);
+        margin: 0;
+        padding: 15px 0;
+        display: flex;
+        flex-flow: column wrap;
+        border: none;
+        border-bottom: 2px solid $divider;
+        &:first-child{
+          padding-top: 0;
+        }
+      }
+
+      .account-title {
+        color: $main;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+
+        &.main-account {
+          &:before {
+            font-family: 'Material Icons';
+            content: '\e8d0';
+            color: $default-bg;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 5px;
+          }
+        }
+
+        span {
+          font-style: italic;
+          color: $not-started;
+          font-size: 14px;
+          margin-left: 5px;
+          font-weight: normal;
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        &.account-details {
+          label {
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        flex-grow: unset;
+        width: calc(50% - 8px);
+        @media screen and (max-width: 767px) {
+          margin: 0;
+          width: calc(100%);
+          border: none;
+          padding: 15px 0 0 0;
+        }
+        &.add-block{
+          align-items: center;
+          justify-content: center;
+          border: 2px dashed $border-color;
+          text-decoration: underline;
+          @media screen and (max-width: 767px) {
+            flex-grow: unset;
+            padding: 0;
+            margin-top: 15px;
+            color: $selected;
+            border: none;
+            align-items: unset;
+            justify-content: unset;
+          }
+          &:hover, &:focus {
+              border-color: $selected;
+              color: $selected;
+              cursor: pointer;
+
+              i {
+                  color: $selected;
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
 .fo-royalties {
   .content-container {
     width: 1160px;
@@ -70,6 +219,9 @@
 
     .card {
       margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
 
     [class*='-content-main'] {
@@ -115,110 +267,7 @@
       }
 
       .my-accounts {
-        .section-actions {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          justify-content: flex-end;
-
-          .edit {
-            a {
-              text-decoration: none;
-
-              &:hover {
-                text-decoration: none;
-
-                u {
-                  text-decoration: none;
-                }
-              }
-            }
-
-            i {
-              font-size: 24px;
-              margin-left: 5px;
-            }
-          }
-        }
-
-        .my-accounts-list {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          padding: 0 15px;
-          margin: 0;
-          list-style-type: none;
-          flex-flow: row wrap;
-
-          > li {
-            border: 1px solid $divider;
-            padding: 15px;
-            margin: 0 16px 16px 0;
-            flex-grow: 1;
-            width: calc(50% - 16px);
-            display: flex;
-            flex-flow: row wrap;
-
-            .account-title {
-              color: $main;
-              font-size: 16px;
-              font-weight: 600;
-              margin-bottom: 5px;
-              display: -webkit-flex;
-              display: -moz-flex;
-              display: -ms-flex;
-              display: -o-flex;
-              display: flex;
-              align-items: center;
-
-              &.main-account {
-                &:before {
-                  font-family: 'Material Icons';
-                  content: '\e8d0';
-                  color: $default-bg;
-                  display: inline-flex;
-                  align-items: center;
-                  margin-right: 5px;
-                }
-              }
-
-              span {
-                font-style: italic;
-                color: $not-started;
-                font-size: 14px;
-                margin-left: 5px;
-                font-weight: normal;
-              }
-            }
-
-            ul {
-              padding: 0;
-              margin: 0;
-              list-style-type: none;
-
-              &.account-details {
-                label {
-                  font-size: 12px;
-                  text-transform: uppercase;
-                }
-              }
-            }
-
-            &:nth-child(even) {
-              margin-right: 0;
-            }
-
-            &:last-child {
-              flex-grow: unset;
-              margin: 0;
-              width: calc(50% - 8px);
-            }
-          }
-        }
+        @extend %my-accounts-royalty;
       }
 
       .working-status {
@@ -253,6 +302,17 @@
       }
     }
   }
+}
+
+#myaccountRoyalty {
+  @extend %modal;
+  .my-accounts {
+    @extend %my-accounts-royalty;
+  }
+}
+
+#myaccountEditRoyalty{
+  @extend %modal;
 }
 
 /* Modal styles ends */

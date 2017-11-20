@@ -232,7 +232,7 @@
                                             </div>
                                             <div class="col-xs-3 section-actions">
                                               <span class="edit">
-                                                  <a class="df-ac" href="javascript:;">
+                                                  <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#myaccountRoyalty">
                                                       <u class="hidden-xs">Edit</u>
                                                       <i class="material-icons">
                                                           create
@@ -288,6 +288,11 @@
                                                   </ul>
                                                 </div>
                                               </li>
+                                              <li class="add-block">
+                                                <span data-target="#myaccountEditRoyalty" data-toggle="modal">
+                                                  + Add a new account
+                                                </span>
+                                              </li>
                                             </ul>
                                           </div>
                                         </div>
@@ -336,6 +341,39 @@
                                                   <span class="status-title d-block">Status</span>
                                                   <span class="fw600">Self employed</span>
                                                 </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="row">
+                                                <div class="col-md-12 activation">
+                                                    <div class="col-md-12 activation-container">
+                                                        <div class="col-md-1 activation-switch">
+                                                            <div class="switch" data-off-label="" data-on-label="">
+                                                                <input type="checkbox"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-10 activation-statement">
+                                                            Look for candidates:
+                                                            <span class="no">
+                                                                NO
+                                                            </span>
+                                                            <span class="yes">
+                                                                YES
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                                    <p class="category">Plain</p>
+                                                  <input type="checkbox" data-toggle="switch" checked=""
+                                                    data-off-text=""
+                                                    data-on-text=""
+                                                  />
+                                                  <input type="checkbox" data-toggle="switch"
+                                                    data-off-text=""
+                                                    data-on-text=""
+                                                  />
+                                                                </div>
                                               </div>
                                             </li>
                                           </ul>
@@ -485,7 +523,7 @@
 
 
 <!-- Modals starts -->
-<div aria-labelledby="paymentRoyalty" class="modal fade" id="paymentRoyalty" role="dialog" style="" tabindex="-1">
+<div aria-labelledby="" class="modal fade" id="paymentRoyalty" role="dialog" style="" tabindex="-1">
     <div class="modal-dialog modal-lg" role="modal">
         <div class="modal-content clearfix">
             <div class="modal-body">
@@ -495,6 +533,7 @@
                     </a>
                 </span>
                 <div class="modal-container">
+                  <!-- Modal contents start -->
                   <div class="modal-title">
                       Payment history
                   </div>
@@ -767,12 +806,242 @@
                           </div>
                       </div>
                   </div>
+                  <!-- Modal contents end -->
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<div aria-labelledby="" class="modal fade" id="myaccountRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      My accounts
+                  </div>
+                  <div class="col-md-12 p-0 my-accounts">
+                    <div class="row">
+                      <ul class="my-accounts-list">
+                        <li>
+                          <div class="col-sm-12 p-0">
+                              <span class="account-title main-account">Pro account <span class="hidden-xs">(main account)</span></span>
+                          </div>
+                          <div class="col-sm-12 p-0">
+                            <ul class="col-sm-12 account-details">
+                              <li class="hidden-xs">
+                                <label for="" class="hidden-xs">Type :</label> Bank account
+                              </li>
+                              <li>
+                                <label for="" class="hidden-xs">IBAN :</label> FR76 4041 8830 7980 0405 9643 975
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-sm-12 p-0">
+                              <span class="account-title">Paypal</span>
+                          </div>
+                          <div class="col-sm-12 p-0">
+                            <ul class="col-sm-12 account-details">
+                              <li class="hidden-xs">
+                                <label for="" class="hidden-xs">Type :</label> Paypal account
+                              </li>
+                              <li>
+                                <label for="" class="hidden-xs">Email :</label> m.martin@gmail.com
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-sm-12 p-0">
+                              <span class="account-title">Another account</span>
+                          </div>
+                          <div class="col-sm-12 p-0">
+                            <ul class="col-sm-12 account-details">
+                              <li class="hidden-xs">
+                                <label for="" class="hidden-xs">Type :</label> Another Bank account
+                              </li>
+                              <li>
+                                <label for="" class="hidden-xs">IBAN :</label> FR76 4041 8830 7980 0405 9643 975
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="add-block">
+                          <span>
+                            + Add a new account
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="myaccountEditRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Edit accounts
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 send-share-message-subject">
+                                <label>
+                                    Account Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Pro account"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="answerType">Payment Method  <span class="required">*</span></label>
+                                            <select id="answerType" class="selectpicker">
+                                                <option value="1">Bank Transfer</option>
+                                                <option value="2">Payment method 02</option>
+                                                <option value="3">Payment method 03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <label>
+                                    Bic <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="AXAPFRPPP"/>
+                            </div>
+                            <div class="col-xs-3 pull-right">
+                                <label>
+                                    Country <span class="required">*</span>
+                                </label>
+                                <select class="chosen-default flags">
+                                  <option data-img-src="lbd/img/flag/us.gif">
+                                    EN (US)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/fr.gif">
+                                    FR
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/uk.gif">
+                                    EN (UK)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/sp.gif">
+                                    ES
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/pol.gif">
+                                    PO
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 send-share-message-subject">
+                                <label>
+                                    IBAN <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Pro account"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 send-share-message-subject">
+                                <label>
+                                    Account Owner Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Michael Martin"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-md-12 activation-container form-control df-ac auto-height p-10">
+                                  <div class="col-md-8 p-0 activation-switch df-ac">
+                                      <input type="checkbox" data-toggle="switch" data-off-text="" data-on-text="" /> This is my main account
+                                  </div>
+                                  <div class="col-xs-4 pull-right">
+                                    <a class="" href="javasctipt:;">Remove this account</a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 activation-container form-control df-ac auto-height p-10">
+                                <div class="col-md-2 p-0 activation-switch df-ac">
+                                    <div class="switch" data-off-label="" data-on-label="">
+                                        <input type="checkbox"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 activation-statement">
+                                    This user is active :
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  </form>
+                  <div class="row">
+                      <div class="edit-quick-question-action col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-wd btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-wd btn-yes pull-right form-control" type="button">
+                                  Save changes
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+H:\Kathirr K\2017\Projects\Webapp\Git\FO-UI\_partials\_modal-myaccount-add-royalty.html not found
 <!-- Modals ends -->
 
 <!--   Core JS Files   -->

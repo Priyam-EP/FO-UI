@@ -166,6 +166,17 @@
                     color: $main;
                     margin: 0px 0 15px 0;
                     font-weight: 600;
+                    a{
+                      &.back{
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                      }
+                    }
                 }
             }
 
