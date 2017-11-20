@@ -102,59 +102,59 @@
         }
     }
 
-    .fo-royalties {
-        .content-container {
-            [class*='-content-main'] {
-                .royalty-info-header {
-                    display: block;
+  .fo-royalties {
+    .content-container {
+      [class*='-content-main'] {
+        .royalty-info-header {
+          display: block;
 
-                    .royalty-info {
-                        .royalty-contents {
-                            padding-bottom: 20px;
-                            margin-bottom: 20px;
-                            border-bottom: 2px solid $divider;
-                        }
-                    }
-                }
-
-                .payment-actions {
-                    padding-bottom: 15px;
-                }
+          .royalty-info {
+            .royalty-contents {
+              padding-bottom: 20px;
+              margin-bottom: 20px;
+              border-bottom: 2px solid $divider;
             }
+          }
 
-            .my-accounts {
-                .section-actions {
-                    position: relative;
-
-                    .edit {
-                        position: absolute;
-                        top: -5px;
-                        right: -5px;
-                    }
-                }
-
-                .my-accounts-list {
-                    > li {
-                        width: calc(100%);
-                        margin: 0;
-                        padding: 15px 0;
-                        display: flex;
-                        flex-flow: column wrap;
-                        border: none;
-                        border-bottom: 2px solid $divider;
-
-                        &:last-child {
-                            flex-grow: unset;
-                            margin: 0;
-                            width: calc(100%);
-                            border: none;
-                            padding: 15px 0 0 0;
-                        }
-                    }
-                }
-            }
-
-            [class*='-content-aside'] {}
+          .payment-actions {
+            padding-bottom: 15px;
+          }
         }
+
+        .my-accounts {
+          .section-actions {
+            position: relative;
+
+            .edit {
+              position: absolute;
+              top: -5px;
+              right: -5px;
+            }
+          }
+
+          .my-accounts-list {
+            > li {
+              width: calc(100%);
+              margin: 0;
+              padding: 15px 0;
+              display: flex;
+              flex-flow: column wrap;
+              border: none;
+              border-bottom: 2px solid $divider;
+
+              &:last-child {
+                flex-grow: unset;
+                margin: 0;
+                width: calc(100%);
+                border: none;
+                padding: 15px 0 0 0;
+              }
+            }
+          }
+        }
+      }
+
+      [class*='-content-aside'] {}
     }
+  }
 }

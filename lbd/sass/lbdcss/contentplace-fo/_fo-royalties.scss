@@ -1,9 +1,6 @@
 /* Main panel styles */
 
 %payment-activities {
-  h3 {
-    color: $main;
-  }
 
   [class*='-list'] {
     padding: 0;
@@ -85,9 +82,9 @@
         align-items: center;
 
         .royalty-info {
-          h2 {
+          /* h2 {
             color: $main;
-          }
+          } */
 
           .user-image {
             .user-image-container {
