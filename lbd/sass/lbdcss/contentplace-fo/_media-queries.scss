@@ -116,40 +116,40 @@
                             border-bottom: 2px solid $divider;
                         }
                     }
-                }
 
-                .payment-actions {
-                    padding-bottom: 15px;
-                }
-            }
-
-            .my-accounts {
-                .section-actions {
-                    position: relative;
-
-                    .edit {
-                        position: absolute;
-                        top: -5px;
-                        right: -5px;
+                    .payment-actions {
+                        padding-bottom: 15px;
                     }
                 }
 
-                .my-accounts-list {
-                    > li {
-                        width: calc(100%);
-                        margin: 0;
-                        padding: 15px 0;
-                        display: flex;
-                        flex-flow: column wrap;
-                        border: none;
-                        border-bottom: 2px solid $divider;
+                .my-accounts {
+                    .section-actions {
+                        position: relative;
 
-                        &:last-child {
-                            flex-grow: unset;
-                            margin: 0;
+                        .edit {
+                            position: absolute;
+                            top: -5px;
+                            right: -5px;
+                        }
+                    }
+
+                    .my-accounts-list {
+                        > li {
                             width: calc(100%);
+                            margin: 0;
+                            padding: 15px 0;
+                            display: flex;
+                            flex-flow: column wrap;
                             border: none;
-                            padding: 15px 0 0 0;
+                            border-bottom: 2px solid $divider;
+
+                            &:last-child {
+                                flex-grow: unset;
+                                margin: 0;
+                                width: calc(100%);
+                                border: none;
+                                padding: 15px 0 0 0;
+                            }
                         }
                     }
                 }
