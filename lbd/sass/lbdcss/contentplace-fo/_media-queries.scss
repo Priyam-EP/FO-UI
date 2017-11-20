@@ -88,10 +88,6 @@
                 transform: translate3d(0, 0, 0);
             }
 
-            .bottom-signup-container {
-                display: block;
-            }
-
             .nav-open .sidebar, .nav-open .bootstrap-navbar {
                 -webkit-transform: translate3d(-80px, 0, 0);
                 -moz-transform: translate3d(-80px, 0, 0);
@@ -100,6 +96,11 @@
                 transform: translate3d(-80px, 0, 0);
             }
         }
+    }
+
+    .bottom-signup-container {
+        display: block;
+        z-index: 9;
     }
 
     .fo-royalties {
