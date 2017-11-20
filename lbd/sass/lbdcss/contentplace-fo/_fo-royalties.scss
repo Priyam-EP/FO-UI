@@ -82,9 +82,6 @@
         align-items: center;
 
         .royalty-info {
-          /* h2 {
-            color: $main;
-          } */
 
           .user-image {
             .user-image-container {
@@ -225,7 +222,7 @@
       }
 
       .working-status {
-        @extend .payment-activities;
+        @extend %payment-activities;
 
         @extend .my-accounts;
       }
