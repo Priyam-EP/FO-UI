@@ -26,6 +26,12 @@
     }
 }
 
+/* .remove, .delete {
+  color: $delete;
+} */
+
+
+
 // Box modal styles
 
 $dimensions: ("m": "margin", "p": "padding");
@@ -182,7 +188,7 @@ $directions: ("t": "top", "b": "bottom", "r": "right", "l": "left");
 
         div {
             b {
-                background-position-y: 15px;
+                // background-position-y: 15px;
             }
         }
     }

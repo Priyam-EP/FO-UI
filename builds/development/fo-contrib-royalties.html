@@ -289,7 +289,7 @@
                                                 </div>
                                               </li>
                                               <li class="add-block">
-                                                <span data-target="#myaccountEditRoyalty" data-toggle="modal">
+                                                <span data-target="#myaccountAddRoyalty" data-toggle="modal">
                                                   + Add a new account
                                                 </span>
                                               </li>
@@ -309,7 +309,7 @@
                                             </div>
                                             <div class="col-xs-3 section-actions">
                                               <span class="edit">
-                                                  <a class="df-ac" href="javascript:;">
+                                                  <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#workingStatusSelfemployedRoyalty">
                                                       <u class="hidden-xs">Edit</u>
                                                       <i class="material-icons">
                                                           create
@@ -341,39 +341,6 @@
                                                   <span class="status-title d-block">Status</span>
                                                   <span class="fw600">Self employed</span>
                                                 </div>
-                                              </div>
-                                            </li>
-                                            <li>
-                                              <div class="row">
-                                                <div class="col-md-12 activation">
-                                                    <div class="col-md-12 activation-container">
-                                                        <div class="col-md-1 activation-switch">
-                                                            <div class="switch" data-off-label="" data-on-label="">
-                                                                <input type="checkbox"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-10 activation-statement">
-                                                            Look for candidates:
-                                                            <span class="no">
-                                                                NO
-                                                            </span>
-                                                            <span class="yes">
-                                                                YES
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                                    <p class="category">Plain</p>
-                                                  <input type="checkbox" data-toggle="switch" checked=""
-                                                    data-off-text=""
-                                                    data-on-text=""
-                                                  />
-                                                  <input type="checkbox" data-toggle="switch"
-                                                    data-off-text=""
-                                                    data-on-text=""
-                                                  />
-                                                                </div>
                                               </div>
                                             </li>
                                           </ul>
@@ -914,11 +881,11 @@
                   <form action="" class="form clearfix">
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-md-12 send-share-message-subject">
+                            <div class="col-md-12">
                                 <label>
                                     Account Name <span class="required">*</span>
                                 </label>
-                                <input class="form-control" name="" type="text" value="Pro account"/>
+                                <input class="form-control" name="" type="text" value="Pro account" placeholder="Type name of the account" />
                             </div>
                         </div>
                     </div>
@@ -928,8 +895,8 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="answerType">Payment Method  <span class="required">*</span></label>
-                                            <select id="answerType" class="selectpicker">
+                                            <label for="">Payment Method  <span class="required">*</span></label>
+                                            <select id="" class="selectpicker" title="Choose...">
                                                 <option value="1">Bank Transfer</option>
                                                 <option value="2">Payment method 02</option>
                                                 <option value="3">Payment method 03</option>
@@ -942,17 +909,17 @@
                     </div>
                     <div class="form-group divider">
                         <div class="row">
-                            <div class="col-xs-3">
+                            <div class="col-md-3 col-sm-6">
                                 <label>
                                     Bic <span class="required">*</span>
                                 </label>
-                                <input class="form-control" name="" type="text" value="AXAPFRPPP"/>
+                                <input class="form-control" name="" type="text" value="AXAPFRPPP" placeholder="8-13 letters" />
                             </div>
-                            <div class="col-xs-3 pull-right">
+                            <div class="col-md-3 col-sm-6 pull-right my-account-country">
                                 <label>
                                     Country <span class="required">*</span>
                                 </label>
-                                <select class="chosen-default flags">
+                                <select class="chosen-default flags" title="-">
                                   <option data-img-src="lbd/img/flag/us.gif">
                                     EN (US)
                                   </option>
@@ -974,61 +941,48 @@
                     </div>
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-md-12 send-share-message-subject">
+                            <div class="col-md-12">
                                 <label>
                                     IBAN <span class="required">*</span>
                                 </label>
-                                <input class="form-control" name="" type="text" value="Pro account"/>
+                                <input class="form-control" name="" type="text" value="FR76 4041 8833 7990 0405 9643 975" placeholder="23 characters" />
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-md-12 send-share-message-subject">
+                            <div class="col-md-12">
                                 <label>
                                     Account Owner Name <span class="required">*</span>
                                 </label>
-                                <input class="form-control" name="" type="text" value="Michael Martin"/>
+                                <input class="form-control" name="" type="text" value="Michael Martin" placeholder="Full name" />
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="col-md-12 activation-container form-control df-ac auto-height p-10">
-                                  <div class="col-md-8 p-0 activation-switch df-ac">
-                                      <input type="checkbox" data-toggle="switch" data-off-text="" data-on-text="" /> This is my main account
-                                  </div>
-                                  <div class="col-xs-4 pull-right">
-                                    <a class="" href="javasctipt:;">Remove this account</a>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 activation-container form-control df-ac auto-height p-10">
-                                <div class="col-md-2 p-0 activation-switch df-ac">
-                                    <div class="switch" data-off-label="" data-on-label="">
-                                        <input type="checkbox"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-10 activation-statement">
-                                    This user is active :
-                                </div>
-                            </div>
+                      <div class="row account-options">
+                        <div class="col-sm-7">
+                            <span class="df-ac"><div class="switch mr-10" data-off-label="" data-on-label="">
+                                <input  type="checkbox" />
+                              </div> <span class="fw600">This is my main account</span>
+                            </span>
                         </div>
+                        <div class="col-sm-5 remove-account"><a href="javascript:;" class="remove">Remove this account</a></div>
+                      </div>
                     </div>
 
                   </form>
-                  <div class="row">
-                      <div class="edit-quick-question-action col-xs-12">
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
                           <div class="row">
                               <div class="col-xs-6">
-                                  <button class="btn btn-default full-width btn-fill btn-wd btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
                                   Cancel
                                   </button>
                               </div>
                               <div class="col-xs-6">
-                                  <button class="btn btn-default btn-fill full-width btn-wd btn-yes pull-right form-control" type="button">
-                                  Save changes
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Save
                                   </button>
                               </div>
                           </div>
@@ -1041,7 +995,884 @@
     </div>
 </div>
 
-H:\Kathirr K\2017\Projects\Webapp\Git\FO-UI\_partials\_modal-myaccount-add-royalty.html not found
+<div aria-labelledby="" class="modal fade" id="myaccountAddRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Add a new account
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Account Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Type a name for this account" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Payment Method  <span class="required">*</span></label>
+                                            <select id="" class="selectpicker" title="Choose...">
+                                                <option value="1">Bank Transfer</option>
+                                                <option value="2">Payment method 02</option>
+                                                <option value="3">Payment method 03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <label>
+                                    Bic <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="8-13 letters" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 pull-right my-account-country">
+                                <label>
+                                    Country <span class="required">*</span>
+                                </label>
+                                <select class="chosen-default flags" title="-">
+                                  <option data-img-src="lbd/img/flag/us.gif">
+                                    EN (US)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/fr.gif">
+                                    FR
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/uk.gif">
+                                    EN (UK)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/sp.gif">
+                                    ES
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/pol.gif">
+                                    PO
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    IBAN <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="23 characters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Account Owner Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Full name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row account-options">
+                        <div class="col-sm-7">
+                            <span class="df-ac"><div class="switch mr-10" data-off-label="" data-on-label="">
+                                <input  type="checkbox" />
+                              </div> <span class="fw600">This is my main account</span>
+                            </span>
+                        </div>
+                        <div class="col-sm-5 remove-account" style="display: none;"><a href="javascript:;" class="remove">Remove this account</a></div>
+                      </div>
+                    </div>
+
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Add
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="workingStatusCompanyRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Working Status
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Status <span class="required">*</span>
+                                </label>
+                                <select id="" class="selectpicker" title="Company">
+                                  <option value="1" selected>Company</option>
+                                  <option value="2">Other</option>
+                                  <option value="3">Status 01</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Company name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Webedia Group" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Address <span class="required">*</span>
+                                </label>
+                                <textarea name="" id="" cols="30" rows="3" class="form-control">2 rue Paul Vaillant Courtier</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    City <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Levallois-Parret" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <label>
+                                    Zip / Postal code <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="92300" placeholder="" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 pull-right my-account-country">
+                                <label>
+                                    Country <span class="required">*</span>
+                                </label>
+                                <select class="chosen-default flags" title="-">
+                                  <option data-img-src="lbd/img/flag/us.gif">
+                                    EN (US)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/fr.gif">
+                                    FR
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/uk.gif">
+                                    EN (UK)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/sp.gif">
+                                    ES
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/pol.gif">
+                                    PO
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    VAT Nummber <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="BE 123456789" placeholder="23 characters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Phone Number <span class="required">*</span>
+                                </label>
+                                <div class="row">
+                                  <div class="col-xs-3">
+                                    <input class="form-control" name="" type="text" value="+33" placeholder="" />
+                                  </div>
+                                  <div class="col-xs-9">
+                                    <input class="form-control" name="" type="text" value="01 49 88 91 95" placeholder="" />
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Save
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="workingStatusSelfemployedRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Working Status
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Status <span class="required">*</span>
+                                </label>
+                                <select id="" class="selectpicker" title="Company">
+                                  <option value="1">Company</option>
+                                  <option value="2" selected>Other</option>
+                                  <option value="3">Status 01</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12 highlight-bg">
+                            <p class="fw600">Warning :</p>
+                            <p>The 'Other' status is temporary status if you are not a company or registered as a freelancer</p>
+                            <p>Please select the status that is in line with your country's legislation rules.</p>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    ID Card Number
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Type your ID Card number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Passport Number
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Type your Passport number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    VAT Number
+                                </label>
+                                <input class="form-control" name="" type="text" value="BE 123456789" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Save
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade in" id="tunnelRoyalty" role="dialog" style="display: block;" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Working Status
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Status <span class="required">*</span>
+                                </label>
+                                <select id="" class="selectpicker" title="Company">
+                                  <option value="1">Company</option>
+                                  <option value="2" selected>Other</option>
+                                  <option value="3">Status 01</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                              <div class="col-md-12 progress-steps">
+                                  <div id="wizardCard">
+                                      <form action="" id="wizardForm" method="">
+                                          <div class="tab-links">
+                                              <ul class="nav">
+                                                  <li>
+                                                      <a data-toggle="tab" href="#tab-setting-1">
+                                                          Assignation
+                                                      </a>
+                                                  </li>
+                                                  <li>
+                                                      <a data-toggle="tab" href="#tab-setting-2">
+                                                          Participation rules
+                                                      </a>
+                                                  </li>
+                                                  <li>
+                                                      <a data-toggle="tab" href="#tab-setting-3">
+                                                          Production settings
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                              <div class="tab-content">
+                                                  <div class="tab-pane" id="tab-setting-1">
+                                                      <div class="row">
+                                                          <div class="col-md-12 assigned-user">
+                                                              <label>
+                                                                  Assign on this job
+                                                              </label>
+                                                              <div class="col-md-12 card assigned-user-card">
+                                                                  <div class="row">
+                                                                      <div class="col-md-10 user">
+                                                                          <div class="user-image">
+                                                                              <img class="img-circle" src="lbd/img/default-avatar.png"/>
+                                                                          </div>
+                                                                          <div class="user-name">
+                                                                              Lucie Zvanovec
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="col-md-2 remove">
+                                                                          <a href="javascript:;">
+                                                                              Remove
+                                                                          </a>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="row">
+                                                          <div class="col-md-12 tab-navigation">
+                                                              <button class="btn btn-info btn-fill btn-wd btn-no btn-cancel-settings pull-left" type="button">
+                                                                  Cancel
+                                                              </button>
+                                                              <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next" type="button">
+                                                                  Next
+                                                              </button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="tab-pane" id="tab-setting-2">
+                                                      <div class="row">
+                                                          <div class="col-md-12 participation-rules-container">
+                                                              <div class="row">
+                                                                  <div class="col-md-6">
+                                                                      <h4 class="title">
+                                                                          Cost settings
+                                                                      </h4>
+                                                                      <div class="row">
+                                                                          <div class="col-md-4">
+                                                                              <label>
+                                                                                  Min. price
+                                                                              </label>
+                                                                              <input class="form-control" type="text" value="16.00"/>
+                                                                          </div>
+                                                                          <div class="col-md-4">
+                                                                              <label>
+                                                                                  Max. price
+                                                                              </label>
+                                                                              <input class="form-control" type="text" value="320.00"/>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                          <div class="col-md-4">
+                                                                              <label>
+                                                                                  Min. price
+                                                                              </label>
+                                                                              <input class="form-control" type="text" value="16.00"/>
+                                                                          </div>
+                                                                          <div class="col-md-4">
+                                                                              <label>
+                                                                                  Max. price
+                                                                              </label>
+                                                                              <input class="form-control" type="text" value="320.00"/>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                      <div class="price-place">
+                                                                          <div class="col-md-6 recommeded">
+                                                                              <span class="head">
+                                                                                  Recommended Max.
+                                                                              </span>
+                                                                              16.00 €
+                                                                              <a href="javascript:;">
+                                                                                  apply
+                                                                              </a>
+                                                                          </div>
+                                                                          <div class="col-md-6 recommeded">
+                                                                              <span class="head">
+                                                                                  Estimated margin
+                                                                              </span>
+                                                                              61.33 %
+                                                                              <span class="rise">
+                                                                                  (
+                                                                                  <i class="material-icons">
+                                                                                      arrow_upward
+                                                                                  </i>
+                                                                                  +1.33)
+                                                                              </span>
+                                                                              <span class="fall">
+                                                                                  (
+                                                                                  <i class="material-icons">
+                                                                                      arrow_downward
+                                                                                  </i>
+                                                                                  -1.33)
+                                                                              </span>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <hr/>
+                                                              <div class="row">
+                                                                  <div class="col-md-6">
+                                                                      <div class="row">
+                                                                          <h4 class="title col-md-5">
+                                                                              Bidding Time
+                                                                          </h4>
+                                                                          <div class="col-md-6 previous-job-setting-date">
+                                                                              <a href="javascript:;"
+                                                                                  data-toggle="popover"
+                                                                                  data-placement="bottom"
+                                                                                  data-html="true"
+                                                                                  data-trigger="hover"
+                                                                                  data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
+                                                                                  See previous job settings
+                                                                              </a>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                          <div class="col-md-12">
+                                                                              <label>
+                                                                                  Starting
+                                                                              </label>
+                                                                              <div class="row">
+                                                                                  <div class="col-md-8">
+                                                                                      <input class="form-control datepicker" placeholder="Date Here" type="text"/>
+                                                                                  </div>
+                                                                                  <div class="col-md-4">
+                                                                                      <div class="row">
+                                                                                          <!-- <input type="text" class="form-control timepicker" placeholder="Time Here"/> -->
+                                                                                          <input class="form-control" id="timepicker1" name="timepicker" placeholder="Time Here" type="text"/>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                          <div class="col-md-12">
+                                                                              <label>
+                                                                                  Ending
+                                                                              </label>
+                                                                              <div class="row">
+                                                                                  <div class="col-md-8">
+                                                                                      <input class="form-control datepicker" placeholder="Date Here" type="text"/>
+                                                                                  </div>
+                                                                                  <div class="col-md-4">
+                                                                                      <div class="row">
+                                                                                          <!-- <input type="text" class="form-control timepicker" placeholder="Time Here"/> -->
+                                                                                          <input class="form-control" id="timepicker2" name="timepicker" placeholder="Time Here" type="text"/>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                      <div class="row">
+                                                                          <div class="col-md-8 pull-right">
+                                                                              <div class="price-place">
+                                                                                  <div class="col-md-12 recommeded">
+                                                                                      <span class="head">
+                                                                                          Bidding
+                                                                                      </span>
+                                                                                      04h 00m
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <hr/>
+                                                              <div class="row">
+                                                                  <div class="col-md-6">
+                                                                      <div class="row">
+                                                                          <h4 class="title col-md-5">
+                                                                              Selection Time
+                                                                          </h4>
+                                                                          <div class="col-md-6 previous-job-setting-date">
+                                                                              <a href="javascript:;"
+                                                                                  data-toggle="popover"
+                                                                                  data-placement="bottom"
+                                                                                  data-html="true"
+                                                                                  data-trigger="hover"
+                                                                                  data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
+                                                                                  See previous job settings
+                                                                              </a>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                          <div class="col-md-12">
+                                                                              <label>
+                                                                                  Ending
+                                                                              </label>
+                                                                              <div class="row">
+                                                                                  <div class="col-md-8">
+                                                                                      <input class="form-control datepicker" placeholder="Date Here" type="text"/>
+                                                                                  </div>
+                                                                                  <div class="col-md-4">
+                                                                                      <div class="row">
+                                                                                          <!-- <input type="text" class="form-control timepicker" placeholder="Time Here"/> -->
+                                                                                          <input class="form-control" id="timepicker3" name="timepicker" placeholder="Time Here" type="text"/>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                      <div class="row">
+                                                                          <div class="col-md-8 pull-right">
+                                                                              <div class="price-place">
+                                                                                  <div class="col-md-12 recommeded">
+                                                                                      <span class="head">
+                                                                                          Selection
+                                                                                      </span>
+                                                                                      02h 30m
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="row">
+                                                          <div class="col-md-12 tab-navigation">
+                                                              <button class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back" type="button">
+                                                                  Back
+                                                              </button>
+                                                              <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next" type="button">
+                                                                  Next
+                                                              </button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="tab-pane" id="tab-setting-3">
+                                                      <div class="row">
+                                                          <div class="col-md-12 participation-settings-container">
+                                                              <div class="row">
+                                                                  <div class="col-md-3">
+                                                                      <div class="row">
+                                                                          <div class="col-md-12">
+                                                                              <label>
+                                                                                  Job duration
+                                                                              </label>
+                                                                              <div class="input-group">
+                                                                                  <input class="form-control" type="text" value="3">
+                                                                                      <span class="input-group-addon">
+                                                                                          <select class="selectpicker" name="">
+                                                                                              <option>
+                                                                                                  hours
+                                                                                              </option>
+                                                                                              <option>
+                                                                                                  days
+                                                                                              </option>
+                                                                                              <option>
+                                                                                                  months
+                                                                                              </option>
+                                                                                              <option>
+                                                                                                  years
+                                                                                              </option>
+                                                                                          </select>
+                                                                                      </span>
+                                                                                  </input>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-md-6 pull-right">
+                                                                      <div class="row">
+                                                                          <div class="col-md-6">
+                                                                              <label>
+                                                                                  Starting date
+                                                                              </label>
+                                                                              <input class="form-control datepicker-start-down" placeholder="Date Here" type="text"/>
+                                                                              <div class="previous-job-settings">
+                                                                                  <a href="javascript:;"
+                                                                                      data-toggle="popover"
+                                                                                      data-placement="bottom"
+                                                                                      data-html="true"
+                                                                                      data-trigger="hover"
+                                                                                      data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
+                                                                                          See previous job settings
+                                                                                  </a>
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <label>
+                                                                                  Ending date
+                                                                              </label>
+                                                                              <input class="form-control datepicker-end-down" placeholder="Date Here" type="text"/>
+                                                                              <div class="previous-job-settings">
+                                                                                  <a href="javascript:;"
+                                                                                      data-toggle="popover"
+                                                                                      data-placement="bottom"
+                                                                                      data-html="true"
+                                                                                      data-trigger="hover"
+                                                                                      data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
+                                                                                          See previous job settings
+                                                                                  </a>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="row">
+                                                                  <div class="col-md-6">
+                                                                      <div class="row">
+                                                                          <div class="col-md-12 activation-nobg">
+                                                                              <div class="row">
+                                                                                  <div class="col-md-12 activation-container">
+                                                                                      <div class="col-md-2 activation-switch">
+                                                                                          <div class="switch" data-off-label="" data-on-label="">
+                                                                                              <input type="checkbox"/>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                      <div class="col-md-9 activation-statement">
+                                                                                          Add additional time (if refused):
+                                                                                          <span class="no">
+                                                                                              NO
+                                                                                          </span>
+                                                                                          <span class="yes">
+                                                                                              YES
+                                                                                          </span>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                          <div class="col-md-7">
+                                                                              <div class="input-group">
+                                                                                  <input class="form-control" type="text" value="3">
+                                                                                      <span class="input-group-addon">
+                                                                                          <select class="selectpicker" name="tempo">
+                                                                                              <option>
+                                                                                                  hours
+                                                                                              </option>
+                                                                                              <option>
+                                                                                                  days
+                                                                                              </option>
+                                                                                              <option>
+                                                                                                  months
+                                                                                              </option>
+                                                                                              <option>
+                                                                                                  years
+                                                                                              </option>
+                                                                                          </select>
+                                                                                      </span>
+                                                                                  </input>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                      <div class="row">
+                                                                          <div class="col-md-12 activation-nobg">
+                                                                              <div class="row">
+                                                                                  <div class="col-md-12 activation-container">
+                                                                                      <div class="col-md-2 activation-switch">
+                                                                                          <div class="switch" data-off-label="" data-on-label="">
+                                                                                              <input type="checkbox"/>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                      <div class="col-md-9 activation-statement">
+                                                                                          Add plagiarism bot after this job:
+                                                                                          <span class="no">
+                                                                                              NO
+                                                                                          </span>
+                                                                                          <span class="yes">
+                                                                                              YES
+                                                                                          </span>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="row">
+                                                                  <div class="col-md-12 timeline-chart">
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="row">
+                                                          <div class="col-md-12 tab-navigation">
+                                                              <button class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back" type="button">
+                                                                  Back
+                                                              </button>
+                                                              <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish" onclick="onFinishWizard()" type="button">
+                                                                  Done
+                                                              </button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Save
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modals ends -->
 
 <!--   Core JS Files   -->
