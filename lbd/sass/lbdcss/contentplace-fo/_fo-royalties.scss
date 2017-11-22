@@ -382,4 +382,76 @@
   }
 }
 
+#tunnelRoyalty {
+  @extend #workingStatusSelfemployedRoyalty;
+  .modal-dialog{
+    span.close{
+      top: 10px;
+      right: 10px;
+    }
+    .modal-content{
+      padding: 0 !important;
+      .modal-body{
+        padding: 0 !important;
+        .tunnel-container{
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          padding: 0;
+          .tunnel-left-column{
+            background: $highlight-03;
+            padding: 15px;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+          }
+          .tunnel-right-column{
+            padding: 30px;
+            #tunnelWizard{
+              .tab-links{
+                ul.nav{
+                  display: none;
+                }
+                .tab-pane{
+                  padding: 0;
+                  .tunnel-step-1{
+                    padding: 0;
+                    margin: 15px 0;
+                    list-style-type: none;
+                    li {
+                      border-bottom: 2px $border-color-02 solid;
+                      &:last-child {
+                        border: none;
+                      }
+                      & + li {
+                        label {
+                          text-transform: none;
+                          font-size: 14px;
+                          font-weight: normal;
+                          .icons{
+                            position: absolute;
+                            top: 2px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .transfer-option{
+                    .card{
+                      padding: 10px;
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Modal styles ends */

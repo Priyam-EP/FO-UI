@@ -1388,484 +1388,187 @@
                         <i class="material-icons">close</i>
                     </a>
                 </span>
-                <div class="modal-container">
+                <div class="modal-container clearfix">
                   <!-- Modal contents start -->
-                  <div class="modal-title">
-                      <div class="df-ac">
-                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
-                            <i class="material-icons">
-                            arrow_back
-                            </i>
-                        </a>
-                        Working Status
-                      </div>
-                  </div>
-                  <form action="" class="form clearfix">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label>
-                                    Status <span class="required">*</span>
-                                </label>
-                                <select id="" class="selectpicker" title="Company">
-                                  <option value="1">Company</option>
-                                  <option value="2" selected>Other</option>
-                                  <option value="3">Status 01</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                              <div class="col-md-12 progress-steps">
-                                  <div id="wizardCard">
-                                      <form action="" id="wizardForm" method="">
-                                          <div class="tab-links">
-                                              <ul class="nav">
-                                                  <li>
-                                                      <a data-toggle="tab" href="#tab-setting-1">
-                                                          Assignation
-                                                      </a>
-                                                  </li>
-                                                  <li>
-                                                      <a data-toggle="tab" href="#tab-setting-2">
-                                                          Participation rules
-                                                      </a>
-                                                  </li>
-                                                  <li>
-                                                      <a data-toggle="tab" href="#tab-setting-3">
-                                                          Production settings
-                                                      </a>
-                                                  </li>
+                  <div class="col-sm-12 tunnel-container">
+                    <div class="col-sm-5 tunnel-left-column" style="">
+
+                    </div>
+                    <div class="col-sm-7 tunnel-right-column">
+                      <div class="right-column-container">
+                        <div id="tunnelWizard">
+                          <form action="" id="wizardForm" method="">
+                              <div class="tab-links">
+                                  <ul class="nav">
+                                      <li>
+                                          <a data-toggle="tab" href="#step-1">
+                                              Step 1
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a data-toggle="tab" href="#step-2">
+                                              Step 1
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a data-toggle="tab" href="#confirmation">
+                                              Confirmation
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a data-toggle="tab" href="#requestSent">
+                                              Request sent
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  <div class="tab-content">
+                                      <div class="tab-pane" id="step-1">
+                                          <div class="row">
+                                            <div class="col-xs-12">
+                                              <div class="modal-title">
+                                                  Step 1
+                                              </div>
+                                              <div class="">
+                                                <h4>Select jobs to be paid for</h4>
+                                                <span class="">Please tell us the jobs that you want to be payed for.</span>
+                                              </div>
+                                              <ul class="tunnel-step-1">
+                                                <li>
+                                                  <div class="row">
+                                                    <div class="col-xs-3"><label for="">Job name</label></div>
+                                                    <div class="col-xs-3 pull-right text-right"><label for="">Royalties</label></div>
+                                                  </div>
+                                                </li>
+                                                <li>
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <label class="checkbox clearfix">
+                                                          <input data-toggle="checkbox" type="checkbox" />
+                                                          <div class="col-xs-8">Webedia article</div>
+                                                          <div class="col-xs-4 text-right pr-0">FR 1 950.80 €</div>
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li>
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <label class="checkbox clearfix">
+                                                          <input data-toggle="checkbox" type="checkbox" />
+                                                          <div class="col-xs-8">Webedia article</div>
+                                                          <div class="col-xs-4 text-right pr-0">FR 1 950.80 €</div>
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                </li>
                                               </ul>
-                                              <div class="tab-content">
-                                                  <div class="tab-pane" id="tab-setting-1">
-                                                      <div class="row">
-                                                          <div class="col-md-12 assigned-user">
-                                                              <label>
-                                                                  Assign on this job
-                                                              </label>
-                                                              <div class="col-md-12 card assigned-user-card">
-                                                                  <div class="row">
-                                                                      <div class="col-md-10 user">
-                                                                          <div class="user-image">
-                                                                              <img class="img-circle" src="lbd/img/default-avatar.png"/>
-                                                                          </div>
-                                                                          <div class="user-name">
-                                                                              Lucie Zvanovec
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="col-md-2 remove">
-                                                                          <a href="javascript:;">
-                                                                              Remove
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-md-12 tab-navigation">
-                                                              <button class="btn btn-info btn-fill btn-wd btn-no btn-cancel-settings pull-left" type="button">
-                                                                  Cancel
-                                                              </button>
-                                                              <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next" type="button">
-                                                                  Next
-                                                              </button>
-                                                          </div>
-                                                      </div>
+                                              <div class="form-group">
+                                                <div class="transfer-option">
+                                                  <div class="col-sm-12 card">
+                                                      <span class="df-ac"><div class="switch mr-10" data-off-label="" data-on-label="">
+                                                          <input  type="checkbox" />
+                                                        </div> <span class="fw600">Express transfer : No</span>
+                                                      </span>
                                                   </div>
-                                                  <div class="tab-pane" id="tab-setting-2">
-                                                      <div class="row">
-                                                          <div class="col-md-12 participation-rules-container">
-                                                              <div class="row">
-                                                                  <div class="col-md-6">
-                                                                      <h4 class="title">
-                                                                          Cost settings
-                                                                      </h4>
-                                                                      <div class="row">
-                                                                          <div class="col-md-4">
-                                                                              <label>
-                                                                                  Min. price
-                                                                              </label>
-                                                                              <input class="form-control" type="text" value="16.00"/>
-                                                                          </div>
-                                                                          <div class="col-md-4">
-                                                                              <label>
-                                                                                  Max. price
-                                                                              </label>
-                                                                              <input class="form-control" type="text" value="320.00"/>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="row">
-                                                                          <div class="col-md-4">
-                                                                              <label>
-                                                                                  Min. price
-                                                                              </label>
-                                                                              <input class="form-control" type="text" value="16.00"/>
-                                                                          </div>
-                                                                          <div class="col-md-4">
-                                                                              <label>
-                                                                                  Max. price
-                                                                              </label>
-                                                                              <input class="form-control" type="text" value="320.00"/>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="col-md-6">
-                                                                      <div class="price-place">
-                                                                          <div class="col-md-6 recommeded">
-                                                                              <span class="head">
-                                                                                  Recommended Max.
-                                                                              </span>
-                                                                              16.00 €
-                                                                              <a href="javascript:;">
-                                                                                  apply
-                                                                              </a>
-                                                                          </div>
-                                                                          <div class="col-md-6 recommeded">
-                                                                              <span class="head">
-                                                                                  Estimated margin
-                                                                              </span>
-                                                                              61.33 %
-                                                                              <span class="rise">
-                                                                                  (
-                                                                                  <i class="material-icons">
-                                                                                      arrow_upward
-                                                                                  </i>
-                                                                                  +1.33)
-                                                                              </span>
-                                                                              <span class="fall">
-                                                                                  (
-                                                                                  <i class="material-icons">
-                                                                                      arrow_downward
-                                                                                  </i>
-                                                                                  -1.33)
-                                                                              </span>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <hr/>
-                                                              <div class="row">
-                                                                  <div class="col-md-6">
-                                                                      <div class="row">
-                                                                          <h4 class="title col-md-5">
-                                                                              Bidding Time
-                                                                          </h4>
-                                                                          <div class="col-md-6 previous-job-setting-date">
-                                                                              <a href="javascript:;"
-                                                                                  data-toggle="popover"
-                                                                                  data-placement="bottom"
-                                                                                  data-html="true"
-                                                                                  data-trigger="hover"
-                                                                                  data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
-                                                                                  See previous job settings
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="row">
-                                                                          <div class="col-md-12">
-                                                                              <label>
-                                                                                  Starting
-                                                                              </label>
-                                                                              <div class="row">
-                                                                                  <div class="col-md-8">
-                                                                                      <input class="form-control datepicker" placeholder="Date Here" type="text"/>
-                                                                                  </div>
-                                                                                  <div class="col-md-4">
-                                                                                      <div class="row">
-                                                                                          <!-- <input type="text" class="form-control timepicker" placeholder="Time Here"/> -->
-                                                                                          <input class="form-control" id="timepicker1" name="timepicker" placeholder="Time Here" type="text"/>
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="row">
-                                                                          <div class="col-md-12">
-                                                                              <label>
-                                                                                  Ending
-                                                                              </label>
-                                                                              <div class="row">
-                                                                                  <div class="col-md-8">
-                                                                                      <input class="form-control datepicker" placeholder="Date Here" type="text"/>
-                                                                                  </div>
-                                                                                  <div class="col-md-4">
-                                                                                      <div class="row">
-                                                                                          <!-- <input type="text" class="form-control timepicker" placeholder="Time Here"/> -->
-                                                                                          <input class="form-control" id="timepicker2" name="timepicker" placeholder="Time Here" type="text"/>
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="col-md-6">
-                                                                      <div class="row">
-                                                                          <div class="col-md-8 pull-right">
-                                                                              <div class="price-place">
-                                                                                  <div class="col-md-12 recommeded">
-                                                                                      <span class="head">
-                                                                                          Bidding
-                                                                                      </span>
-                                                                                      04h 00m
-                                                                                  </div>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <hr/>
-                                                              <div class="row">
-                                                                  <div class="col-md-6">
-                                                                      <div class="row">
-                                                                          <h4 class="title col-md-5">
-                                                                              Selection Time
-                                                                          </h4>
-                                                                          <div class="col-md-6 previous-job-setting-date">
-                                                                              <a href="javascript:;"
-                                                                                  data-toggle="popover"
-                                                                                  data-placement="bottom"
-                                                                                  data-html="true"
-                                                                                  data-trigger="hover"
-                                                                                  data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
-                                                                                  See previous job settings
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="row">
-                                                                          <div class="col-md-12">
-                                                                              <label>
-                                                                                  Ending
-                                                                              </label>
-                                                                              <div class="row">
-                                                                                  <div class="col-md-8">
-                                                                                      <input class="form-control datepicker" placeholder="Date Here" type="text"/>
-                                                                                  </div>
-                                                                                  <div class="col-md-4">
-                                                                                      <div class="row">
-                                                                                          <!-- <input type="text" class="form-control timepicker" placeholder="Time Here"/> -->
-                                                                                          <input class="form-control" id="timepicker3" name="timepicker" placeholder="Time Here" type="text"/>
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="col-md-6">
-                                                                      <div class="row">
-                                                                          <div class="col-md-8 pull-right">
-                                                                              <div class="price-place">
-                                                                                  <div class="col-md-12 recommeded">
-                                                                                      <span class="head">
-                                                                                          Selection
-                                                                                      </span>
-                                                                                      02h 30m
-                                                                                  </div>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-md-12 tab-navigation">
-                                                              <button class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back" type="button">
-                                                                  Back
-                                                              </button>
-                                                              <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next" type="button">
-                                                                  Next
-                                                              </button>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div class="tab-pane" id="tab-setting-3">
-                                                      <div class="row">
-                                                          <div class="col-md-12 participation-settings-container">
-                                                              <div class="row">
-                                                                  <div class="col-md-3">
-                                                                      <div class="row">
-                                                                          <div class="col-md-12">
-                                                                              <label>
-                                                                                  Job duration
-                                                                              </label>
-                                                                              <div class="input-group">
-                                                                                  <input class="form-control" type="text" value="3">
-                                                                                      <span class="input-group-addon">
-                                                                                          <select class="selectpicker" name="">
-                                                                                              <option>
-                                                                                                  hours
-                                                                                              </option>
-                                                                                              <option>
-                                                                                                  days
-                                                                                              </option>
-                                                                                              <option>
-                                                                                                  months
-                                                                                              </option>
-                                                                                              <option>
-                                                                                                  years
-                                                                                              </option>
-                                                                                          </select>
-                                                                                      </span>
-                                                                                  </input>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="col-md-6 pull-right">
-                                                                      <div class="row">
-                                                                          <div class="col-md-6">
-                                                                              <label>
-                                                                                  Starting date
-                                                                              </label>
-                                                                              <input class="form-control datepicker-start-down" placeholder="Date Here" type="text"/>
-                                                                              <div class="previous-job-settings">
-                                                                                  <a href="javascript:;"
-                                                                                      data-toggle="popover"
-                                                                                      data-placement="bottom"
-                                                                                      data-html="true"
-                                                                                      data-trigger="hover"
-                                                                                      data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
-                                                                                          See previous job settings
-                                                                                  </a>
-                                                                              </div>
-                                                                          </div>
-                                                                          <div class="col-md-6">
-                                                                              <label>
-                                                                                  Ending date
-                                                                              </label>
-                                                                              <input class="form-control datepicker-end-down" placeholder="Date Here" type="text"/>
-                                                                              <div class="previous-job-settings">
-                                                                                  <a href="javascript:;"
-                                                                                      data-toggle="popover"
-                                                                                      data-placement="bottom"
-                                                                                      data-html="true"
-                                                                                      data-trigger="hover"
-                                                                                      data-content="<b>Production start date : </b>  September  7, 2017 - 01:00 AM<br><b>Production end date : </b>  October 31, 2017 - 01:00 PM" data-original-title="" title="">
-                                                                                          See previous job settings
-                                                                                  </a>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="row">
-                                                                  <div class="col-md-6">
-                                                                      <div class="row">
-                                                                          <div class="col-md-12 activation-nobg">
-                                                                              <div class="row">
-                                                                                  <div class="col-md-12 activation-container">
-                                                                                      <div class="col-md-2 activation-switch">
-                                                                                          <div class="switch" data-off-label="" data-on-label="">
-                                                                                              <input type="checkbox"/>
-                                                                                          </div>
-                                                                                      </div>
-                                                                                      <div class="col-md-9 activation-statement">
-                                                                                          Add additional time (if refused):
-                                                                                          <span class="no">
-                                                                                              NO
-                                                                                          </span>
-                                                                                          <span class="yes">
-                                                                                              YES
-                                                                                          </span>
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="row">
-                                                                          <div class="col-md-7">
-                                                                              <div class="input-group">
-                                                                                  <input class="form-control" type="text" value="3">
-                                                                                      <span class="input-group-addon">
-                                                                                          <select class="selectpicker" name="tempo">
-                                                                                              <option>
-                                                                                                  hours
-                                                                                              </option>
-                                                                                              <option>
-                                                                                                  days
-                                                                                              </option>
-                                                                                              <option>
-                                                                                                  months
-                                                                                              </option>
-                                                                                              <option>
-                                                                                                  years
-                                                                                              </option>
-                                                                                          </select>
-                                                                                      </span>
-                                                                                  </input>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="col-md-6">
-                                                                      <div class="row">
-                                                                          <div class="col-md-12 activation-nobg">
-                                                                              <div class="row">
-                                                                                  <div class="col-md-12 activation-container">
-                                                                                      <div class="col-md-2 activation-switch">
-                                                                                          <div class="switch" data-off-label="" data-on-label="">
-                                                                                              <input type="checkbox"/>
-                                                                                          </div>
-                                                                                      </div>
-                                                                                      <div class="col-md-9 activation-statement">
-                                                                                          Add plagiarism bot after this job:
-                                                                                          <span class="no">
-                                                                                              NO
-                                                                                          </span>
-                                                                                          <span class="yes">
-                                                                                              YES
-                                                                                          </span>
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="row">
-                                                                  <div class="col-md-12 timeline-chart">
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-md-12 tab-navigation">
-                                                              <button class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back" type="button">
-                                                                  Back
-                                                              </button>
-                                                              <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish" onclick="onFinishWizard()" type="button">
-                                                                  Done
-                                                              </button>
-                                                          </div>
-                                                      </div>
-                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15">
+                                              <div class="col-xs-12 tab-navigation">
+                                                  <div class="row">
+                                                    <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-no pull-left btn-back" type="button">
+                                                         Back
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-yes pull-right btn-next" type="button">
+                                                         Next
+                                                     </button>
+                                                   </div>
+                                                 </div>
                                               </div>
                                           </div>
-                                      </form>
+                                      </div>
+                                      <div class="tab-pane" id="step-2">
+                                          <div class="row">
+                                            <div class="modal-title col-sm-12">
+                                                Step-2
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15">
+                                              <div class="col-xs-12 tab-navigation">
+                                                 <div class="row">
+                                                    <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-no pull-left btn-back" type="button">
+                                                         Back
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-yes pull-right btn-next" type="button">
+                                                         Next
+                                                     </button>
+                                                   </div>
+                                                 </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="tab-pane" id="confirmation">
+                                          <div class="row">
+                                            <div class="modal-title col-sm-12">
+                                                Confirmation
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15">
+                                              <div class="col-xs-12 tab-navigation">
+                                                  <div class="row">
+                                                    <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-no pull-left btn-back" type="button">
+                                                         Back
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-yes pull-right btn-next" type="button">
+                                                         Next
+                                                     </button>
+                                                   </div>
+                                                 </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="tab-pane" id="requestSent">
+                                          <div class="row">
+                                            <div class="modal-title col-sm-12">
+                                                Request done
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15">
+                                              <div class="col-xs-12 tab-navigation">
+                                                  <div class="row">
+                                                    <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-no pull-left btn-back" type="button">
+                                                         Back
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-6">
+                                                     <button class="btn btn-info btn-fill btn-yes pull-right btn-finish" onclick="onFinishWizard()" type="button">
+                                                        Done
+                                                    </button>
+                                                   </div>
+                                                 </div>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
                               </div>
-                          </div>
+                          </form>
+                      </div>
+
                       </div>
                     </div>
-                  </form>
-                  <div class="row mt-15">
-                      <div class="col-xs-12">
-                          <div class="row">
-                              <div class="col-xs-6">
-                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
-                                  Cancel
-                                  </button>
-                              </div>
-                              <div class="col-xs-6">
-                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
-                                  Save
-                                  </button>
-                              </div>
-                          </div>
-                      </div>
                   </div>
+
                   <!-- Modal contents end -->
                 </div>
             </div>
@@ -1992,7 +1695,52 @@
 
 
 <!-- Custom scripts -->
+<script type="text/javascript">
 
+//Tab Wizard
+$('#wizardCard, #tunnelWizard, #wizardCard-testArticle').bootstrapWizard({
+  tabClass: 'nav nav-pills',
+  nextSelector: '.btn-next',
+    previousSelector: '.btn-back',
+  onNext: function(tab, navigation, index) {
+    var $valid = $('#wizardForm').valid();
+    if(!$valid) {
+      $validator.focusInvalid();
+      return false;
+    }
+  },/*
+    onInit : function(tab, navigation, index){
+        //check number of tabs and fill the entire row
+        var $total = navigation.find('li').length;
+        $width = 100/$total;
+        $display_width = $(document).width();
+        if($display_width < 600 && $total > 3){
+           $width = 50;
+        }
+        navigation.find('li').css('width',$width + '%');
+    },*/
+    onTabClick : function(tab, navigation, index){
+        // Disable the posibility to click on tabs
+        return false;
+    },
+    onTabShow: function(tab, navigation, index) {
+        var $total = navigation.find('li').length;
+        var $current = index+1;
+        var wizard = navigation.closest('.card-wizard');
+        // If it's the last tab then hide the last button and show the finish instead
+        if($current >= $total) {
+            $(wizard).find('.btn-next').hide();
+            $(wizard).find('.btn-finish').show();
+        } else if($current == 1){
+            $(wizard).find('.btn-back').hide();
+        } else {
+            $(wizard).find('.btn-back').show();
+            $(wizard).find('.btn-next').show();
+            $(wizard).find('.btn-finish').hide();
+        }
+    }
+});
+</script>
 <!-- Custom scripts ends -->
 </body>
 </html>
