@@ -438,9 +438,21 @@
                     }
                   }
                   .transfer-option{
+                    color: $main;
                     .card{
                       padding: 10px;
                       margin: 0;
+                    }
+                  }
+                  .payment-container{
+                    .total-payment{
+                      color: $main;
+                    }
+                  }
+                  .step-actions {
+                    margin: 0 -30px;
+                    .tab-navigation{
+                      padding: 0 30px;
                     }
                   }
                 }
