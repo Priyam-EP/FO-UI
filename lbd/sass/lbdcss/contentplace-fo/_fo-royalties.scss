@@ -455,6 +455,24 @@
                       padding: 0 30px;
                     }
                   }
+                  .request-sent{
+                    padding: 30px;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .request-sent-icon{
+                      width: 150px;
+                      i {
+                        font-size: 180px;
+                        color: $selected;
+                        width: 100%;
+                      }
+                    }
+                  }
                 }
               }
             }
