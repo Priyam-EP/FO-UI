@@ -232,7 +232,7 @@
                                             </div>
                                             <div class="col-xs-3 section-actions">
                                               <span class="edit">
-                                                  <a class="df-ac" href="javascript:;">
+                                                  <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#myaccountRoyalty">
                                                       <u class="hidden-xs">Edit</u>
                                                       <i class="material-icons">
                                                           create
@@ -288,6 +288,11 @@
                                                   </ul>
                                                 </div>
                                               </li>
+                                              <li class="add-block">
+                                                <span data-target="#myaccountAddRoyalty" data-toggle="modal">
+                                                  + Add a new account
+                                                </span>
+                                              </li>
                                             </ul>
                                           </div>
                                         </div>
@@ -304,7 +309,7 @@
                                             </div>
                                             <div class="col-xs-3 section-actions">
                                               <span class="edit">
-                                                  <a class="df-ac" href="javascript:;">
+                                                  <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#workingStatusSelfemployedRoyalty">
                                                       <u class="hidden-xs">Edit</u>
                                                       <i class="material-icons">
                                                           create
@@ -485,7 +490,7 @@
 
 
 <!-- Modals starts -->
-<div aria-labelledby="paymentRoyalty" class="modal fade" id="paymentRoyalty" role="dialog" style="" tabindex="-1">
+<div aria-labelledby="" class="modal fade" id="paymentRoyalty" role="dialog" style="" tabindex="-1">
     <div class="modal-dialog modal-lg" role="modal">
         <div class="modal-content clearfix">
             <div class="modal-body">
@@ -495,6 +500,7 @@
                     </a>
                 </span>
                 <div class="modal-container">
+                  <!-- Modal contents start -->
                   <div class="modal-title">
                       Payment history
                   </div>
@@ -767,6 +773,833 @@
                           </div>
                       </div>
                   </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="myaccountRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      My accounts
+                  </div>
+                  <div class="col-md-12 p-0 my-accounts">
+                    <div class="row">
+                      <ul class="my-accounts-list">
+                        <li>
+                          <div class="col-sm-12 p-0">
+                              <span class="account-title main-account">Pro account <span class="hidden-xs">(main account)</span></span>
+                          </div>
+                          <div class="col-sm-12 p-0">
+                            <ul class="col-sm-12 account-details">
+                              <li class="hidden-xs">
+                                <label for="" class="hidden-xs">Type :</label> Bank account
+                              </li>
+                              <li>
+                                <label for="" class="hidden-xs">IBAN :</label> FR76 4041 8830 7980 0405 9643 975
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-sm-12 p-0">
+                              <span class="account-title">Paypal</span>
+                          </div>
+                          <div class="col-sm-12 p-0">
+                            <ul class="col-sm-12 account-details">
+                              <li class="hidden-xs">
+                                <label for="" class="hidden-xs">Type :</label> Paypal account
+                              </li>
+                              <li>
+                                <label for="" class="hidden-xs">Email :</label> m.martin@gmail.com
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="col-sm-12 p-0">
+                              <span class="account-title">Another account</span>
+                          </div>
+                          <div class="col-sm-12 p-0">
+                            <ul class="col-sm-12 account-details">
+                              <li class="hidden-xs">
+                                <label for="" class="hidden-xs">Type :</label> Another Bank account
+                              </li>
+                              <li>
+                                <label for="" class="hidden-xs">IBAN :</label> FR76 4041 8830 7980 0405 9643 975
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="add-block">
+                          <span>
+                            + Add a new account
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="myaccountEditRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Edit accounts
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Account Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Pro account" placeholder="Type name of the account" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Payment Method  <span class="required">*</span></label>
+                                            <select id="" class="selectpicker" title="Choose...">
+                                                <option value="1">Bank Transfer</option>
+                                                <option value="2">Payment method 02</option>
+                                                <option value="3">Payment method 03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <label>
+                                    Bic <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="AXAPFRPPP" placeholder="8-13 letters" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 pull-right my-account-country">
+                                <label>
+                                    Country <span class="required">*</span>
+                                </label>
+                                <select class="chosen-default flags" title="-">
+                                  <option data-img-src="lbd/img/flag/us.gif">
+                                    EN (US)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/fr.gif">
+                                    FR
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/uk.gif">
+                                    EN (UK)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/sp.gif">
+                                    ES
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/pol.gif">
+                                    PO
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    IBAN <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="FR76 4041 8833 7990 0405 9643 975" placeholder="23 characters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Account Owner Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Michael Martin" placeholder="Full name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row account-options">
+                        <div class="col-sm-7">
+                            <span class="df-ac"><div class="switch mr-10" data-off-label="" data-on-label="">
+                                <input  type="checkbox" />
+                              </div> <span class="fw600">This is my main account</span>
+                            </span>
+                        </div>
+                        <div class="col-sm-5 remove-account"><a href="javascript:;" class="remove">Remove this account</a></div>
+                      </div>
+                    </div>
+
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Save
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="myaccountAddRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Add a new account
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Account Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Type a name for this account" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Payment Method  <span class="required">*</span></label>
+                                            <select id="" class="selectpicker" title="Choose...">
+                                                <option value="1">Bank Transfer</option>
+                                                <option value="2">Payment method 02</option>
+                                                <option value="3">Payment method 03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <label>
+                                    Bic <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="8-13 letters" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 pull-right my-account-country">
+                                <label>
+                                    Country <span class="required">*</span>
+                                </label>
+                                <select class="chosen-default flags" title="-">
+                                  <option data-img-src="lbd/img/flag/us.gif">
+                                    EN (US)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/fr.gif">
+                                    FR
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/uk.gif">
+                                    EN (UK)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/sp.gif">
+                                    ES
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/pol.gif">
+                                    PO
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    IBAN <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="23 characters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Account Owner Name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Full name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row account-options">
+                        <div class="col-sm-7">
+                            <span class="df-ac"><div class="switch mr-10" data-off-label="" data-on-label="">
+                                <input  type="checkbox" />
+                              </div> <span class="fw600">This is my main account</span>
+                            </span>
+                        </div>
+                        <div class="col-sm-5 remove-account" style="display: none;"><a href="javascript:;" class="remove">Remove this account</a></div>
+                      </div>
+                    </div>
+
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Add
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="workingStatusCompanyRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Working Status
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Status <span class="required">*</span>
+                                </label>
+                                <select id="" class="selectpicker" title="Company">
+                                  <option value="1" selected>Company</option>
+                                  <option value="2">Other</option>
+                                  <option value="3">Status 01</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Company name <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Webedia Group" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Address <span class="required">*</span>
+                                </label>
+                                <textarea name="" id="" cols="30" rows="3" class="form-control">2 rue Paul Vaillant Courtier</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    City <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="Levallois-Parret" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <label>
+                                    Zip / Postal code <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="92300" placeholder="" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 pull-right my-account-country">
+                                <label>
+                                    Country <span class="required">*</span>
+                                </label>
+                                <select class="chosen-default flags" title="-">
+                                  <option data-img-src="lbd/img/flag/us.gif">
+                                    EN (US)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/fr.gif">
+                                    FR
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/uk.gif">
+                                    EN (UK)
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/sp.gif">
+                                    ES
+                                  </option>
+                                  <option data-img-src="lbd/img/flag/pol.gif">
+                                    PO
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    VAT Nummber <span class="required">*</span>
+                                </label>
+                                <input class="form-control" name="" type="text" value="BE 123456789" placeholder="23 characters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Phone Number <span class="required">*</span>
+                                </label>
+                                <div class="row">
+                                  <div class="col-xs-3">
+                                    <input class="form-control" name="" type="text" value="+33" placeholder="" />
+                                  </div>
+                                  <div class="col-xs-9">
+                                    <input class="form-control" name="" type="text" value="01 49 88 91 95" placeholder="" />
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Save
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade" id="workingStatusSelfemployedRoyalty" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container">
+                  <!-- Modal contents start -->
+                  <div class="modal-title">
+                      <div class="df-ac">
+                        <a class="back" data-dismiss="modal" href="javascript:;" id="back">
+                            <i class="material-icons">
+                            arrow_back
+                            </i>
+                        </a>
+                        Working Status
+                      </div>
+                  </div>
+                  <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Status <span class="required">*</span>
+                                </label>
+                                <select id="" class="selectpicker" title="Company">
+                                  <option value="1">Company</option>
+                                  <option value="2" selected>Other</option>
+                                  <option value="3">Status 01</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12 highlight-bg">
+                            <p class="fw600">Warning :</p>
+                            <p>The 'Other' status is temporary status if you are not a company or registered as a freelancer</p>
+                            <p>Please select the status that is in line with your country's legislation rules.</p>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    ID Card Number
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Type your ID Card number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    Passport Number
+                                </label>
+                                <input class="form-control" name="" type="text" value="" placeholder="Type your Passport number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>
+                                    VAT Number
+                                </label>
+                                <input class="form-control" name="" type="text" value="BE 123456789" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+                  <div class="row mt-15">
+                      <div class="col-xs-12">
+                          <div class="row">
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default full-width btn-fill btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                  Cancel
+                                  </button>
+                              </div>
+                              <div class="col-xs-6">
+                                  <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                                  Save
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Modal contents end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="" class="modal fade in" id="tunnelRoyalty" role="dialog" style="display: block;" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content clearfix">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <div class="modal-container clearfix">
+                  <!-- Modal contents start -->
+                  <div class="col-sm-12 tunnel-container">
+                    <div class="col-sm-5 tunnel-left-column" style="">
+
+                    </div>
+                    <div class="col-sm-7 tunnel-right-column">
+                      <div class="right-column-container">
+                        <div id="tunnelWizard">
+                          <form action="" id="wizardForm" method="">
+                              <div class="tab-links">
+                                  <ul class="nav">
+                                      <li>
+                                          <a data-toggle="tab" href="#step-1">
+                                              Step 1
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a data-toggle="tab" href="#step-2">
+                                              Step 1
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a data-toggle="tab" href="#confirmation">
+                                              Confirmation
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a data-toggle="tab" href="#requestSent">
+                                              Request sent
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  <div class="tab-content">
+                                      <div class="tab-pane" id="step-1">
+                                          <div class="row">
+                                            <div class="col-xs-12">
+                                              <div class="modal-title">
+                                                  Step 1
+                                              </div>
+                                              <div class="">
+                                                <h4>Select jobs to be paid for</h4>
+                                                <span class="">Please tell us the jobs that you want to be payed for.</span>
+                                              </div>
+                                              <ul class="tunnel-step-1">
+                                                <li>
+                                                  <div class="row">
+                                                    <div class="col-xs-3"><label for="">Job name</label></div>
+                                                    <div class="col-xs-3 pull-right text-right"><label for="">Royalties</label></div>
+                                                  </div>
+                                                </li>
+                                                <li>
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <label class="checkbox clearfix">
+                                                          <input data-toggle="checkbox" type="checkbox" />
+                                                          <div class="col-xs-8">Webedia article</div>
+                                                          <div class="col-xs-4 text-right pr-0">FR 1 950.80 €</div>
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li>
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <label class="checkbox clearfix">
+                                                          <input data-toggle="checkbox" type="checkbox" />
+                                                          <div class="col-xs-8">Webedia article</div>
+                                                          <div class="col-xs-4 text-right pr-0">FR 1 950.80 €</div>
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                              <div class="form-group transfer-option">
+                                                <div class="clearfix">
+                                                  <div class="col-sm-12 card">
+                                                      <span class="df-ac"><div class="switch mr-10" data-off-label="" data-on-label="">
+                                                          <input  type="checkbox" />
+                                                        </div> <span class="fw700">Express transfer : No</span>
+                                                      </span>
+                                                  </div>
+                                                </div>
+                                                <div class="mt-15">
+                                                    Your transfer will be processed on <span class="fw700">Sep. 16</span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group divider">
+                                                <div class="highlight-bg text-center">
+                                                  You can ask payment from <span class="fw600">20€ min</span>
+                                                </div>
+                                              </div>
+                                              <div class="payment-container">
+                                                <div class="form-group">
+                                                  <div class="row">
+                                                      <div class="col-xs-8">Sub total :</div>
+                                                      <div class="col-xs-3 pull-right text-right">0.00 €</div>
+                                                  </div>
+                                                  <div class="row">
+                                                      <div class="col-xs-8">Transfer fees :</div>
+                                                      <div class="col-xs-3 pull-right text-right">-</div>
+                                                  </div>
+                                                  <div class="row mt-20 total-payment">
+                                                      <div class="col-xs-8 fw700">Payment amount :</div>
+                                                      <div class="col-xs-3 pull-right text-right fw600">0.00 €</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15 divider step-actions">
+                                              <div class="col-xs-12 tab-navigation">
+                                                  <div class="row">
+                                                    <div class="col-xs-3">
+                                                     <button class="btn btn-info btn-fill btn-no pull-left btn-back" type="button">
+                                                         Cancel
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-3 pull-right">
+                                                     <button class="btn btn-info btn-fill btn-yes pull-right btn-next" type="button">
+                                                         Next
+                                                     </button>
+                                                   </div>
+                                                 </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="tab-pane" id="step-2">
+                                          <div class="row">
+                                            <div class="modal-title col-sm-12">
+                                                Step-2
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15 divider step-actions">
+                                              <div class="col-xs-12 tab-navigation">
+                                                  <div class="row">
+                                                    <div class="col-xs-3">
+                                                     <button class="btn btn-info btn-fill btn-no pull-left btn-back" type="button">
+                                                         Back
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-3 pull-right">
+                                                     <button class="btn btn-info btn-fill btn-yes pull-right btn-next" type="button">
+                                                         Next
+                                                     </button>
+                                                   </div>
+                                                 </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="tab-pane" id="confirmation">
+                                          <div class="row">
+                                            <div class="modal-title col-sm-12">
+                                                Confirmation
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15 divider step-actions">
+                                              <div class="col-xs-12 tab-navigation">
+                                                  <div class="row">
+                                                    <div class="col-xs-3">
+                                                     <button class="btn btn-info btn-fill btn-no pull-left btn-back" type="button">
+                                                         Edit
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-3 pull-right">
+                                                     <button class="btn btn-info btn-fill btn-yes pull-right btn-next" type="button">
+                                                         Confirm
+                                                     </button>
+                                                   </div>
+                                                 </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="tab-pane" id="requestSent">
+                                          <div class="row">
+                                            <div class="modal-title col-sm-12">
+                                                Request sent
+                                            </div>
+                                            <div class="col-xs-12">
+                                                Your payment request has been submit as <span class="fw700">Payment order #01927.</span>
+                                            </div>
+                                            <div class="col-xs-12 request-sent">
+                                              <span class="request-sent-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                            </div>
+                                          </div>
+                                          <div class="row mt-15 divider step-actions">
+                                              <div class="col-xs-12 tab-navigation">
+                                                  <div class="row">
+                                                    <div class="col-xs-6">
+                                                     <button class="btn full-width pull-left btn-back" type="button">
+                                                         Show me payment order
+                                                     </button>
+                                                   </div>
+                                                   <div class="col-xs-6">
+                                                     <button class="btn btn-fill full-width pull-right btn-finish" onclick="onFinishWizard()" type="button">
+                                                        Back to Royalties
+                                                    </button>
+                                                   </div>
+                                                 </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modal contents end -->
                 </div>
             </div>
         </div>
@@ -896,7 +1729,52 @@
 
 
 <!-- Custom scripts -->
+<script type="text/javascript">
 
+//Tab Wizard
+$('#wizardCard, #tunnelWizard, #wizardCard-testArticle').bootstrapWizard({
+  tabClass: 'nav nav-pills',
+  nextSelector: '.btn-next',
+    previousSelector: '.btn-back',
+  onNext: function(tab, navigation, index) {
+    var $valid = $('#wizardForm').valid();
+    if(!$valid) {
+      $validator.focusInvalid();
+      return false;
+    }
+  },/*
+    onInit : function(tab, navigation, index){
+        //check number of tabs and fill the entire row
+        var $total = navigation.find('li').length;
+        $width = 100/$total;
+        $display_width = $(document).width();
+        if($display_width < 600 && $total > 3){
+           $width = 50;
+        }
+        navigation.find('li').css('width',$width + '%');
+    },*/
+    onTabClick : function(tab, navigation, index){
+        // Disable the posibility to click on tabs
+        return false;
+    },
+    onTabShow: function(tab, navigation, index) {
+        var $total = navigation.find('li').length;
+        var $current = index+1;
+        var wizard = navigation.closest('.card-wizard');
+        // If it's the last tab then hide the last button and show the finish instead
+        if($current >= $total) {
+            $(wizard).find('.btn-next').hide();
+            $(wizard).find('.btn-finish').show();
+        } else if($current == 1){
+            $(wizard).find('.btn-back').hide();
+        } else {
+            $(wizard).find('.btn-back').show();
+            $(wizard).find('.btn-next').show();
+            $(wizard).find('.btn-finish').hide();
+        }
+    }
+});
+</script>
 <!-- Custom scripts ends -->
 </body>
 </html>

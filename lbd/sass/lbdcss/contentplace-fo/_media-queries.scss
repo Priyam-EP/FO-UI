@@ -139,25 +139,7 @@
                         }
                     }
 
-                    .my-accounts-list {
-                        > li {
-                            width: calc(100%);
-                            margin: 0;
-                            padding: 15px 0;
-                            display: flex;
-                            flex-flow: column wrap;
-                            border: none;
-                            border-bottom: 2px solid $divider;
-
-                            &:last-child {
-                                flex-grow: unset;
-                                margin: 0;
-                                width: calc(100%);
-                                border: none;
-                                padding: 15px 0 0 0;
-                            }
-                        }
-                    }
+                    .my-accounts-list {}
                 }
             }
 
