@@ -129,9 +129,10 @@
         }
 
         label {
-            font-weight: 400;
+            font-weight: 600;
             font-size: 12px;
-            color: $helper;
+            color: #9a9fa9;
+            text-transform: uppercase;
         }
 
         .form-group {
@@ -162,10 +163,10 @@
                 padding: 15px;
 
                 .modal-title {
-                    font-size: 20px;
+                    font-size: 22px;
                     color: $main;
                     margin: 0px 0 15px 0;
-                    font-weight: 600;
+                    font-weight: 700;
                 }
             }
 

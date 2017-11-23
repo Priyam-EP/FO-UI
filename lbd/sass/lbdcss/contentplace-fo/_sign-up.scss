@@ -1,0 +1,76 @@
+#signUpModal {
+    @extend %modal;
+
+    .sign-up-form {
+        hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .input-texts {
+            margin-bottom: 10px;
+        }
+
+        button.sign-up {
+            margin-bottom: 15px;
+        }
+
+        .captcha-container {
+            margin-bottom: 15px;
+        }
+
+        .checkbox {
+            label {
+                text-transform: none;
+                font-weight: 400;
+                padding-left: 0;
+            }
+        }
+
+        .second-title {
+            font-size: 18px;
+            color: #353F53;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f6f6f7;
+        }
+
+        .social-connect {
+            margin-bottom: 15px;
+
+            .row {
+                margin: 0 -7px;
+            }
+
+            .social-buttons {
+                padding: 0 7px;
+
+                a {
+                    margin-bottom: 15px;
+                }
+            }
+
+            a {
+                margin-bottom: 8px;
+            }
+        }
+
+        .terms-conditions {
+            p {
+                margin-bottom: 0;
+                font-size: 12px;
+                text-align: center;
+
+                a {
+                    color: #448aff;
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
