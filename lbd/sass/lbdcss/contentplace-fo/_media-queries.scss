@@ -109,6 +109,29 @@
         z-index: 9;
     }
 
+    #signUpModal .sign-up-form .social-connect .social-buttons a {
+        margin-bottom: 7px;
+    }
+
+    #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .language-delete {
+        margin-bottom: 30px;
+    }
+
+    #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .clients-selection-list {
+        padding-bottom: 0;
+    }
+
+    .modal-content .tab-links .tab-content .tab-pane {
+        height: calc(100vh - 52px);
+        position: relative;
+    }
+
+    .modal-content .tab-links .tab-content .tab-pane .tab-panel-content-scroll {
+        height: calc(100vh - 230px);
+        overflow-y: scroll;
+        padding-right: 15px;
+    }
+
     .fo-royalties {
         .content-container {
             [class*='-content-main'] {
@@ -145,5 +168,19 @@
 
             [class*='-content-aside'] {}
         }
+    }
+}
+
+@media (max-width: 540px) {
+    #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .language-delete {
+        padding: 0;
+    }
+
+    #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .interest-list-container .interest-list ul li {
+        min-width: calc(100% - 15px);
+    }
+
+    #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .clients-selection-list .clients-selection-row .client-select {
+        width: 16.333%;
     }
 }

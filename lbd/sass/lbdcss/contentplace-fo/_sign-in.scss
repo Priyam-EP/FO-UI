@@ -1,4 +1,4 @@
-#signInModal {
+#signInModal, #forgotPasswordModal, #ConfirmationSendingEmailModal {
     @extend %modal;
 
     .modal-dialogue {
@@ -138,6 +138,52 @@
 
                 &:hover {
                     text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .forgot-password-content, .confirmation-email-content {
+        height: calc(100vh - 170px);
+        position: relative;
+
+        .input-texts {
+            margin-bottom: 10px;
+        }
+
+        .fixed-actions {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            button:first-child {
+                margin-bottom: 7px;
+            }
+        }
+
+        p {
+            color: #353F53;
+        }
+
+        .send-mail-confirm {
+            .confirmation-tick {
+                margin: 30px auto;
+                width: 185px;
+                height: 185px;
+                border-radius: 50%;
+                background: #448AFF;
+                position: relative;
+                -webkit-box-shadow: 0px 30px 55px 0 rgba(68, 138, 255, 0.4);
+                -moz-box-shadow: 0px 30px 55px 0 rgba(68, 138, 255, 0.4);
+                box-shadow: 0px 30px 55px 0 rgba(68, 138, 255, 0.4);
+
+                i {
+                    position: absolute;
+                    left: 23%;
+                    top: 23%;
+                    color: #fff;
+                    font-size: 100px;
                 }
             }
         }

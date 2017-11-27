@@ -39,8 +39,9 @@
     <link href="lbd/lib/emoji-picker-master/lib/css/emoji.css" rel="stylesheet">
     
     <!--  Light Bootstrap Dashboard core CSS    -->
-    <link href="lbd/css/light-bootstrap-dashboard.css" rel="stylesheet" />
+    <link href="lbd/css/fo-style.css" rel="stylesheet" />
     <!--     Temporary css for Layouts     -->
+    
 </head>
 <body class="cp-fo layout-1">
 <div class="wrapper">
@@ -101,7 +102,7 @@
                     <li>
                         <div class="col-md-12 col-sm-6 col-xs-6">
                             <p>Not a member yet ?</p>
-                            <a href="javascript:;" class="btn btn-fill btn-yes">Create an account</a>
+                            <a href="javascript:;" class="btn btn-fill btn-yes" data-toggle="modal" data-target="#signUpModal">Create an account</a>
                         </div>
                     </li>
                 </ul>
@@ -127,15 +128,14 @@
   <div class="row">
     <div class="col-sm-12 signup-container">
       <div class="col-md-12 col-sm-6 col-xs-6">
-        <a href="javascript:;" class="btn btn-fill btn-confirm">Sign in</a>
+        <a href="javascript:;" class="btn btn-fill btn-confirm" data-toggle="modal" data-target="#signInModal">Sign in</a>
       </div>
       <div class="col-md-12 col-sm-6 col-xs-6">
-        <a href="javascript:;" class="btn btn-fill btn-yes">Sign up</a>
+        <a href="javascript:;" class="btn btn-fill btn-yes" data-toggle="modal" data-target="#signUpModal">Create an account</a>
       </div>
     </div>
   </div>
 </div>
-<<<<<<< HEAD
 <!-- Sign in content Starts -->
 <div aria-labelledby="" class="modal fade" id="signInModal" role="dialog" tabindex="-1">
     <div class="modal-dialog modal-sm" role="modal">
@@ -155,63 +155,59 @@
                   </div>
                   <div class="row">
                     <div class="col-md-12 sign-in-form">
-                      <div class="row">
-                        <div class="col-md-12 alert-notification">
-                          <b>Your new password has been created.</b><br />You can now use it to sign in.
-                        </div>
-                        <div class="col-md-12 alert-notification validated">
-                          <b>Good Job! Your account has been validated.</b><br />You can now sign in.
-                        </div>
-                        <div class="col-md-12 remembered-user-container">
-                          <div class="remembered-user">
-                            <div class="user-initial">
-                              <img src="lbd/img/default-avatar.png" class="img-circle">
-                            </div>
-                            <div class="remembered-username">
-                              Michael Martin
-                              <span class="username">m.martin@gmail.com</span>
-                            </div>
-                            <div class="not-user">
-                              <a href="javascript:;">This is not you ?</a>
-                            </div>
+                      <div class="col-md-12 alert-notification">
+                        <b>Your new password has been created.</b><br />You can now use it to sign in.
+                      </div>
+                      <div class="col-md-12 alert-notification validated">
+                        <b>Good Job! Your account has been validated.</b><br />You can now sign in.
+                      </div>
+                      <div class="col-md-12 remembered-user-container">
+                        <div class="remembered-user">
+                          <div class="user-initial">
+                            <img src="lbd/img/default-avatar.png" class="img-circle">
+                          </div>
+                          <div class="remembered-username">
+                            Michael Martin
+                            <span class="username">m.martin@gmail.com</span>
+                          </div>
+                          <div class="not-user">
+                            <a href="javascript:;">This is not you ?</a>
                           </div>
                         </div>
                       </div>
-                      <form>
-                        <div class="row">
-                          <div class="col-md-12 input-texts">
-                            <label>Email</label>
-                            <input type="text" class="form-control" placeholder="Type your email" />
+                      <div class="row">
+                        <div class="col-md-12 input-texts">
+                          <label>Email</label>
+                          <input type="text" class="form-control" placeholder="Type your email" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12  input-texts">
+                          <label>Password</label>
+                          <input type="password" class="form-control" placeholder="Type your password" data-toggle="password" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="checkbox">
+                            <input id="rememberMe" data-toggle="checkbox" type="checkbox">
+                            <label for="rememberMe">
+                              Remember me
+                            </label>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12  input-texts">
-                            <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Type your password" data-toggle="password" />
-                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <button type="submit" class="btn btn-yes" data-toggle="modal" data-target="#firstLoginModal" data-dismiss="modal">Sign in</button>
+                          <button type="submit" class="btn btn-yes disabled">Sign in</button>
                         </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="checkbox">
-                              <input id="rememberMe" data-toggle="checkbox" type="checkbox">
-                              <label for="rememberMe">
-                                Remember me
-                              </label>
-                            </div>
-                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 forgotten-password">
+                          <a href="javascript:;" data-dismiss="modal" data-toggle="modal" data-target="#forgotPasswordModal">Password forgotten ?</a>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <button type="submit" class="btn btn-yes">Sign in</button>
-                            <button type="submit" class="btn btn-yes disabled">Sign in</button>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12 forgotten-password">
-                            <a href="javascript:;">Password forgotten ?</a>
-                          </div>
-                        </div>
-                      </form>
+                      </div>
                       <div class="row">
                         <div class="col-md-12 social-connect">
                           <h4 class="second-title">Social connect</h4>
@@ -223,7 +219,7 @@
                       <div class="row">
                         <div class="col-md-12 crerate-account-link">
                           <h4 class="second-title">Not a contributor</h4>
-                          <a href="javascript:;">Create an account</a>
+                          <a href="javascript:;" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Create an account</a>
                         </div>
                       </div>
                     </div>
@@ -237,7 +233,7 @@
 
 <!-- Sign in content Ends -->
 <!-- Sign up content Starts -->
-<div aria-labelledby="" class="modal fade  in" id="signUpModal" style="display: block;" role="dialog" tabindex="-1">
+<div aria-labelledby="" class="modal fade" id="signUpModal" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="modal">
         <div class="modal-content">
             <div class="modal-body">
@@ -255,46 +251,44 @@
                   </div>
                   <div class="row">
                     <div class="col-md-12 sign-up-form">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-6 input-texts">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" placeholder="Type your first name" />
-                          </div>
-                          <div class="col-md-6 input-texts">
-                            <label>Last Name</label>
-                            <input type="text" class="form-control" placeholder="Type your last name" />
-                          </div>
+                      <div class="row">
+                        <div class="col-md-6 input-texts">
+                          <label>First Name</label>
+                          <input type="text" class="form-control" placeholder="Type your first name" />
                         </div>
-                        <hr />
-                        <div class="row">
-                          <div class="col-md-6 input-texts">
-                            <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Type your email" />
-                          </div>
+                        <div class="col-md-6 input-texts">
+                          <label>Last Name</label>
+                          <input type="text" class="form-control" placeholder="Type your last name" />
                         </div>
-                        <div class="row">
-                          <div class="col-md-6 input-texts">
-                            <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Type your password" data-toggle="password" />
-                          </div>
-                          <div class="col-md-6 input-texts">
-                            <label>Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="Type your password" data-toggle="password" />
-                          </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-md-6 input-texts">
+                          <label>Email</label>
+                          <input type="email" class="form-control" placeholder="Type your email" />
                         </div>
-                        <div class="row">
-                          <div class="col-md-12 captcha-container">
-                            <div class="g-recaptcha" data-callback="capcha_filled" data-expired-callback="capcha_expired" data-sitekey="6LcQyAcUAAAAAJtFoCX0gmT90gRBzKmXYjDWzQv6" id="capcha"></div>
-                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 input-texts">
+                          <label>Password</label>
+                          <input type="password" class="form-control" placeholder="Type your password" data-toggle="password" />
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <button type="submit" class="btn btn-yes sign-up">Sign up</button>
-                            <button type="submit" class="btn btn-yes disabled sign-up">Sign up</button>
-                          </div>
+                        <div class="col-md-6 input-texts">
+                          <label>Confirm Password</label>
+                          <input type="password" class="form-control" placeholder="Type your password" data-toggle="password" />
                         </div>
-                      </form>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 captcha-container">
+                          <!-- <div class="g-recaptcha" data-callback="capcha_filled" data-expired-callback="capcha_expired" data-sitekey="6LcQyAcUAAAAAJtFoCX0gmT90gRBzKmXYjDWzQv6" id="capcha"></div> -->
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <button type="submit" class="btn btn-yes sign-up">Sign up</button>
+                          <button type="submit" class="btn btn-yes disabled sign-up">Sign up</button>
+                        </div>
+                      </div>
                       <div class="row">
                         <div class="col-md-12 social-connect">
                           <h4 class="second-title">Social connect</h4>
@@ -326,6 +320,663 @@
 </div>
 
 <!-- Sign up content Ends -->
+<!-- Forgotten Password content Starts -->
+<div aria-labelledby="" class="modal fade" id="forgotPasswordModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-sm" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+              <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </a>
+                </span>
+                <!-- Forgot Password content Starts -->
+                <div class="modal-container">
+                  <div class="modal-title">
+                      Password forgotten
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 forgot-password-content">
+                      <p>Enter your email and we will send you a new password to login</p>
+                      <div class="row">
+                        <div class="col-md-12 input-texts">
+                          <label>Email</label>
+                          <input type="email" class="form-control" placeholder="Type your email" />
+                        </div>
+                      </div>
+                      <div class="fixed-actions">
+                        <div class="col-md-12 forget-password-actions">
+                          <button type="submit" class="btn btn-confirm full-width" data-toggle="modal" data-target="#ConfirmationSendingEmailModal" data-dismiss="modal">Send Email</button>
+                          <button data-dismiss="modal" class="btn btn-default full-width">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Forgot Password content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confirmation sending Email Modal -->
+<div aria-labelledby="" class="modal fade" id="ConfirmationSendingEmailModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-sm" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+              <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </a>
+                </span>
+                <!-- Confirmation sending Email Content Starts -->
+                <div class="modal-container">
+                  <div class="modal-title">
+                      Confirmation email sent
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 confirmation-email-content">
+                      <p><b>We're almost ready to get started.</b><br />Please confirm your email by clicking the link we just sent.</p>
+                      <div class="row">
+                        <div class="col-md-12 send-mail-confirm">
+                            <div class="confirmation-tick">
+                              <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="fixed-actions">
+                        <div class="col-md-12 forget-password-actions">
+                          <button type="submit" class="btn btn-confirm full-width">Re-send email</button>
+                          <button data-dismiss="modal" class="btn btn-default full-width">Sign in</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Confirmation sending Email Content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgotten Password content Ends -->
+<!-- First Login Modal Starts -->
+<div aria-labelledby="" class="modal fade" data-keyboard="false" data-backdrop="static" id="firstLoginModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- First login content Starts -->
+                <div class="modal-container">
+                  <div class="row">
+                    <div class="col-md-12 first-login-content">
+                      <div class="col-md-12 progress-steps">
+                        <div id="wizardCard">
+                            <form id="wizardForm" method="" action="">
+                                <div class="tab-links">
+                                    <ul class="nav">
+                                        <li><a href="#tab-login-1" data-toggle="tab"></a></li>
+                                        <li><a href="#tab-login-2" data-toggle="tab"></a></li>
+                                        <li><a href="#tab-login-3" data-toggle="tab"></a></li>
+                                        <li><a href="#tab-login-4" data-toggle="tab"></a></li>
+                                        <li><a href="#tab-login-5" data-toggle="tab"></a></li>
+                                        <li><a href="#tab-login-6" data-toggle="tab"></a></li>
+                                        <li><a href="#tab-login-7" data-toggle="tab"></a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="tab-login-1">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <div class="modal-title">
+                                                  Welcome !
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-md-12 welcome-login">
+                                                    <div class="tagline">We are glad to see you Michael.</div>
+                                                    <p>before we start please tell us more about you so we can guide you in your first step.</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="bottom-fixed-modal-actions">
+                                              <div class="row">
+                                                  <div class="col-md-12 tab-navigation">
+                                                      <button type="button" class="btn btn-yes btn-next">Continue</button>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-login-2">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <div class="modal-title">
+                                                  Step 1
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-md-12">
+                                                    <div class="tagline">Your Languages</div>
+                                                    <p>First tell us languages you know , so that we can provide you best offers accordingly</p>
+                                                  </div>
+                                                </div>
+                                                <div class="tab-panel-content-scroll">
+                                                  <div class="row">
+                                                    <div class="col-md-8 input-text">
+                                                      <label>Mother Tongue *</label>
+                                                      <select class="chosen-default flags">
+                                                        <option data-img-src="lbd/img/flag/uk.gif">English (UK)</option>
+                                                        <option data-img-src="lbd/img/flag/fr.gif">French</option>
+                                                        <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
+                                                        <option data-img-src="lbd/img/flag/sp.gif">Espanol</option>
+                                                        <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
+                                                  <hr />
+                                                  <div class="row">
+                                                    <div class="col-md-12">
+                                                      <label>Other Languages</label>
+                                                      <div class="row">
+                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                          <select class="chosen-default flags">
+                                                            <option data-img-src="lbd/img/flag/sp.gif">Espanol</option>
+                                                            <option data-img-src="lbd/img/flag/fr.gif">French</option>
+                                                            <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
+                                                            <option data-img-src="lbd/img/flag/uk.gif">English (UK)</option>
+                                                            <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                          <select name="filter" class="selectpicker">
+                                                              <option>Elementary (A2)</option>
+                                                              <option>Intermediate (B2)</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 language-delete">
+                                                          <a href="javascript:;">
+                                                            <i class="material-icons">close</i>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                          <select class="chosen-default flags">
+                                                            <option data-img-src="lbd/img/flag/fr.gif">French</option>
+                                                            <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
+                                                            <option data-img-src="lbd/img/flag/uk.gif">English (UK)</option>
+                                                            <option data-img-src="lbd/img/flag/sp.gif">Espanol</option>
+                                                            <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                          <select name="filter" class="selectpicker">
+                                                              <option>Intermediate (B2)</option>
+                                                              <option>Elementary (A2)</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 language-delete">
+                                                          <a href="javascript:;">
+                                                            <i class="material-icons">close</i>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                          <select class="chosen-default flags">
+                                                            <option data-img-src="lbd/img/flag/fr.gif">French</option>
+                                                            <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
+                                                            <option data-img-src="lbd/img/flag/uk.gif">English (UK)</option>
+                                                            <option data-img-src="lbd/img/flag/sp.gif">Espanol</option>
+                                                            <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                          <select name="filter" class="selectpicker">
+                                                              <option>Intermediate (B2)</option>
+                                                              <option>Elementary (A2)</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 language-delete">
+                                                          <a href="javascript:;">
+                                                            <i class="material-icons">close</i>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                          <select class="chosen-default flags">
+                                                            <option data-img-src="lbd/img/flag/fr.gif">French</option>
+                                                            <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
+                                                            <option data-img-src="lbd/img/flag/uk.gif">English (UK)</option>
+                                                            <option data-img-src="lbd/img/flag/sp.gif">Espanol</option>
+                                                            <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                          <select name="filter" class="selectpicker">
+                                                              <option>Intermediate (B2)</option>
+                                                              <option>Elementary (A2)</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 language-delete">
+                                                          <a href="javascript:;">
+                                                            <i class="material-icons">close</i>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="col-md-6 add-languages">
+                                                          <a href="javascript:;">+ Add a language</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="bottom-fixed-modal-actions">
+                                              <div class="row">
+                                                  <div class="col-md-12 tab-navigation">
+                                                      <button type="button" class="btn btn-yes btn-next">Continue</button>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-login-3">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title">
+                                                Step 2
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div class="tagline">Your interests</div>
+                                                  <p>Give us more informations about your interests and your fields of expertise.</p>
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row">
+                                                  <div class="col-md-8 col-sm-8 input-text">
+                                                    <select class="selectpicker" title="+ Add a sector" multiple data-selected-text-format="count">
+                                                      <option data-icon="fa fa-cutlery">Cuisine</option>
+                                                      <option data-icon="fa fa-plane">Travel</option>
+                                                      <option data-icon="fa fa-trophy">Sports</option>
+                                                      <option data-icon="fa fa-book">Books</option>
+                                                      <option data-icon="fa fa-shopping-cart">E-Commerce/Shopping</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <hr />
+                                                <div class="row">
+                                                  <div class="col-md-12 col-sm-12 col-xs-12 interest-list-container">
+                                                    <label>Interested by</label>
+                                                    <div class="row">
+                                                      <div class="col-md-12 interest-list">
+                                                        <ul>
+                                                          <li>
+                                                            <i class="fa fa-cutlery" aria-hidden="true"></i> Cuisine
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-plane" aria-hidden="true"></i> Travel
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> E-Commerce/Shopping
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-trophy" aria-hidden="true"></i> Sports
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                                <div class="col-md-12 tab-navigation">
+                                                    <button type="button" class="btn btn-yes btn-next">Continue</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-login-4">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title">
+                                                Step 3
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div class="tagline">Your current job</div></div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row">
+                                                  <div class="col-md-12 connect-linkedin">
+                                                    <a href="javascript:;" class="btn full-width btn-linkedin">Import from LinkedIn</a>
+                                                  </div>
+                                                </div>
+                                                <hr />
+                                                <div class="row">
+                                                  <div class="col-md-6 col-sm-6">
+                                                    <label>Current Job</label>
+                                                    <input type="text" class="form-control" placeholder="Your job title">
+                                                  </div>
+                                                  <div class="col-md-6 col-sm-6">
+                                                    <label>Company</label>
+                                                    <input type="text" class="form-control" disabled="disabled" placeholder="Your current company">
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-md-12 self-employed">
+                                                    <div class="checkbox">
+                                                      <input id="selfEmployed" data-toggle="checkbox" type="checkbox">
+                                                      <label for="selfEmployed">
+                                                        I am self-employed
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                                <div class="col-md-12 tab-navigation">
+                                                    <button type="button" class="btn btn-yes btn-next">Continue</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-login-5">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title">
+                                                Step 4
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div class="tagline">Your profile picture</div>
+                                                  <p>Show us your better angle! Please add a picture to enhance your profile</p>
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row">
+                                                  <div class="col-md-12 profile-picture-container">
+                                                    <div class="profile-picture-block">
+                                                      <a href="javascript:;" class="no-image">
+                                                        <p><span>Tap here</span>to add a picture</p>
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                                <div class="col-md-12 tab-navigation">
+                                                    <button type="button" class="btn btn-yes btn-next">Continue</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-login-6">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title">
+                                                Step 4
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div class="tagline">Your profile picture</div>
+                                                  <p>Show us your better angle! Please add a picture to enhance your profile</p>
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row">
+                                                  <div class="col-md-12 profile-picture-container">
+                                                    <div class="profile-picture-block">
+                                                      <img src="lbd/img/default-avatar.png" class="img-circle img-responsive" />
+                                                      <a href="javascript:;" class="edit-profile-picture" data-toggle="dropdown" data-container="body">
+                                                        <i class="material-icons">mode_edit</i>
+                                                      </a>
+                                                      <ul class="dropdown-menu" data-container="body" role="menu">
+                                                        <li><a href="javascript:;">Change Picture</a></li>
+                                                        <li class="remove"><a href="javascript:;">Remove</a></li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                                <div class="col-md-12 tab-navigation">
+                                                    <button type="button" class="btn btn-yes btn-next">Continue</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-login-7">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title">
+                                                Final step
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div class="tagline">Get informed of new offers</div>
+                                                  <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <!-- Client selection list starts -->
+                                                <div class="clients-selection-list">
+                                                  <!-- Client selection list head starts -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-head">
+                                                      <div class="row">
+                                                        <div class="col-md-2 col-sm-2 col-xs-3 header">Clients</div>
+                                                        <div class="col-md-2 col-sm-2 col-xs-3 pull-right header">Select</div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection list head ends -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-row">
+                                                      <div class="row">
+                                                        <div class="col-md-11 col-sm-11 col-xs-9">
+                                                          <div class="row">
+                                                            <div class="col-md-2 col-sm-2 col-xs-2 client-logo">
+                                                              <img src="lbd/img/adobe.jpg" class="img-circle" />
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8 col-xs-8 client-name">Adobe Systems</div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 client-select">
+                                                          <div class="checkbox">
+                                                            <input id="clientSelect" data-toggle="checkbox" type="checkbox">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection row ends -->
+                                                  <!-- Client selection row starts -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-row">
+                                                      <div class="row">
+                                                        <div class="col-md-11 col-sm-11 col-xs-9">
+                                                          <div class="row">
+                                                            <div class="col-md-2 col-sm-2 col-xs-2 client-logo">
+                                                              <img src="lbd/img/apple.jpg" class="img-circle" />
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8 col-xs-8 client-name">Apple</div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 client-select">
+                                                          <div class="checkbox">
+                                                            <input id="clientSelect" data-toggle="checkbox" type="checkbox">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection row ends -->
+                                                  <!-- Client selection row starts -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-row">
+                                                      <div class="row">
+                                                        <div class="col-md-11 col-sm-11 col-xs-9">
+                                                          <div class="row">
+                                                            <div class="col-md-2 col-sm-2 col-xs-2 client-logo">
+                                                              <img src="lbd/img/webedia.jpg" class="img-circle" />
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8 col-xs-8 client-name">Webedia</div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 client-select">
+                                                          <div class="checkbox">
+                                                            <input id="clientSelect" data-toggle="checkbox" type="checkbox">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection row ends -->
+                                                  <!-- Client selection row starts -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-row">
+                                                      <div class="row">
+                                                        <div class="col-md-11 col-sm-11 col-xs-9">
+                                                          <div class="row">
+                                                           <div class="col-md-2 col-sm-2 col-xs-2 client-logo">
+                                                              <img src="lbd/img/apple.jpg" class="img-circle" />
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8 col-xs-8 client-name">Apple</div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 client-select">
+                                                          <div class="checkbox">
+                                                            <input id="clientSelect" data-toggle="checkbox" type="checkbox">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection row ends -->
+                                                  <!-- Client selection row starts -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-row">
+                                                      <div class="row">
+                                                        <div class="col-md-11 col-sm-11 col-xs-9">
+                                                          <div class="row">
+                                                            <div class="col-md-2 col-sm-2 col-xs-2 client-logo">
+                                                              <img src="lbd/img/webedia.jpg" class="img-circle" />
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8 col-xs-8 client-name">Webedia</div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 client-select">
+                                                          <div class="checkbox">
+                                                            <input id="clientSelect" data-toggle="checkbox" type="checkbox">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection row ends -->
+                                                  <!-- Client selection row starts -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-row">
+                                                      <div class="row">
+                                                        <div class="col-md-11 col-sm-11 col-xs-9">
+                                                          <div class="row">
+                                                            <div class="col-md-2 col-sm-2 col-xs-2 client-logo">
+                                                              <img src="lbd/img/apple.jpg" class="img-circle" />
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8 col-xs-8 client-name">Apple</div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 client-select">
+                                                          <div class="checkbox">
+                                                            <input id="clientSelect" data-toggle="checkbox" type="checkbox">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection row ends -->
+                                                  <!-- Client selection row starts -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 clients-selection-row">
+                                                      <div class="row">
+                                                        <div class="col-md-11 col-sm-11 col-xs-9">
+                                                          <div class="row">
+                                                            <div class="col-md-2 col-sm-2 col-xs-2 client-logo">
+                                                              <img src="lbd/img/adobe.jpg" class="img-circle" />
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-8 col-xs-8 client-name">Adobe Systems</div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-md-1 col-sm-1 col-xs-1 client-select">
+                                                          <div class="checkbox">
+                                                            <input id="clientSelect" data-toggle="checkbox" type="checkbox">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Client selection row ends -->
+                                                  <div class="row">
+                                                    <div class="col-md-12 show-more-clients">
+                                                      <a href="javascript:;">Show more clients ...</a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <!-- Client selection list ends -->
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                                <div class="col-md-12 tab-navigation">
+                                                    <button type="button" class="btn btn-yes btn-finish" onclick="onFinishWizard()" data-dismiss="modal">Follow 3 clients and finish</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- First Login content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- First Login Modal Ends -->
 <!-- Core JS Files -->
 <script src="lbd/js/jquery.min.js" type="text/javascript">
 </script>
@@ -439,12 +1090,20 @@
 <script type="text/javascript" src="lbd/lib/croppie/exif.js"></script>
 
 <!-- reCaptcha Code -->
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
 
 <!-- Custom JS -->
 <script src="lbd/js/custom.js">
 </script>
 
 <!-- Custom scripts -->
+<script type="text/javascript">
+
+    $(window).on('shown.bs.modal', function() {
+      $('#firstLoginModa').modal('show');
+        backdrop: 'static',   // This disable for click outside event
+        keyboard: true        // This for keyboard event
+    });
+</script>
 </body>
 </html>

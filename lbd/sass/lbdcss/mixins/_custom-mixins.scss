@@ -204,7 +204,7 @@
             .modal-header {}
 
             .modal-body {
-                padding: 15px;
+                padding: 0px;
 
                 .modal-title {
                     font-size: 22px;
@@ -256,4 +256,15 @@ span.edit {
             text-decoration: none;
         }
     }
+}
+
+.bottom-fixed-modal-actions {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding-top: 14px;
+    border-top: 1px solid #f6f6f7;
+    background: #fff;
 }

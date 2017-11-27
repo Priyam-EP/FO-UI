@@ -42,7 +42,7 @@ var
   },
 
   css = {
-    in: [source + 'lbd/sass/light-bootstrap-dashboard.scss'],
+    in: [source + 'lbd/sass/fo-style.scss'],
     watch: ['lbd/sass/**/*.scss'],
     out: dest + 'lbd/css/',
     pluginCSS: {

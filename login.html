@@ -23,23 +23,36 @@
   <div class="row">
     <div class="col-sm-12 signup-container">
       <div class="col-md-12 col-sm-6 col-xs-6">
-        <a href="javascript:;" class="btn btn-fill btn-confirm">Sign in</a>
+        <a href="javascript:;" class="btn btn-fill btn-confirm" data-toggle="modal" data-target="#signInModal">Sign in</a>
       </div>
       <div class="col-md-12 col-sm-6 col-xs-6">
-        <a href="javascript:;" class="btn btn-fill btn-yes">Sign up</a>
+        <a href="javascript:;" class="btn btn-fill btn-yes" data-toggle="modal" data-target="#signUpModal">Create an account</a>
       </div>
     </div>
   </div>
 </div>
-<<<<<<< HEAD
 <!-- Sign in content Starts -->
 <!-- @include _partials/_sign-in-modal.html -->
 <!-- Sign in content Ends -->
 <!-- Sign up content Starts -->
 <!-- @include _partials/_sign-up-modal.html -->
 <!-- Sign up content Ends -->
+<!-- Forgotten Password content Starts -->
+<!-- @include  _partials/_forgot-password.html -->
+<!-- Forgotten Password content Ends -->
+<!-- First Login Modal Starts -->
+<!-- @include  _partials/_first-login.html -->
+<!-- First Login Modal Ends -->
 <!-- Core JS Files -->
 <!-- @include _partials/_all-js-files.html -->
 <!-- Custom scripts -->
+<script type="text/javascript">
+
+    $(window).on('shown.bs.modal', function() {
+      $('#firstLoginModa').modal('show');
+        backdrop: 'static',   // This disable for click outside event
+        keyboard: true        // This for keyboard event
+    });
+</script>
 </body>
 </html>
