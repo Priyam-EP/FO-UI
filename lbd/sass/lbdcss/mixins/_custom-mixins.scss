@@ -268,3 +268,23 @@ span.edit {
     border-top: 1px solid #f6f6f7;
     background: #fff;
 }
+
+%confirmation-tick {
+    margin: 30px auto;
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    background: #448AFF;
+    position: relative;
+    -webkit-box-shadow: 0px 30px 55px 0 rgba(68, 138, 255, 0.4);
+    -moz-box-shadow: 0px 30px 55px 0 rgba(68, 138, 255, 0.4);
+    box-shadow: 0px 30px 55px 0 rgba(68, 138, 255, 0.4);
+
+    i {
+        position: absolute;
+        left: 23%;
+        top: 23%;
+        color: #fff;
+        font-size: 100px;
+    }
+}

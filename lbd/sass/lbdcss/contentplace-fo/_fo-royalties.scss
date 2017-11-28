@@ -431,6 +431,39 @@
 
                     .tunnel-right-column {
                         padding: 30px;
+                        @media screen and (max-width: 767px){
+                          padding: 15px;
+                        }
+
+                        .my-accounts {
+                          @extend %my-accounts-royalty;
+                          .my-accounts-list{
+                            padding: 0;
+                            > li{
+                              width: 100% !important;
+                              margin: 0 0 10px 0 !important;
+                              border: 1px solid $divider;
+
+                              a {
+                                &.change-account{
+                                  color: $main;
+                                  text-decoration: underline;
+                                  &:hover{
+                                    text-decoration: none;
+                                  }
+                                }
+                              }
+
+                              @media screen and (max-width:767px){
+                                padding: 15px !important;
+                                border: 1px solid $divider !important;
+                              }
+                              &:last-child{
+                                width: 100% !important;
+                              }
+                            }
+                          }
+                        }
 
                         #tunnelWizard {
                             .tab-links {
@@ -441,9 +474,22 @@
                                 .tab-pane {
                                     padding: 0;
 
+                                    .tunnel-steps-content-container{
+                                      min-height: 300px;
+                                      max-height: 350px;
+                                      overflow: hidden;
+                                      overflow-y: auto;
+                                      .tunnel-steps-contents{
+                                        width: calc(100% - 5px);
+                                        padding: 15px 0 0 1px;
+                                        .payment-amount{
+                                          color: $main;
+                                        }
+                                      }
+                                    }
                                     .tunnel-step-1 {
                                         padding: 0;
-                                        margin: 15px 0;
+                                        margin: 0 0 15px 0;
                                         list-style-type: none;
 
                                         li {
@@ -485,6 +531,9 @@
 
                                     .step-actions {
                                         margin: 0 -30px;
+                                        @media screen and (max-width: 767px){
+                                          margin: 0 -15px;
+                                        }
 
                                         .tab-navigation {
                                             padding: 0 30px;
@@ -511,6 +560,50 @@
                                             }
                                         }
                                     }
+
+                                    &#confirmation{
+                                      .my-accounts{
+                                        .payment-confirmation{
+                                          color: $main;
+                                          .total-payment-amount{
+                                            color: $selected;
+                                            font-size: 32px;
+                                            font-weight: 700;
+                                          }
+                                          .option-express-transfer{
+                                            color: $helper;
+                                          }
+                                        }
+
+                                        .my-accounts-list {
+                                          > li{
+                                            @media screen and (max-width: 767px){
+                                              border:none !important;
+                                              padding: 0 !important;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+
+                                    &#requestSent{
+                                      .step-actions{
+                                        padding: 20px 0 0;
+                                        border-top: 2px solid $divider;
+                                        @media screen and (max-width:767px){
+                                          border: none;
+                                          .tab-navigation{
+                                            .btn-back{
+                                              margin-bottom: 10px;
+                                            }
+                                          }
+                                        }
+                                      }
+                                      .confirmation-tick{
+                                        @extend %confirmation-tick;
+                                      }
+                                    }
+
                                 }
                             }
                         }
@@ -558,6 +651,24 @@
                     }
                 }
 
+                &.step-01{
+                  .timeline-dot{
+                    &:before{
+                      height: 64px;
+                    }
+                  }
+                }
+
+                @media screen and (max-width: 991px){
+                  &.step-01{
+                    .timeline-dot{
+                      &:before{
+                        height: 112px;
+                      }
+                    }
+                  }
+                }
+
                 .timeline-content {
                     padding-left: 0;
 
@@ -602,6 +713,7 @@
                             margin-bottom: 0;
                             color: #353f53;
                             line-height: 1.2;
+                            font-size: 14px;
 
                             span {
                                 display: block;
@@ -671,7 +783,14 @@
                                     font-family: FontAwesome;
                                     position: absolute;
                                     left: 0px;
-                                    top: 10px;
+                                    // top: 10px;
+                                    display: -webkit-flex;
+                                    display: -moz-flex;
+                                    display: -ms-flex;
+                                    display: -o-flex;
+                                    display: flex;
+                                    align-items: center;
+                                    height: 100%;
                                     color: #448aff;
                                 }
                             }
