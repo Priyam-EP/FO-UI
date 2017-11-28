@@ -36,6 +36,7 @@
 
 $dimensions: ("m": "margin", "p": "padding");
 $directions: ("t": "top", "b": "bottom", "r": "right", "l": "left");
+$responsive-breaks: ("xs, sm, md, lg");
 
 @each $dim in $dimensions {
     @for $i from 0 through 6 {
