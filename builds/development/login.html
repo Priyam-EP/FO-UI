@@ -285,7 +285,7 @@
                       </div>
                       <div class="row">
                         <div class="col-md-12">
-                          <button type="submit" class="btn btn-yes sign-up">Sign up</button>
+                          <button type="submit" class="btn btn-yes sign-up" data-toggle="modal" data-target="#signUpConfirmationModal" data-dismiss="modal">Sign up</button>
                           <button type="submit" class="btn btn-yes disabled sign-up">Sign up</button>
                         </div>
                       </div>
@@ -318,6 +318,57 @@
         </div>
     </div>
 </div>
+<!-- Sign up confirmation modal Starts-->
+
+<div aria-labelledby="" class="modal fade" id="signUpConfirmationModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+              <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </a>
+                </span>
+                <!-- Confirmation sending Email Content Starts -->
+                <div class="modal-container">
+                  <div class="modal-title">
+                      Confirmation email sent
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 confirmation-email-content">
+                      <p><b>We're almost ready to get started.</b><br />Please confirm your email by clicking the link we just sent.</p>
+                      <div class="row">
+                        <div class="col-md-12 send-mail-confirm">
+                            <div class="confirmation-tick">
+                              <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="fixed-actions">
+                        <div class="col-md-12 forget-password-actions">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                              <button type="submit" class="btn btn-confirm full-width">Re-send email</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                              <button data-dismiss="modal" class="btn btn-default full-width">Sign in</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Confirmation sending Email Content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sign up confirmation modal ends-->
+
+
 
 <!-- Sign up content Ends -->
 <!-- Forgotten Password content Starts -->
@@ -1063,17 +1114,9 @@
 </script>
 <!-- Rating Stars -->
 <script type="text/javascript" src="lbd/lib/rateyo/jquery.rateyo.js"></script>
-<!-- Time piki     -->
-<script src="lbd/lib/TimePicki-master/js/timepicki.js"></script>
-<link rel="stylesheet" type="text/css" href="lbd/lib/TimePicki-master/css/timepicki.css"/>
+
 <!-- Bootstrap-tokenfield -->
 <script src="lbd/lib/bootstrap-tokenfield/bootstrap-tokenfield.min.js"></script>
-
-<!-- Begin emoji-picker JavaScript -->
-<script src="lbd/lib/emoji-picker-master/lib/js/config.js"></script>
-<script src="lbd/lib/emoji-picker-master/lib/js/util.js"></script>
-<script src="lbd/lib/emoji-picker-master/lib/js/jquery.emojiarea.js"></script>
-<script src="lbd/lib/emoji-picker-master/lib/js/emoji-picker.js"></script>
 
 <!--Auto Resize Textarea -->
 <script src="lbd/js/jquery-ns-autogrow.min.js"></script>
@@ -1083,11 +1126,6 @@
 
 <!-- jquery readmore -->
 <script type="text/javascript" src="lbd/lib/read-more/readmore.js"></script>
-
-<!-- Croppie -->
-<link rel="stylesheet" type="text/css" href="lbd/lib/croppie/croppie.css"/>
-<script type="text/javascript" src="lbd/lib/croppie/croppie.min.js"></script>
-<script type="text/javascript" src="lbd/lib/croppie/exif.js"></script>
 
 <!-- reCaptcha Code -->
 <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->

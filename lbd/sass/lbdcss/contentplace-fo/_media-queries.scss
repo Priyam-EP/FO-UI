@@ -121,6 +121,14 @@
         padding-bottom: 0;
     }
 
+    #signUpConfirmationModal .send-mail-confirm {
+        height: 45vh;
+    }
+
+    #signUpConfirmationModal .fixed-actions .forget-password-actions button.btn-confirm {
+        margin-bottom: 10px;
+    }
+
     .modal-content .tab-links .tab-content .tab-pane {
         height: calc(100vh - 52px);
         position: relative;
