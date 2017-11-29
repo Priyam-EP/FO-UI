@@ -477,6 +477,7 @@
                                     .tunnel-steps-content-container{
                                       min-height: 300px;
                                       max-height: 350px;
+                                      height: calc(100vh - 150px);
                                       overflow: hidden;
                                       overflow-y: auto;
                                       .tunnel-steps-contents{
