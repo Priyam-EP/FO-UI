@@ -208,6 +208,22 @@
     #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .clients-selection-list .clients-selection-row .client-select {
         width: 16.333%;
     }
+
+    /* Captcha Responsive */
+    .g-recaptcha {
+        -webkit-transform: scale(0.83);
+        -moz-transform: scale(0.83);
+        -ms-transform: scale(0.83);
+        -o-transform: scale(0.83);
+        transform: scale(0.83);
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+
+    /* Captcha Responsive */
 }
 
 /* Modal vertcically center */
