@@ -473,11 +473,12 @@
 
                                 .tab-pane {
                                     padding: 0;
+                                    height: calc(100vh - 32px);
 
                                     .tunnel-steps-content-container{
                                       min-height: 300px;
-                                      max-height: 350px;
-                                      height: calc(100vh - 150px);
+                                      // max-height: 350px;
+                                      max-height: calc(100vh - 220px);
                                       overflow: hidden;
                                       overflow-y: auto;
                                       .tunnel-steps-contents{
@@ -539,6 +540,15 @@
                                         .tab-navigation {
                                             padding: 0 30px;
                                         }
+                                    }
+                                    @media screen and (max-width:767px){
+                                      .modal-actions-fixed-bottom{
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        height: 60px;
+                                        width: 100%;
+                                      }
                                     }
 
                                     .request-sent {
