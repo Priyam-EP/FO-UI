@@ -1,3 +1,7 @@
+#signInModal {
+    padding: 0 !important;
+}
+
 #signInModal, #forgotPasswordModal, #ConfirmationSendingEmailModal {
     @extend %modal;
 
@@ -168,7 +172,7 @@
 
         .send-mail-confirm {
             .confirmation-tick {
-              @extend %confirmation-tick;
+                @extend %confirmation-tick;
             }
         }
     }
