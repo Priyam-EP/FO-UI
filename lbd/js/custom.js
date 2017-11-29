@@ -64,7 +64,7 @@ $(document).ready(function(){
     } else{
     	$('body').removeClass('modal-open');
     	$('body').css({'padding-right':'0'});
-    }    
+    }
 	});
 
 
@@ -445,10 +445,10 @@ $(document).ready(function(){
 
 
     //contract Tag
-	$('#contract-tags').tagEditor({
+/*	$('#contract-tags').tagEditor({
         placeholder: '+ Add a tag',
         autocomplete: { minLength: 3, delay: 250, html: true, position: { collision: 'flip' } }
-    });
+    });*/
 
 
 	//Tab Edit content toggle

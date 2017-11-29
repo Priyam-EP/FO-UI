@@ -415,6 +415,12 @@
       .modal-body {
         padding: 0 !important;
 
+        .modal-sub-title{
+          h4{
+            font-weight: 700;
+          }
+        }
+
         .tunnel-container {
           display: -webkit-flex;
           display: -moz-flex;
