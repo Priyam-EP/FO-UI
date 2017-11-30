@@ -1,7 +1,7 @@
 #firstLoginModal {
     @extend %modal;
 
-    .input-text {
+    .input-texts {
         margin-bottom: 10px;
     }
 
@@ -176,10 +176,10 @@
 
                             ul.dropdown-menu {
                                 position: absolute;
-                                right: -63px;
+                                right: -60px;
                                 left: auto;
                                 top: auto;
-                                bottom: -92px;
+                                bottom: -130px;
 
                                 &:before, &:after {
                                     left: 65px;
@@ -287,3 +287,28 @@
         }
     }
 }
+
+/* Resize Image Modal Starts */
+#resizeImageModal {
+    @extend %modal;
+
+    .modal-container {
+        height: calc(100vh - 150px);
+        overflow-y: auto;
+        padding-right: 15px;
+
+        .upload-picture-container {
+            input[type="file"] {
+                display: none;
+            }
+
+            .btn-upload {
+                width: 50% !important;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+
+/* Resize Image Modal Ends */

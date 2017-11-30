@@ -20,7 +20,6 @@
     <link href="lbd/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
     <!--  lionbars Plugin -->
     <link href="lbd/lib/lionbars/lionbars.css" rel="stylesheet" />
-    
     <!-- Chosen Plugin -->
     <link href="lbd/lib/chosen/chosen.css" rel="stylesheet" type="text/css" />
     <link href="lbd/lib/chosen/ImageSelect.css" rel="stylesheet" type="text/css" />
@@ -29,6 +28,8 @@
     <link rel="stylesheet" type="text/css" href="lbd/lib/slick-1.6.0/slick/slick-theme.css">
     <!-- Rating Stars-->
     <link rel="stylesheet" href="lbd/lib/rateyo/jquery.rateyo.min.css" />
+    <!-- Croppie -->
+    <link rel="stylesheet" href="lbd/lib/croppie/croppie.css" />
     <!--  Light Bootstrap Dashboard core CSS    -->
     <link href="lbd/css/fo-style.css" rel="stylesheet" />
     <!--     Temporary css for Layouts     -->
@@ -417,11 +418,11 @@
                 <!-- Confirmation sending Email Content Starts -->
                 <div class="modal-container">
                   <div class="modal-title">
-                      Confirmation email sent
+                      Recover password email sent
                   </div>
                   <div class="row">
                     <div class="col-md-12 confirmation-email-content">
-                      <p><b>We're almost ready to get started.</b><br />Please confirm your email by clicking the link we just sent.</p>
+                      <p><b>We sent you an email.</b><br />Please click the link sent to you to create a new password.</p>
                       <div class="row">
                         <div class="col-md-12 send-mail-confirm">
                             <div class="confirmation-tick">
@@ -504,7 +505,7 @@
                                                 </div>
                                                 <div class="tab-panel-content-scroll">
                                                   <div class="row">
-                                                    <div class="col-md-8 input-text">
+                                                    <div class="col-md-8 input-texts">
                                                       <label>Mother Tongue *</label>
                                                       <select class="chosen-default flags">
                                                         <option data-img-src="lbd/img/flag/uk.gif">English (UK)</option>
@@ -520,7 +521,7 @@
                                                     <div class="col-md-12">
                                                       <label>Other Languages</label>
                                                       <div class="row">
-                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                        <div class="col-md-6 col-sm-6 input-texts">
                                                           <select class="chosen-default flags">
                                                             <option data-img-src="lbd/img/flag/sp.gif">Espanol</option>
                                                             <option data-img-src="lbd/img/flag/fr.gif">French</option>
@@ -529,7 +530,7 @@
                                                             <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
                                                           </select>
                                                         </div>
-                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-texts">
                                                           <select name="filter" class="selectpicker">
                                                               <option>Elementary (A2)</option>
                                                               <option>Intermediate (B2)</option>
@@ -542,7 +543,7 @@
                                                         </div>
                                                       </div>
                                                       <div class="row">
-                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                        <div class="col-md-6 col-sm-6 input-textss">
                                                           <select class="chosen-default flags">
                                                             <option data-img-src="lbd/img/flag/fr.gif">French</option>
                                                             <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
@@ -551,7 +552,7 @@
                                                             <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
                                                           </select>
                                                         </div>
-                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-texts">
                                                           <select name="filter" class="selectpicker">
                                                               <option>Intermediate (B2)</option>
                                                               <option>Elementary (A2)</option>
@@ -564,7 +565,7 @@
                                                         </div>
                                                       </div>
                                                       <div class="row">
-                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                        <div class="col-md-6 col-sm-6 input-texts">
                                                           <select class="chosen-default flags">
                                                             <option data-img-src="lbd/img/flag/fr.gif">French</option>
                                                             <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
@@ -573,7 +574,7 @@
                                                             <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
                                                           </select>
                                                         </div>
-                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-texts">
                                                           <select name="filter" class="selectpicker">
                                                               <option>Intermediate (B2)</option>
                                                               <option>Elementary (A2)</option>
@@ -586,7 +587,7 @@
                                                         </div>
                                                       </div>
                                                       <div class="row">
-                                                        <div class="col-md-6 col-sm-6 input-text">
+                                                        <div class="col-md-6 col-sm-6 input-texts">
                                                           <select class="chosen-default flags">
                                                             <option data-img-src="lbd/img/flag/fr.gif">French</option>
                                                             <option data-img-src="lbd/img/flag/us.gif">English (US)</option>
@@ -595,7 +596,7 @@
                                                             <option data-img-src="lbd/img/flag/pol.gif">Polish</option>
                                                           </select>
                                                         </div>
-                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-text">
+                                                        <div class="col-md-5 col-sm-5 col-xs-11 input-texts">
                                                           <select name="filter" class="selectpicker">
                                                               <option>Intermediate (B2)</option>
                                                               <option>Elementary (A2)</option>
@@ -639,8 +640,8 @@
                                               </div>
                                               <div class="tab-panel-content-scroll">
                                                 <div class="row">
-                                                  <div class="col-md-8 col-sm-8 input-text">
-                                                    <select class="selectpicker" title="+ Add a sector" multiple data-selected-text-format="count">
+                                                  <div class="col-md-8 col-sm-8 input-texts">
+                                                    <select class="selectpicker" title="+ Add a sector">
                                                       <option data-icon="fa fa-cutlery">Cuisine</option>
                                                       <option data-icon="fa fa-plane">Travel</option>
                                                       <option data-icon="fa fa-trophy">Sports</option>
@@ -704,6 +705,77 @@
                                               </div>
                                               <div class="row">
                                                 <div class="col-md-12">
+                                                  <div class="tagline">Your skills</div>
+                                                  <p>What can you do? This information will send us to send you relevant job offers.</p>
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row">
+                                                  <div class="col-md-8 col-sm-8 input-texts">
+                                                    <select class="selectpicker" title="+ Add a sector">
+                                                      <option data-icon="fa fa-pencil-square-o">Writing</option>
+                                                      <option data-icon="fa fa-binoculars">Proofreading</option>
+                                                      <option data-icon="fa fa-file-code-o">Coding</option>
+                                                      <option data-icon="fa fa-file-video-o">Multimedia</option>
+                                                      <option data-icon="fa fa-users">Public Relations</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <hr />
+                                                <div class="row">
+                                                  <div class="col-md-12 col-sm-12 col-xs-12 interest-list-container">
+                                                    <label>Interested by</label>
+                                                    <div class="row">
+                                                      <div class="col-md-12 interest-list">
+                                                        <ul>
+                                                          <li>
+                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Writing
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-binoculars" aria-hidden="true"></i> Proofreading
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-file-code-o" aria-hidden="true"></i> Coding
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-users" aria-hidden="true"></i> Public Relations
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                                <div class="col-md-12 tab-navigation">
+                                                    <button type="button" class="btn btn-yes btn-next">Continue</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- <div class="tab-pane" id="tab-login-4">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title">
+                                                Step 3
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
                                                   <div class="tagline">Your current job</div></div>
                                               </div>
                                               <div class="tab-panel-content-scroll">
@@ -743,7 +815,7 @@
                                                 </div>
                                             </div>
                                           </div>
-                                        </div>
+                                        </div> -->
                                         <div class="tab-pane" id="tab-login-5">
                                           <div class="row">
                                             <div class="col-md-12">
@@ -794,13 +866,14 @@
                                                   <div class="col-md-12 profile-picture-container">
                                                     <div class="profile-picture-block">
                                                       <img src="lbd/img/default-avatar.png" class="img-circle img-responsive" />
-                                                      <a href="javascript:;" class="edit-profile-picture" data-toggle="dropdown" data-container="body">
-                                                        <i class="material-icons">mode_edit</i>
-                                                      </a>
-                                                      <ul class="dropdown-menu" data-container="body" role="menu">
-                                                        <li><a href="javascript:;">Change Picture</a></li>
-                                                        <li class="remove"><a href="javascript:;">Remove</a></li>
-                                                      </ul>
+                                                        <a href="javascript:;" class="edit-profile-picture" data-toggle="dropdown" data-container="body">
+                                                          <i class="material-icons">mode_edit</i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" data-container="body" role="menu">
+                                                          <li><a href="javascript:;">Change Picture</a></li>
+                                                          <li class="resize"><a href="javascript:;" data-toggle="modal" data-target="#resizeImageModal">Resize Picture</a></li>
+                                                          <li class="remove"><a href="javascript:;">Remove</a></li>
+                                                        </ul>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1018,6 +1091,64 @@
     </div>
 </div>
 
+<!-- Resize Image Modal -->
+<div aria-labelledby="" class="modal fade" id="resizeImageModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+              <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </a>
+                </span>
+                <!-- Resize Image Content Starts -->
+                <div class="modal-container">
+                  <div class="modal-title">
+                      Resize Picture
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 upload-picture-container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="upload-picture">
+                            <div id="main-cropper"></div>
+                              <a class="button actionUpload">
+                                <input type="file" id="upload" value="Choose Image" accept="image/*">
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <a class="btn btn-yes btn-upload">Upload</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-fixed-modal-actions">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <button data-dismiss="modal" class="btn btn-default full-width">Cancel</button>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <button type="submit" class="btn btn-confirm full-width" data-dismiss="modal">Save this picture</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resize Image Content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Resize Image Ends -->
+
 <!-- First Login Modal Ends -->
 <!-- Core JS Files -->
 <script src="lbd/js/jquery.min.js" type="text/javascript">
@@ -1102,6 +1233,9 @@
 <!-- jquery readmore -->
 <script type="text/javascript" src="lbd/lib/read-more/readmore.js"></script>
 
+<!-- Croppie -->
+<script src="lbd/lib/croppie/croppie.min.js"></script>
+
 <!-- reCaptcha Code -->
 <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
 
@@ -1110,5 +1244,39 @@
 </script>
 
 <!-- Custom scripts -->
+<script type="text/javascript">
+var basic = $('#main-cropper').croppie({
+    viewport: { width: 250, height: 250, type: 'circle' },
+    boundary: { width: 300, height: 300 },
+    showZoomer: true,
+    url: 'http://lorempixel.com/500/400/'
+});
+$('.btn-upload').click(function(event) {
+   $('#upload').click();
+});
+function readFile(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $('#main-cropper').croppie('bind', {
+        url: e.target.result
+      });
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$('.actionUpload input').on('change', function () { readFile(this); });
+$('.actionDone').on('click', function(){
+  $('.actionDone').toggle();
+  $('.actionUpload').toggle();
+})
+</script>
+
+
+
+</script>
 </body>
 </html>

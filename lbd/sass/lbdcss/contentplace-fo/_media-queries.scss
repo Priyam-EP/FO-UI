@@ -146,6 +146,14 @@
         margin-bottom: 10px;
     }
 
+    #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .profile-picture-container .profile-picture-block ul.dropdown-menu {
+        bottom: -92px;
+    }
+
+    #firstLoginModal .first-login-content .tab-links .tab-content .tab-pane .profile-picture-container .profile-picture-block ul.dropdown-menu li.resize {
+        display: none;
+    }
+
     .modal-content .tab-links .tab-content .tab-pane {
         height: calc(100vh - 52px);
         position: relative;

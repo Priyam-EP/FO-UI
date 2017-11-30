@@ -262,7 +262,7 @@ Copyright (c) 2015 Daniel Eden
         line-height: 60px;
         display: block;
       }
-    
+
       p {
         font-size: 16px;
         text-align: center;
@@ -4805,19 +4805,20 @@ fieldset[disabled] .btn-neutral {
     box-shadow: none;
 }
 
+/*
 .has-success .form-control:focus, .form-control.valid:focus {
-    border-color: #87CB16;
+    border-color: #E3E3E3;
 }
 
 .has-error .form-control {
-    color: #FB404B;
-    border-color: #FB404B;
+    color: #ef1365;
+    border-color: #ef1365;
 }
 
 .form-control {
     &.error {
-        color: #FB404B;
-        border-color: #FB404B;
+        color: #ef1365;
+        border-color: #ef1365;
     }
 
     + .form-control-feedback {
@@ -4825,11 +4826,11 @@ fieldset[disabled] .btn-neutral {
         font-size: 14px;
         margin-top: -7px;
         position: absolute;
-        right: 10px;
-        top: 50%;
+         right: 15px;
+                        top: 31px;
         vertical-align: middle;
     }
-}
+} */
 
 .open .form-control {
     border-radius: 4px 4px 0 0;
@@ -8204,7 +8205,7 @@ ul.zg-ul-select {
         background-image: url('https://images.unsplash.com/photo-1438978280647-f359d95ebda4?q=80&fm=jpg&s=73cb1239b517411534379c92660b2660');
         background-size: cover;
         z-index: 1;
-         
+
         &:before{
             position: absolute;
             width: 94%;
@@ -8216,8 +8217,8 @@ ul.zg-ul-select {
             border-radius: 6px;
             content: "";
             box-shadow: 0 3px 40px rgba(0, 0, 0, 0.2);
-            top: 24px;  
-        } 
+            top: 24px;
+        }
     */
     /*
         .footer div{

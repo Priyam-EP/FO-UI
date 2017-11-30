@@ -236,6 +236,50 @@
             .modal-footer {}
         }
 
+        .input-texts {
+            &.has-success {
+                .form-control {
+                    &:focus {
+                        border-color: #E3E3E3;
+                    }
+                }
+
+                span.form-control-feedback {
+                    border-radius: 6px;
+                    font-size: 14px;
+                    margin-top: -7px;
+                    position: absolute;
+                    right: 15px;
+                    top: 31px;
+                    vertical-align: middle;
+                    color: #448AFF;
+                }
+            }
+
+            &.has-error {
+                .form-control {
+                    color: #ef1365;
+                    border-color: #ef1365;
+                }
+
+                span.form-control-feedback {
+                    border-radius: 6px;
+                    font-size: 14px;
+                    margin-top: -7px;
+                    position: absolute;
+                    right: 15px;
+                    top: 31px;
+                    vertical-align: middle;
+                    color: #ef1365;
+                }
+
+                .error.help-block {
+                    color: #ef1365;
+                    font-style: normal;
+                }
+            }
+        }
+
         .chosen-container {
             a.chosen-single {
                 height: 38px !important;
