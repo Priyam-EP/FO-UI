@@ -444,14 +444,11 @@ $(document).ready(function(){
     });
 
 
-<<<<<<< HEAD
-=======
     //contract Tag
 /*	$('#contract-tags').tagEditor({
         placeholder: '+ Add a tag',
         autocomplete: { minLength: 3, delay: 250, html: true, position: { collision: 'flip' } }
     });*/
->>>>>>> c91b1d8024bfde9e98a583e086f73e6599ed019d
 
 
 	//Tab Edit content toggle

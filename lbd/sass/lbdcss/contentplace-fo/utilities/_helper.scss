@@ -133,6 +133,11 @@ $responsive-breaks: ("xs, sm, md, lg");
     color: $sub-heading;
 }
 
+/* Text color styles */
+.error-text{
+  color: $delete !important;
+}
+
 .df-ac {
     display: flex;
     align-items: center;
