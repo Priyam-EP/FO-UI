@@ -233,6 +233,15 @@
   }
 }
 
+.cp-fo{
+  .content-container{
+    @include clearfix;
+
+    width: 1160px;
+    padding: 25px 0;
+  }
+}
+
 .fo-royalties {
   .content-container {
     @include clearfix;
