@@ -242,12 +242,9 @@
   }
 }
 
-.fo-royalties {
-  .content-container {
+.content-container {
+  .fo-royalties {
     @include clearfix;
-
-    width: 1160px;
-    padding: 25px 0;
 
     .card {
       margin-bottom: 15px;

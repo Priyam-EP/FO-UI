@@ -9,288 +9,14 @@
     <!-- @include _partials/_sidebar.html -->
     <div class="container-fluid page-wrap">
         <div class="row">
-            <div class="col-md-12 main-panel-wrap">
+            <div class="col-xs-12 main-panel-wrap">
                 <div class="main-panel">
                     <div class="container-fluid main-panel-page">
-                        <div class="fo-cards-list">
-                            <div class="content-container">
-                                <div class="cards-list-content col-xs-12">
-                                  <div class="row">
-                                    <h2 class="page-heading fw700 mb-15 col-xs-8">My Cards</h2>
-                                    <div class="col-xs-4 pull-right"><i class="material-icons">view_agenda</i> <i class="material-icons">view_list</i></div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="payment-royalty-container col-sm-12">
-                                      <div class="row">
-                                          <div class="col-md-12 tab-step">
-                                              <div class="tab-step-content">
-                                                  <ul class="nav">
-                                                      <li class="active">
-                                                          <a data-toggle="tab" href="#paymentHistory">
-                                                              History
-                                                          </a>
-                                                      </li>
-                                                      <li>
-                                                          <a data-toggle="tab" href="#paymentActivity">
-                                                              Activity
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                                  <div class="tab-content tab-content-progress">
-                                                      <div class="tab-pane general-info active" id="paymentHistory">
-                                                          <div class="row">
-                                                            <div class="col-sm-12 mb-30 mt-15">
-                                                              <select class="selectpicker" data-actions-box="true" id="filterByDate" name="filterByDate" title="Select filter">
-                                                                <option data-content="">
-                                                                  2017 (3)
-                                                                </option>
-                                                                <option data-content="">
-                                                                  2018 (12)
-                                                                </option>
-                                                                <option data-content="" selected>
-                                                                  2019 (16)
-                                                                </option>
-                                                              </select>
-                                                            </div>
-                                                          </div>
-                                                          <div class="row payment-activities">
-                                                            <div class="col-sm-12">
-                                                              <ul class="payment-history-list">
-                                                                <li>
-                                                                  <div class="row">
-                                                                    <div class="payment-status df-ac">
-                                                                      <div class="col-xs-8 df-ac">
-                                                                        <span class="label to-validate">
-                                                                          Ongoing
-                                                                        </span>
-                                                                      </div>
-                                                                      <div class="payment-time col-xs-4 helper-text text-right">2h ago</div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="row">
-                                                                    <div class="payment-order-number col-sm-12">Payment order #01927</div>
-                                                                    <div class="col-sm-12">
-                                                                      <div class="col-xs-4 order-value p-0">
-                                                                        <span class="">644.92 €</span>
-                                                                      </div>
-                                                                      <div class="col-xs-8 submit-claim text-right p-0">
-                                                                        <a class="" href="javasctipt:;">Submit a claim</a>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="row">
-                                                                    <div class="payment-actions col-sm-12">
-                                                                      <div class="col-xs-12 p-0">
-                                                                        <button class="btn btn-fill full-width" type="submit">
-                                                                          Available on <span class="fw600">Aug.15, 2019</span>
-                                                                        </button>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                </li>
-                                                                <li>
-                                                                  <div class="row">
-                                                                    <div class="payment-status df-ac">
-                                                                      <div class="col-xs-8 df-ac">
-                                                                        <span class="label ongoing">
-                                                                          Paid
-                                                                        </span>
-                                                                      </div>
-                                                                      <div class="payment-time col-xs-4 helper-text text-right">26 May</div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="row">
-                                                                    <div class="payment-order-number col-sm-12">Payment order #01927</div>
-                                                                    <div class="col-sm-12">
-                                                                      <div class="col-xs-4 order-value p-0">
-                                                                        <span class="">644.92 €</span>
-                                                                      </div>
-                                                                      <div class="col-xs-8 submit-claim text-right p-0">
-
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="row">
-                                                                    <div class="payment-actions col-sm-12">
-                                                                      <div class="row">
-                                                                        <div class="col-xs-6">
-                                                                          <button class="btn full-width" type="submit">
-                                                                            View bill
-                                                                          </button>
-                                                                        </div>
-                                                                        <div class="col-xs-6">
-                                                                          <button class="btn btn-primary btn-fill full-width" type="submit">
-                                                                            Download
-                                                                          </button>
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                </li>
-                                                                          <li>
-                                                                  <div class="row">
-                                                                    <div class="payment-status df-ac">
-                                                                      <div class="col-xs-8 df-ac">
-                                                                        <span class="label ongoing">
-                                                                          Paid
-                                                                        </span>
-                                                                      </div>
-                                                                      <div class="payment-time col-xs-4 helper-text text-right">21 Jan</div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="row">
-                                                                    <div class="payment-order-number col-sm-12">Payment order #01927</div>
-                                                                    <div class="col-sm-12">
-                                                                      <div class="col-xs-4 order-value p-0">
-                                                                        <span class="">644.92 €</span>
-                                                                      </div>
-                                                                      <div class="col-xs-8 submit-claim text-right p-0">
-
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="row">
-                                                                    <div class="payment-actions col-sm-12">
-                                                                      <div class="row">
-                                                                        <div class="col-xs-6">
-                                                                          <button class="btn full-width" type="submit">
-                                                                            View bill
-                                                                          </button>
-                                                                        </div>
-                                                                        <div class="col-xs-6">
-                                                                          <button class="btn btn-primary btn-fill full-width" type="submit">
-                                                                            Download
-                                                                          </button>
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                </li>
-                                                                <li>
-                                                                  <div class="row">
-                                                                    <div class="col-sm-12">
-                                                                      <a class="df-ac-jc show-more-activities" href="javascript:;">All payment order (7)</a>
-                                                                    </div>
-                                                                  </div>
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="tab-pane external-links" id="paymentActivity">
-                                                        <div class="row">
-                                                          <div class="col-sm-12 mb-30 mt-15">
-                                                            <select class="selectpicker" data-actions-box="true" id="filterByDate" name="filterByDate" title="Select filter">
-                                                              <option data-content="">
-                                                                2017 (24)
-                                                              </option>
-                                                              <option data-content="">
-                                                                2018 (4)
-                                                              </option>
-                                                              <option data-content="" selected>
-                                                                2019 (8)
-                                                              </option>
-                                                            </select>
-                                                          </div>
-                                                        </div>
-                                                        <div class="row payment-activities">
-                                                          <div class="col-sm-12 pb-15 pr-0">
-                                                            <ul class="payment-activities-list">
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-xs-9 activity-content">
-                                                                    <span class="fw600">Webedia articels FR</span> was validated
-                                                                    <span class="d-block helper-text">+ 1 950.80 €</span>
-                                                                  </div>
-                                                                  <div class="col-xs-3 activity-time text-right helper-text">
-                                                                    21 Jul 2019
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-xs-9 activity-content">
-                                                                    <span class="fw600">Webedia articels FR</span> was validated
-                                                                    <span class="d-block helper-text">+ 1 950.80 €</span>
-                                                                  </div>
-                                                                  <div class="col-xs-3 activity-time text-right helper-text">
-                                                                    21 Jul 2019
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-xs-9 activity-content">
-                                                                    <span class="fw600">Webedia articels FR</span> was validated
-                                                                    <span class="d-block helper-text">+ 1 950.80 €</span>
-                                                                  </div>
-                                                                  <div class="col-xs-3 activity-time text-right helper-text">
-                                                                    21 Jul 2019
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-xs-9 activity-content">
-                                                                    <span class="fw600">Webedia articels FR</span> was validated
-                                                                    <span class="d-block helper-text">+ 1 950.80 €</span>
-                                                                  </div>
-                                                                  <div class="col-xs-3 activity-time text-right helper-text">
-                                                                    21 Jul 2019
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-xs-9 activity-content">
-                                                                    <span class="fw600">Webedia articels FR</span> was validated
-                                                                    <span class="d-block helper-text">+ 1 950.80 €</span>
-                                                                  </div>
-                                                                  <div class="col-xs-3 activity-time text-right helper-text">
-                                                                    21 Jul 2019
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-xs-9 activity-content">
-                                                                    <span class="fw600">Webedia articels FR</span> was validated
-                                                                    <span class="d-block helper-text">+ 1 950.80 €</span>
-                                                                  </div>
-                                                                  <div class="col-xs-3 activity-time text-right helper-text">
-                                                                    21 Jul 2019
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-xs-9 activity-content">
-                                                                    <span class="fw600">Webedia articels FR</span> was validated
-                                                                    <span class="d-block helper-text">+ 1 950.80 €</span>
-                                                                  </div>
-                                                                  <div class="col-xs-3 activity-time text-right helper-text">
-                                                                    21 Jul 2019
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                              <li>
-                                                                <div class="row">
-                                                                  <div class="col-sm-12">
-                                                                    <a class="df-ac-jc show-more-activities" href="javascript:;">Show more activities...</a>
-                                                                  </div>
-                                                                </div>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  </div>
-                                </div>
+                          <div class="content-container">
+                            <div class="fo-cards-list">
+                              <div class="col-xs-12">
+                                <!-- @include _partials/_cards-list-content.html -->
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -333,61 +59,66 @@
 
 $(document).ready(function(){
 
-//Tab Wizard
-$('#wizardCard, #tunnelWizard, #wizardCard-testArticle').bootstrapWizard({
-  tabClass: 'nav nav-pills',
-  nextSelector: '.btn-next',
-    previousSelector: '.btn-back',
-  onNext: function(tab, navigation, index) {
-    var $valid = $('#wizardForm').valid();
-    if(!$valid) {
-      $validator.focusInvalid();
-      return false;
-    }
-  },/*
-    onInit : function(tab, navigation, index){
-        //check number of tabs and fill the entire row
-        var $total = navigation.find('li').length;
-        $width = 100/$total;
-        $display_width = $(document).width();
-        if($display_width < 600 && $total > 3){
-           $width = 50;
-        }
-        navigation.find('li').css('width',$width + '%');
-    },*/
-    onTabClick : function(tab, navigation, index){
-        // Disable the posibility to click on tabs
-        return false;
-    },
-    onTabShow: function(tab, navigation, index) {
-        var $total = navigation.find('li').length;
-        var $current = index+1;
-        var wizard = navigation.closest('.card-wizard');
-        // If it's the last tab then hide the last button and show the finish instead
-        if($current >= $total) {
-            $(wizard).find('.btn-next').hide();
-            $(wizard).find('.btn-finish').show();
-        } else if($current == 1){
-            $(wizard).find('.btn-back').hide();
-        } else {
-            $(wizard).find('.btn-back').show();
-            $(wizard).find('.btn-next').show();
-            $(wizard).find('.btn-finish').hide();
-        }
-    }
+/*Read more / Read less*/
+function readmoreEllipse(){
+  $('.readmore-ellipses').each(function(){
+    $(this).readmore({
+        speed : 150,
+        collapsedHeight: 60,
+        moreLink: '<a href="#" class="morelink"> [ &hellip; ]</a>',
+        lessLink: '<a href="#" class="morelink" style=""> [ See less ]</a>',
+        blockCSS: 'display: inline; width: 50%;',
+    });
+    $(this).resize(function(){
+      console.log("Change happened");
+    });
+  });
+}
+
+readmoreEllipse();
+
+$('.modal').one('show.bs.modal', function () {
+$(this).find('.readmore-ellipses').css({overflow: "hidden"});
+  }).one('shown.bs.modal shown.bs.tab', function () {
+      $(this).find('.readmore-ellipses').readmore({
+          speed : 150,
+          collapsedHeight: 60,
+          moreLink: '<a href="#" class="morelink"> [ &hellip; ]</a>',
+          lessLink: '<a href="#" class="morelink"> [ See less ]</a>'
+      });
 });
 
-$(document).on('click', "#myaccountRoyalty .my-accounts-list li", function(e){
-    e.stopPropagation();
-    if($(this).hasClass('add-block')){
-      return false;
-    }
-    $(this).parent('.my-accounts-list').find('li').removeClass('selected');
-    // $(this).parent('.my-accounts-list').find('.account-title').removeClass('main-account');
-    // $(this).addClass('selected').find('.account-title').addClass('main-account');
-    $(this).addClass('selected');
-/*    $('.contact-info-edit').slideDown();*/
+/* $(".readmore-ellipses").shorten({
+	"showChars" : 150,
+	"moreText"	: "See More",
+	"lessText"	: "Less",
+}); */
+
+/*Toggle cards view*/
+$(document).on('click', '.cards-view a', function(e){
+  e.preventDefault();
+  if($(this).hasClass('selected')) {
+    return;
+  }
+  else{
+    var switchingClass = $(this).attr('class');
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $(this).parents('.tab-pane.active').find('.cards-list-container').toggleClass('list-view card-view');
+  }
 });
+
+$('.readmore-ellipses').on('resize', function(){
+  console.log("Change happened");
+});
+
+$('#readmore-ellipses').on('mresize', function(){
+  alert("Something happened");
+});
+
+$(document).on("mresize", '.readmore-ellipses' ,function(){
+    console.log("This has been changed");
+});
+
 
 });
 

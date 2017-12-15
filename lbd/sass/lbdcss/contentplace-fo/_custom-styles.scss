@@ -11,6 +11,12 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
     color: #7d889a;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 *::-webkit-scrollbar {
     width: 8px;
     background-color: #F5F5F5;
@@ -3476,5 +3482,45 @@ body.mce-content-body {
 }
 
 /* Flags rectangular in chosen Ends*/
+
+/*See More Content Starts*/
+.morecontent span {
+    display: none;
+}
+
+span.more {
+    word-wrap: break-word;
+}
+
+.morelink {
+    display: flex !important;
+    width: 30%;
+    padding: 10px 0 0 20px;
+    color: #448aff;
+    font-weight: 600;
+    text-decoration: underline;
+    position: relative;
+
+    &:before {
+        content: '\E313';
+        font-family: 'Material Icons';
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.morelink.less {
+    &:before {
+        content: '\E316';
+    }
+}
+
+/*See More Content Ends*/
+
 
 /* New Content Place styels ends */
