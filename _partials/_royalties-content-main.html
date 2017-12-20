@@ -70,7 +70,7 @@
             <li>
               <div class="row">
                 <div class="col-sm-12">
-                  <a class="df-ac-jc show-more-activities" href="javascript:;">Show more activities...</a>
+                  <a class="df-ac-jc show-more-activities" href="javascript:;" data-toggle="modal" data-target="#paymentRoyalty">Show more activities...</a>
                 </div>
               </div>
             </li>
@@ -87,7 +87,7 @@
             <div class="col-xs-9">
               <h4 class="mt-0 mb-15 fw700">My accounts</h4>
             </div>
-            <div class="col-xs-3 section-actions">
+            <!-- <div class="col-xs-3 section-actions">
               <span class="edit">
                   <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#myaccountRoyalty">
                       <u class="hidden-xs">Edit</u>
@@ -96,11 +96,21 @@
                       </i>
                   </a>
               </span>
-            </div>
+            </div> -->
           </div>
           <div class="row">
             <ul class="my-accounts-list">
-              <li>
+              <li class="">
+                <span class="section-actions">
+                  <span class="edit">
+                      <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#myaccountEditRoyalty">
+                          <u class="hidden-xs">Edit</u>
+                          <i class="material-icons">
+                            create
+                          </i>
+                      </a>
+                  </span>
+                </span>
                 <div class="col-sm-12 p-0">
                     <span class="account-title main-account">Pro account <span class="hidden-xs">(main account)</span></span>
                   </div>
@@ -116,6 +126,16 @@
                 </div>
               </li>
               <li>
+                <span class="section-actions">
+                  <span class="edit">
+                      <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#myaccountEditRoyalty">
+                          <u class="hidden-xs">Edit</u>
+                          <i class="material-icons">
+                            create
+                          </i>
+                      </a>
+                  </span>
+                </span>
                 <div class="col-sm-12 p-0">
                     <span class="account-title">Paypal</span>
                   </div>
@@ -130,7 +150,7 @@
                   </ul>
                 </div>
               </li>
-              <li>
+              <!-- <li>
                 <div class="col-sm-12 p-0">
                     <span class="account-title">Another account</span>
                   </div>
@@ -144,7 +164,7 @@
                     </li>
                   </ul>
                 </div>
-              </li>
+              </li> -->
               <li class="add-block">
                 <span data-target="#myaccountAddRoyalty" data-toggle="modal">
                   + Add a new account
@@ -166,6 +186,14 @@
             </div>
             <div class="col-xs-3 section-actions">
               <span class="edit">
+                  <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#workingStatusCompanyRoyalty">
+                      <u class="hidden-xs">Edit</u>
+                      <i class="material-icons">
+                          create
+                      </i>
+                  </a>
+              </span>
+              <span class="edit">
                   <a class="df-ac" href="javascript:;" data-toggle="modal" data-target="#workingStatusSelfemployedRoyalty">
                       <u class="hidden-xs">Edit</u>
                       <i class="material-icons">
@@ -173,6 +201,7 @@
                       </i>
                   </a>
               </span>
+
             </div>
           </div>
           <ul class="royalty-status-list">

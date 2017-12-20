@@ -110,6 +110,23 @@
       width: calc(50% - 16px);
       display: flex;
       flex-flow: row wrap;
+      position: relative;
+
+        span.section-actions{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          visibility: hidden;
+          opacity: 0;
+          transition: all .3s ease;
+          z-index: 2;
+        }
+        &.selected, &:hover{
+          span.section-actions{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
 
       @media screen and (max-width: 767px) {
         width: calc(100%);
@@ -216,12 +233,18 @@
   }
 }
 
-.fo-royalties {
-  .content-container {
+.cp-fo{
+  .content-container{
     @include clearfix;
 
     width: 1160px;
     padding: 25px 0;
+  }
+}
+
+.content-container {
+  .fo-royalties {
+    @include clearfix;
 
     .card {
       margin-bottom: 15px;
@@ -274,6 +297,13 @@
 
       .my-accounts {
         @extend %my-accounts-royalty;
+/*         .my-accounts-list{
+          li{
+            &.selected, &:hover{
+              border-color: $selected;
+            }
+          }
+        } */
       }
 
       .working-status {
@@ -317,6 +347,27 @@
 
   .my-accounts {
     @extend %my-accounts-royalty;
+      .my-accounts-list{
+        li{
+          position: relative;
+          span.section-actions{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease;
+            z-index: 2;
+          }
+          &.selected, &:hover{
+            border-color: $selected;
+            span.section-actions{
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+      }
   }
 }
 

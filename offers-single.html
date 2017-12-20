@@ -9,14 +9,18 @@
     <!-- @include _partials/_sidebar.html -->
     <div class="container-fluid page-wrap">
         <div class="row">
-            <div class="col-md-12 main-panel-wrap">
+            <div class="col-xs-12 main-panel-wrap">
                 <div class="main-panel">
                     <div class="container-fluid main-panel-page">
-                        <div class="fo-royalties">
-                            <div class="content-container">
+                        <div class="content-container">
+                          <div class="fo-royalties">
+                            <div class="row">
+                              <div class="col-xs-12">
                                 <!-- @include _partials/_royalties-content-main.html -->
                                 <!-- @include _partials/_royalties-content-aside.html -->
+                              </div>
                             </div>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -27,13 +31,27 @@
 
 
 <!-- Modals starts -->
+<!-- Paymet history royalty modal starts -->
 <!-- @include _partials/_modal-payment-royalty.html -->
-<!-- @include _partials/_modal-myaccount-royalty.html -->
-<!-- @include _partials/_modal-myaccount-edit-royalty.html -->
-<!-- @include _partials/_modal-myaccount-add-royalty.html -->
-<!-- @include _partials/_modal-working-status-company-royalty.html -->
-<!-- @include _partials/_modal-working-status-selfemployed-royalty.html -->
+<!-- Paymet history royalty modal ends -->
+<!-- Royalty tunnel modal starts -->
 <!-- @include _partials/_modal-tunnel-royalty.html -->
+<!-- Royalty tunnel mdoal ends -->
+<!-- Myaccounts royalty modal starts -->
+<!-- @include _partials/_modal-myaccount-royalty.html -->
+<!-- Myaccounts royalty modal ends -->
+<!-- Myaccounts royalty edit modal starts -->
+<!-- @include _partials/_modal-myaccount-edit-royalty.html -->
+<!-- Myaccounts royalty edit modal ends -->
+<!-- Myaccounts royalty add account modal starts -->
+<!-- @include _partials/_modal-myaccount-add-royalty.html -->
+<!-- Myaccounts royalty add account modal ends -->
+<!-- Royalty workign status company modal starts -->
+<!-- @include _partials/_modal-working-status-company-royalty.html -->
+<!-- Royalty workign status company modal ends -->
+<!-- Royalty workign status selfemployed modal starts -->
+<!-- @include _partials/_modal-working-status-selfemployed-royalty.html -->
+<!-- Royalty workign status selfemployed modal ens -->
 <!-- Modals ends -->
 
 <!--   Core JS Files   -->
@@ -41,6 +59,8 @@
 
 <!-- Custom scripts -->
 <script type="text/javascript">
+
+$(document).ready(function(){
 
 //Tab Wizard
 $('#wizardCard, #tunnelWizard, #wizardCard-testArticle').bootstrapWizard({
@@ -85,6 +105,23 @@ $('#wizardCard, #tunnelWizard, #wizardCard-testArticle').bootstrapWizard({
         }
     }
 });
+
+$(document).on('click', "#myaccountRoyalty .my-accounts-list li", function(e){
+    e.stopPropagation();
+    if($(this).hasClass('add-block')){
+      return false;
+    }
+    $(this).parent('.my-accounts-list').find('li').removeClass('selected');
+    // $(this).parent('.my-accounts-list').find('.account-title').removeClass('main-account');
+    // $(this).addClass('selected').find('.account-title').addClass('main-account');
+    $(this).addClass('selected');
+/*    $('.contact-info-edit').slideDown();*/
+});
+
+});
+
+
+
 </script>
 <!-- Custom scripts ends -->
 </body>
