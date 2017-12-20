@@ -148,6 +148,113 @@
                                     display: block;
                                     font-weight: 700;
                                 }
+
+                                .profile-image-loader {
+                                    position: absolute;
+
+                                    @-webkit-keyframes dyinglight {
+                                        15% {
+                                            -webkit-transform: scale(1.6);
+                                            transform: scale(1.6);
+                                        }
+
+                                        50% {
+                                            -webkit-transform: rotate(-89deg);
+                                            transform: rotate(-89deg);
+                                        }
+
+                                        100% {
+                                            -webkit-transform: rotate(-90deg);
+                                            transform: rotate(-90deg);
+                                        }
+                                    }
+
+                                    @keyframes dyinglight {
+                                        15% {
+                                            -webkit-transform: scale(1.6);
+                                            transform: scale(1.6);
+                                        }
+
+                                        50% {
+                                            -webkit-transform: rotate(-89deg);
+                                            transform: rotate(-89deg);
+                                        }
+
+                                        100% {
+                                            -webkit-transform: rotate(-90deg);
+                                            transform: rotate(-90deg);
+                                        }
+                                    }
+
+                                    .pImage-loader {
+                                        position: absolute;
+                                        left: 50%;
+                                        top: 50%;
+                                        -webkit-transform: translate(-50%, -50%);
+                                        transform: translate(-50%, -50%);
+                                        display: inline-block;
+                                    }
+
+                                    .pImage-loader-square {
+                                        display: block;
+                                        width: 50px;
+                                        height: 50px;
+                                        background: #4285F4;
+                                    }
+
+                                    .pImage-loader-container {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                        -webkit-transform-origin: 50% 50% 0;
+                                        transform-origin: 50% 50% 0;
+                                        -webkit-animation: dyinglight 1s ease infinite;
+                                        animation: dyinglight 1s ease infinite;
+                                        -webkit-backface-visibility: hidden;
+                                        backface-visibility: hidden;
+                                    }
+
+                                    .pImage-loader-corner--top:before,
+                                    .pImage-loader-corner--top:after,
+                                    .pImage-loader-corner--bottom:before,
+                                    .pImage-loader-corner--bottom:after {
+                                        position: absolute;
+                                        width: 17px;
+                                        height: 17px;
+                                        color: #4285F4;
+                                        content: "";
+                                    }
+
+                                    .pImage-loader-corner--top:before {
+                                        border-left: 1px solid;
+                                        border-top: 1px solid;
+                                        top: -6px;
+                                        left: -6px;
+                                    }
+
+                                    .pImage-loader-corner--top:after {
+                                        border-right: 1px solid;
+                                        border-top: 1px solid;
+                                        top: -6px;
+                                        right: -6px;
+                                    }
+
+                                    .pImage-loader-corner--bottom:before {
+                                        border-left: 1px solid;
+                                        border-bottom: 1px solid;
+                                        bottom: -6px;
+                                        left: -6px;
+                                    }
+
+                                    .pImage-loader-corner--bottom:after {
+                                        border-right: 1px solid;
+                                        border-bottom: 1px solid;
+                                        bottom: -6px;
+                                        right: -6px;
+                                    }
+                                }
                             }
 
                             img {

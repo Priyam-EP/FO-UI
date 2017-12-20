@@ -442,18 +442,6 @@ $(document).ready(function(){
             }
         }
     });
-
-<<<<<<< HEAD
-=======
-
-    //contract Tag
-/*	$('#contract-tags').tagEditor({
-        placeholder: '+ Add a tag',
-        autocomplete: { minLength: 3, delay: 250, html: true, position: { collision: 'flip' } }
-    });*/
-
-
->>>>>>> 41bed2b5bc1e98aeef98be9473d2bb7c200f419e
 	//Tab Edit content toggle
 	$('.contract .nav-button').click(function(e) {
 		e.stopPropagation();
