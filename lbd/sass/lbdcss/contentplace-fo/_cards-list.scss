@@ -78,12 +78,23 @@
               border-radius: 4px;
               font-size: 14px;
               color: #565656;
-              padding: 10px 15px 10px 35px;
+              padding: 10px 25px 10px 35px;
               background: #fff;
 
               &.search-card {
                 background: #fff url(../img/search.svg) no-repeat 10px;
                 background-size: 20px;
+              }
+            }
+            a.reset-search{
+              color: #cacaca;
+              position: absolute;
+              right: 10px;
+              &:hover{
+                color: $main;
+              }
+              i{
+                font-size: 16px;
               }
             }
           }
