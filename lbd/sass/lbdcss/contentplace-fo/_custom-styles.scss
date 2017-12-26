@@ -14,7 +14,7 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
@@ -3451,7 +3451,7 @@ body.mce-content-body {
     }
 
     ul.chosen-results, ul.chosen-choices {
-        li.active-result, li.result-selected, li.search-choice {
+        li.active-result, li.result-selected, li.search-choice, li.disabled-result {
             img, img.chose-image {
                 border-radius: 0 !important;
                 width: 20px !important;
@@ -3521,6 +3521,5 @@ span.more {
 }
 
 /*See More Content Ends*/
-
 
 /* New Content Place styels ends */
