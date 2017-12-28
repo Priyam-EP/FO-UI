@@ -159,12 +159,14 @@
                                           </div>
                                         </div>
                                         <div class="col-sm-6 payment-actions">
-                                          <button class="btn btn-primary btn-fill btn-wd full-width mb-10" type="" data-toggle="modal" data-target="#tunnelRoyalty">
-                                            Request a payment
-                                          </button>
-                                          <button class="btn btn-wd full-width visible-xs" type="" data-toggle="modal" data-target="#paymentRoyalty">
-                                            Payment history
-                                          </button>
+                                          <div class="payment-actions-wrapper">
+                                            <button class="btn btn-primary btn-fill btn-wd full-width mb-10" type="" data-toggle="modal" data-target="#tunnelRoyalty">
+                                              Request a payment
+                                            </button>
+                                            <button class="btn btn-wd full-width visible-xs" type="" data-toggle="modal" data-target="#paymentRoyalty">
+                                              Payment history
+                                            </button>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
@@ -1720,22 +1722,12 @@
                                 <label>
                                     Country <span class="required">*</span>
                                 </label>
-                                <select class="chosen-default flags" title="-">
-                                  <option data-img-src="lbd/img/flag/us.gif">
-                                    EN (US)
-                                  </option>
-                                  <option data-img-src="lbd/img/flag/fr.gif">
-                                    FR
-                                  </option>
-                                  <option data-img-src="lbd/img/flag/uk.gif">
-                                    EN (UK)
-                                  </option>
-                                  <option data-img-src="lbd/img/flag/sp.gif">
-                                    ES
-                                  </option>
-                                  <option data-img-src="lbd/img/flag/pol.gif">
-                                    PO
-                                  </option>
+                                <select id="" class="selectpicker" data-live-search="true" title="">
+                                  <option value="1" data-content="<img src='lbd/img/flag/us.gif'> EN (US)">EN (US)</option>
+                                  <option value="2" data-content="<img src='lbd/img/flag/fr.gif'> FR">FR</option>
+                                  <option value="3" data-content="<img src='lbd/img/flag/uk.gif'> EN (UK)">EN (UK)</option>
+                                  <option value="4" data-content="<img src='lbd/img/flag/sp.gif'> ES">ES</option>
+                                  <option value="5" data-content="<img src='lbd/img/flag/pol.gif'> PO">PO</option>
                                 </select>
                             </div>
                         </div>
