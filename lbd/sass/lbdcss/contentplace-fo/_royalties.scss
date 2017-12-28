@@ -290,6 +290,16 @@
                         }
                     }
                 }
+                @media (max-width:767px) {
+                  display: block;
+                  .payment-actions{
+                    .payment-actions-wrapper{
+                      margin-top: 20px;
+                      padding-top: 20px;
+                      border-top: 2px solid $border-color-02;
+                    }
+                  }
+                }
             }
 
             .payment-activities {
