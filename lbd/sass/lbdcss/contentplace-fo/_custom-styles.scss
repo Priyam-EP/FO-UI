@@ -2689,7 +2689,28 @@ h1, h2, h3, h4, h5, h6 {
     .btn {
         font-weight: 400;
     }
+    .filter-option{
+      img{
+        margin-right: 10px;
+      }
+    }
+    &.open{
+      .dropdown-menu{
+        .dropdown-menu{
+          &.inner{
+            li{
+              a{
+                img{
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 }
+
 
 .chosen-container-single .chosen-single {
     height: 50px;
