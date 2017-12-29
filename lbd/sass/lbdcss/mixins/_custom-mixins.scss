@@ -167,10 +167,10 @@
         @include divider;
     }
 
-/*     [class*='alert']{
-      padding: 15px !important;
-      border-radius: 4px;
-    } */
+    /*     [class*='alert']{
+          padding: 15px !important;
+          border-radius: 4px;
+        } */
 
     .modal-dialog {
         display: inline-block;
@@ -323,6 +323,7 @@ span.edit {
     padding-top: 14px;
     border-top: 1px solid #f6f6f7;
     background: #fff;
+    z-index: 9;
 }
 
 %confirmation-tick {

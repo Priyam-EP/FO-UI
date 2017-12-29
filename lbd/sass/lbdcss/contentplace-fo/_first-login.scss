@@ -19,6 +19,7 @@
                         height: calc(100vh - 230px);
                         overflow-y: auto;
                         padding-right: 15px;
+                        padding-bottom: 40px;
                     }
 
                     .welcome-login {
@@ -322,8 +323,6 @@
                     }
 
                     .clients-selection-list {
-                        padding-bottom: 50px;
-
                         .clients-selection-head {
                             border-bottom: 1px solid #edeeef;
                             padding-bottom: 10px;
