@@ -630,6 +630,7 @@
                                         height: calc(100vh - 230px);
                                         overflow: hidden;
                                         overflow-y: auto;
+                                        padding-right: 1px;
 
                                         &.no-scroll{
                                           overflow-y: hidden;
