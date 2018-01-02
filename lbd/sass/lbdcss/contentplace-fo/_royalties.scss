@@ -445,6 +445,26 @@
             font-weight: 600;
         }
 
+        .modal-body{
+          height: calc(100vh - 32px);
+        }
+        .modal-container{
+          height: 100%;
+          position: relative;
+          .content-scroll{
+            height: calc(100vh - 130px);
+            overflow: hidden;
+            overflow-y: auto;
+            padding: 0 5px 0px 0;
+          }
+          .modal-actions-fixed-bottom{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+          }
+        }
+
         .required {
             color: $delete;
         }
@@ -456,7 +476,6 @@
                 float: none !important;
             }
         }
-
         .account-options {
             display: -webkit-flex;
             display: -moz-flex;
@@ -491,6 +510,7 @@
     @extend #myaccountEditRoyalty;
 
     .modal-dialog {
+
         .flag-dropdown {
             @extend %flag-dropdown;
         }
