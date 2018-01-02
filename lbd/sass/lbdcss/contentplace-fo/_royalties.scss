@@ -446,13 +446,13 @@
         }
 
         .modal-body{
-          height: calc(100vh - 32px);
+          // height: calc(100vh - 32px);
         }
         .modal-container{
-          height: 100%;
+          // height: 100%;
           position: relative;
           .content-scroll{
-            height: calc(100vh - 130px);
+            // height: calc(100vh - 130px);
             overflow: hidden;
             overflow-y: auto;
             padding: 0 5px 0px 0;
@@ -621,13 +621,13 @@
 
                                 .tab-pane {
                                     padding: 0;
-                                    height: calc(100vh - 32px);
+                                    // height: calc(100vh - 32px);
                                     position: relative;
 
                                     .tunnel-steps-content-container {
                                         // min-height: 300px;
 
-                                        max-height: calc(100vh - 220px);
+                                        height: calc(100vh - 230px);
                                         overflow: hidden;
                                         overflow-y: auto;
 
@@ -732,7 +732,7 @@
                                       .tunnel-steps-content-container{
                                         overflow: unset;
                                         position: unset;
-                                        max-height: unset;
+                                        height: 100%;
 
                                       }
 
@@ -747,12 +747,15 @@
                                         bottom: unset;
                                         left: unset;
                                         margin-top: 10px;
+                                        .step-actions{
+                                          margin: 0 -44px;
+                                        }
                                       }
                                     }
 
                                     &#confirmation {
                                         .tunnel-steps-content-container{
-                                          max-height: calc(100vh - 150px);
+                                          // max-height: calc(100vh - 150px);
                                         }
                                         .my-accounts {
                                             .payment-confirmation {
