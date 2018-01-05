@@ -166,6 +166,9 @@
     .divider {
         @include divider;
     }
+  .required {
+    color: $delete;
+  }
 
     /*     [class*='alert']{
           padding: 15px !important;
@@ -232,7 +235,7 @@
                             display: -o-flex;
                             display: flex;
                             align-items: center;
-                            margin-right: 20px;
+                            margin-right: 10px;
                         }
                     }
                 }
