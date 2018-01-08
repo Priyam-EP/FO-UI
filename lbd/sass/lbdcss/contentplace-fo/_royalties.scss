@@ -51,6 +51,13 @@
 
             .payment-actions {
                 margin-top: 10px;
+
+                .alert {
+                    background: #bdbfc3;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 4px;
+                }
             }
 
             &:last-child {
