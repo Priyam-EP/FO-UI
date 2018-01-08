@@ -90,6 +90,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+.has-error .form-control, .form-control.error {
+    border-color: #FB404B;
+}
+
+em.error {
+    color: #FB404B;
+}
+
 //Custom Styles
 
 .cp-fo {
@@ -2689,28 +2697,29 @@ h1, h2, h3, h4, h5, h6 {
     .btn {
         font-weight: 400;
     }
-    .filter-option{
-      img{
-        margin-right: 10px;
-      }
-    }
-    &.open{
-      .dropdown-menu{
-        .dropdown-menu{
-          &.inner{
-            li{
-              a{
-                img{
-                  margin-right: 10px;
-                }
-              }
-            }
-          }
+
+    .filter-option {
+        img {
+            margin-right: 10px;
         }
-      }
+    }
+
+    &.open {
+        .dropdown-menu {
+            .dropdown-menu {
+                &.inner {
+                    li {
+                        a {
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
 
 .chosen-container-single .chosen-single {
     height: 50px;
