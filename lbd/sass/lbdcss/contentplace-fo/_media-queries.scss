@@ -1,5 +1,13 @@
 /*-----Media Queries-----*/
 
+.display-mobile {
+    display: none;
+}
+
+.display-desktop {
+    display: block;
+}
+
 @media screen and (max-width: 1400px) {}
 
 @media screen and (max-width: 1240px) {
@@ -55,6 +63,14 @@
 }
 
 @media (max-width: 767px) {
+    .display-mobile {
+        display: block;
+    }
+
+    .display-desktop {
+        display: none;
+    }
+
     .modal {
         border: 0;
     }
@@ -202,6 +218,10 @@
             [class*='-content-aside'] {}
         }
     }
+}
+
+#tunnelRoyalty .modal-dialog .modal-content .modal-body .tunnel-container {
+    display: block;
 }
 
 @media (max-width: 540px) {
