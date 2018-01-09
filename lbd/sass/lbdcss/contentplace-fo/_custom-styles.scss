@@ -1359,6 +1359,12 @@ em.error {
 
 .modal {
     overflow-y: scroll;
+
+    /*     &.in {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        } */
 }
 
 .content-title {
@@ -2655,6 +2661,30 @@ em.error {
 }
 
 /* Multiple Select Search Box Starts*/
+
+/* Logout Modal Starts Starts */
+
+#profileLogout {
+    @extend %modal;
+
+    .modal-dialog {
+        width: 400px;
+
+        .profile-logout {
+            .list-head-container {
+                .user-name {
+                    label {
+                        font-size: 24px;
+                        color: #353F53;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Logout Modal Starts Ends */
 
 .bs-searchbox {
     margin: 10px 10px 5px;
