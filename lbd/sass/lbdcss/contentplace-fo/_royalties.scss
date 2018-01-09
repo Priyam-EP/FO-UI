@@ -325,8 +325,6 @@
                 @extend .my-accounts;
 
                 li {
-                    padding: 15px !important;
-
                     &:last-child {
                         flex-grow: unset;
                         width: calc(50% - 8px);
@@ -335,10 +333,10 @@
                             margin: 0;
                             width: calc(100%);
                             border: none;
-                            padding: 15px 0 0 0 !important;
                         }
 
                         &.add-block {
+                            padding: 15px;
                             text-align: center;
                             align-items: center;
                             justify-content: center;
@@ -471,7 +469,7 @@
                 bottom: 0;
                 left: 0;
                 background: #fff;
-                z-index: 1;
+                z-index: 9;
             }
         }
 
@@ -528,17 +526,27 @@
 
 #workingStatusCompanyRoyalty {
     @extend #myaccountAddRoyalty;
-    .phone-number{
-      .has-feedback{
-        .input-group{
-          input.form-control{
-            padding: 8px 15px 8px 5px;
-          }
-          .input-group-addon{
-            padding-right: 0;
-          }
+
+    .phone-number {
+        .has-feedback {
+            .input-group {
+                input.form-control {
+                    padding: 8px 15px 8px 5px;
+                }
+
+                .input-group-addon {
+                    padding-right: 0;
+                }
+            }
+
+            .input-group-focus {
+                border-color: #ccc;
+
+                .input-group-addon {
+                    border-color: #ccc;
+                }
+            }
         }
-      }
     }
 }
 
