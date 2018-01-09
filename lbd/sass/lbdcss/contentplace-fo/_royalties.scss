@@ -528,6 +528,18 @@
 
 #workingStatusCompanyRoyalty {
     @extend #myaccountAddRoyalty;
+    .phone-number{
+      .has-feedback{
+        .input-group{
+          input.form-control{
+            padding: 8px 15px 8px 5px;
+          }
+          .input-group-addon{
+            padding-right: 0;
+          }
+        }
+      }
+    }
 }
 
 #workingStatusSelfemployedRoyalty {
