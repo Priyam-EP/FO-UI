@@ -2668,19 +2668,53 @@ em.error {
     @extend %modal;
 
     .modal-dialog {
-        width: 400px;
+      width: 400px;
 
-        .profile-logout {
-            .list-head-container {
-                .user-name {
-                    label {
-                        font-size: 24px;
-                        color: #353F53;
-                        text-transform: none;
+      @media (max-width: 767px){
+        width: 100%;
+      }
+
+      .modal-content{
+        .modal-body{
+
+          .modal-container{
+            @media (max-width:767px){
+              height: calc(100vh - 32px);
+              position: relative;
+              .modal-actions-fixed-bottom{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+              }
+            }
+
+            .modal-actions-fixed-bottom{
+              margin-top: 20px;
+            }
+
+            .profile-logout {
+              @media (max-width:767px){
+                .client-image-container{
+                  width: 56px;
+                }
+              }
+                .list-head-container {
+                    .user-name {
+                        label {
+                            font-size: 24px;
+                            color: #353F53;
+                            text-transform: none;
+                        }
                     }
                 }
             }
+
+          }
+
+
         }
+      }
     }
 }
 

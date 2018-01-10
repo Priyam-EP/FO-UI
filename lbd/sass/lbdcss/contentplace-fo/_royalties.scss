@@ -13,13 +13,6 @@
             margin-bottom: 15px;
             border-bottom: 2px solid $divider;
 
-            /* .row{
-              margin-bottom: 10px;
-              &:last-child{
-                margin: 0;
-              }
-            } */
-
             [class*='-content'] {
                 color: $main;
 
@@ -31,6 +24,14 @@
                         font-size: 12px;
                     }
                 }
+            }
+
+            @media (max-width:767px){
+              .col-sm-6{
+                &:nth-child(2){
+                  margin-top: 10px;
+                }
+              }
             }
 
             .show-more-activities {
