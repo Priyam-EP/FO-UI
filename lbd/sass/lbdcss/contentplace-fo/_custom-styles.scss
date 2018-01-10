@@ -2554,7 +2554,7 @@ em.error {
 
 /*Labels Ends*/
 .alert{
-  .alert-default{
+  &.alert-default{
     background: #bdbfc3;
     color: #fff;
     text-align: center;
