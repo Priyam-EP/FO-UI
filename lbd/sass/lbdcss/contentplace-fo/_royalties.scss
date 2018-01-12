@@ -26,12 +26,12 @@
                 }
             }
 
-            @media (max-width:767px){
-              .col-sm-6{
-                &:nth-child(2){
-                  margin-top: 10px;
+            @media (max-width: 767px) {
+                .col-sm-6 {
+                    &:nth-child(2) {
+                        margin-top: 10px;
+                    }
                 }
-              }
             }
 
             .show-more-activities {
@@ -537,21 +537,17 @@
 
     .phone-number {
         .has-feedback {
-            .input-group {
+            &.country-code {
                 input.form-control {
-                    padding: 8px 15px 8px 5px;
+                    padding: 8px 12px 8px 24px;
                 }
 
-                .input-group-addon {
-                    padding-right: 0;
-                }
-            }
-
-            .input-group-focus {
-                border-color: #ccc;
-
-                .input-group-addon {
-                    border-color: #ccc;
+                label.add-sign {
+                    position: absolute;
+                    top: 8px;
+                    left: 10px;
+                    font-size: 16px;
+                    color: #353F53;
                 }
             }
         }
