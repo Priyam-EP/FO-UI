@@ -57,6 +57,18 @@
                 }
             }
 
+            .request-time{
+              font-size: 12px;
+              color: $helper;
+              font-weight: 400;
+            }
+
+            .payment-time{
+              font-size: 14px;
+              color: $helper;
+              font-weight: 600;
+            }
+
             .payment-actions {
                 margin-top: 10px;
 
@@ -149,6 +161,7 @@
             }
 
             .account-title {
+                width: calc(100% - 60px);
                 color: $main;
                 font-size: 16px;
                 font-weight: 600;
@@ -428,6 +441,7 @@
                 }
 
                 .account-details-container{
+                  width: 100%;
                   padding: 15px;
                 }
 
@@ -709,6 +723,7 @@
 
                                         li {
                                             border-bottom: 2px $border-color-02 solid;
+                                            padding: 8px 0;
 
                                             &:last-child {
                                                 border: none;
