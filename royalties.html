@@ -112,15 +112,15 @@ $('#wizardCard, #tunnelWizard, #wizardCard-testArticle').bootstrapWizard({
     }
 });
 
-$(document).on('click', "#myaccountRoyalty .my-accounts-list li", function(e){
+$(document).on('click', "#myaccountRoyalty .my-accounts-list li .account-details-container", function(e){
     e.stopPropagation();
-    if($(this).hasClass('add-block')){
+    /*if($(this).hasClass('add-block')){
       return false;
-    }
-    $(this).parent('.my-accounts-list').find('li').removeClass('selected');
+    }*/
+    $(this).parents('.my-accounts-list').find('li').removeClass('selected');
     // $(this).parent('.my-accounts-list').find('.account-title').removeClass('main-account');
     // $(this).addClass('selected').find('.account-title').addClass('main-account');
-    $(this).addClass('selected');
+    $(this).parent('li').addClass('selected');
 /*    $('.contact-info-edit').slideDown();*/
 });
 

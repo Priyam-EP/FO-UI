@@ -415,6 +415,7 @@
         .my-accounts-list {
             li {
                 position: relative;
+                padding: 0;
 
                 span.section-actions {
                     position: absolute;
@@ -426,6 +427,10 @@
                     z-index: 2;
                 }
 
+                .account-details-container{
+                  padding: 15px;
+                }
+
                 &.selected, &:hover {
                     border-color: $selected;
 
@@ -433,6 +438,14 @@
                         visibility: visible;
                         opacity: 1;
                     }
+                }
+                &.add-block{
+                  padding: 15px;
+                }
+                &:only-child{
+                  margin: 0;
+                  padding: 30px;
+                  width: 100%;
                 }
             }
         }
