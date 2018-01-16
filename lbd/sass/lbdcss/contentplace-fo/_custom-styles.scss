@@ -2553,14 +2553,15 @@ em.error {
 }
 
 /*Labels Ends*/
-.alert{
-  &.alert-default{
-    background: #bdbfc3;
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
-  }
+.alert {
+    &.alert-default {
+        background: #bdbfc3;
+        color: #fff;
+        text-align: center;
+        border-radius: 4px;
+    }
 }
+
 /* Alert styles */
 
 /* Alert styles ends */
@@ -2679,53 +2680,51 @@ em.error {
     @extend %modal;
 
     .modal-dialog {
-      width: 400px;
+        width: 400px;
 
-      @media (max-width: 767px){
-        width: 100%;
-      }
+        @media (max-width: 767px) {
+            width: 100%;
+        }
 
-      .modal-content{
-        .modal-body{
+        .modal-content {
+            .modal-body {
+                .modal-container {
+                    @media (max-width: 767px) {
+                        height: calc(100vh - 32px);
+                        position: relative;
 
-          .modal-container{
-            @media (max-width:767px){
-              height: calc(100vh - 32px);
-              position: relative;
-              .modal-actions-fixed-bottom{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                margin: 0;
-              }
-            }
+                        .modal-actions-fixed-bottom {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            margin: 0;
+                        }
+                    }
 
-            .modal-actions-fixed-bottom{
-              margin-top: 20px;
-            }
+                    .modal-actions-fixed-bottom {
+                        margin-top: 20px;
+                    }
 
-            .profile-logout {
-              @media (max-width:767px){
-                .client-image-container{
-                  width: 56px;
-                }
-              }
-                .list-head-container {
-                    .user-name {
-                        label {
-                            font-size: 24px;
-                            color: #353F53;
-                            text-transform: none;
+                    .profile-logout {
+                        @media (max-width: 767px) {
+                            .client-image-container {
+                                width: 56px;
+                            }
+                        }
+
+                        .list-head-container {
+                            .user-name {
+                                label {
+                                    font-size: 24px;
+                                    color: #353F53;
+                                    text-transform: none;
+                                }
+                            }
                         }
                     }
                 }
             }
-
-          }
-
-
         }
-      }
     }
 }
 
@@ -3626,5 +3625,12 @@ span.more {
 }
 
 /*See More Content Ends*/
+
+/*Error Custom Starts*/
+.country-code-error {
+    border-color: #FB404B;
+}
+
+/*Error Custom Ends*/
 
 /* New Content Place styels ends */
