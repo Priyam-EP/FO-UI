@@ -78,13 +78,13 @@ $(document).ready(function(){
 	    autoHideScrollbar: true
 	 });
 	// Common custom scrollbar
-	$('.tab-panel').mCustomScrollbar({
+	$('.customScroll, .tab-panel').mCustomScrollbar({
 		// mouseWheel:{ deltaFactor: 50 }
 		// scrollInertia: 1000
 		autoHideScrollbar: true
 	});
 // custom scrollbar outside positioned
-	$('.tab-panel.outside').mCustomScrollbar({
+	$('.customScroll.outside, .tab-panel.outside').mCustomScrollbar({
 		scrollbarPosition: "outside",
 		autoHideScrollbar: true
 	});

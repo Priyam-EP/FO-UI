@@ -264,6 +264,10 @@
     .fo-royalties {
         @include clearfix;
 
+        @media (max-width: 767px){
+          width: 100%;
+        }
+
         .card {
             margin-bottom: 15px;
 
@@ -283,11 +287,18 @@
 
                 .royalty-info {
                     .user-image {
+                      width: 25%;
                         .user-image-container {
+                          width: 100%;
+                          height: auto;
                             img {
                                 width: 72px;
                                 height: 72px;
                                 object-fit: cover;
+                                &.img-responsive{
+                                  width: 100%;
+                                  height: auto;
+                                }
                             }
                         }
                     }
