@@ -127,7 +127,7 @@
           }
         }
         .offer-content{
-          padding: 40px 30px 30px;
+          padding: 30px;
           position: relative;
           color: $main;
           span.edit{
@@ -187,16 +187,33 @@
         }
         .more-offers{
           padding: 0;
+          @media (max-width: 767px){
+            margin-top: 15px;
+            h2{
+              font-size: 18px;
+            }
+          }
           h2{
-            margin-bottom: 15px;
+            margin-bottom: 5px;
           }
           .more-offerslist{
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 -10px;
             li{
               // @include clearfix;
+              padding: 10px;
               width: 50%;
+              @media (max-width: 767px){
+                width: 100%;
+              }
               &[class*='-item']{
                 .card{
                   @include clearfix;
@@ -204,10 +221,32 @@
                   margin: 0;
                   .offer-banner{
                     height: 140px;
+                    padding: 15px;
+                    h3{
+                      font-size: 16px;
+                      font-weight: 600;
+                      bottom: 15px;
+                    }
+                    .timer{
+                      background: #fff;
+                      border-radius: 4px;
+                      position: absolute;
+                      right: 15px;
+                      top: 15px;
+                      padding: 2px 16px;
+                      color: $delete;
+                      font-weight: 600;
+                    }
                   }
                   .offer-pricing{
                     font-size: 14px;
                     color: $main;
+                    @media (max-width: 767px){
+                      font-size: 12px;
+                      i.fa-database{
+                        width: 12px;
+                      }
+                    }
                     span{
                       font-size: 20px;
                       font-weight: 700;
@@ -233,6 +272,7 @@
                     }
                   }
                   .offer-translation{
+                    padding-left: 0;
                     .language-to{
                       @extend %language-breadcrum;
                       li{
@@ -240,6 +280,9 @@
                           &:after{
                             border-left-color: #fff !important;
                           }
+                        }
+                        &:only-child{
+                          width: auto;
                         }
                       }
                     }
@@ -258,7 +301,7 @@
           position: fixed;
           width: 380px;
           height: 100vh;
-          padding-bottom: 50px;
+          padding-bottom: 60px;
         }
         .section-title{
           color: $main;
@@ -268,6 +311,37 @@
         }
         label{
           font-weight: 600;
+        }
+        .client-details-container{
+          .client-details{
+            @extend %client-details;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            // padding: 0;
+            margin: 0;
+            .client-image{
+              padding: 0;
+              width: 62px;
+            }
+            .client-spec{
+              margin: 0;
+            }
+          }
+          p{
+            font-size: 14px;
+          }
+          .more-offers-link{
+            font-size: 14px;
+            text-decoration: underline;
+            color: $selected;
+            &:hover{
+              text-decoration: none;
+            }
+
+          }
         }
         .card{
           margin-bottom: 10px;
@@ -288,12 +362,19 @@
           }
           .offer-bidding{
             padding: 10px 20px 0px;
+            color: $main;
             .bidding-price{
               font-size: 20px;
               font-weight: 700;
               color: $main;
               text-align: center;
               padding: 10px;
+              .bidding-pre-text{
+                font-size: 12px;
+                font-weight: 600;
+                color: $helper;
+                text-transform: uppercase;
+              }
               .fa-database{
                 display: -webkit-inline-flex;
                 display: -moz-inline-flex;
@@ -334,10 +415,41 @@
                 }
               }
             }
+            .bidding-actions{
+              .signin-link{
+                display: block;
+                text-decoration: underline;
+                font-size: 14px;
+                text-align: center;
+                margin-top: 15px;
+                color: $helper;
+                &:hover{
+                  text-decoration: none;
+                }
+              }
+              .timer{
+                text-align: center;
+                font-weight: 600;
+                background: $highlight-01;
+                display: block;
+                padding: 5px;
+                border-radius: 4px;
+                border: 1px solid $border-color;
+                &.selection-phase{
+                  font-weight: normal;
+                  padding: 15px;
+                  > div{
+                    font-weight: 700;
+                    font-size: 16px;
+                    padding: 15px;
+                  }
+                }
+              }
+            }
           }
-          [class$='-actions']{
+          /* [class$='-actions']{
             margin-bottom: 25px;
-          }
+          } */
           [class*='-actions-more']{
             .section-title{
               color: $main;
