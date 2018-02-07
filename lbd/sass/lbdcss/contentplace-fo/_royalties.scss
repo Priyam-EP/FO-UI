@@ -609,7 +609,7 @@
     }
 }
 
-#tunnelRoyalty {
+#tunnelRoyalty, #tunnelOffersSingle {
     @extend #workingStatusSelfemployedRoyalty;
 
     .modal-dialog {
@@ -694,6 +694,8 @@
                                 }
 
                                 .tab-pane {
+                                    @include clearfix;
+
                                     padding: 0;
 
                                     // height: calc(100vh - 32px);
@@ -712,6 +714,7 @@
                                         }
 
                                         .tunnel-steps-contents {
+                                            @include clearfix;
                                             width: calc(100% - 5px);
 
                                             @media (max-width: 767px) {

@@ -128,6 +128,10 @@ $responsive-breaks: ("xs, sm, md, lg");
     font-weight: 700 !important;
 }
 
+.text-none{
+  text-transform: none !important;
+}
+
 .primary-font {
     font-size: 14px;
     color: $sub-heading;
