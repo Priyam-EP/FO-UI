@@ -653,7 +653,7 @@
                             padding: 15px;
                         }
 
-                        .my-accounts {
+                        .my-accounts, .application-summary {
                             @extend %my-accounts-royalty;
 
                             .my-accounts-list {
@@ -851,7 +851,7 @@
                                             }
                                         }
 
-                                        .my-accounts {
+                                        .my-accounts, .application-summary {
                                             .payment-confirmation {
                                                 color: $main;
 
@@ -877,7 +877,7 @@
                                         }
                                     }
 
-                                    &#requestSent {
+                                    &#requestSent, &#applicationSubmision {
                                         @media screen and (max-width: 767px) {
                                             height: calc(100vh - 92px);
                                         }

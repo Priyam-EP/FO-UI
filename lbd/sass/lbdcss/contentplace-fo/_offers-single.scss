@@ -688,53 +688,208 @@
                   &#step-1 {
                     .tunnel-steps-content-container {
                       height: calc(100vh - 230px);
+                      overflow: hidden;
+                      overflow-y: auto;
+                      padding-right: 1px;
+
                       .contract-owner-box{
                         margin: 0;
                       }
                     }
                   }
-
-                  .tunnel-steps-contents {
-                    .bidding-price {
-                      font-size: 20px;
-                      font-weight: 700;
-                      color: $main;
-                      text-align: center;
-                      padding: 10px;
-
-                      .bidding-pre-text {
-                        font-size: 12px;
-                        font-weight: 600;
-                        color: $helper;
-                        text-transform: uppercase;
+                  .tunnel-steps-content-container{
+                    padding-bottom: 70px;
+                    .tunnel-steps-contents {
+                      .bidding-price-range{
+                        text-align: center;
                       }
-
-                      .fa-database {
-                        display: -webkit-inline-flex;
-                        display: -moz-inline-flex;
-                        display: -ms-inline-flex;
-                        display: -o-inline-flex;
-                        display: inline-flex;
-                        margin-right: 10px;
-                        position: relative;
-
-                        .fa-database {
-                          position: absolute;
-                          left: 0.5em;
-                          width: 0.8em;
-
-                          /* height: 0.8em; */
-                          top: 0.4em;
-                          font-size: 0.8em;
-                          background: white;
+                      .bidding-price-amount{
+                        padding: 0;
+                        .input-group{
+                          input{
+                            padding-right: 0px;
+                          }
+                          &.input-group-focus{
+                            input, .input-group-addon{
+                              border-color: #ccc;
+                            }
+                          }
                         }
                       }
+                      .bidding-price-slider{
+                        padding: 0;
+                        .ui-slider{
+                          @extend %ui-slider;
+                          margin: 10px 0 0;
+                          background: $selected;
+                        }
+                      }
+                      .bidding-price-tooltip{
+                        color: $helper;
+                        border-radius: 4px;
+                        padding: 10px;
+                        // display: block;
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 9000;
+                        position: absolute;
+                        box-shadow: 1px 2px 3px rgba(0,0,0,0.125);
+                        span{
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 700;
+                          color: $main;
+                        }
+                        &:before, &:after{
+                          border-bottom: 11px solid rgba(0,0,0,0.2);
+                          border-left: 11px solid transparent;
+                          border-right: 11px solid transparent;
+                          content: "";
+                          display: inline-block;
+                          position: absolute;
+                          left: calc(50% - 10px);
+                          top: -11px;
+                        }
+                        &:after{
+                          border-bottom: 11px solid #FFFFFF;
+                          top: -10px;
+                        }
+                      }
+                      .working-days-container{
+                        .working-days{
+                          margin: 0;
+                          padding: 0;
+                          list-style-type: none;
+                          display: -webkit-flex;
+                          display: -moz-flex;
+                          display: -ms-flex;
+                          display: -o-flex;
+                          display: flex;
+                          justify-content: space-between;
+                          li{
+                            display: -webkit-inline-flex;
+                            display: -moz-inline-flex;
+                            display: -ms-inline-flex;
+                            display: -o-inline-flex;
+                            display: inline-flex;
+                            label{
+                              display: -webkit-flex;
+                              display: -moz-flex;
+                              display: -ms-flex;
+                              display: -o-flex;
+                              display: flex;
+                              margin: 0;
+                            }
+                          }
+                        }
+                      }
+                      .bidding-price {
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $main;
+                        text-align: center;
+                        padding: 10px;
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
-                      span {
+                        .bidding-pre-text {
+                          font-size: 12px;
+                          font-weight: 600;
+                          color: $helper;
+                          text-transform: uppercase;
+                        }
+
+                        > i {
+                          margin-right: 10px;
+                          &.fa-database {
+                            display: -webkit-inline-flex;
+                            display: -moz-inline-flex;
+                            display: -ms-inline-flex;
+                            display: -o-inline-flex;
+                            display: inline-flex;
+                            margin-right: 10px;
+                            position: relative;
+
+                            .fa-database {
+                              position: absolute;
+                              left: 0.5em;
+                              width: 0.8em;
+                              top: 0.4em;
+                              font-size: 0.8em;
+                              background: white;
+                            }
+                          }
+                        }
+
+                        span {
+                          font-weight: normal;
+                        }
+                      }
+                      .application-summary{
+                        .summary-item{
+                          margin-bottom: 15px;
+                          padding: 0 0 15px;
+                          border-bottom: 2px solid $divider;
+                          &:last-child{
+                            margin: 0;
+                            padding: 0;
+                            border:none;
+                          }
+                        }
+                        .contract-owner-box{
+                          height: auto;
+                          margin: 0;
+                          .contract-owner{
+                            height: auto;
+                            .user-name-block{
+                              height: auto;
+                              flex-flow: column;
+                              justify-content: center;
+                              align-items: left;
+                              .user-name{
+                                font-size: 16px;
+                                font-weight: 600;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+
+                  }
+                  &#confirmation{
+                    .bidding-price{
+                      padding: 0;
+                      justify-content: flex-start;
+                    }
+                  }
+                  &#applicationSubmision{
+                    .timer{
+                      padding: 10px;
+                      background: $highlight-02;
+                      border-radius: 4px;
+                      text-align: center;
+                      color: $main;
+                      font-size: 16px;
+                      font-weight: 600;
+                      display: block;
+                      span{
+                        font-size: 14px;
                         font-weight: normal;
                       }
                     }
                   }
+
                 }
               }
             }
