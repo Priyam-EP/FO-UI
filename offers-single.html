@@ -14,12 +14,12 @@
                     <div class="container-fluid main-panel-page">
                         <div class="content-container">
                           <div class="offers-single">
-                            <div class="row">
+                            <!-- @include _partials/_offers-single-content-main.html -->
+                            <!-- @include _partials/_offers-single-content-aside.html -->
+                            <!--<div class="row">
                               <div class="col-xs-12">
-                                <!-- @include _partials/_offers-single-content-main.html -->
-                                <!-- @include _partials/_offers-single-content-aside.html -->
                               </div>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                     </div>
@@ -33,24 +33,15 @@
 <!-- Paymet history royalty modal starts -->
 <!-- @include _partials/_modal-payment-royalty.html -->
 <!-- Paymet history royalty modal ends -->
-<!-- Royalty tunnel modal starts -->
+<!-- Offers single tunnel modal starts -->
 <!-- @include _partials/_modal-tunnel-offers-single.html -->
-<!-- Royalty tunnel mdoal ends -->
-<!-- Myaccounts royalty modal starts -->
-<!-- @include _partials/_modal-myaccount-royalty.html -->
-<!-- Myaccounts royalty modal ends -->
-<!-- Myaccounts royalty edit modal starts -->
-<!-- @include _partials/_modal-myaccount-edit-royalty.html -->
-<!-- Myaccounts royalty edit modal ends -->
-<!-- Myaccounts royalty add account modal starts -->
-<!-- @include _partials/_modal-myaccount-add-royalty.html -->
-<!-- Myaccounts royalty add account modal ends -->
-<!-- Royalty workign status company modal starts -->
-<!-- @include _partials/_modal-working-status-company-royalty.html -->
-<!-- Royalty workign status company modal ends -->
-<!-- Royalty workign status selfemployed modal starts -->
-<!-- @include _partials/_modal-working-status-selfemployed-royalty.html -->
-<!-- Royalty workign status selfemployed modal ens -->
+<!-- Offers single tunnel mdoal ends -->
+<!-- Sign-in modal starts -->
+<!-- @include _partials/_sign-in-modal.html -->
+<!-- Sign-in modal starts -->
+<!-- @include _partials/_sign-in-modal.html -->
+<!-- Sign-up modal starts -->
+<!-- @include _partials/_sign-up-modal.html -->
 <!-- Modals ends -->
 
 <!--   Core JS Files   -->
@@ -159,6 +150,27 @@ $('.bidding-price-slider #trackProgressBar')
     html: true
   })*/
 
+// if (matchMedia('only screen and (max-width: 480px)').matches) {
+//   alert("You are in mobile view");
+// }
+
+/*$(window).resize(function() {
+    if( $(this).width() < 767 ) {
+        alert("You are in 767px width window")
+    }
+});*/
+
+/*if($(window).width() < 767){
+  alert("You are in 767px width window")
+}*/
+
+$(window).on("load resize",function(){
+    if(window.matchMedia("(min-width: 992px)").matches){
+        $('.sticky-section.customScroll').mCustomScrollbar();
+    }else{
+        $('.sticky-section.customScroll').mCustomScrollbar("destroy");
+    }
+});
 
 });
 

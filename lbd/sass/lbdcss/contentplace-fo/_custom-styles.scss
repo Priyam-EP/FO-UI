@@ -3466,6 +3466,9 @@ body.mce-content-body {
 .divider {
     @include divider;
 }
+.divider-bottom{
+  @include divider-bottom;
+}
 
 /* Empty User Starts*/
 

@@ -354,6 +354,20 @@ $(document).ready(function(){
             vertical: 'top'
         }
 	});
+  $('.datepicker-jobstart-date-down').datetimepicker({
+    format: 'MM/YYYY',
+    widgetPositioning: {
+            horizontal: 'left',
+            vertical: 'bottom'
+        }
+  });
+  $('.datepicker-jobend-date-down').datetimepicker({
+    format: 'MM/YYYY',
+    widgetPositioning: {
+            horizontal: 'left',
+            vertical: 'bottom'
+        }
+  });
 	$('.datepicker-start-up').datetimepicker({
 		format: 'DD/MM/YYYY h:mm A',
 		widgetPositioning: {

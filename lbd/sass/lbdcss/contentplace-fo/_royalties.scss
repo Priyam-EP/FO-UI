@@ -718,10 +718,10 @@
                                             width: calc(100% - 5px);
 
                                             @media (max-width: 767px) {
-                                                width: 100%;
+                                                // width: 100%;
                                             }
 
-                                            padding: 15px 0 0 1px;
+                                            padding: 1px 0 0 1px;
 
                                             .payment-amount {
                                                 color: $main;
