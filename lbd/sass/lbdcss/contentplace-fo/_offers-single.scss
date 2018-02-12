@@ -744,7 +744,7 @@
               .tab-links {
                 .tab-pane {
                   .tunnel-steps-content-container{
-                    height: calc(100vh - 230px);
+                    height: calc(100vh - 270px);
                     padding-bottom: 70px;
                     @media (max-width: 767px){
                       padding-bottom: 20px;
@@ -930,7 +930,7 @@
                       overflow: hidden;
                       overflow-y: auto;
                       position: relative;
-                      height: calc(100vh - 230px);
+                      height: calc(100vh - 270px);
                       @media (max-width: 767px){
                         height: calc(100vh - 210px);
                       }
@@ -948,7 +948,7 @@
                   }
                   &#step-2{
                     .tunnel-steps-content-container {
-                      height: calc(100vh - 250px);
+                      height: calc(100vh - 290px);
                       @media (max-width: 767px){
                           height: calc(100vh - 230px);
                         }
@@ -971,7 +971,7 @@
                   }
                   &#confirmation{
                     .tunnel-steps-content-container {
-                      height: calc(100vh - 177px);
+                      height: calc(100vh - 217px);
                       @media (max-width: 767px){
                           height: calc(100vh - 130px);
                         }
@@ -988,7 +988,7 @@
                     .tunnel-steps-content-container{
                       overflow-y: auto;
                       padding-bottom: 35px;
-                      height: calc(100vh - 207px);
+                      height: calc(100vh - 247px);
                       @media (max-width: 767px){
                           height: calc(100vh - 160px);
                         }
