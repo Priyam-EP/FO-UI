@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+    <!-- @include _partials/_all-meta-head.html -->
+</head>
+<body class="cp-fo">
+<div class="wrapper">
+    <!-- @include _partials/_sidebar.html -->
+    <div class="container-fluid page-wrap">
+        <div class="row">
+            <div class="col-xs-12 main-panel-wrap">
+                <div class="main-panel">
+                    <div class="container-fluid main-panel-page">
+                          <div class="content-container">
+                            <div class="fo-cards-list">
+                              <div class="col-xs-12">
+                                <!-- @include _partials/_offers-contributors-content.html -->
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modals starts -->
+<!-- Paymet history royalty modal starts -->
+<!-- @include _partials/_modal-payment-royalty.html -->
+<!-- Paymet history royalty modal ends -->
+<!-- Royalty tunnel modal starts -->
+<!-- @include _partials/_modal-tunnel-royalty.html -->
+<!-- Royalty tunnel mdoal ends -->
+<!-- Myaccounts royalty modal starts -->
+<!-- @include _partials/_modal-myaccount-royalty.html -->
+<!-- Myaccounts royalty modal ends -->
+<!-- Myaccounts royalty edit modal starts -->
+<!-- @include _partials/_modal-myaccount-edit-royalty.html -->
+<!-- Myaccounts royalty edit modal ends -->
+<!-- Myaccounts royalty add account modal starts -->
+<!-- @include _partials/_modal-myaccount-add-royalty.html -->
+<!-- Myaccounts royalty add account modal ends -->
+<!-- Royalty workign status company modal starts -->
+<!-- @include _partials/_modal-working-status-company-royalty.html -->
+<!-- Royalty workign status company modal ends -->
+<!-- Royalty workign status selfemployed modal starts -->
+<!-- @include _partials/_modal-working-status-selfemployed-royalty.html -->
+<!-- Royalty workign status selfemployed modal ens -->
+<!-- Modals ends -->
+
+<!--   Core JS Files   -->
+<!-- @include _partials/_all-js-files.html -->
+
+<!-- Custom scripts -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+/*Read more / Read less*/
+function readmoreEllipse(){
+  $('.readmore-ellipses').each(function(){
+    $(this).readmore({
+        speed : 150,
+        collapsedHeight: 60,
+        moreLink: '<a href="#" class="morelink"> [ &hellip; ]</a>',
+        lessLink: '<a href="#" class="morelink" style=""> [ See less ]</a>',
+        blockCSS: 'display: inline; width: 50%;',
+    });
+    $(this).resize(function(){
+      console.log("Change happened");
+    });
+  });
+}
+
+readmoreEllipse();
+
+$('.modal').one('show.bs.modal', function () {
+$(this).find('.readmore-ellipses').css({overflow: "hidden"});
+  }).one('shown.bs.modal shown.bs.tab', function () {
+      $(this).find('.readmore-ellipses').readmore({
+          speed : 150,
+          collapsedHeight: 60,
+          moreLink: '<a href="#" class="morelink"> [ &hellip; ]</a>',
+          lessLink: '<a href="#" class="morelink"> [ See less ]</a>'
+      });
+});
+
+/* $(".readmore-ellipses").shorten({
+	"showChars" : 150,
+	"moreText"	: "See More",
+	"lessText"	: "Less",
+}); */
+
+/*Toggle cards view*/
+$(document).on('click', '.cards-view a', function(e){
+  e.preventDefault();
+  if($(this).hasClass('selected')) {
+    return;
+  }
+  else{
+    var switchingClass = $(this).attr('class');
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $(this).parents('.tab-pane.active').find('.cards-list-container').toggleClass('list-view card-view');
+  }
+});
+
+$('.readmore-ellipses').on('resize', function(){
+  console.log("Change happened");
+});
+
+$('#readmore-ellipses').on('mresize', function(){
+  alert("Something happened");
+});
+
+$(document).on("mresize", '.readmore-ellipses' ,function(){
+    console.log("This has been changed");
+});
+
+
+});
+
+
+
+</script>
+<!-- Custom scripts ends -->
+</body>
+</html>
