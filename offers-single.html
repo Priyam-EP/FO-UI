@@ -151,14 +151,22 @@ $('.bidding-price-slider #trackProgressBar')
 //   alert("You are in mobile view");
 // }
 
-/*$(window).resize(function() {
+$(window).resize(function() {
+    var biddingInfoBlock = $('.offers-single-content-aside .bidding-info'),
+        biddingInfoBlockMobile = $('.offer-content .bidding-info-container');
+
     if( $(this).width() < 767 ) {
-        alert("You are in 767px width window")
+      if(!this.done) {
+        this.done = true;
+        console.log(biddingInfoBlock[0]);
+        biddingInfoBlockMobile[0].append(biddingInfoBlock[0]);
+      }
     }
-});*/
+});
 
 /*if($(window).width() < 767){
-  alert("You are in 767px width window")
+  var biddingInfoBlock = $('.offers-single-content-aside .bidding-info');
+  console.log(biddingInfoBlock[0]);
 }*/
 
 $(window).on("load resize",function(){
