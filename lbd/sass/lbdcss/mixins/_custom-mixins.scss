@@ -167,11 +167,11 @@
 
 // Modal styles
 %modal {
-    text-align: center;
+  text-align: center;
 
-    .divider {
-        @include divider;
-    }
+  .divider {
+      @include divider;
+  }
   .required {
     color: $delete;
   }
@@ -560,7 +560,11 @@ span.edit {
 
       &:first-child {}
 
-      &:last-child {}
+      &:last-child {
+        a {
+          padding: 0 10px 0 20px;
+        }
+      }
 
       &:only-child {}
     }
@@ -819,3 +823,122 @@ span.edit {
 }
 
 /* UI Circle slider ends */
+
+/* FO Offers list */
+%offers-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px;
+
+  li {
+    // @include clearfix;
+    padding: 10px;
+    width: 50%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    &[class*='-item'] {
+      .card {
+        @include clearfix;
+
+        padding: 0;
+        margin: 0;
+
+        .offer-banner {
+          height: 140px;
+          padding: 15px;
+
+          h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            position: absolute;
+            bottom: 15px;
+          }
+
+          .timer {
+            background: #fff;
+            border-radius: 4px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            padding: 2px 16px;
+            color: $delete;
+            font-weight: 600;
+          }
+        }
+
+        .offer-pricing {
+          font-size: 14px;
+          color: $main;
+
+          @media (max-width: 767px) {
+            font-size: 12px;
+
+            i.fa-database {
+              width: 12px;
+            }
+          }
+
+          span {
+            font-size: 20px;
+            font-weight: 700;
+          }
+
+          .fa-database {
+            display: -webkit-inline-flex;
+            display: -moz-inline-flex;
+            display: -ms-inline-flex;
+            display: -o-inline-flex;
+            display: inline-flex;
+            margin-right: 10px;
+            position: relative;
+            width: 14px;
+
+            .fa-database {
+              position: absolute;
+              left: 0.5em;
+              width: 0.8em;
+
+              /* height: 0.8em; */
+              top: 0.5em;
+              font-size: 0.8em;
+              background: white;
+            }
+          }
+        }
+
+        .offer-translation {
+          padding-left: 0;
+
+          .language-to {
+            @extend %language-breadcrum;
+            justify-content: flex-end;
+
+            li {
+              a {
+                &:after {
+                  border-left-color: #fff !important;
+                }
+              }
+
+              &:only-child {
+                width: 50% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* FO Offers list ends */

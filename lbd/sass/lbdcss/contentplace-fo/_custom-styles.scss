@@ -3642,7 +3642,7 @@ span.more {
     width: 40px;
 
     img {
-        max-width: 100%;
+        // max-width: 100%;
         width: 40px;
         height: 40px;
         object-fit: cover;
@@ -3654,6 +3654,7 @@ span.more {
 
     .card-user-empty {
         height: 40px;
+        width: 40px;
     }
 }
 
