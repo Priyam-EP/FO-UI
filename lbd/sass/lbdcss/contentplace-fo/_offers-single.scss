@@ -641,6 +641,9 @@
                       padding-bottom: 20px;
                     }
                     .tunnel-steps-contents {
+                      overflow: hidden;
+                      overflow-y:auto;
+                      height: 100%;
                       .bidding-price-range{
                         text-align: center;
                       }
@@ -658,7 +661,7 @@
                         }
                       }
                       .bidding-price-slider{
-                        padding: 0;
+                        padding: 0 0 5px;
                         .ui-slider{
                           @extend %ui-slider;
                           margin: 10px 0 0;
