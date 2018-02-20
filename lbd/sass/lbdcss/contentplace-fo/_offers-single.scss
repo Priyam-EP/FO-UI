@@ -649,14 +649,27 @@
                       }
                       .bidding-price-amount{
                         padding: 0;
-                        .input-group{
-                          input{
-                            padding-right: 0px;
-                          }
-                          &.input-group-focus{
-                            input, .input-group-addon{
-                              border-color: #ccc;
+                        .has-feedback{
+                          margin-bottom: 10px;
+                          .input-group{
+                            input{
+                              padding-right: 0px;
                             }
+                            &.input-group-focus{
+                              input, .input-group-addon{
+                                border-color: #ccc;
+                              }
+                            }
+                            input.error ~ .input-group-addon {
+                              border-color: #fb404b;
+                            }
+                          }
+                          label{
+                            position: absolute;
+                            top: 40px;
+                            left: 5px;
+                            margin: 0;
+                            width: 100%;
                           }
                         }
                       }

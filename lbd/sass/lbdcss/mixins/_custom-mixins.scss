@@ -199,6 +199,10 @@
             font-size: 12px;
             color: #9a9fa9;
             text-transform: uppercase;
+            &.error{
+              text-transform: none;
+              color: $delete;
+            }
         }
 
         .form-group {
@@ -387,14 +391,14 @@ span.edit {
         border-bottom: 2px solid #ddd;
         width: 50%;
 
-        &:before, &:after, a:before, a:after {
+        &:before, &:after, > a:before, > a:after, > span:before, > span:after {
             content: '';
             position: absolute;
             top: 50%;
             z-index: 4;
         }
 
-        &:before, a:before {
+        &:before, > a:before, > span:before {
             right: -19px;
             margin-top: -21px;
             border-top: 21px solid transparent;
@@ -402,7 +406,7 @@ span.edit {
             border-left: 21px solid #dddddd;
         }
 
-        &:after, a:after {
+        &:after, a:after, > span:after {
             right: -16px;
             margin-top: -18px;
             border-top: 18px solid transparent;
@@ -410,7 +414,7 @@ span.edit {
             border-left: 18px solid $tab-panel-bg;
         }
 
-        a {
+        > a, > span {
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flex;
@@ -432,7 +436,7 @@ span.edit {
             }
         }
 
-        &:first-child a, &:last-child {
+        &:first-child > a, &:first-child > span, &:last-child {
             &:after, &:before {
                 content: none;
             }
@@ -443,7 +447,7 @@ span.edit {
             border-left: 2px solid #ddd;
             border-right: 0;
 
-            a {
+            > a, > span {
                 padding-left: 15px;
             }
         }
@@ -454,7 +458,7 @@ span.edit {
             border-right: 2px solid #ddd;
             border-left: 0;
 
-            a {
+            > a, > span {
                 padding: 0 15px 0 30px;
             }
         }
@@ -464,7 +468,7 @@ span.edit {
             border-radius: 4px;
             width: 100% !important;
 
-            a {
+            a, span {
                 padding: 0 15px;
 
                 img {
@@ -481,7 +485,7 @@ span.edit {
             height: 40px;
             background: $highlight-01;
 
-            &:before, a:before {
+            &:before, a:before, span:before {
                 right: -20px;
                 margin-top: -22px;
                 border-top: 22px solid transparent;
@@ -489,7 +493,7 @@ span.edit {
                 border-left: 22px solid #dddddd;
             }
 
-            &:after, a:after {
+            &:after, a:after, span:after {
                 right: -17px;
                 margin-top: -19px;
                 border-top: 19px solid transparent;
@@ -510,7 +514,7 @@ span.edit {
             height: 32px;
             background: $highlight-01;
 
-            &:before, a:before {
+            &:before, a:before, span:before {
                 right: -16px;
                 margin-top: -18px;
                 border-top: 18px solid transparent;
@@ -519,7 +523,7 @@ span.edit {
                 z-index: 4;
             }
 
-            &:after, a:after {
+            &:after, a:after, span:after {
                 right: -13px;
                 margin-top: -15px;
                 border-top: 15px solid transparent;
@@ -541,7 +545,7 @@ span.edit {
             height: 26px;
             background: $highlight-01;
 
-            &:before, a:before {
+            &:before, a:before, span:before {
                 right: -13px;
                 margin-top: -15px;
                 border-top: 15px solid transparent;
@@ -550,7 +554,7 @@ span.edit {
                 z-index: 4;
             }
 
-            &:after, a:after {
+            &:after, a:after, span:after {
                 right: -10px;
                 margin-top: -12px;
                 border-top: 12px solid transparent;
@@ -562,7 +566,7 @@ span.edit {
             &:first-child {}
 
             &:last-child {
-                a {
+                a, span {
                     padding: 0 10px 0 20px;
                 }
             }
@@ -575,7 +579,7 @@ span.edit {
         li {
             width: 50%;
 
-            a {
+            a, span {
                 justify-content: center;
                 text-decoration: none;
                 color: inherit;
@@ -590,7 +594,7 @@ span.edit {
             }
 
             &:first-child {
-                a {
+                a, span {
                     padding: 0;
                 }
             }
@@ -603,7 +607,7 @@ span.edit {
         }
     }
 
-    &.x-large li a, &.large li a, &.medium li a, &.small li a {
+    &.x-large li a, &.large li a, &.medium li a, &.small li a, &.x-large li span, &.large li span, &.medium li span, &.small li span {
         &:before, &:after {
             left: 0px;
             right: unset;
@@ -932,7 +936,7 @@ span.edit {
                         justify-content: flex-end;
 
                         li {
-                            a {
+                            a, span {
                                 &:after {
                                     border-left-color: #fff !important;
                                 }
