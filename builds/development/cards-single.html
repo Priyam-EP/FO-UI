@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+    <meta charset="utf-8" />
+    <link href="lbd/img/favicon.ico" rel="icon" type="image/png" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="width=device-width" name="viewport" />
+    <!-- Bootstrap core CSS     -->
+    <link href="lbd/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Core jquery-ui theme css -->
+    <link href="lbd/css/jquery-ui.theme.min.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="lbd/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lbd/css/material-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" />
+    <link href="lbd/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <!--  mCustomScrollbar Plugin -->
+    <link href="lbd/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <!--  lionbars Plugin -->
+    <link href="lbd/lib/lionbars/lionbars.css" rel="stylesheet" />
+    <!-- Chosen Plugin -->
+    <link href="lbd/lib/chosen/chosen.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/chosen/ImageSelect.css" rel="stylesheet" type="text/css" />
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="lbd/lib/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="lbd/lib/slick-1.6.0/slick/slick-theme.css">
+    <!-- Rating Stars-->
+    <link rel="stylesheet" href="lbd/lib/rateyo/jquery.rateyo.min.css" />
+    <!-- Croppie -->
+    <link rel="stylesheet" href="lbd/lib/croppie/croppie.css" />
+    <!-- Jquery slider pips -->
+    <link href="lbd/lib/jquery-slider-pipe/jquery-ui-slider-pips.css" rel="stylesheet" type="text/css" />
+    <!--  Light Bootstrap Dashboard core CSS    -->
+    <link href="lbd/css/fo-style.css" rel="stylesheet" />
+    <!--     Temporary css for Layouts     -->
+    
+</head>
+<body class="cp-fo">
+<div class="wrapper">
+    <!-- Sidebar desktop starts -->
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/">
+                <img src="lbd/img/wp-logo.png" alt="Logo" />
+            </a>
+        </div>
+        <div class="sidebar-wrapper">
+            <!-- Sidebar  destktop upper nav starts -->
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;" class="nav-link">
+                        <i class="material-icons">mode_edit</i>
+                        <p>Offers</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="javascript:;" class="nav-link">
+                        <i class="material-icons">card_travel</i>
+                        <p>My cards</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-link">
+                        <i class="material-icons">data_usage</i>
+                        <p>Royalties</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- Sidebar  destktop upper nav ends -->
+            <!-- Sidebar  destktop lower nav starts -->
+            <div class="sidebar-footer">
+                <a href="javascript:;" class="switch-workplace" >
+                    <i class="material-icons">notifications_none</i>
+                    <p>Invitations</p>
+                    <span class="notification">3</span>
+                </a>
+                <a class="profile clearfix" href="javascript:;" data-toggle="modal" data-target="#profileLogout">
+                    <div class="profile_pic">
+                        <img src="lbd/img/default-avatar.png" alt="..." class="img-circle profile_img" />
+                    </div>
+                    <div class="profile_info">
+                        <p>Clarrise</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Sidebar  destktop lower nav ends -->
+        </div>
+    </div>
+    <!-- Sidebar desktop ends -->
+    <!-- Sidebar mobile starts -->
+    <div class="col-sm-12 col-xs-12 sidebar-mobile">
+        <div class="row">
+            <div class="col-sm-12 sidebar-mobile-container">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="material-icons">mode_edit</i>
+                            <p>Offers</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="material-icons">card_travel</i>
+                            <p>My cards</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                            <i class="material-icons">data_usage</i>
+                            <p>Royalties</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="material-icons">notifications_none</i>
+                            <p>Invitations</p>
+                            <span class="notification">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="modal" data-target="#profileLogout">
+                            <img src="lbd/img/default-avatar.png" class="img-circle">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar mobile ends -->
+    
+    <div class="container-fluid page-wrap">
+        <div class="row">
+            <div class="col-xs-12 main-panel-wrap">
+                <div class="main-panel">
+                    <div class="container-fluid main-panel-page">
+                          <div class="content-container">
+                            <div class="fo-cards-single assign-card">
+                              <div class="col-xs-12">
+                                <div class="row">
+                                  <div class="cards-container col-xs-12">
+                                    <div class="row">
+                                      <div class="col-xs-12">
+                                        <div class="row">
+                                          <div class="col-xs-12 page-header-nav-container">
+                                            <a class="page-navigation" href="cards-list.html"><i class="material-icons">arrow_back</i> </a> <h2 class="page-heading col-xs-8 p-0">Back to Cards list</h2>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="cards-content col-sm-12">
+                                        <div class="row">
+                                          <div class="col-xs-12 text-center">
+                                            <a href="javascript:;" class="fw600" data-toggle="modal" data-target="#assignCardsSingle">Assign Card</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modals starts -->
+<!-- First Login Modal Starts -->
+<div aria-labelledby="" class="modal fade" data-keyboard="false" data-backdrop="static" id="assignCardsSingle" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- First login content Starts -->
+                <div class="modal-container">
+                  <div class="row">
+                    <div class="col-md-12 first-login-content">
+                      <div class="col-md-12 progress-steps">
+                        <div id="wizardCard">
+                            <form id="wizardForm" method="" action="">
+                                <div class="tab-links">
+                                    <ul class="nav">
+                                        <li><a href="#declineAssign" data-toggle="tab"></a></li>
+                                        <li><a href="#assign" data-toggle="tab"></a></li>
+                                        <li><a href="#confirmAssign" data-toggle="tab"></a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="declineAssign">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <div class="modal-title df-ac">
+                                                  <a href="javascript:;" class="back btn-next" id="back" data-dismiss="">
+                                                      <i class="material-icons">arrow_back</i>
+                                                  </a>
+                                                  <div class="col-md-11 pl-0">
+                                                      Decline this job
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-12 contract-owner-box">
+                                                    <div class="col-md-12 contract-owner pl-0">
+                                                        <div class="user-image">
+                                                            <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                            <!-- <div class="card-user-empty user">
+                                                                PC
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="user-name-block">
+                                                            <div class="user-name">
+                                                                Webedia Group <span>Blog articles - Lot 1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-panel-content-scroll">
+                                                  <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                      <label for="">What is wrong with this job</label>
+                                                      <select id="" class="selectpicker" data-live-search="" title="">
+                                                        <option value="1">One or several of the provided informations are not correct.</option>
+                                                        <option value="2">I want to withdraw from this job.</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row problem-01 form-group">
+                                                    <div class="col-md-12 form-group">
+                                                      <label>Select the incorrect information(s)</label>
+                                                      <ul class="job-info-list">
+                                                        <li class="list-item">
+                                                          <div class="job-info-box">
+                                                              <label class="checkbox">
+                                                                <input type="checkbox" data-toggle="checkbox" value="" />
+                                                                <div class="job-info-content">
+                                                                  <span class="info-title">Your Goal</span>
+                                                                   <div class="df-ac">
+                                                                      <i class="material-icons">insert_drive_file</i> Write 100 articles
+                                                                   </div>
+                                                                   <span>Your work will be revied by our team.</span>
+                                                                </div>
+                                                              </label>
+                                                          </div>
+                                                        </li>
+                                                        <li class="list-item">
+                                                          <div class="job-info-box">
+                                                              <label class="checkbox">
+                                                                <input type="checkbox" data-toggle="checkbox" value="" />
+                                                                <div class="job-info-content">
+                                                                  <span class="info-title">Timing</span>
+                                                                  <div class="df-ac">
+                                                                      <i class="material-icons">date_range</i> Jul 01 - Jul 29, 2019
+                                                                  </div>
+                                                                  <span>30 Days</span>
+                                                                </div>
+                                                              </label>
+                                                          </div>
+                                                        </li>
+                                                        <li class="list-item">
+                                                          <div class="job-info-box">
+                                                              <label class="checkbox">
+                                                                <input type="checkbox" data-toggle="checkbox" value="" />
+                                                                <div class="job-info-content">
+                                                                  <span class="info-title">Royalties</span>
+                                                                  <div class="df-ac">
+                                                                    <i class="fa fa-database" aria-hidden="true"><i class="fa fa-database" aria-hidden="true"></i></i> 1210.00€
+                                                                  </div>
+                                                                  <span>12.10 € per article</span>
+                                                                </div>
+                                                              </label>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="col-md-12 form-group">
+                                                      <label>Describe the issue</label>
+                                                      <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I was assigned 100 articles instead of 50."></textarea>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row problem-02 form-group" style="display: none;">
+                                                    <div class="col-md-12 form-group">
+                                                      <label>Tell us why?</label>
+                                                      <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I have emergency on the defined period."></textarea>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="bottom-fixed-modal-actions">
+                                              <div class="row">
+                                                <div class="col-sm-3 col-xs-6">
+                                                   <button class="btn btn-no btn-fill pull-left btn-next" type="button">
+                                                       Back
+                                                   </button>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6 pull-right">
+                                                   <button class="btn btn-fill btn-disapprove pull-right" type="button" data-dismiss="modal">
+                                                       Decline
+                                                   </button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="assign">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title">
+                                                Step 2
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div class="tagline">Your interests</div>
+                                                  <p>Give us more informations about your interests and your fields of expertise.</p>
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row">
+                                                  <div class="col-md-8 col-sm-8">
+                                                    <select class="selectpicker" title="+ Add a sector">
+                                                      <option data-icon="fa fa-cutlery">Cuisine</option>
+                                                      <option data-icon="fa fa-plane">Travel</option>
+                                                      <option data-icon="fa fa-trophy">Sports</option>
+                                                      <option data-icon="fa fa-book">Books</option>
+                                                      <option data-icon="fa fa-shopping-cart">E-Commerce/Shopping</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <hr />
+                                                <div class="row">
+                                                  <div class="col-md-12 col-sm-12 col-xs-12 interest-list-container">
+                                                    <label>Interested by</label>
+                                                    <div class="row">
+                                                      <div class="col-md-12 interest-list">
+                                                        <ul>
+                                                          <li>
+                                                            <i class="fa fa-cutlery" aria-hidden="true"></i> Cuisine
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-plane" aria-hidden="true"></i> Travel
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> E-Commerce/Shopping
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                          <li>
+                                                            <i class="fa fa-trophy" aria-hidden="true"></i> Sports
+                                                            <a href="javascript:;">
+                                                              <i class="material-icons">close</i>
+                                                            </a>
+                                                          </li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-sm-3 col-xs-6">
+                                                 <button class="btn btn-disapprove btn-fill pull-left btn-back" type="button">
+                                                     Decline
+                                                 </button>
+                                              </div>
+                                              <div class="col-sm-3 col-xs-6 pull-right">
+                                                 <button class="btn btn-fill btn-yes pull-right btn-next" type="button">
+                                                     Confirm
+                                                 </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="confirmAssign">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title df-ac">
+                                                <a href="javascript:;" class="back btn-back" id="back" data-dismiss="">
+                                                    <i class="material-icons">arrow_back</i>
+                                                </a>
+                                                <div class="col-md-11 pl-0">
+                                                    Please read our terms and conditions
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <!-- Terms and conditions contents starts -->
+                                                <div class="row">
+                                                  <div class="col-md-12">
+                                                    <div class="tagline terms-title">Edit-Place contributor agreement</div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p class="terms-sub-title">1. Terms and condtitions sub-title</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                  </div>
+                                                </div>
+                                                <!-- Terms and conditions contents ends -->
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <label class="checkbox text-none">
+                                                    <input type="checkbox" data-toggle="checkbox" value=""/>
+                                                    I have read and agree with Edit-Place terms and conditions. <span class="required">*</span>
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-sm-3 col-xs-6">
+                                                 <button class="btn btn-no btn-fill pull-left btn-back" type="button">
+                                                     Back
+                                                 </button>
+                                              </div>
+                                              <div class="col-sm-3 col-xs-6 pull-right">
+                                                 <button class="btn btn-fill btn-yes pull-right btn-finish" type="button" onclick="onFinishWizard()" data-dismiss="modal">
+                                                     Confirm
+                                                 </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- First Login content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- First Login Modal Ends -->
+<!-- Modals ends -->
+
+<!--   Core JS Files   -->
+<script src="lbd/js/jquery.min.js" type="text/javascript">
+</script>
+<script src="lbd/js/underscore-min.js" type="text/javascript">
+</script>
+<script src="lbd/js/jquery-ui-1.10.0.custom.min.js" type="text/javascript">
+</script>
+<script src="lbd/js/jquery-ui-slider.min.js" type="text/javascript">
+</script>
+<script src="lbd/js/bootstrap.min.js" type="text/javascript">
+</script>
+<!-- Password Show JS -->
+<script src="lbd/js/bootstrap-show-password.min.js" type="text/javascript">
+</script>
+<!--  Forms Validations Plugin -->
+<script src="lbd/js/jquery.validate.min.js">
+</script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="lbd/js/moment.min.js">
+</script>
+<!--  Date Time Picker Plugin is included in this js file -->
+<script src="lbd/js/bootstrap-datetimepicker.js">
+</script>
+<!--  Select Picker Plugin -->
+<script src="lbd/js/bootstrap-selectpicker.js">
+</script>
+<!--  Checkbox, Radio, Switch and Tags Input Plugins -->
+<script src="lbd/js/bootstrap-checkbox-radio-switch-tags.js">
+</script>
+<!--  Notifications Plugin    -->
+<script src="lbd/js/bootstrap-notify.js">
+</script>
+<!-- Sweet Alert 2 plugin -->
+<script src="lbd/js/sweetalert2.js">
+</script>
+<!-- Wizard Plugin    -->
+<script src="lbd/js/jquery.bootstrap.wizard.min.js">
+</script>
+<!--  Datatable Plugin    -->
+<script src="lbd/js/bootstrap-table.js">
+</script>
+<!--  Full Calendar Plugin    -->
+<script src="lbd/js/fullcalendar.min.js">
+</script>
+<!-- Light Bootstrap Dashboard Core javascript and methods -->
+<script src="lbd/js/light-bootstrap-dashboard.js">
+</script>
+<!-- Custom Scrollbar -->
+<script src="lbd/js/jquery.mCustomScrollbar.concat.min.js">
+</script>
+<!-- Custom Scrollbar lionbars -->
+<script src="lbd/lib/lionbars/jquery.lionbars.0.3.min.js">
+</script>
+<!-- jQuery UI Slider pips -->
+<script src="lbd/lib/jquery-slider-pipe/jquery-ui-slider-pips.js" type="text/javascript">
+</script>
+<!-- Progress Bar JS -->
+<script src="lbd/lib/progressbarjs/progressbar.js">
+</script>
+<!--  Chosen Plugin -->
+<script src="lbd/lib/chosen/chosen.jquery.js" type="text/javascript">
+</script>
+<script src="lbd/lib/chosen/ImageSelect.jquery.js" type="text/javascript">
+</script>
+<!-- <script type="text/javascript" src="lbd/lib/jscroll/jquery.jscroll.min.js"></script> -->
+<!-- Bootstrap Selelect Picker -->
+<script src="lbd/js/bootstrap-select.js" type="text/javascript">
+</script>
+<!--     Light Bootstrap Dashboard DEMO methods, don't include it in your project!
+<script src="lbd/js/demo.js"></script> -->
+<!-- TinyMCE-->
+<script src="lbd/lib/tinymce_4.2.5/js/tinymce/tinymce.min.js" type="text/javascript">
+</script>
+<!-- Slick slider -->
+<script charset="utf-8" src="lbd/lib/slick-1.6.0/slick/slick.js" type="text/javascript">
+</script>
+<!-- Rating Stars -->
+<script type="text/javascript" src="lbd/lib/rateyo/jquery.rateyo.js"></script>
+
+<!--Auto Resize Textarea -->
+<script src="lbd/js/jquery-ns-autogrow.min.js"></script>
+
+<!-- jquery shorten -->
+<script type="text/javascript" src="lbd/lib/shorten/jquery.shorten.1.0.js"></script>
+
+<!-- jquery readmore -->
+<script type="text/javascript" src="lbd/lib/read-more/readmore.js"></script>
+
+<!-- Croppie -->
+<script src="lbd/lib/croppie/croppie.min.js"></script>
+<!-- jQuery media query matchMedia -->
+<script src="lbd/lib/matchmedia/matchMedia.js"></script>
+
+<!-- reCaptcha Code -->
+<!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
+
+<!-- Custom JS -->
+<script src="lbd/js/custom.js">
+</script>
+
+
+<!-- Custom scripts -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+/*Read more / Read less*/
+function readmoreEllipse(){
+  $('.readmore-ellipses').each(function(){
+    $(this).readmore({
+        speed : 150,
+        collapsedHeight: 60,
+        moreLink: '<a href="#" class="morelink"> [ &hellip; ]</a>',
+        lessLink: '<a href="#" class="morelink" style=""> [ See less ]</a>',
+        blockCSS: 'display: inline; width: 50%;',
+    });
+    $(this).resize(function(){
+      console.log("Change happened");
+    });
+  });
+}
+
+readmoreEllipse();
+
+$('.modal').one('show.bs.modal', function () {
+$(this).find('.readmore-ellipses').css({overflow: "hidden"});
+  }).one('shown.bs.modal shown.bs.tab', function () {
+      $(this).find('.readmore-ellipses').readmore({
+          speed : 150,
+          collapsedHeight: 60,
+          moreLink: '<a href="#" class="morelink"> [ &hellip; ]</a>',
+          lessLink: '<a href="#" class="morelink"> [ See less ]</a>'
+      });
+});
+
+/* $(".readmore-ellipses").shorten({
+	"showChars" : 150,
+	"moreText"	: "See More",
+	"lessText"	: "Less",
+}); */
+
+/*Toggle cards view*/
+$(document).on('click', '.cards-view a', function(e){
+  e.preventDefault();
+  if($(this).hasClass('selected')) {
+    return;
+  }
+  else{
+    var switchingClass = $(this).attr('class');
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $(this).parents('.tab-pane.active').find('.cards-list-container').toggleClass('list-view card-view');
+  }
+});
+
+$('.readmore-ellipses').on('resize', function(){
+  console.log("Change happened");
+});
+
+$('#readmore-ellipses').on('mresize', function(){
+  alert("Something happened");
+});
+
+$(document).on("mresize", '.readmore-ellipses' ,function(){
+    console.log("This has been changed");
+});
+
+/*Assign decline on change modifications*/
+$('#declineAssign .selectpicker').on('change', function(){
+    var selected = $(this).find("option:selected").val();
+    if(selected == 1) {
+      $(this).parents('.tab-panel-content-scroll').find('.problem-02').hide('200');
+      $(this).parents('.tab-panel-content-scroll').find('.problem-01').show('200');
+    } else if(selected == 2) {
+      $(this).parents('.tab-panel-content-scroll').find('.problem-01').hide('200');
+      $(this).parents('.tab-panel-content-scroll').find('.problem-02').show('200');
+    }
+  });
+/*Assign decline on change modifications ends*/
+
+
+});
+
+
+
+</script>
+<!-- Custom scripts ends -->
+</body>
+</html>

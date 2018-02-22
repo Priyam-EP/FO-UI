@@ -10,7 +10,7 @@
 }
 
 .content-container {
-  .fo-cards-list {
+  .fo-cards-single {
     width: 100%;
     .page-heading {
       font-weight: 700;
@@ -18,6 +18,35 @@
 
       @media screen and (max-width: 767px) {
         margin-bottom: 15px;
+      }
+    }
+
+    &.assign-card {
+      .page-header-nav-container{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        .page-navigation{
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          margin-right: 10px;
+        }
+        .page-heading{
+          margin: 0;
+        }
+      }
+      .offers-container{
+        .offers-list-container{
+          margin-top: 0;
+        }
       }
     }
 
@@ -314,3 +343,167 @@
 }
 
 /* Main panel page styles ends */
+
+/* Modal Styles starts */
+#assignCardsSingle{
+  @extend #firstLoginModal;
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          p{
+            font-size: 14px;
+          }
+          .tab-panel-content-scroll{
+            padding-bottom: 50px !important;
+          }
+          #confirmAssign{
+            .tab-panel-content-scroll{
+              padding-bottom: 90px;
+              @media (max-width: 767px){
+                padding-bottom: 0;
+              }
+            }
+            .bottom-fixed-modal-actions{
+              height: 90px;
+              @media (max-width: 767px){
+                height: 110px;
+              }
+            }
+            .terms-title{
+              font-size: 16px;
+              text-decoration: underline;
+              margin-bottom: 15px;
+            }
+            .terms-sub-title{
+              text-decoration: underline;
+              font-weight: 600;
+              color: $main;
+            }
+          }
+          .contract-owner-box{
+            .contract-owner{
+              .user-image{
+                width: 50px;
+                img, .card-user-empty{
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+              .user-name-block{
+                .user-name{
+                  font-size: 18px;
+                  font-weight: 700;
+                  span{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: inherit;
+                  }
+                }
+              }
+            }
+          }
+          .job-info-list{
+            padding: 0;
+            margin: 0 -8px;
+            list-style-type: none;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-flow: row wrap;
+
+            li{
+              &.list-item{
+                padding: 10px;
+                width: calc(100% / 3);
+                display: -webkit-inline-flex;
+                display: -moz-inline-flex;
+                display: -ms-inline-flex;
+                display: -o-inline-flex;
+                display: inline-flex;
+                .job-info-box{
+                  padding: 15px;
+                  background: $highlight-03;
+                  position: relative;
+                  border-radius: 4px;
+                  color: $main;
+                  flex:1;
+
+                  label.checkbox{
+                    margin: 0;
+                    position: relative;
+                    padding: 0;
+                    flex:1;
+
+                    span.icons{
+                      position: absolute;
+                      left: unset;
+                      right: 0px;
+                    }
+                    .job-info-content{
+                      padding: 10px 0 0;
+                      margin: 0;
+                      display: block;
+                      font-size: 12px;
+                      color: $main;
+                      text-transform: none;
+                      > div {
+                        margin: 5px 0;
+                        font-size: 18px;
+                        i{
+                          margin-right: 5px;
+                          &.fa-database {
+                            display: -webkit-inline-flex;
+                            display: -moz-inline-flex;
+                            display: -ms-inline-flex;
+                            display: -o-inline-flex;
+                            display: inline-flex;
+                            margin-right: 10px;
+                            position: relative;
+
+                            .fa-database {
+                              position: absolute;
+                              left: 0.5em;
+                              width: 0.8em;
+
+                              /* height: 0.8em; */
+                              top: 0.4em;
+                              font-size: 0.8em;
+                              background: white;
+                            }
+                          }
+                        }
+                      }
+                      .info-title{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $helper;
+                        display: block;
+                        i{
+                          margin-right: 5px;
+                        }
+                      }
+                      span{
+                        display: block;
+                        color: $helper;
+                        font-weight: normal;
+                      }
+                    }
+                  }
+                }
+                &:first-child{
+                  .job-info-box{
+                    padding-left: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+/* Modal Styles starts ends */
