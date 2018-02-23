@@ -49,13 +49,18 @@
       .offer-banner {
         width: 100%;
         height: 240px;
-        background: url('../img/fo-bg.jpg') no-repeat center center;
-        background-size: cover;
-        padding: 25px;
+        /* background: url('../img/fo-bg.jpg') no-repeat center center;
+        background-size: cover; */
+        padding: 0px;
         border-radius: 4px 4px 0 0;
+        overflow: hidden;
+        position: relative;
 
-        @media (max-width: 767px) {
-          padding: 20px;
+
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
 
         input[type='file'] {
@@ -150,6 +155,9 @@
           }
 
           &.back {
+            position: absolute;
+            top: 20px;
+            left: 20px;
             span {
               text-decoration: underline;
             }
@@ -165,7 +173,8 @@
         h3 {
           margin: 0;
           position: absolute;
-          bottom: 25px;
+          bottom: 20px;
+          left: 20px;
           color: #fff;
           transition: all .3s ease;
           width: calc(100% - 40px);
@@ -176,6 +185,23 @@
             }
           }
         }
+
+        @media (max-width: 767px) {
+          // padding: 0px;
+          height: 180px;
+          a{
+            &.back{
+              top: 15px;
+              left: 15px;
+            }
+          }
+          h3{
+            bottom: 15px;
+            left: 15px;
+            font-size: 20px;
+          }
+        }
+
       }
 
       .offer-content {

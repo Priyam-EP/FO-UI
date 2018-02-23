@@ -566,7 +566,7 @@ span.edit {
             &:first-child {}
 
             &:last-child {
-                a, span {
+                 > a, > span {
                     padding: 0 10px 0 20px;
                 }
             }
@@ -862,10 +862,20 @@ span.edit {
 
                 padding: 0;
                 margin: 0;
+                height: 100%;
+                flex: 1;
 
                 .offer-banner {
                     height: 140px;
-                    padding: 15px;
+                    padding: 0px;
+                    overflow: hidden;
+                    background: $highlight-02;
+
+                    img {
+                      height: 100%;
+                      width: 100%;
+                      object-fit:cover;
+                    }
 
                     h3 {
                         font-size: 16px;
@@ -873,6 +883,7 @@ span.edit {
                         color: #fff;
                         position: absolute;
                         bottom: 15px;
+                        left: 15px;
                     }
 
                     .timer {

@@ -353,31 +353,16 @@
           p{
             font-size: 14px;
           }
-          .tab-panel-content-scroll{
-            padding-bottom: 50px !important;
-          }
-          #confirmAssign{
-            .tab-panel-content-scroll{
-              padding-bottom: 90px;
-              @media (max-width: 767px){
-                padding-bottom: 0;
+          .tab-links {
+            .tab-content {
+              .tab-pane{
+                .tab-panel-content-scroll{
+                  padding-bottom: 50px;
+                  @media (max-width: 767px){
+                    padding-bottom: 0;
+                  }
+                }
               }
-            }
-            .bottom-fixed-modal-actions{
-              height: 90px;
-              @media (max-width: 767px){
-                height: 110px;
-              }
-            }
-            .terms-title{
-              font-size: 16px;
-              text-decoration: underline;
-              margin-bottom: 15px;
-            }
-            .terms-sub-title{
-              text-decoration: underline;
-              font-weight: 600;
-              color: $main;
             }
           }
           .contract-owner-box{
@@ -430,7 +415,7 @@
                   color: $main;
                   flex:1;
 
-                  label.checkbox{
+                  .checkbox{
                     margin: 0;
                     position: relative;
                     padding: 0;
@@ -498,12 +483,216 @@
                     padding-left: 20px;
                   }
                 }
+                &.selected{
+                  .job-info-box{
+                    box-shadow: inset 0 0 0 2px $delete;
+                    span.icons{
+                      color: $delete;
+                      span{
+                        color: $delete;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            @media (max-width: 767px) {
+              flex-flow: column;
+              li{
+                &.list-item{
+                  width: 100%;
+                }
               }
             }
           }
+          .offer-translation{
+            margin-top: 15px;
+            .language-to {
+              @extend %language-breadcrum;
+
+              li {
+                a {
+                  &:after {
+                    border-left-color: $highlight-03 !important;
+                  }
+                }
+              }
+            }
+          }
+          #declineAssign{
+            .tab-panel-content-scroll{
+              @media (max-width: 767px){
+                height: calc(100vh - 210px);
+              }
+            }
+          }
+          #assign{
+            .tab-panel-content-scroll{
+              padding-bottom: 60px;
+              @media (max-width: 767px){
+                height: calc(100vh - 210px);
+                padding-bottom: 0;
+              }
+            }
+            .card-info-container{
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flex;
+              display: -o-flex;
+              display: flex;
+              @media (max-width: 767px){
+                flex-flow: column;
+              }
+              > div{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-flow: column;
+                &:first-child{
+                  padding-right: 0;
+                  @media (max-width: 767px){
+                    padding-right: 15px;
+                    margin-bottom: 15px;
+                  }
+                }
+              }
+              .card-info-content{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-flow: column;
+                background: $highlight-03;
+                border-radius: 4px;
+                padding: 15px;
+                height: 100%;
+                justify-content: center;
+                .user-image{
+                  width: 50px;
+                  img{
+                    width: 50px;
+                    height: 50px;
+                  }
+                }
+              }
+              .job-info-box{
+                padding: 0px;
+                color: $main;
+                flex:1;
+
+                .checkbox{
+                  margin: 0;
+                  position: relative;
+                  padding: 0;
+                  flex:1;
+
+                  .job-info-content{
+                    padding: 10px 0 0;
+                    margin: 0;
+                    display: block;
+                    font-size: 12px;
+                    color: $main;
+                    text-transform: none;
+                    > div {
+                      margin: 5px 0;
+                      font-size: 18px;
+                      font-weight: 600;
+                      i{
+                        margin-right: 5px;
+                        &.fa-database {
+                          display: -webkit-inline-flex;
+                          display: -moz-inline-flex;
+                          display: -ms-inline-flex;
+                          display: -o-inline-flex;
+                          display: inline-flex;
+                          margin-right: 10px;
+                          position: relative;
+
+                          .fa-database {
+                            position: absolute;
+                            left: 0.5em;
+                            width: 0.8em;
+
+                            /* height: 0.8em; */
+                            top: 0.4em;
+                            font-size: 0.8em;
+                            background: white;
+                          }
+                        }
+                      }
+                    }
+                    .info-title{
+                      text-transform: uppercase;
+                      font-size: 14px;
+                      font-weight: 600;
+                      color: $helper;
+                      display: block;
+                      i{
+                        margin-right: 5px;
+                      }
+                    }
+                    span{
+                      display: block;
+                      color: $helper;
+                      font-weight: normal;
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          #confirmAssign{
+            .tab-panel-content-scroll{
+              padding-bottom: 90px;
+              height: calc(100vh - 154px);
+              @media (max-width: 767px){
+                padding-bottom: 70px;
+              }
+            }
+            .bottom-fixed-modal-actions{
+              height: 90px;
+              @media (max-width: 767px){
+                height: 110px;
+              }
+            }
+            .terms-title{
+              font-size: 16px;
+              text-decoration: underline;
+              margin-bottom: 15px;
+            }
+            .terms-sub-title{
+              text-decoration: underline;
+              font-weight: 600;
+              color: $main;
+            }
+          }
+
         }
       }
     }
+}
+
+#assignCardsSingleError{
+  @extend #assignCardsSingle;
+  .tab-pane{
+    height: 100%;
+    padding: 0;
+    .tab-panel-content-scroll{
+      padding: 0px;
+      @media (max-width: 767px){
+        padding-bottom: 0;
+      }
+    }
+
+    @media (max-width: 767px){
+      height: calc(100vh - 32px);
+    }
+  }
 }
 
 /* Modal Styles starts ends */

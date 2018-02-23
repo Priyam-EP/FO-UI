@@ -28,9 +28,7 @@
 
 
 <!-- Modals starts -->
-<!-- First Login Modal Starts -->
-<!-- @include  _partials/_cards-single-assignation.html -->
-<!-- First Login Modal Ends -->
+
 <!-- Modals ends -->
 
 <!--   Core JS Files   -->
@@ -101,19 +99,11 @@ $(document).on("mresize", '.readmore-ellipses' ,function(){
     console.log("This has been changed");
 });
 
-/*Assign decline on change modifications*/
-$('#declineAssign .selectpicker').on('change', function(){
-    var selected = $(this).find("option:selected").val();
-    if(selected == 1) {
-      $(this).parents('.tab-panel-content-scroll').find('.problem-02').hide('200');
-      $(this).parents('.tab-panel-content-scroll').find('.problem-01').show('200');
-    } else if(selected == 2) {
-      $(this).parents('.tab-panel-content-scroll').find('.problem-01').hide('200');
-      $(this).parents('.tab-panel-content-scroll').find('.problem-02').show('200');
-    }
-  });
-/*Assign decline on change modifications ends*/
 
+
+/*Card Assignation Confirm modal open in step 2*/
+
+/*Card Assignation Confirm modal open in step 2 ends*/
 
 });
 

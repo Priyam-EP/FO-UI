@@ -28,27 +28,12 @@
 
 
 <!-- Modals starts -->
-<!-- Paymet history royalty modal starts -->
-<!-- @include _partials/_modal-payment-royalty.html -->
-<!-- Paymet history royalty modal ends -->
-<!-- Royalty tunnel modal starts -->
-<!-- @include _partials/_modal-tunnel-royalty.html -->
-<!-- Royalty tunnel mdoal ends -->
-<!-- Myaccounts royalty modal starts -->
-<!-- @include _partials/_modal-myaccount-royalty.html -->
-<!-- Myaccounts royalty modal ends -->
-<!-- Myaccounts royalty edit modal starts -->
-<!-- @include _partials/_modal-myaccount-edit-royalty.html -->
-<!-- Myaccounts royalty edit modal ends -->
-<!-- Myaccounts royalty add account modal starts -->
-<!-- @include _partials/_modal-myaccount-add-royalty.html -->
-<!-- Myaccounts royalty add account modal ends -->
-<!-- Royalty workign status company modal starts -->
-<!-- @include _partials/_modal-working-status-company-royalty.html -->
-<!-- Royalty workign status company modal ends -->
-<!-- Royalty workign status selfemployed modal starts -->
-<!-- @include _partials/_modal-working-status-selfemployed-royalty.html -->
-<!-- Royalty workign status selfemployed modal ens -->
+<!-- Cards assignation Modal Starts -->
+<!-- @include  _partials/_cards-single-assignation.html -->
+<!-- Cards assignation Modal Ends -->
+<!-- Cards assignation error Modal Starts -->
+<!-- @include  _partials/_cards-single-assignation-error.html -->
+<!-- Cards assignation error Modal Ends -->
 <!-- Modals ends -->
 
 <!--   Core JS Files   -->
@@ -78,8 +63,8 @@ function readmoreEllipse(){
 readmoreEllipse();
 
 $('.modal').one('show.bs.modal', function () {
-$(this).find('.readmore-ellipses').css({overflow: "hidden"});
-  }).one('shown.bs.modal shown.bs.tab', function () {
+  $(this).find('.readmore-ellipses').css({overflow: "hidden"});
+    }).one('shown.bs.modal shown.bs.tab', function () {
       $(this).find('.readmore-ellipses').readmore({
           speed : 150,
           collapsedHeight: 60,
@@ -119,6 +104,30 @@ $(document).on("mresize", '.readmore-ellipses' ,function(){
     console.log("This has been changed");
 });
 
+/*Assign decline on change modifications*/
+$('#declineAssign .selectpicker').on('change', function(){
+    var selected = $(this).find("option:selected").val();
+    if(selected == 1) {
+      $(this).parents('.tab-panel-content-scroll').find('.problem-02').fadeOut('200');
+      $(this).parents('.tab-panel-content-scroll').find('.problem-01').fadeIn('200');
+    } else if(selected == 2) {
+      $(this).parents('.tab-panel-content-scroll').find('.problem-01').fadeOut('200');
+      $(this).parents('.tab-panel-content-scroll').find('.problem-02').fadeIn('200');
+    }
+  });
+/*Assign decline on change modifications ends*/
+
+$(document).on('click', '#declineAssign label.checkbox', function(e){
+  e.preventDefault();
+  $(this).parents('.list-item').toggleClass('selected');
+});
+
+/*Card Assignation Confirm modal open in step 2*/
+$('[id*="assignCardConfirmation-"]').click(function(e) {
+  e.preventDefault();
+  $('#wizardCard').bootstrapWizard('show',1)
+});
+/*Card Assignation Confirm modal open in step 2 ends*/
 
 });
 
