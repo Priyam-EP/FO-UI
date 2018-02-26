@@ -16,11 +16,52 @@
                             <form id="wizardForm" method="" action="">
                                 <div class="tab-links">
                                     <ul class="nav">
+                                        <li><a href="#oopsError" data-toggle="tab"></a></li>
                                         <li><a href="#declineAssign" data-toggle="tab"></a></li>
                                         <li><a href="#assign" data-toggle="tab"></a></li>
                                         <li><a href="#confirmAssign" data-toggle="tab"></a></li>
                                     </ul>
                                     <div class="tab-content">
+                                        <div class="tab-pane" id="oopsError">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title df-ac">
+                                                Oops, too late! :(
+                                              </div>
+                                              <div class="col-md-12 contract-owner-box">
+                                                  <div class="col-md-12 contract-owner pl-0">
+                                                      <div class="user-image">
+                                                          <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                          <!-- <div class="card-user-empty user">
+                                                              PC
+                                                          </div> -->
+                                                      </div>
+                                                      <div class="user-name-block">
+                                                          <div class="user-name">
+                                                              Webedia Group <span>Blog articles - Lot 1</span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row form-group">
+                                                  <div class="col-md-12 mb-15">
+                                                    <span><span class="fw600">This job have already been filled by another contributor.</span> Please check our other offers.</span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-xs-12">
+                                                 <button class="btn btn-confirm btn-fill pull-left" type="button" data-dismiss="modal">
+                                                     Close
+                                                 </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                         <div class="tab-pane" id="declineAssign">
                                             <div class="row">
                                               <div class="col-md-12">
@@ -127,7 +168,7 @@
                                                    </button>
                                                 </div>
                                                 <div class="col-sm-3 col-xs-6 pull-right">
-                                                   <button class="btn btn-fill btn-disapprove pull-right" type="button" data-dismiss="modal">
+                                                   <button class="btn btn-fill btn-disapprove pull-right btn-back" type="button" data-dismiss="">
                                                        Decline
                                                    </button>
                                                 </div>
