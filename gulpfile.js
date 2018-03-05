@@ -428,7 +428,6 @@ gulp.task('jsliblive', ['tinymce','slick-fonts'], function() {
           "jquery.validationEngine-fr.js",
           "jquery.validationEngine.js",
           "matchMedia.js",
-          // "tinymce.min.js",
           "readmore.js"
           ]))
       .pipe($.concat('plugins-bundle.js'))
