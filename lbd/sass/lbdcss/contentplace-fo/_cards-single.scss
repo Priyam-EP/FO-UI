@@ -386,6 +386,20 @@
                 }
               }
             }
+            @media (max-width: 767px){
+              flex-flow: column;
+              height: auto;
+              .contract-owner{
+                height: auto;
+                width: 100%;
+                padding: 0;
+              }
+              .download-brief{
+                width: 100%;
+                padding: 0;
+                margin-top: 15px;
+              }
+            }
           }
           .job-info-list{
             padding: 0;
@@ -520,6 +534,16 @@
               }
             }
           }
+          .job-message{
+            @include clearfix;
+            color: $main;
+            background: $highlight-01;
+            padding: 15px;
+            border-radius: 4px;
+            p{
+              color: $main;
+            }
+          }
           #declineAssign{
             .tab-panel-content-scroll{
               @media (max-width: 767px){
@@ -532,7 +556,7 @@
               padding-bottom: 60px;
               @media (max-width: 767px){
                 height: calc(100vh - 210px);
-                padding-bottom: 0;
+                // padding-bottom: 0;
               }
             }
             .card-info-container{
@@ -576,6 +600,11 @@
                   img{
                     width: 50px;
                     height: 50px;
+                  }
+                }
+                @media (max-width: 767px){
+                  .col-xs-8{
+                    padding-left: 0;
                   }
                 }
               }
@@ -641,6 +670,9 @@
                       font-weight: normal;
                       font-size: 14px;
                     }
+                    @media (max-width: 767px){
+                      padding: 0;
+                    }
                   }
                 }
               }
@@ -670,6 +702,9 @@
               font-weight: 600;
               color: $main;
             }
+          }
+          #oopsError{
+            padding-bottom: 60px;
           }
 
         }

@@ -16,52 +16,12 @@
                             <form id="wizardForm" method="" action="">
                                 <div class="tab-links">
                                     <ul class="nav">
-                                        <li><a href="#oopsError" data-toggle="tab"></a></li>
                                         <li><a href="#declineAssign" data-toggle="tab"></a></li>
                                         <li><a href="#assign" data-toggle="tab"></a></li>
                                         <li><a href="#confirmAssign" data-toggle="tab"></a></li>
+                                        <li><a href="#oopsError" data-toggle="tab"></a></li>
                                     </ul>
                                     <div class="tab-content">
-                                        <div class="tab-pane" id="oopsError">
-                                          <div class="row">
-                                            <div class="col-md-12">
-                                              <div class="modal-title df-ac">
-                                                Oops, too late! :(
-                                              </div>
-                                              <div class="col-md-12 contract-owner-box">
-                                                  <div class="col-md-12 contract-owner pl-0">
-                                                      <div class="user-image">
-                                                          <img class="img-circle" src="lbd/img/webedia.jpg">
-                                                          <!-- <div class="card-user-empty user">
-                                                              PC
-                                                          </div> -->
-                                                      </div>
-                                                      <div class="user-name-block">
-                                                          <div class="user-name">
-                                                              Webedia Group <span>Blog articles - Lot 1</span>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="tab-panel-content-scroll">
-                                                <div class="row form-group">
-                                                  <div class="col-md-12 mb-15">
-                                                    <span><span class="fw600">This job have already been filled by another contributor.</span> Please check our other offers.</span>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="bottom-fixed-modal-actions">
-                                            <div class="row">
-                                              <div class="col-xs-12">
-                                                 <button class="btn btn-confirm btn-fill pull-left" type="button" data-dismiss="modal">
-                                                     Close
-                                                 </button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
                                         <div class="tab-pane" id="declineAssign">
                                             <div class="row">
                                               <div class="col-md-12">
@@ -168,7 +128,7 @@
                                                    </button>
                                                 </div>
                                                 <div class="col-sm-3 col-xs-6 pull-right">
-                                                   <button class="btn btn-fill btn-disapprove pull-right btn-back" type="button" data-dismiss="">
+                                                   <button class="btn btn-fill btn-confirm pull-right" type="button" data-dismiss="modal">
                                                        Decline
                                                    </button>
                                                 </div>
@@ -184,7 +144,7 @@
                                                 </div> -->
                                               </div>
                                               <div class="col-md-12 contract-owner-box">
-                                                  <div class="col-md-12 contract-owner pl-0">
+                                                  <div class="col-md-9 contract-owner pl-0">
                                                       <div class="user-image">
                                                           <img class="img-circle" src="lbd/img/webedia.jpg">
                                                           <!-- <div class="card-user-empty user">
@@ -196,6 +156,15 @@
                                                               Webedia Group <span>Blog articles - Lot 1</span>
                                                           </div>
                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-3 download-brief pull-right">
+                                                      <button class="btn btn-download btn-fill" type="button">
+                                                          <span class="btn-label">
+                                                              <i class="material-icons">
+                                                                  file_download
+                                                              </i>
+                                                          </span> Download brief
+                                                      </button>
                                                   </div>
                                               </div>
                                               <div class="tab-panel-content-scroll">
@@ -279,13 +248,39 @@
                                                     </div>
                                                   </div>
                                                 </div>
+                                                <div class="row form-group">
+                                                  <div class="col-md-12 mb-10">
+                                                    <div class="fw600">Here is a message of the owner :</div>
+                                                  </div>
+                                                  <div class="col-md-12">
+                                                    <div class="job-message">
+                                                      <div class="user-image pull-left hidden-xs">
+                                                          <img class="img-circle" src="lbd/img/default-avatar.png">
+                                                          <!-- <div class="card-user-empty user">
+                                                              PC
+                                                          </div> -->
+                                                      </div>
+                                                      <div class="col-md-9">
+                                                          <p>
+                                                            Hello Michael, here is the Webedia job we talked about yesterday.<br>
+                                                            Are you still available in the next 30 days to work on these articles? Click on confirm if you are OK :)
+                                                            <br><br>
+                                                            Yours,
+                                                            <br><br>
+                                                            <span class="fw600">Clarisse</span>
+                                                          </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                </div>
                                               </div>
                                             </div>
                                           </div>
                                           <div class="bottom-fixed-modal-actions">
                                             <div class="row">
                                               <div class="col-sm-3 col-xs-6">
-                                                 <button class="btn btn-disapprove btn-fill pull-left btn-back" type="button">
+                                                 <button class="btn btn-confirm btn-fill pull-left btn-back" type="button">
                                                      Decline
                                                  </button>
                                               </div>
@@ -346,13 +341,50 @@
                                                  </a>
                                               </div>
                                               <div class="col-sm-3 col-xs-6 pull-right">
-                                                 <a href="cards-single.html" class="btn btn-fill btn-yes pull-right" type="button">
+                                                 <a href="javascript:;" class="btn btn-fill btn-yes pull-right btn-next" type="button">
                                                      Confirm
                                                  </a>
                                               </div>
                                             </div>
                                           </div>
                                         </div>
+                                        <div class="tab-pane" id="oopsError">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title df-ac">
+                                                Oops, too late! :(
+                                              </div>
+                                              <div class="col-md-12 contract-owner-box">
+                                                  <div class="col-md-12 contract-owner pl-0">
+                                                      <div class="user-image">
+                                                          <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                          <!-- <div class="card-user-empty user">
+                                                              PC
+                                                          </div> -->
+                                                      </div>
+                                                      <div class="user-name-block">
+                                                          <div class="user-name">
+                                                              Webedia Group <span>Blog articles - Lot 1</span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12 mb-15">
+                                                <span><span class="fw600">This job have already been filled by another contributor.</span> Please check our other offers.</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-xs-12">
+                                                 <button class="btn btn-confirm btn-fill pull-left" type="button" data-dismiss="modal">
+                                                     Close
+                                                 </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </form>
