@@ -641,6 +641,6 @@ gulp.task('watch', function() {
 // default task
 gulp.task('default', ['html', 'images', 'fonts', 'css', 'sass', 'jslib', 'jsliblive', 'js', 'watch', 'serve']);
 
-gulp.task('bundle', ['css', 'sass', 'js', 'jsliblive']);
+gulp.task('bundle', ['css', 'js', 'jsliblive']);
 
 // gulp.task('default', ['serve']);

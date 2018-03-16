@@ -59,11 +59,19 @@
 @import "lbdcss/responsive";
 @import "lbdcss/tabs-navs-pagination";
 
+// layout styles
+@import "lbdcss/contentplace-fo/layout-2";
+@import "lbdcss/contentplace-fo/layout-3";
+@import "lbdcss/contentplace-fo/layout-4";
+@import "lbdcss/contentplace-fo/layout-5";
+
 // Old WP Styles (Kept the same)
 @import "lbdcss/wp-old-styles";
 
 // Custom Styles
 @import "lbdcss/contentplace-fo/custom-styles";
+
+// Styles from BO
 
 // New contentplace-fo Styles
 @import "lbdcss/contentplace-fo/royalties";
@@ -74,6 +82,8 @@
 @import "lbdcss/contentplace-fo/cards-single";
 @import "lbdcss/contentplace-fo/offers-single";
 @import "lbdcss/contentplace-fo/offers-list";
+@import "lbdcss/contentplace-fo/job-deck-cards";
+@import "lbdcss/contentplace-fo/card-single";
 
 //New contentplace-fo media Queries
 @import "lbdcss/contentplace-fo/media-queries";
