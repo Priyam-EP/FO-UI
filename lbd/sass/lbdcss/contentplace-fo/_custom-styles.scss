@@ -469,6 +469,7 @@ em.error {
 
             .main-panel-wrap {
                 padding: 0;
+                @include clearfix;
 
                 .main-panel {
                     float: left;

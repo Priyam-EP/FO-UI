@@ -702,9 +702,22 @@
           width: 100% !important;
           height: 38px;
 
-          i {
-            font-size: 20px;
+          span.btn-label{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              font-size: 20px;
+              &.fa{
+                width: 20px;
+              }
+            }
           }
+
         }
       }
 
