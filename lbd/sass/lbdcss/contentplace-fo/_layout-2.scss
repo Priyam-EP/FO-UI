@@ -1,6 +1,6 @@
 /* Layout-2 Changes Starts */
 
-.layout-2.wp-app {
+.wp-app.layout-2, .cp-fo.layout-2 {
     .page-wrap {
         .main-panel-wrap {
             .main-panel {
@@ -354,6 +354,48 @@
                 }
             }
         }
+    }
+}
+
+.cp-fo.layout-2 {
+    .wrapper{
+        .page-wrap {
+          .main-panel-wrap {
+              .main-panel {
+                  .main-panel-page {
+
+                      .main-container {
+                        @media (max-width: 767px) {
+                          @include clearfix;
+                          margin: 0;
+                          width: 100% !important;
+                          .tab-panel-container {
+                            box-shadow: none;
+                            width: 100%;
+                            .tab-panel{
+                              position: unset;
+                              width: 100%;
+                              height: 100%;
+                              overflow-y: auto;
+                              padding: 15px 15px 0;
+                              .page-title{
+                                .sidebar-page-nav-container{
+                                  flex-flow: column;
+                                  .user-image{
+                                    float: left;
+                                    margin-right: 15px;
+                                  }
+
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                  }
+              }
+          }
+      }
     }
 }
 

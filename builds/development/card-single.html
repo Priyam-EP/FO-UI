@@ -132,7 +132,7 @@
                     <div class="col-md-12 main-panel-wrap">
                         <div class="main-panel">
                             <div class="container-fluid main-panel-page">
-                                <div class="col-md-12 main-panel-page-header clearfix">
+                                <div class="col-md-12 main-panel-page-header clearfix hidden-xs">
                                     <div class="col-md-1 contract-image">
                                          <div class="contract-image-container">
                                             <img class="img-circle" src="lbd/img/webedia.jpg"/>
@@ -149,6 +149,27 @@
                                                 <span class="label default">
                                                     Waiting
                                                 </span>
+                                                <!-- <span class="label default">
+                                                    Checking
+                                                </span>
+                                                <span class="label ongoing">
+                                                    Checking
+                                                </span>
+                                                <span class="label default">
+                                                    Proofread
+                                                </span>
+                                                <span class="label ongoing">
+                                                    Proofread
+                                                </span>
+                                                <span class="label delete">
+                                                    Rework
+                                                </span>
+                                                <span class="label ongoing">
+                                                    Sent
+                                                </span>
+                                                <span class="label archived">
+                                                    Done
+                                                </span> -->
                                                 <strong class="primary-font">
                                                     Blog articles in Italian - 2
                                                 </strong>
@@ -208,12 +229,12 @@
                                             <nav class="navbar navbar-default">
                                                 <div class="container-fluid">
                                                     <div class="navbar-header">
-                                                        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse">
-                                                    <span class="sr-only">Toggle navigation</span>
-                                                    <span class="icon-bar"></span>
-                                                    <span class="icon-bar"></span>
-                                                    <span class="icon-bar"></span>
-                                                </button> -->
+                                                      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                                          <span class="sr-only">Toggle navigation</span>
+                                                          <span class="icon-bar"></span>
+                                                          <span class="icon-bar"></span>
+                                                          <span class="icon-bar"></span>
+                                                      </button> -->
                                                     </div>
                                                     <!-- <div class="row">
                                                         <div class="col-md-7 page-title">
@@ -246,7 +267,23 @@
                                                         <div class="col-md-12 page-title">
                                                             <div class="row">
                                                                 <div class="col-md-12 sidebar-page-nav-container">
-                                                                    <a class="page-navigation" href="#"><i class="material-icons">arrow_back</i> </a> <h4 class="sidebar-title">Webedia 200 articles blog</h4>
+                                                                    <div class="row visible-xs">
+                                                                      <div class="col-md-12">
+                                                                        <h2>
+                                                                          <a class="page-navigation" href="#"><i class="material-icons">arrow_back</i> </a>
+                                                                          Card Overview
+                                                                        </h2>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                      <div class="col-md-12 df-ac">
+                                                                        <a class="page-navigation hidden-xs" href="#"><i class="material-icons">arrow_back</i> </a>
+                                                                        <div class="user-image">
+                                                                            <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                                        </div>
+                                                                        <h4 class="sidebar-title">Webedia 200 articles blog</h4>
+                                                                      </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -298,7 +335,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row hidden-xs">
                                                         <div class="col-md-12 page-title">
                                                             <a class="navbar-brand-secondary col-md-6">
                                                                 Card workflow
@@ -306,8 +343,6 @@
                                                                     <span>3 contributors</span>
                                                                 </span>
                                                             </a>
-<!--                                                             <div class="col-md-6 contributors-numbers">
-                                                            </div> -->
                                                         </div>
                                                     </div>
                                                     <!-- <div class="row">
@@ -319,7 +354,7 @@
                                                             </a>
                                                         </div>
                                                     </div> -->
-                                                    <div class="row">
+                                                    <div class="row hidden-xs">
                                                         <div class="col-md-12 assessment-list-container">
                                                             <ul>
                                                                 <li>
@@ -604,11 +639,440 @@
                                                             </ul>
                                                         </div>
                                                     </div>
+                                                    <div class="row visible-xs">
+                                                      <div class="col-md-12">
+                                                        <ul role="tablist" class="nav nav-tabs">
+                                                            <li role="presentation" class="nav-item active">
+                                                                <a class="nav-link" id="info-tab" href="#includeFilter" data-toggle="tab">Delivery</a>
+                                                            </li>
+                                                            <li role="presentation" class="nav-item">
+                                                                <a class="nav-link" id="account-tab" href="#excludeFilter" data-toggle="tab">Launch</a>
+                                                            </li>
+                                                            <li role="presentation" class="nav-item">
+                                                                <a class="nav-link" id="account-tab" href="#cardWorkflowMob" data-toggle="tab">Workflow</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content">
+                                                            <div id="includeFilter" class="tab-pane active" role="tabpanel" aria-labelledby="info-tab">
+                                                              <div class="row form-group">
+                                                                <div class="from-filter-container col-md-12">
+                                                                  <div class="from-filter clearfix">
+                                                                    <div class="sec-title">From...</div>
+                                                                    <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All Client" id="missions">
+                                                                      <option data-hidden="true"></option>
+                                                                      <option>Client 00</option>
+                                                                      <option>Client 01</option>
+                                                                      <option>Client 02</option>
+                                                                      <option>Client 03</option>
+                                                                      <option>Client 04</option>
+                                                                    </select>
+                                                                    <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All Contract" id="missions">
+                                                                      <option data-hidden="true"></option>
+                                                                      <option>Contract 00</option>
+                                                                      <option>Contract 01</option>
+                                                                      <option>Contract 02</option>
+                                                                      <option>Contract 03</option>
+                                                                      <option>Contract 04</option>
+                                                                    </select>
+                                                                    <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All missions" id="missions">
+                                                                      <option data-hidden="true"></option>
+                                                                      <option>Mission 00</option>
+                                                                      <option>Mission 01</option>
+                                                                      <option>Mission 02</option>
+                                                                      <option>Mission 03</option>
+                                                                      <option>Mission 04</option>
+                                                                    </select>
+                                                                    <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All Owners" id="missions">
+                                                                      <option data-hidden="true"></option>
+                                                                      <option>Owner 00</option>
+                                                                      <option>Owner 01</option>
+                                                                      <option>Owner 02</option>
+                                                                      <option>Owner 03</option>
+                                                                      <option>Owner 04</option>
+                                                                    </select>
+                                                                    <select class="selectpicker select-with-label" multiple name="filter"data-live-search="true" data-actions-box="true" title="Select status">
+                                                                        <option data-content="<span class='label senior'>Senior</span>">Senior</option>
+                                                                        <option data-content="<span class='label junior'>Junior</span>">Junior</option>
+                                                                        <option data-content="<span class='label beginner'>Beginner</span>">Beginner</option>
+                                                                        <option data-content="<span class='label senior'>Senior</span>">Senior</option>
+                                                                        <option data-content="<span class='label junior'>Junior</span>">Junior</option>
+                                                                        <option data-content="<span class='label beginner'>Beginner</span>">Beginner</option>
+                                                                    </select>
+                                                                    <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All Sectors" id="missions">
+                                                                      <option data-hidden="true"></option>
+                                                                      <option>Sector 00</option>
+                                                                      <option>Sector 01</option>
+                                                                      <option>Sector 02</option>
+                                                                      <option>Sector 03</option>
+                                                                      <option>Sector 04</option>
+                                                                    </select>
+                                                                    <div class="row">
+                                                                      <div class="col-md-12">
+                                                                        <label class="checkbox check-all">
+                                                                            <input data-toggle="checkbox" type="checkbox" value="" />
+                                                                                Language group
+                                                                        </label>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <div class="row form-group from-filter-container">
+                                                                <div class="col-md-6">
+                                                                  <div class="sec-title">Min. Jobs done</div>
+                                                                  <input type="number" class="form-control" value="" placeholder="ex : 20" />
+                                                                </div>
+                                                                <div class="col-md-6 p-0">
+                                                                  <ul class="job-filter-checklist">
+                                                                    <li>
+                                                                      <label class="checkbox check-all">
+                                                                          <input data-toggle="checkbox" type="checkbox" value="" />
+                                                                              Inactive users
+                                                                      </label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <label class="checkbox">
+                                                                          <input data-toggle="checkbox" type="checkbox" value="" />
+                                                                              Blacklisted
+                                                                      </label>
+                                                                    </li>
+                                                                  </ul>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div id="excludeFilter" class="tab-pane" role="tabpanel" aria-labelledby="account-tab">
+                                                                <div class="from-filter-container">
+                                                                  <div class="sec-title">
+                                                                    Filters
+                                                                  </div>
+                                                                  <div class="row">
+                                                                    <div class="col-md-12 col-sm-12 col-xs-12 interest-list-container">
+                                                                      <div class="row">
+                                                                        <div class="col-md-12 interest-list">
+                                                                          <ul>
+                                                                            <li>
+                                                                              <a href="javascript:;">
+                                                                                <i class="material-icons">close</i>
+                                                                              </a>
+                                                                              C003-FOU-2017-001-A-Garnier
+                                                                            </li>
+                                                                            <li>
+                                                                              <a href="javascript:;">
+                                                                                <i class="material-icons">close</i>
+                                                                              </a>
+                                                                              C003-FOU-2017-001-A-Garnier
+                                                                            </li>
+                                                                            <li>
+                                                                              <a href="javascript:;">
+                                                                                <i class="material-icons">close</i>
+                                                                              </a>
+                                                                              C003-FOU-2017-001-A-Garnier
+                                                                            </li>
+                                                                          </ul>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <a href="javascript:;" class="add-exclusion-filter" data-toggle="modal" data-target="#teamlistExcludeFilters">+ Add exclusion</a>
+                                                                </div>
+                                                            </div>
+                                                            <div id="cardWorkflowMob" class="tab-pane" role="tabpanel" aria-labelledby="account-tab">
+                                                                <div class="from-filter-container">
+                                                                  <div class="row">
+                                                                      <div class="col-md-12 assessment-list-container">
+                                                                          <ul>
+                                                                              <li>
+                                                                                  <div class="assessment-box unassigned-step">
+                                                                                      <div class="assessment-dot">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card card-notification">
+                                                                                          Card delivered on
+                                                                                          <span>
+                                                                                              Jun 06, 2019
+                                                                                          </span>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                              <li>
+                                                                                  <div class="assessment-box unassigned-step">
+                                                                                      <div class="assessment-dot">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card assessment-card">
+                                                                                          <a href="javascript:;" id="jobNotAssigned">
+                                                                                              <div class="col-md-2 assessment-unassigned-user">
+                                                                                                  <i class="material-icons">
+                                                                                                      person_outline
+                                                                                                  </i>
+                                                                                              </div>
+                                                                                              <div class="col-md-10 assessment-unassigned-title">
+                                                                                                  Not assigned
+                                                                                              </div>
+                                                                                          </a>
+                                                                                          <div class="cta-container">
+                                                                                              <div class="cta">
+                                                                                                  <ul>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" id="proofreaderSettings" title="Edit">
+                                                                                                              <i class="material-icons">
+                                                                                                                  mode_edit
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                                                              <i class="material-icons">
+                                                                                                                  content_copy
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Remove">
+                                                                                                              <i class="material-icons">
+                                                                                                                  delete
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                  </ul>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                              <li>
+                                                                                  <div class="assessment-box unassigned-step">
+                                                                                      <div class="assessment-dot">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card assessment-card">
+                                                                                          <a href="javascript:;" id="jobCandidateList">
+                                                                                              <div class="col-md-2 assessment-unassigned-user">
+                                                                                                  <i class="material-icons">
+                                                                                                      person_outline
+                                                                                                  </i>
+                                                                                                  <span class="notification">
+                                                                                                      0
+                                                                                                  </span>
+                                                                                              </div>
+                                                                                              <div class="col-md-10 assessment-bidding-title">
+                                                                                                  Bidding ongoing ...
+                                                                                                  <span class="designation">
+                                                                                                      Proofreader
+                                                                                                  </span>
+                                                                                              </div>
+                                                                                          </a>
+                                                                                          <div class="col-md-4 assessment-label timer pull-right">
+                                                                                              <i aria-hidden="true" class="fa fa-clock-o">
+                                                                                              </i>
+                                                                                              11:36:59
+                                                                                          </div>
+                                                                                          <div class="cta-container">
+                                                                                              <div class="cta">
+                                                                                                  <ul>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" id="proofreaderSettings" title="Edit">
+                                                                                                              <i class="material-icons">
+                                                                                                                  mode_edit
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                                                              <i class="material-icons">
+                                                                                                                  content_copy
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Remove">
+                                                                                                              <i class="material-icons">
+                                                                                                                  delete
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                  </ul>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                              <li>
+                                                                                  <div class="assessment-box assigned-step">
+                                                                                      <div class="assessment-dot">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card assessment-card">
+                                                                                          <a href="javascript:;" id="proofreaderSettings">
+                                                                                              <div class="col-md-2 assessment-user-image">
+                                                                                                  <img class="img-circle" src="lbd/img/default-avatar.png">
+                                                                                                  </img>
+                                                                                              </div>
+                                                                                              <div class="col-md-10 assessment-title">
+                                                                                                  Michael Martin
+                                                                                                  <span class="designation">
+                                                                                                      Proofreader
+                                                                                                  </span>
+                                                                                              </div>
+                                                                                          </a>
+                                                                                          <div class="col-md-4 assessment-label timer pull-right">
+                                                                                              <i aria-hidden="true" class="fa fa-clock-o">
+                                                                                              </i>
+                                                                                              11:36:59
+                                                                                          </div>
+                                                                                          <div class="cta-container">
+                                                                                              <div class="cta">
+                                                                                                  <ul>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" id="jobCandidateList" title="View Candidate List">
+                                                                                                              <i class="material-icons">
+                                                                                                                  view_list
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                                                              <i class="material-icons">
+                                                                                                                  content_copy
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                      <li>
+                                                                                                          <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Remove">
+                                                                                                              <i class="material-icons">
+                                                                                                                  delete
+                                                                                                              </i>
+                                                                                                          </a>
+                                                                                                      </li>
+                                                                                                  </ul>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                              <li>
+                                                                                  <div class="assessment-box">
+                                                                                      <div class="assessment-dot plagiarized">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card assessment-card plagiarized">
+                                                                                          <a href="javascript:;" id="plagiarism">
+                                                                                              <div class="col-md-2 assessment-icon">
+                                                                                                  <i class="material-icons">
+                                                                                                      adb
+                                                                                                  </i>
+                                                                                              </div>
+                                                                                              <div class="col-md-10 assessment-title">
+                                                                                                  Plagiarism
+                                                                                              </div>
+                                                                                          </a>
+                                                                                          <div class="col-md-4 plagiarism-progress pull-right">
+                                                                                              <div id="plagiarismProgressBar">
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                              <li>
+                                                                                  <div class="assessment-box assigned-step">
+                                                                                      <div class="assessment-dot">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card assessment-card">
+                                                                                          <a href="javascript:;" id="writerSettings">
+                                                                                              <div class="col-md-2 assessment-user-image">
+                                                                                                  <img class="img-circle" src="lbd/img/default-avatar.png">
+                                                                                                  </img>
+                                                                                              </div>
+                                                                                              <div class="col-md-10 assessment-title">
+                                                                                                  Michael Martin
+                                                                                                  <span class="designation">
+                                                                                                      Writer
+                                                                                                  </span>
+                                                                                              </div>
+                                                                                          </a>
+                                                                                          <div class="col-md-4 assessment-label disable pull-right">
+                                                                                              <i aria-hidden="true" class="fa fa-clock-o">
+                                                                                              </i>
+                                                                                              11:36:59
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                              <li>
+                                                                                  <div class="assessment-box assigned-step">
+                                                                                      <div class="assessment-dot active">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card assessment-card active">
+                                                                                          <a href="javascript:;" id="writerSettings">
+                                                                                              <div class="col-md-2 assessment-user-image">
+                                                                                                  <img class="img-circle" src="lbd/img/default-avatar.png">
+                                                                                                  </img>
+                                                                                              </div>
+                                                                                              <div class="col-md-10 assessment-title">
+                                                                                                  Michael Martin
+                                                                                                  <span class="designation">
+                                                                                                      Writer
+                                                                                                  </span>
+                                                                                              </div>
+                                                                                          </a>
+                                                                                          <div class="col-md-4 assessment-label done pull-right">
+                                                                                              <i aria-hidden="true" class="fa fa-check">
+                                                                                              </i>
+                                                                                              Delivered
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                              <li>
+                                                                                  <div class="assessment-box">
+                                                                                      <div class="assessment-dot active">
+                                                                                          <i class="material-icons">
+                                                                                              radio_button_checked
+                                                                                          </i>
+                                                                                      </div>
+                                                                                      <div class="col-md-12 card assessment-card active">
+                                                                                          <a href="javascript:;" id="startingFiles">
+                                                                                              <div class="col-md-2 assessment-icon">
+                                                                                                  <i class="material-icons">
+                                                                                                      insert_drive_file
+                                                                                                  </i>
+                                                                                              </div>
+                                                                                              <div class="col-md-10 assessment-title">
+                                                                                                  Starting Files
+                                                                                              </div>
+                                                                                          </a>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </li>
+                                                                          </ul>
+                                                                      </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
                                                 </div>
                                             </nav>
                                         </div>
                                     </div>
-                                    <div class="col-md-8 main-panel-container">
+                                    <div class="col-md-8 main-panel-container hidden-xs">
                                         <div class="setting-wrap-container">
                                             <div class="col-md-12 settings-wrap starting-files-container">
                                                 <span class="close">
@@ -4330,8 +4794,8 @@
                                       </label>
                                   </div>
                                   <div class="col-sm-3 col-xs-4 pull-right pr-0">
-                                      <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
-                                      Deliver
+                                      <button class="btn btn-default btn-fill full-width btn-disapprove pull-right form-control" type="button">
+                                      Disapprove
                                       </button>
                                   </div>
                               </div>
@@ -5523,7 +5987,18 @@ $('div').delegate('.card-section-list ul li .card', 'click', function(e){
     $('.selectpicker').selectpicker({
         dropupAuto: true
     });
+
+/*Destroy customScroll for mobile*/
+  $(window).on("load resize",function(){
+      if(window.matchMedia("(min-width: 992px)").matches){
+          $('.tab-panel-container .tab-panel').mCustomScrollbar();
+      }else{
+          $('.tab-panel-container .tab-panel').mCustomScrollbar("destroy");
+      }
+  });
+/*Destroy customScroll for mobile ends*/
+
 </script>
-    </body>
+</body>
 
 </html>
