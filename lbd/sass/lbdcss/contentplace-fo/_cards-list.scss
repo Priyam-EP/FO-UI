@@ -12,6 +12,7 @@
 .content-container {
   .fo-cards-list {
     width: 100%;
+
     .page-heading {
       font-weight: 700;
       margin-bottom: 20px;
@@ -22,7 +23,7 @@
     }
 
     .cards-container {
-      .cards-view{
+      .cards-view {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -31,23 +32,26 @@
         align-items: center;
         justify-content: flex-end;
 
-        a{
+        a {
           display: -webkit-flex;
           display: -moz-flex;
           display: -ms-flex;
           display: -o-flex;
           display: flex;
-          &.selected{
+
+          &.selected {
             color: $selected;
           }
         }
-        @media(max-width:767px){
+
+        @media (max-width: 767px) {
           position: absolute;
           right: 0;
           top: -40px;
           transition: all 0.3 ease;
         }
       }
+
       .cards-content {
         .tab-step {
           padding: 0 15px;
@@ -87,14 +91,17 @@
                 background-size: 20px;
               }
             }
-            a.reset-search{
+
+            a.reset-search {
               color: #cacaca;
               position: absolute;
               right: 10px;
-              &:hover{
+
+              &:hover {
                 color: $main;
               }
-              i{
+
+              i {
                 font-size: 16px;
               }
             }
@@ -103,7 +110,8 @@
 
         .cards-list-container {
           margin-top: 20px;
-          @media(max-width:767px){
+
+          @media (max-width: 767px) {
             margin-top: 0;
           }
 
@@ -114,11 +122,16 @@
             margin: 0;
             padding: 0;
 
-            .cards__item {
+            .cards-item {
               display: flex;
               padding: 10px;
               width: 25%;
               transition: all 0.3s ease;
+
+              a {
+                width: 100%;
+                display: block;
+              }
 
               @media (max-width: 991px) {
                 width: 33.3333%;
@@ -143,8 +156,9 @@
                 overflow: hidden;
                 margin: 0;
                 flex: 1;
+                height: 100%;
 
-                .card__content {
+                .card-content {
                   display: flex;
                   flex: 1 1 auto;
                   flex-direction: column;
@@ -161,7 +175,8 @@
                     img {
                       width: 40px;
                     }
-                    .card-user-empty{
+
+                    .card-user-empty {
                       top: 0;
                       left: 0;
                     }
@@ -176,17 +191,20 @@
                     display: -o-flex;
                     display: flex;
                     align-items: center;
+                    height: 60px;
 
                     .card-title {
                       font-weight: 700;
                       color: $main;
-                      // max-height: 40px;
+
+                      /* max-height: 40px; */
                     }
 
                     .time-left {
                       display: none;
                     }
-                    .morelink{
+
+                    .morelink {
                       width: 100%;
                     }
                   }
@@ -210,11 +228,11 @@
               }
             }
 
-            &.upcoming-cards{
-              .cards__item{
-                .card{
-                  .card__content{
-                    .time-left{
+            &.upcoming-cards {
+              .cards-item {
+                .card {
+                  .card-content {
+                    .time-left {
                       background: none;
                       border: 1px solid $helper;
                       color: $helper;
@@ -223,28 +241,32 @@
                 }
               }
             }
-
           }
 
-          &.list-view{
-            .cards__item{
+          &.list-view {
+            .cards-item {
               width: 50%;
 
               @media (max-width: 767px) {
                 width: 100%;
               }
-              .card{
+
+              .card {
                 flex: 1;
-                .card__content{
+
+                .card-content {
                   padding: 10px 20px;
-                  .card-header{
+
+                  .card-header {
                     margin: 0;
-                    div{
-                      &:nth-of-type(2){
+
+                    div {
+                      &:nth-of-type(2) {
                         width: 100%;
                       }
                     }
-                    .time-left{
+
+                    .time-left {
                       display: block;
                       padding: 0;
                       margin: 5px 0 0 0;
@@ -253,34 +275,38 @@
                       background: none;
                     }
                   }
-                  .time-left, .card-pricing{
+
+                  .time-left, .card-pricing {
                     display: none;
                   }
                 }
               }
             }
           }
-
         }
 
-        #archivedCards{
-          .cards-list-container{
-            .card-header{
-              .card-pricing{
+        #archivedCards {
+          .cards-list-container {
+            .card-header {
+              .card-pricing {
                 display: none;
               }
             }
-            .time-left{
+
+            .time-left {
               color: $sub-heading;
-              i{
+
+              i {
                 margin-right: 5px;
               }
             }
-            .card-pricing{
-              i{
+
+            .card-pricing {
+              i {
                 font-size: 12px;
                 position: relative;
-                i{
+
+                i {
                   position: absolute;
                   top: 3px;
                   left: 8px;
@@ -290,9 +316,10 @@
                 }
               }
             }
-            &.list-view{
-              .card-header{
-                .card-pricing{
+
+            &.list-view {
+              .card-header {
+                .card-pricing {
                   display: -webkit-flex;
                   display: -moz-flex;
                   display: -ms-flex;
@@ -301,13 +328,13 @@
                   justify-content: space-between;
                 }
               }
-              .time-left, .card-pricing{
+
+              .time-left, .card-pricing {
                 display: none;
               }
             }
           }
         }
-
       }
     }
   }
