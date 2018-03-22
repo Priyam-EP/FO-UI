@@ -387,7 +387,7 @@
       }
 
       .client-details {
-        @extend %client-details;
+        // @extend %client-details;
 
         display: -webkit-flex;
         display: -moz-flex;
