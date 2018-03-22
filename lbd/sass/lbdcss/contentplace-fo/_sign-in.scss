@@ -203,42 +203,54 @@
 #logoutModal {
   @extend %modal;
 
-  .user-details {
-    .client-image {
-      .client-image-container {
-        width: 50px;
-        height: 50px;
+  .modal-container {
+    height: 100% !important;
 
-        img {
+    .user-details {
+      .client-image {
+        .client-image-container {
           width: 50px;
           height: 50px;
-          object-fit: cover;
-        }
 
-        .card-user-empty {
-          height: 50px;
-        }
-      }
-    }
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+          }
 
-    .list-head-container {
-      .user-name {
-        label {
-          font-size: 24px;
-          font-weight: 600;
-          color: #353F53;
-          text-transform: none;
-        }
-
-        .user-jobs {
-          span.helper-text {
-            font-size: 12px;
-            text-transform: none !important;
-            color: #B0B4BB;
-            font-weight: 400;
+          .card-user-empty {
+            height: 50px;
           }
         }
       }
+
+      .list-head-container {
+        .user-name {
+          label {
+            font-size: 24px;
+            font-weight: 600;
+            color: #353F53;
+            text-transform: none;
+          }
+
+          .user-jobs {
+            span.helper-text {
+              font-size: 12px;
+              text-transform: none !important;
+              color: #B0B4BB;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .modal-content {
+      height: auto;
+      min-height: auto;
+      border-radius: 0;
     }
   }
 }
