@@ -1723,6 +1723,21 @@
   }
 }
 
+.plagiarism-progress {
+  margin: -6px 0 0 0;
+  padding: 0;
+
+  #plagiarismProgressBar {
+    display: block;
+    width: 100%;
+    height: 15px;
+
+    svg {
+      border-radius: 15px;
+    }
+  }
+}
+
 /* Card single card job view modal ends */
 /* Card single card job report problem modal */
 .card-single-report-problem-modal {
