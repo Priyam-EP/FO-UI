@@ -75,17 +75,18 @@
 // Styles from BO
 
 // New contentplace-fo Styles
-@import 'lbdcss/contentplace-fo/royalties';
-@import 'lbdcss/contentplace-fo/sign-in';
-@import 'lbdcss/contentplace-fo/sign-up';
-@import 'lbdcss/contentplace-fo/first-login';
-@import 'lbdcss/contentplace-fo/cards-list';
-
-/* @import 'lbdcss/contentplace-fo/cards-single'; */
-@import 'lbdcss/contentplace-fo/offers-single';
-@import 'lbdcss/contentplace-fo/offers-list';
-@import 'lbdcss/contentplace-fo/job-deck-cards';
-@import 'lbdcss/contentplace-fo/card-single';
+<<<<<<< HEAD
+@import "lbdcss/contentplace-fo/royalties";
+@import "lbdcss/contentplace-fo/sign-in";
+@import "lbdcss/contentplace-fo/sign-up";
+@import "lbdcss/contentplace-fo/first-login";
+@import "lbdcss/contentplace-fo/cards-list";
+// @import "lbdcss/contentplace-fo/cards-single";
+@import "lbdcss/contentplace-fo/offers-single";
+@import "lbdcss/contentplace-fo/offers-list";
+@import "lbdcss/contentplace-fo/job-deck-cards";
+@import "lbdcss/contentplace-fo/card-single";
+@import "lbdcss/contentplace-fo/contributor-profile";
 
 //New contentplace-fo media Queries
 @import 'lbdcss/contentplace-fo/media-queries';

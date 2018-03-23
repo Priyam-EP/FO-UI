@@ -738,36 +738,42 @@
 %client-details {
     margin-bottom: 20px;
     font-size: 12px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
 
-    * {
+    /* * {
         color: #a2a6b0;
 
         a {
             text-decoration: underline;
         }
-    }
+    } */
 
-    .client-image {
-        padding-right: 0;
-        width: 72px;
+    [class$='-image'] {
+        padding: 0;
+        width: 52px;
 
-        .client-image-container {
+        [class*='-image-container'] {
             width: 52px;
             height: 52px;
 
             img {
-                width: 52px;
-                height: 52px;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
 
             .card-user-empty {
-                height: 52px;
+                height: 100%;
             }
         }
     }
 
-    .client-spec {
+    [class*='-spec'], [class*='-infos'] {
         margin-left: 10px;
 
         .row {
@@ -775,12 +781,12 @@
             align-items: center;
         }
 
-        .client-id {
+        [class*='-id'] {
             margin: 0;
             margin-right: 5px;
         }
 
-        .client-name {
+        [class*='-name'] {
             font-size: 22px;
             font-weight: 600;
             color: #353F53;
@@ -800,6 +806,17 @@
                     background: #9a9fa9;
                 }
             }
+        }
+        [class*='-seniority']{
+          font-size: 14px;
+          color: $main;
+          >.label{
+            margin-right: 5px;
+            margin-left: 0 !important;
+          }
+          .label{
+            margin: 0 5px;
+          }
         }
     }
 

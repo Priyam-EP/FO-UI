@@ -1,0 +1,91 @@
+.cp-fo {
+  .wrapper {
+    .page-wrap {
+      .main-panel-wrap {
+        .main-panel {
+            .main-panel-page{
+                .content-container {
+
+                  .contributor-profile {
+                    width: 100%;
+                    .main-container{
+                        .tab-panel-container{
+                            background: none;
+                            box-shadow: none;
+                            margin-top: -30px;
+                            .tab-panel {
+                                background: none;
+                                box-shadow: 4px 4px 4px 0px #edeff1;
+                                padding: 30px 5px 0 0;
+                                width: calc(28.6% + 10px);
+                                .client-details{
+                                    @extend %client-details;
+
+                                }
+                                .profile-completion{
+                                    color: $main;
+                                    padding: 15px;
+                                    margin-bottom: 20px;
+                                    .completion-text{
+                                        .competion-range{
+                                            font-weight: 600;
+                                        }
+                                        a{
+                                            color: $helper;
+                                            text-decoration: underline;
+                                            &:hover{
+                                                text-decoration: none;
+                                            }
+                                        }
+                                    }
+                                    #circles-slider{
+                                        &.ui-slider{
+                                            overflow: hidden;
+                                            margin: 10px 0 0;
+                                            .ui-slider-range{
+                                                border-radius: 10px 0 0 10px;
+                                            }
+                                            .ui-slider-handle{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                  }
+                }
+            }
+
+          @media (max-width: 767px) {
+            padding-bottom: 70px;
+            .main-panel-page{
+                .content-container {
+                  padding: 0;
+
+                  .contributor-profile {
+                    [class*='-content-main'] {
+                      padding: 0;
+
+                      > .card {
+                        box-shadow: none;
+                        border-radius: 0;
+                      }
+
+                      .more-offers {
+                        padding: 0 15px;
+                      }
+                    }
+                  }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
