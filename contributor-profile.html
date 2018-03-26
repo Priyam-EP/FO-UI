@@ -267,7 +267,75 @@
                                     </div>
                                     <div class="content">
                                         <div class="tab-content" id="my-skills">
-                                            Contents to be added
+                                            <div class="row">
+                                              <div class="col-md-12 user-skills-content-container">
+                                                  <span class="close">
+                                                      <a href="javascript:;">
+                                                          <i class="material-icons">
+                                                              close
+                                                          </i>
+                                                      </a>
+                                                  </span>
+                                                  <div class="row">
+                                                    <div class="col-md-12 section-top-header">
+                                                        <div class="section-top-title">
+                                                          <i class="fa fa-edit"></i> My Skills
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row">
+                                                      <div class="col-md-12 user-skills-content">
+                                                          <div class="row">
+                                                              <div class="col-md-12 sub-section">
+                                                                <div class="col-md-12 sub-sec-header">
+                                                                  <div class="row">
+                                                                    <div class="col-md-6 col-xs-12 sec-title">
+                                                                      Language <a href="javascript:;" class="">+ Add a new language</a>
+                                                                    </div>
+                                                                    <div class="col-md-6 hidden-xs text-right">
+                                                                      <label for="">Level of Expertise</label>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-md-12 sub-sec-content">
+                                                                  <div class="row df-ac">
+                                                                    <div class="col-md-11">
+                                                                      <div class="row df-ac">
+                                                                        <div class="col-md-8 col-xs-12 language-to-container">
+                                                                          <ul class="language-to medium">
+                                                                            <li>
+                                                                              <a href="javascript:;" data-toggle="tooltip" data-container="body" data-placement="bottom" title="" data-original-title="French">
+                                                                                <img src="lbd/img/flag/fr.gif" class="mCS_img_loaded">
+                                                                              </a>
+                                                                            </li>
+                                                                            <li>
+                                                                              <a href="javascript:;" data-toggle="tooltip" data-container="body" data-placement="bottom" title="" data-original-title="Portugal">
+                                                                                <img src="lbd/img/flag/pt.gif" class="mCS_img_loaded">
+                                                                              </a>
+                                                                            </li>
+                                                                          </ul>
+                                                                          Writing
+                                                                        </div>
+                                                                        <div class="col-md-4 col-xs-12">
+                                                                          <select class="selectpicker"><option>Beginer</option><option>Intermediate</option><option>Expert</option></select>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="col-md-1">
+                                                                      <a data-placement="bottom" data-toggle="tooltip" data-container="body" href="javascript:void(0);" title="Delete" >
+                                                                        <i class="material-icons">
+                                                                        delete
+                                                                        </i>
+                                                                      </a>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                            </div>
                                         </div>
                                         <div class="tab-content" id="job-history">
                                             Contents to be added
@@ -336,10 +404,18 @@
           $(this).addClass('active');
           $(this).parent().siblings().children().removeClass('active');
           var tab = $(this).attr("href");
-          $(".content > .tab-content").not(tab).css('display', 'none');
+          $(".content .tab-content").not(tab).css('display', 'none');
           $(tab).fadeIn();
+          // $(".tab-content").css({'display':'block'});
           $('.no-data-container').css('position', 'absolute');
         });
+
+        $(document).on('click', '.tab-content.active .close, .tab-navigation .btn-cancel-settings', function(e){
+          e.preventDefault();
+          $(this).closest('.tab-content').removeClass('active').hide();
+          $('.profile-info-navs a').removeClass('active');
+        });
+
 
         /*Read more / Read less*/
           $('.comment').each(function(){
@@ -386,8 +462,26 @@
                 $(this).closest('.row').hide('fast');
             });
         /* Hide Profile completion ends */
-
-
+        /* settings wrap starts */
+          $('#writerSettings').click(function(e) {
+              e.preventDefault();
+              $(this).parent('.assessment-card').addClass('active');
+              $(this).closest('.assessment-dot').addClass('active');
+              $('.job-setting-writer-container').fadeIn(function(){
+                  $('.job-setting-writer-container').css({
+                      display: 'block'
+                  });
+              });
+              $('.starting-files-container, .starting-files-import-search-container, .job-setting-proofreader-container, .job-candidate-list-container, .plagiarism-container').fadeOut(function(){
+                  $('.starting-files-container, .starting-files-import-search-container, .job-setting-proofreader-container, .job-candidate-list-container, .plagiarism-container').css({
+                      display: 'none;'
+                  });
+              });
+              $('.wp-app').css({
+                  overflow: 'hidden'
+              });
+          });
+        /* settings wrap ends */
 
     });
 </script>
