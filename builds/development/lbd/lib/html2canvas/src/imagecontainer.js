@@ -1,1 +1,1 @@
-function ImageContainer(n,a){this.src=n,this.image=new Image;var m=this;this.tainted=null,this.promise=new Promise(function(i,e){m.image.onload=i,m.image.onerror=e,a&&(m.image.crossOrigin="anonymous"),m.image.src=n,!0===m.image.complete&&i(m.image)})}
+function ImageContainer(i,e){this.src=i,this.image=new Image;var n=this;this.tainted=null,this.promise=new Promise(function(a,m){n.image.onload=a,n.image.onerror=m,e&&(n.image.crossOrigin="anonymous"),n.image.src=i,!0===n.image.complete&&a(n.image)})}
