@@ -346,14 +346,20 @@
                   .main-panel-container{
                     background: #fff;
                     .content{
-                        padding: 30px 15px 0;
+                        height: 100vh;
+                        padding: 30px 15px 15px;
                         .tab-content{
+                            height: 100%;
                             &.active{
                                 .tab-content{
                                     display: block !important;
+                                    height: 100%;
                                 }
                             }
                             [class*='content-container']{
+                                height: calc(100vh - 100px);
+                                overflow: hidden;
+                                overflow-y: auto;
                                 > span.close{
                                     position: absolute;
                                     top: -5px;
@@ -376,16 +382,9 @@
                                     }
                                 }
                                 [class$='-content']{
-                                    .add-new-section{
-                                        padding: 15px;
-                                        background: $highlight-03;
-                                        label{
-                                            font-size: 14px;
-                                            font-weight: 600;
-                                            color: $main;
-                                        }
-                                    }
+
                                     .sub-section{
+                                        margin-bottom: 30px;
                                         .sub-sec-header{
                                             border-bottom: solid 2px $divider;
                                             padding: 0px;
@@ -407,9 +406,20 @@
                                         }
                                         .sub-sec-content{
                                             > .row{
-                                                margin-bottom: 20px;
+                                                &.add-new-section{
+                                                    padding: 15px;
+                                                    background: $highlight-03;
+                                                    // margin-bottom: 20px;
+                                                    label{
+                                                        font-size: 14px;
+                                                        font-weight: 600;
+                                                        text-transform: none;
+                                                        color: $main;
+                                                    }
+                                                }
+                                                // margin-bottom: 20px;
+                                                padding: 15px 0 0 0;
                                                 &:nth-child(n+2){
-                                                    padding: 15px 0 0 0;
                                                 }
                                                 &:last-child{
                                                     margin-bottom: 0;
@@ -441,9 +451,112 @@
                                                     }
 
                                                 }
+                                                i{
+                                                    font-size: 20px;
+                                                    margin-right: 15px;
+                                                    &.fa{
+                                                        width: 20px;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
+                                }
+                                .tab-step-content{
+                                    padding: 0 15px;
+                                    input.search-card{
+                                        background: #fff url(../img/search.svg) no-repeat 10px;
+                                        background-size: 20px;
+                                        padding-left: 35px;
+                                    }
+                                    [class*='-list-container']{
+                                        margin: 20px -15px;
+                                        [class$='-list']{
+                                            list-style-type: none;
+                                            padding: 0;
+                                            margin: 0;
+                                            li{
+                                                &.list-item{
+                                                    @include clearfix;
+                                                    transition: all .3s ease;
+                                                    .card-contract{
+                                                        @include clearfix;
+                                                    }
+                                                    .client-details{
+                                                        @extend %client-details;
+                                                        padding: 0;
+                                                            [class*='-spec'], [class*='-infos'] {
+                                                                font-size: 14px;
+
+                                                                [class*='-name'] {
+                                                                    font-size: 14px;
+                                                                    font-weight: 600;
+                                                                    color: $main;
+                                                                }
+
+                                                                [class*='-seniority']{
+                                                                  color: $helper;
+                                                                  >.label{
+                                                                    margin-right: 5px;
+                                                                    margin-left: 0 !important;
+                                                                  }
+                                                                  .label{
+                                                                    margin: 0 5px;
+                                                                  }
+                                                                }
+                                                            }
+                                                      .cta {
+                                                        display: flex;
+                                                        -webkit-flex-flow: row wrap;
+                                                        align-items: center;
+                                                        height: 100%;
+                                                        position: absolute;
+                                                        right: 0px;
+                                                        width: 10%;
+                                                        visibility: hidden;
+                                                        opacity: 0;
+                                                        ul{
+                                                            list-style-type: none;
+                                                            padding: 0;
+                                                            margin: 0;
+                                                            display: -webkit-flex;
+                                                            display: -moz-flex;
+                                                            display: -ms-flex;
+                                                            display: -o-flex;
+                                                            display: flex;
+                                                            width: 100%;
+                                                            justify-content: space-around;
+                                                            li{
+                                                                display: -webkit-inline-flex;
+                                                                display: -moz-inline-flex;
+                                                                display: -ms-inline-flex;
+                                                                display: -o-inline-flex;
+                                                                display: inline-flex;
+                                                            }
+                                                        }
+                                                      }
+
+                                                      &:hover, &:focus {
+                                                        .cta {
+                                                          visibility: visible;
+                                                          opacity: 1;
+                                                          transition: all .3s ease;
+                                                        }
+                                                      }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .settings-fixed-bottom{
+                                position: absolute;
+                                bottom: 15px;
+                                width: 100%;
+                                .modal-actions-fixed-bottom{
+                                    padding-top: 15px;
+                                    border-top: 2px solid $divider;
                                 }
                             }
                         }

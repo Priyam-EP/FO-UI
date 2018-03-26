@@ -78,13 +78,13 @@ $(document).ready(function(){
 	    autoHideScrollbar: true
 	 });
 	// Common custom scrollbar
-	$('.customScroll, .tab-panel').mCustomScrollbar({
+	$('.tab-panel').mCustomScrollbar({
 		// mouseWheel:{ deltaFactor: 50 }
 		// scrollInertia: 1000
 		autoHideScrollbar: true
 	});
 // custom scrollbar outside positioned
-	$('.customScroll.outside, .tab-panel.outside').mCustomScrollbar({
+	$('.tab-panel.outside').mCustomScrollbar({
 		scrollbarPosition: "outside",
 		autoHideScrollbar: true
 	});
@@ -107,7 +107,17 @@ $(document).ready(function(){
 
 
 
-
+	//Chosen Select Dropdown
+	var config = {
+		'.chosen-select'           : {},
+		'.chosen-select-deselect'  : {allow_single_deselect:true},
+		'.chosen-select-no-single' : {disable_search_threshold:10},
+		'.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+		'.chosen-select-width'     : {width:"95%"}
+	}
+		for (var selector in config) {
+		$(selector).chosen(config[selector]);
+	}
 	//Layout-3 Tab
 	$('.status-list a').click(function(event) {
 		event.preventDefault();
@@ -203,12 +213,12 @@ $(document).ready(function(){
 
 	//Select All Fuctions
     var showValid = function() {
-		$('.main-panel-header .page-status, .main-panel-header .project-planner, .main-panel-header .search-action').hide();
+		$('.main-panel-header .page-status, .main-panel-header .project-planner, .main-panel-header .search-action, .page-header-swap-container .selected-articles-swap').hide();
 		$('.main-panel-header .validate').show();
 	};
 
 	var notShowValid = function() {
-		$('.main-panel-header .page-status, .main-panel-header .project-planner, .main-panel-header .search-action').show();
+		$('.main-panel-header .page-status, .main-panel-header .project-planner, .main-panel-header .search-action, .page-header-swap-container .selected-articles-swap').show();
 		$('.main-panel-header .validate').hide();
 	};
 
@@ -216,10 +226,12 @@ $(document).ready(function(){
 		if ($(this).hasClass('checked')) {
 			$('.check .checkbox').removeClass('checked');
 			$('.card-section-list ul li .card').removeClass('card-select');
+			$('.test-article-card-list .card-box').removeClass('selected');
 			notShowValid();
 		}else{
 			$('.check .checkbox').addClass('checked');
 			$('.card-section-list ul li .card').addClass('card-select');
+			$('.test-article-card-list .card-box').addClass('selected');
 			showValid();
 		}
 	});
@@ -344,20 +356,6 @@ $(document).ready(function(){
             vertical: 'top'
         }
 	});
-  $('.datepicker-jobstart-date-down').datetimepicker({
-    format: 'MM/YYYY',
-    widgetPositioning: {
-            horizontal: 'left',
-            vertical: 'bottom'
-        }
-  });
-  $('.datepicker-jobend-date-down').datetimepicker({
-    format: 'MM/YYYY',
-    widgetPositioning: {
-            horizontal: 'left',
-            vertical: 'bottom'
-        }
-  });
 	$('.datepicker-start-up').datetimepicker({
 		format: 'DD/MM/YYYY h:mm A',
 		widgetPositioning: {
@@ -407,7 +405,7 @@ $(document).ready(function(){
     $('#wizardCard, #wizardCard-testArticle').bootstrapWizard({
     	tabClass: 'nav nav-pills',
     	nextSelector: '.btn-next',
-        previousSelector: '.btn-back',
+      previousSelector: '.btn-back',
     	onNext: function(tab, navigation, index) {
     		var $valid = $('#wizardForm').valid();
     		if(!$valid) {
@@ -446,6 +444,52 @@ $(document).ready(function(){
             }
         }
     });
+
+/*    $('#wizardCardTapable').bootstrapWizard({
+      tabClass: 'nav nav-pills',
+      nextSelector: '.btn-next',
+      previousSelector: '.btn-back',
+      onNext: function(tab, navigation, index) {
+        var $valid = $('#wizardForm').valid();
+        if(!$valid) {
+          $validator.focusInvalid();
+          return false;
+        }
+      },
+      onTabClick : function(tab, navigation, index){
+            // Disable the posibility to click on tabs
+            return true;
+        },
+        onTabShow: function(tab, navigation, index) {
+            var $total = navigation.find('li').length;
+            var $current = index+1;
+            var wizard = navigation.closest('.card-wizard');
+            // If it's the last tab then hide the last button and show the finish instead
+            if($current >= $total) {
+                $(wizard).find('.btn-next').hide();
+                $(wizard).find('.btn-finish').show();
+            } else if($current == 1){
+                $(wizard).find('.btn-back').hide();
+            } else {
+                $(wizard).find('.btn-back').show();
+                $(wizard).find('.btn-next').show();
+                $(wizard).find('.btn-finish').hide();
+            }
+        }
+    });*/
+
+
+    //contract Tag
+	$('#contract-tags').tagEditor({
+        placeholder: '+ Add a tag',
+        autocomplete: { minLength: 3, delay: 250, html: true, position: { collision: 'flip' } }
+    });
+
+    $('[data-toggle="tooltip"]').tooltip({
+	    trigger : 'hover'
+	})
+
+
 	//Tab Edit content toggle
 	$('.contract .nav-button').click(function(e) {
 		e.stopPropagation();
@@ -491,8 +535,13 @@ $(document).ready(function(){
 	tinymce.init({
 	    selector: '#edit-textarea-normal, #edit-textarea-normal-02, [id*="edit-textarea-normal"]',
 	    statusbar: false,
-  		menubar : false,
-		height: "230",
+		height: "300",
+		plugins: [
+		"advlist autolink lists link image charmap print preview anchor",
+		"searchreplace visualblocks fullscreen",
+		"insertdatetime media table contextmenu paste imagetools wordcount"
+		],
+		toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
   		content_css : "http://admin-test.edit-place.com/webapp-theme/lbd/css/tinymce.css",
   		allow_html_in_named_anchor: true,
   		force_p_newlines : true,
@@ -503,7 +552,6 @@ $(document).ready(function(){
 	tinymce.init({
 	    selector: '#editSendTestMessage',
 	    statusbar: false,
-  		menubar : false,
   		content_css : "http://admin-test.edit-place.com/webapp-theme/lbd/css/tinymce.css",
   		allow_html_in_named_anchor: true,
   		force_p_newlines : true,
@@ -566,7 +614,7 @@ $(document).ready(function(){
 	  });
 
 	//Chosen Dropdown with Image
-	$(".mission-assignee, .chosen-default").chosen({width:"100%"});
+	$(".mission-assignee, .chosen-default, .update-assignee").chosen({width:"100%"});
 
 	//Settings popup
 	$('.show-reassign, .btn-mission-overview-reassign').click(function() {
@@ -643,8 +691,8 @@ $(document).ready(function(){
 
 
 
-  //Readmore/less Code
-  // Configure/customize these variables.
+	//Readmore/less Code
+	// Configure/customize these variables.
     var showChar = 250;  // How many characters are shown by default
     var ellipsestext = "...";
     var moretext = "See more";
@@ -653,7 +701,7 @@ $(document).ready(function(){
 
      $('.more').each(function() {
         var content = $(this).html(),
-            textContent = $(this).text();
+        		textContent = $(this).text();
         // console.log(content);
         if(content.length > showChar) {
             var c = content.substr(0, showChar);
@@ -666,6 +714,18 @@ $(document).ready(function(){
         }
     });
 
+/*$(".morelink").click(function(){
+    if($(this).hasClass("less")) {
+        $(this).removeClass("less");
+        $(this).html(moretext);
+    } else {
+        $(this).addClass("less");
+        $(this).html(lesstext);
+    }
+    $(this).parent().prev().toggle();
+    $(this).prev().toggle();
+    return false;
+});*/
     $(".morelink").click(function(e){
         e.stopPropagation();
         if($(this).hasClass("less")) {
@@ -680,57 +740,6 @@ $(document).ready(function(){
         return false;
     });
 
-
-(function($) {
-  $.fn.shorten = function (settings) {
-
-    var config = {
-      showChars: 100,
-      ellipsesText: "...",
-      moreText: "more",
-      lessText: "less"
-    };
-
-    if (settings) {
-      $.extend(config, settings);
-    }
-
-    $(document).off("click", '.morelink');
-
-    $(document).on({click: function () {
-
-        var $this = $(this);
-        if ($this.hasClass('less')) {
-          $this.removeClass('less');
-          $this.html(config.moreText);
-        } else {
-          $this.addClass('less');
-          $this.html(config.lessText);
-        }
-        $this.parent().prev().toggle();
-        $this.prev().toggle();
-        return false;
-      }
-    }, '.morelink');
-
-    return this.each(function () {
-      var $this = $(this);
-      if($this.hasClass("shortened")) return;
-
-      $this.addClass("shortened");
-      var content = $this.html();
-      if (content.length > config.showChars) {
-        var c = content.substr(0, config.showChars);
-        var h = content.substr(config.showChars, content.length - config.showChars);
-        var html = c + '<span class="moreellipses">' + config.ellipsesText + ' </span><span class="morecontent"><span>' + h + '</span> <a href="#" class="morelink">' + config.moreText + '</a></span>';
-        $this.html(html);
-        $(".morecontent span").hide();
-      }
-    });
-
-  };
-
- })(jQuery);
 
 
     //Full Calendar
