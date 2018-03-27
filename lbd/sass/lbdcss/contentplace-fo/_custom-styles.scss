@@ -1616,6 +1616,23 @@ em.error {
         }
       }
 
+      li.notification-new {
+        a {
+          position: relative;
+
+          &:before {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: -5px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $color-notify;
+          }
+        }
+      }
+
       li.active {
         position: relative;
 
