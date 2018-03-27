@@ -1,1 +1,1 @@
-$(function(){$("textarea.mention-example2").mentionsInput({onDataRequest:function(t,e,n){$.getJSON("assets/data.json",function(t){t=_.filter(t,function(t){return-1<t.name.toLowerCase().indexOf(e.toLowerCase())}),n.call(this,t)})}})});
+$(function(){$("textarea.mention-example2").mentionsInput({onDataRequest:function(t,e,n){$.getJSON("assets/data.json",function(t){t=_.filter(t,function(t){return t.name.toLowerCase().indexOf(e.toLowerCase())>-1}),n.call(this,t)})}})});
