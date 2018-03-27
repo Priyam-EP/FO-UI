@@ -55,9 +55,13 @@
       .cards-content {
         .tab-step {
           padding: 0 15px;
+
+          .tab-content {
+            padding-top: 1px;
+          }
         }
 
-        .tab-panel-search {
+        /* .tab-panel-search {
           display: -webkit-flex;
           display: -moz-flex;
           display: -ms-flex;
@@ -107,9 +111,23 @@
             }
           }
         }
-
+         */
         .cards-list-container {
           margin-top: 20px;
+
+          h4 {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+
+            i {
+              color: #B0B4BB;
+              margin-right: 5px;
+            }
+          }
 
           @media (max-width: 767px) {
             margin-top: 0;
@@ -197,6 +215,13 @@
                       font-weight: 700;
                       color: $main;
 
+                      span.article-name {
+                        display: block;
+                        font-weight: 400;
+                        color: $dark-gray;
+                        font-weight: 14px;
+                      }
+
                       /* max-height: 40px; */
                     }
 
@@ -244,41 +269,96 @@
           }
 
           &.list-view {
-            .cards-item {
-              width: 50%;
+            .cards {
+              .cards-item {
+                width: 50%;
 
-              @media (max-width: 767px) {
-                width: 100%;
-              }
+                .card {
+                  flex: 1;
 
-              .card {
-                flex: 1;
+                  .card-content {
+                    padding: 10px 20px;
 
-                .card-content {
-                  padding: 10px 20px;
+                    > .row {
+                      display: -webkit-flex;
+                      display: -moz-flex;
+                      display: -ms-flex;
+                      display: -o-flex;
+                      display: flex;
+                      align-items: center;
 
-                  .card-header {
-                    margin: 0;
+                      @media (max-width: 580px) {
+                        display: block;
+                      }
 
-                    div {
-                      &:nth-of-type(2) {
-                        width: 100%;
+                      .card-header {
+                        margin: 0;
+
+                        @media (max-width: 580px) {
+                          height: auto;
+                          margin-bottom: 10px;
+                        }
+
+                        div {
+                          &:nth-of-type(2) {
+                            width: 100%;
+                          }
+                        }
+
+                        .time-left {
+                          display: block;
+                          padding: 0;
+                          margin: 5px 0 0 0;
+                          border-radius: 0;
+                          border: none;
+                          background: none;
+                        }
+
+                        .aricle-time-price {
+                          display: block;
+                          padding: 0;
+                          margin: 5px 0 0 0;
+                          border-radius: 0;
+                          border: none;
+                          background: none;
+                          color: $medium-dark-gray;
+
+                          i {
+                            font-size: 12px;
+                            width: 12px;
+
+                            &.fa-database {
+                              position: relative;
+                              margin-right: 8px;
+
+                              i {
+                                position: absolute;
+                                position: absolute;
+                                top: 3px;
+                                left: 8px;
+                                width: 10px;
+                                font-size: 10px;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
-                    .time-left {
-                      display: block;
-                      padding: 0;
-                      margin: 5px 0 0 0;
-                      border-radius: 0;
-                      border: none;
-                      background: none;
+                    .time-left, .card-pricing {
+                      display: none;
                     }
                   }
+                }
+              }
+            }
 
-                  .time-left, .card-pricing {
-                    display: none;
-                  }
+            &.invitations {
+              .cards {
+                display: block;
+
+                .cards-item {
+                  width: 100%;
                 }
               }
             }
