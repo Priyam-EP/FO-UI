@@ -403,6 +403,7 @@
                                         overflow: hidden;
                                         overflow-y: auto;
                                         padding-bottom: 55px;
+                                        padding-top: 2px;
                                         > .row{
                                             &:last-child{
                                                 @-moz-document url-prefix () {
@@ -685,6 +686,35 @@
                                 .modal-actions-fixed-bottom{
                                     padding-top: 15px;
                                     border-top: 2px solid $divider;
+                                }
+                            }
+
+                            &#my-skills{
+                                .profile-rank{
+                                    padding: 15px;
+                                    .client-details{
+                                        @extend %client-details;
+                                        color: $main;
+                                        i{
+                                            font-size: 52px;
+                                            color: $main;
+                                        }
+                                        .client-rank{
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            // color: $main;
+                                        }
+                                    }
+                                    .time-spent{
+                                        color: $body;
+                                        font-weight: 600;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                    }
+                                    ul{
+                                        padding-left: 15px;
+                                    }
                                 }
                             }
 
