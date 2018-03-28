@@ -2585,6 +2585,10 @@ em.error {
   &.archived {
     background: #000;
   }
+  &.elite {
+    background: #164b8a;
+    border-radius: 30px;
+  }
 
   &.senior {
     background: #FB8C00;
