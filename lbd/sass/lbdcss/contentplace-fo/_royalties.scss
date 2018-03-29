@@ -289,20 +289,16 @@
                     .user-image {
                       width: 25%;
                         .user-image-container {
-                          width: 72px;
-                          height: 72px;
-                          @media (max-width: 1200px){
-                            width: 62px;
-                            height: 62px;
-                          }
-                          @media (max-width: 991px){
+                            @extend %user-image;
                             width: 72px;
                             height: 72px;
-                          }
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
+                            @media (max-width: 1200px){
+                              width: 62px;
+                              height: 62px;
+                            }
+                            @media (max-width: 991px){
+                              width: 72px;
+                              height: 72px;
                             }
                         }
                     }

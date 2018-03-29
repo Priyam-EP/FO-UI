@@ -5,8 +5,8 @@
         .main-panel {
           .main-panel-page {
             .content-container {
-                padding: 0;
               &.contributor-profile {
+                padding: 0;
                 width: 100%;
 
                 .main-container {
@@ -769,6 +769,12 @@
                                         label{
                                             margin: 0 10px 0 0;
                                             width: 10%;
+                                        }
+                                        .add-new-section{
+                                            label{
+                                                width: 100%;
+                                                margin: 0 0 5px 0;
+                                            }
                                         }
                                     }
                                 }

@@ -130,6 +130,7 @@
                     justify-content: center;
                     flex-flow: column;
                     .client-logo{
+                      @extend %user-image;
                       width: 60px;
                       height: 60px;
                     }

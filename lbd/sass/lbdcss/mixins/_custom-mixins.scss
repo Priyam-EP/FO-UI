@@ -733,6 +733,31 @@
     }
 }
 
+// card user image, user image
+%user-image{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    position: relative;
+    .card-user-empty, img{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        object-fit: cover;
+        max-width: 100%;
+        display: block;
+    }
+    &.img-small{
+
+    }
+    &.img-medium{
+
+    }
+    &.img-large{
+
+    }
+}
 
 // Cleint details block
 %client-details {
@@ -754,23 +779,11 @@
     } */
 
     [class$='-image'] {
+        @extend %user-image;
         padding: 0;
         width: 52px;
+        height: 52px;
 
-        [class*='-image-container'] {
-            width: 52px;
-            height: 52px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .card-user-empty {
-                height: 100%;
-            }
-        }
     }
 
     [class*='-spec'], [class*='-infos'] {
@@ -844,6 +857,8 @@
         }
     }
 }
+
+
 
 /* UI Circle  slider starts */
 %ui-slider {
