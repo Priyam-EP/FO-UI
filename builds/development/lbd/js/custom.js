@@ -517,6 +517,26 @@ $(document).ready(function(){
 		});
 	});
 
+    //Open Main Menu
+    $('#mainMenuDropdown').click(function(e) {
+        e.stopPropagation();
+        $('#mainMenuDropdown .tooltip').hide();
+        $('ul.login-drop').fadeIn('400', function() {
+            $('ul.login-drop').show();
+        });
+    });
+    $(document).click(function(e) {
+        if(e.target.id == 'ul.login-drop')
+          return;
+       //For descendants of menu_content being clicked, remove this check if you do not want to put constraint on descendants.
+       if($(e.target).closest('ul.login-drop').length)
+          return;
+
+        $('ul.login-drop').fadeOut('400', function() {
+            $('ul.login-drop').hide();
+        });
+    });
+
 	//tinyMCE integartion
 	tinymce.init({
 	    selector: '#edit-textarea',
