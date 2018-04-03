@@ -458,6 +458,10 @@ em.error {
           }
         }
       }
+
+      &.tab-open {
+        z-index: 1;
+      }
     }
 
     .page-wrap {

@@ -16,7 +16,7 @@
                         <div class="content-container contributor-profile">
                           <div class="clearfix full-width">
                             <div class="row main-container">
-                                <div class="col-md-4 tab-panel-container">
+                                <div class="col-xs-12 col-md-4 tab-panel-container">
                                     <div class="tab-panel">
                                         <div class="row">
                                           <div class="client-details col-md-12">
@@ -182,8 +182,8 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="row d-flex">
-                                                    <div class="col-md-6 d-flex">
+                                                  <div class="row profile-contact-info">
+                                                    <div class="col-md-6 contact-email">
                                                       <div class="info-content card">
                                                         <div class="display-content clearfix">
                                                           <!-- <span class="edit" data-toggle="modal" data-target="#editProfileOverview">
@@ -199,7 +199,7 @@
                                                         </div>
                                                       </div>
                                                     </div>
-                                                    <div class="col-md-6  d-flex">
+                                                    <div class="col-md-6 contact-phone">
                                                       <div class="info-content card">
                                                         <div class="display-content clearfix">
                                                           <span class="edit" data-toggle="modal" data-target="#editProfileOverview">
@@ -258,8 +258,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-8 main-panel-container hidden-xs">
-                                    <div class="no-data-container">
+                                <div class="col-xs-12 col-md-8 main-panel-container">
+                                    <div class="no-data-container hidden-xs">
                                         <div class="no-data-placeholder">
                                             <h2>Click on a tab on the left</h2>
                                             <p>to show more information about this profile.</p>
@@ -326,6 +326,8 @@
         $('.profile-info-navs a').click(function(event) {
           event.preventDefault();
           $(this).addClass('active');
+          $(this).parents('.tab-panel-container').addClass('tab-open').siblings('.main-panel-container').addClass('tab-open');
+          $('.sidebar-mobile, .tab-panel-container, .main-panel-container').addClass('tab-open');
           $(this).parent().siblings().children().removeClass('active');
           var tab = $(this).attr("href");
           $(".content .tab-content").not(tab).css('display', 'none');
@@ -338,6 +340,7 @@
           e.preventDefault();
           $(this).closest('.tab-content').removeClass('active').hide();
           $('.profile-info-navs a').removeClass('active');
+          $('.sidebar-mobile, .tab-panel-container, .main-panel-container').removeClass('tab-open');
         });
 
         /*My skills add new section*/
