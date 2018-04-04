@@ -196,7 +196,8 @@
                                                                 color: $not-started;
                                                             }
                                                         }
-                                                        @media (max-width: 767px){
+
+                                                        @media (max-width: 767px) {
                                                             width: calc(100% / 1) !important;
                                                         }
                                                     }
@@ -214,29 +215,28 @@
                                             .profile-overview {
                                                 @include divider($color: $divider-02);
 
-                                                .profile-contact-info{
+                                                .profile-contact-info {
                                                     display: -webkit-flex;
                                                     display: -moz-flex;
                                                     display: -ms-flex;
                                                     display: -o-flex;
                                                     display: flex;
+                                                    flex: 1;
 
-                                                    .contact-email,.contact-phone{
+                                                    .contact-email, .contact-phone {
                                                         display: -webkit-flex;
                                                         display: -moz-flex;
                                                         display: -ms-flex;
                                                         display: -o-flex;
                                                         display: flex;
+                                                        width: 100%;
                                                     }
-                                                    @media (max-width: 767px){
-                                                        display: block;
-                                                        .contact-email, .contact-phone{
-                                                            display: block;
-                                                        }
-                                                    }
+
                                                 }
+
                                                 .info-content {
                                                     margin-bottom: 20px;
+                                                    width: 100%;
 
                                                     .display-content {
                                                         padding: 12px 0;
@@ -339,7 +339,8 @@
                                                         display: -o-flex;
                                                         display: flex;
                                                         align-items: center;
-                                                        @media (max-width: 767px){
+
+                                                        @media (max-width: 1199px) {
                                                             display: block;
                                                         }
                                                     }
@@ -364,14 +365,18 @@
                                                         &:last-child {
                                                             padding-left: 0;
                                                         }
-                                                        @media (max-width: 767px){
+
+                                                        @media (max-width: 1199px) {
                                                             margin-bottom: 15px;
-                                                            &:last-child{
+
+                                                            &:last-child {
                                                                 padding-left: 15px;
                                                                 margin: 0;
                                                                 text-align: center;
-                                                                a.btn{
+
+                                                                a.btn {
                                                                     // width: 100%;
+
                                                                 }
                                                             }
                                                         }
@@ -397,9 +402,11 @@
                                                 }
                                             }
                                         }
-                                        @media (max-width: 767px){
+
+                                        @media (max-width: 767px) {
                                             width: 100%;
-                                            .tab-panel{
+
+                                            .tab-panel {
                                                 width: 100%;
                                             }
                                         }
@@ -588,6 +595,17 @@
                                                                         }
                                                                     }
                                                                 }
+                                                                @media (max-width: 767px){
+                                                                    .field-group{
+                                                                        > .df-ac{
+                                                                            display: block !important;
+                                                                            .expert-level{
+                                                                                padding-left: 0;
+                                                                                margin-top: 10px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -664,7 +682,7 @@
 
                                                                             .applied-date {
                                                                                 width: 20%;
-                                                                                padding-right: 5px;
+                                                                                padding-right: 0px;
                                                                             }
 
                                                                             .cta {
@@ -714,6 +732,43 @@
                                                                                     visibility: visible;
                                                                                     opacity: 1;
                                                                                     transition: all .3s ease;
+                                                                                }
+                                                                            }
+                                                                            @media (max-width: 767px){
+                                                                                [class$='-image'] {
+                                                                                    width: 35px;
+                                                                                    height: 35px;
+                                                                                    display: -webkit-flex;
+                                                                                    display: -moz-flex;
+                                                                                    display: -ms-flex;
+                                                                                    display: -o-flex;
+                                                                                    display: flex;
+                                                                                    align-items: center;
+                                                                                    img {
+                                                                                    }
+                                                                                }
+                                                                                [class*='-spec'], [class*='-infos'] {
+                                                                                    width: 63%;
+                                                                                }
+                                                                                .applied-date{
+                                                                                    width: 29%;
+                                                                                }
+                                                                                > .client-desc{
+                                                                                    display: -webkit-flex !important;
+                                                                                    display: -moz-flex !important;
+                                                                                    display: -ms-flex !important;
+                                                                                    display: -o-flex !important;
+                                                                                    display: flex !important;
+                                                                                    align-items: center;
+                                                                                    justify-content: space-between;
+                                                                                    font-size: 14px;
+                                                                                    margin-top: 5px;
+                                                                                    .dropdown-menu{
+                                                                                        margin-top: 0;
+                                                                                        &:after, &:before{
+                                                                                            content: none;
+                                                                                        }
+                                                                                    }
                                                                                 }
                                                                             }
                                                                         }
@@ -951,6 +1006,164 @@
                         }
                     }
 
+                    @media (max-width: 1199px){
+                        .main-panel-page {
+                            .content-container {
+                                padding: 0;
+
+                                &.contributor-profile {
+                                    .main-container {
+                                        // display: block !important;
+
+                                        .tab-panel-container {
+                                            // width: 100%;
+                                            .tab-panel {
+                                                // width: 100%;
+                                                min-height: unset;
+                                                height: calc(100%);
+
+                                                .client-details {
+                                                    .client-infos {
+                                                        .client-name-edit {
+                                                            .input-group {
+                                                                flex-flow: row wrap;
+
+                                                                input, button.btn {
+                                                                    width: 100% !important;
+                                                                }
+
+                                                                input {
+                                                                    border-radius: 4px 4px 0 0;
+                                                                    border-bottom: 0;
+                                                                    border-right: 1px solid #eaebed;
+                                                                }
+
+                                                                button.btn {
+                                                                    border-radius: 0 0 4px 4px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .profile-info-navs {
+                                                    ul{
+                                                        li{
+                                                            width: calc(100% / 1);
+                                                        }
+                                                    }
+                                                }
+                                                .profile-overview{
+                                                    .profile-contact-info{
+                                                        display: block;
+                                                        .contact-email, .contact-phone {
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                        }
+
+                                        .main-panel-container {
+                                            .sub-section {
+                                                &.sub-section-lang{
+                                                    .sub-sec-content{
+                                                        .add-new-section{
+                                                            .col-md-5{
+                                                                margin-bottom: 10px;
+                                                                &:last-child{
+                                                                    margin-bottom: 0;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @media (max-width: 991px){
+                        .main-panel-page {
+                            .content-container {
+                                padding: 0;
+
+                                &.contributor-profile {
+                                    .main-container {
+                                        display: block !important;
+
+                                        .tab-panel-container {
+                                            width: 100%;
+                                            .tab-panel {
+                                                width: 100%;
+                                                min-height: unset;
+                                                height: calc(100%);
+
+                                                .client-details {
+                                                    .client-infos {
+                                                        .client-name-edit {
+                                                            .input-group {
+                                                                flex-flow: row wrap;
+
+                                                                input, button.btn {
+                                                                    width: 100% !important;
+                                                                }
+
+                                                                input {
+                                                                    border-radius: 4px 4px 0 0;
+                                                                    border-bottom: 0;
+                                                                    border-right: 1px solid #eaebed;
+                                                                }
+
+                                                                button.btn {
+                                                                    border-radius: 0 0 4px 4px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .profile-info-navs {
+                                                    ul{
+                                                        li{
+                                                            width: calc(100% / 2);
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            &.tab-open {
+                                                display: none;
+                                            }
+                                        }
+
+                                        .main-panel-container {
+                                            .no-data-container{
+                                                display: none;
+                                            }
+
+                                            .sub-section {
+                                                &.sub-section-lang{
+                                                    .sub-sec-content{
+                                                        .add-new-section{
+                                                            .col-md-5{
+                                                                margin-bottom: 10px;
+                                                                &:last-child{
+                                                                    margin-bottom: 0;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     @media (max-width: 767px) {
                         padding-bottom: 0px !important;
 
@@ -959,41 +1172,45 @@
                                 padding: 0;
 
                                 &.contributor-profile {
-                                    .main-container{
+                                    .main-container {
                                         display: block !important;
-                                        .tab-panel-container{
-                                            .tab-panel{
+
+                                        .tab-panel-container {
+                                            .tab-panel {
                                                 min-height: unset;
                                                 height: calc(100% - 60px);
-                                                .client-details{
-                                                    .client-infos{
-                                                        .client-name-edit{
-                                                            .input-group{
+
+                                                .client-details {
+                                                    .client-infos {
+                                                        .client-name-edit {
+                                                            .input-group {
                                                                 flex-flow: row wrap;
-                                                                input, button.btn{
+
+                                                                input, button.btn {
                                                                     width: 100% !important;
                                                                 }
-                                                                input{
+
+                                                                input {
                                                                     border-radius: 4px 4px 0 0;
                                                                     border-bottom: 0;
                                                                     border-right: 1px solid #eaebed;
                                                                 }
-                                                                button.btn{
+
+                                                                button.btn {
                                                                     border-radius: 0 0 4px 4px;
                                                                 }
                                                             }
-
                                                         }
                                                     }
                                                 }
                                             }
-                                            &.tab-open{
+
+                                            &.tab-open {
                                                 display: none;
                                             }
                                         }
-                                        .main-panel-container{
 
-                                        }
+                                        .main-panel-container {}
                                     }
                                 }
                             }

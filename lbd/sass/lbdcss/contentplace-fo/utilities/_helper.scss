@@ -1,6 +1,7 @@
 /* helper utility styles */
 .helper-text {
     font-size: 12px;
+
     // text-transform: none !important;
     color: $helper;
     font-weight: 400;
@@ -30,13 +31,11 @@
   color: $delete;
 } */
 
-
-
 // Box modal styles
 
-$dimensions: ("m": "margin", "p": "padding");
-$directions: ("t": "top", "b": "bottom", "r": "right", "l": "left");
-$responsive-breaks: ("xs, sm, md, lg");
+$dimensions: ('m': 'margin', 'p': 'padding');
+$directions: ('t': 'top', 'b': 'bottom', 'r': 'right', 'l': 'left');
+$responsive-breaks: 'xs, sm, md, lg';
 
 @each $dim in $dimensions {
     @for $i from 0 through 6 {
@@ -111,8 +110,8 @@ $responsive-breaks: ("xs, sm, md, lg");
     @include custom-btn-nofill-hover(#fff, $default-bg-hover, $delete);
 }
 
-.btn{
-  white-space: normal;
+.btn {
+    white-space: normal;
 }
 
 // button styles ends
@@ -122,21 +121,25 @@ $responsive-breaks: ("xs, sm, md, lg");
     color: $main;
     font-weight: 600;
 }
-.ln100{
-  line-height: 100% !important;
+
+.ln100 {
+    line-height: 100% !important;
 }
-.fw-normal{
-  font-weight: normal !important;
+
+.fw-normal {
+    font-weight: normal !important;
 }
-.fw600{
+
+.fw600 {
     font-weight: 600 !important;
 }
-.fw700{
+
+.fw700 {
     font-weight: 700 !important;
 }
 
-.text-none{
-  text-transform: none !important;
+.text-none {
+    text-transform: none !important;
 }
 
 .primary-font {
@@ -144,20 +147,20 @@ $responsive-breaks: ("xs, sm, md, lg");
     color: $sub-heading;
 }
 
-.sec-title{
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: $main;
+.sec-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: $main;
 }
 
 /* Text color styles */
-.error-text{
-  color: $delete !important;
+.error-text {
+    color: $delete !important;
 }
 
-.warning-text{
-  color: $validate !important;
+.warning-text {
+    color: $validate !important;
 }
 
 /* .modal{
@@ -223,6 +226,7 @@ $responsive-breaks: ("xs, sm, md, lg");
         div {
             b {
                 // background-position-y: 15px;
+
             }
         }
     }
