@@ -51,6 +51,19 @@
           color: $delete;
           text-decoration: underline;
 
+<<<<<<< HEAD
+            .request-time {
+                font-size: 12px;
+                color: $helper;
+                font-weight: 400;
+            }
+
+            .payment-time {
+                font-size: 14px;
+                color: $helper;
+                font-weight: 600;
+            }
+=======
           &:hover {
             text-decoration: none;
           }
@@ -62,6 +75,7 @@
         color: $helper;
         font-weight: 400;
       }
+>>>>>>> 8541521d1b559722a7cc10f45c17506aefc3430a
 
       .payment-time {
         font-size: 14px;
@@ -292,8 +306,14 @@
             .user-image-container {
               @extend %user-image;
 
+<<<<<<< HEAD
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+=======
               width: 72px;
               height: 72px;
+>>>>>>> 8541521d1b559722a7cc10f45c17506aefc3430a
 
               @media (max-width: 1200px) {
                 width: 62px;
@@ -317,6 +337,38 @@
           }
         }
 
+<<<<<<< HEAD
+        [class*='-content-main'] {
+            .royalty-info-header {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+
+                .royalty-info {
+                    .user-image {
+                        width: 25%;
+
+                        .user-image-container {
+                            @extend %user-image;
+
+                            width: 72px;
+                            height: 72px;
+
+                            @media (max-width: 1200px) {
+                                width: 62px;
+                                height: 62px;
+                            }
+
+                            @media (max-width: 991px) {
+                                width: 72px;
+                                height: 72px;
+                            }
+                        }
+                    }
+=======
         .payment-actions {
           button {
             &:last-child {
@@ -324,6 +376,7 @@
             }
           }
         }
+>>>>>>> 8541521d1b559722a7cc10f45c17506aefc3430a
 
         @media (max-width: 767px) {
           display: block;
@@ -439,10 +492,17 @@
   .my-accounts {
     @extend %my-accounts-royalty;
 
+<<<<<<< HEAD
+                .account-details-container {
+                    width: 100%;
+                    padding: 15px;
+                }
+=======
     .my-accounts-list {
       li {
         position: relative;
         padding: 0;
+>>>>>>> 8541521d1b559722a7cc10f45c17506aefc3430a
 
         span.section-actions {
           position: absolute;
@@ -454,9 +514,28 @@
           z-index: 2;
         }
 
+<<<<<<< HEAD
+                    span.section-actions {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+
+                &.add-block {
+                    padding: 15px;
+                }
+
+                &:only-child {
+                    margin: 0;
+                    padding: 30px;
+                    width: 100%;
+                }
+            }
+=======
         .account-details-container {
           width: 100%;
           padding: 15px;
+>>>>>>> 8541521d1b559722a7cc10f45c17506aefc3430a
         }
 
         &.selected, &:hover {
@@ -675,9 +754,239 @@
                       color: $main;
                       text-decoration: underline;
 
+<<<<<<< HEAD
+                        #tunnelWizard {
+                            .tab-links {
+                                ul.nav {
+                                    display: none;
+                                }
+
+                                .tab-pane {
+                                    @include clearfix;
+
+                                    padding: 0;
+
+                                    // height: calc(100vh - 32px);
+                                    position: relative;
+
+                                    .tunnel-steps-content-container {
+                                        // min-height: 300px;
+
+                                        height: calc(100vh - 230px);
+                                        overflow: hidden;
+                                        overflow-y: auto;
+                                        padding-right: 1px;
+
+                                        &.no-scroll {
+                                            overflow-y: hidden;
+                                        }
+
+                                        .tunnel-steps-contents {
+                                            @include clearfix;
+
+                                            width: calc(100% - 5px);
+
+                                            @media (max-width: 767px) {
+                                                // width: 100%;
+                                            }
+
+                                            padding: 1px 1px 0;
+
+                                            .payment-amount {
+                                                color: $main;
+                                            }
+                                        }
+                                    }
+
+                                    .tunnel-step-1 {
+                                        padding: 0;
+                                        margin: 0 0 15px 0;
+                                        list-style-type: none;
+
+                                        li {
+                                            border-bottom: 2px $border-color-02 solid;
+                                            padding: 8px 0;
+
+                                            &:last-child {
+                                                border: none;
+                                            }
+
+                                            & + li {
+                                                label {
+                                                    text-transform: none;
+                                                    font-size: 14px;
+                                                    font-weight: normal;
+                                                    padding-left: 20px;
+
+                                                    .icons {
+                                                        position: absolute;
+                                                        top: 2px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .transfer-option {
+                                        color: $main;
+
+                                        .card {
+                                            padding: 10px;
+                                            margin: 0;
+                                        }
+                                    }
+
+                                    .payment-container {
+                                        .total-payment {
+                                            color: $main;
+                                        }
+                                    }
+
+                                    .step-actions {
+                                        margin: 0 -15px;
+
+                                        @media screen and (max-width: 767px) {
+                                            margin: 0 -15px;
+                                        }
+
+                                        .tab-navigation {
+                                            padding: 0 30px;
+                                        }
+                                    }
+
+                                    .modal-actions-fixed-bottom {
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        height: 60px;
+                                        width: 100%;
+                                    }
+
+                                    .request-sent {
+                                        padding: 30px;
+                                        display: -webkit-flex;
+                                        display: -moz-flex;
+                                        display: -ms-flex;
+                                        display: -o-flex;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        .request-sent-icon {
+                                            width: 150px;
+
+                                            i {
+                                                font-size: 180px;
+                                                color: $selected;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+
+                                    &#step-1 {
+                                        .tunnel-steps-content-container {
+                                            overflow: unset;
+                                            position: unset;
+                                            height: 100%;
+                                        }
+
+                                        .tunnel-step-1 {
+                                            overflow: hidden;
+                                            overflow-y: auto;
+                                            height: 150px;
+                                            padding-right: 10px;
+                                        }
+
+                                        .modal-actions-fixed-bottom {
+                                            position: unset;
+                                            bottom: unset;
+                                            left: unset;
+                                            margin-top: 10px;
+
+                                            .step-actions {
+                                                margin: 0 -15px;
+
+                                                @media (max-width: 767px) {
+                                                    margin: 0 -15px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &#confirmation {
+                                        .tunnel-steps-content-container {
+                                            @media (max-width: 767px) {
+                                                height: calc(100vh - 170px);
+                                            }
+                                        }
+
+                                        .my-accounts, .application-summary {
+                                            .payment-confirmation {
+                                                color: $main;
+
+                                                .total-payment-amount {
+                                                    color: $selected;
+                                                    font-size: 32px;
+                                                    font-weight: 700;
+                                                }
+
+                                                .option-express-transfer {
+                                                    color: $helper;
+                                                }
+                                            }
+
+                                            .my-accounts-list {
+                                                > li {
+                                                    @media screen and (max-width: 767px) {
+                                                        border: none !important;
+                                                        padding: 0 !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &#requestSent, &#applicationSubmision {
+                                        @media screen and (max-width: 767px) {
+                                            height: calc(100vh - 92px);
+                                        }
+
+                                        .tunnel-steps-content-container {
+                                            overflow: unset;
+                                            overflow-y: unset;
+                                        }
+
+                                        .step-actions {
+                                            padding: 20px 0 0;
+                                            border-top: 2px solid $divider;
+
+                                            @media screen and (max-width: 767px) {
+                                                border: none;
+
+                                                .tab-navigation {
+                                                    .btn-back {
+                                                        margin-bottom: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .confirmation-tick {
+                                            @extend %confirmation-tick;
+
+                                            -webkit-box-shadow: 0px 15px 55px 0 rgba(68, 138, 255, 0.4);
+                                            -moz-box-shadow: 0px 15px 55px 0 rgba(68, 138, 255, 0.4);
+                                            box-shadow: 0px 15px 55px 0 rgba(68, 138, 255, 0.4);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+=======
                       &:hover {
                         text-decoration: none;
                       }
+>>>>>>> 8541521d1b559722a7cc10f45c17506aefc3430a
                     }
                   }
 

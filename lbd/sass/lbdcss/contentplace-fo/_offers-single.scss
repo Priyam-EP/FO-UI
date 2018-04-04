@@ -197,7 +197,6 @@
                     color: #fff;
                     transition: all .3s ease;
                     width: calc(100% - 40px);
-
                     &.offer-title {
                         text-shadow: 2px 2px 4px $main;
 
@@ -205,6 +204,19 @@
                             border-radius: 0 4px 4px 0;
                         }
                     }
+                }
+                p {
+                  font-size: 14px;
+
+                  img {
+                    padding-left: 0;
+                    max-width: 100%;
+                  }
+                }
+
+                img {
+                  padding-left: 15px;
+                  max-width: 100%;
                 }
 
                 @media (max-width: 767px) {
