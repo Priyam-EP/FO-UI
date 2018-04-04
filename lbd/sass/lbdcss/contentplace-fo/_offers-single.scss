@@ -279,6 +279,16 @@
 
         p {
           font-size: 14px;
+
+          img {
+            padding-left: 0;
+            max-width: 100%;
+          }
+        }
+
+        img {
+          padding-left: 15px;
+          max-width: 100%;
         }
 
         a {
