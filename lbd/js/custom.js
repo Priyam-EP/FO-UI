@@ -993,6 +993,27 @@ $('[data-toggle="popover"]').popover({
     container: 'body'
 });
 
+/*FO modals mobile Vitual keyboard scroll*/
+if($(window).width() < 767){
+    $('.content-scroll input, .content-scroll select, .content-scroll textarea').focus('input, select, textarea', function(e) {
+        var form = $(this).closest('form');
+        // console.log($(this)[0]);
+        // return false;
+        if(form[0][0] != $(this)[0] && form[0][1] != $(this)[0])
+        {
+            $('.content-scroll').animate({scrollTop:$(this).offset().top}, 'slow');
+        }
+        return false;
+    });
+    $(".tunnel-steps-contents input").focusin('input', function(e) {
+        $('.tunnel-steps-contents').animate({
+            scrollTop: $(this).offset().top
+        }, 'slow');
+    });
+}
+
+
+
 });
 
 

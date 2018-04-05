@@ -279,14 +279,8 @@
           font-size: 14px;
 
           img {
-            padding-left: 0;
             max-width: 100%;
           }
-        }
-
-        img {
-          padding-left: 15px;
-          max-width: 100%;
         }
 
         a {
@@ -1031,6 +1025,16 @@
                       @media (max-width: 767px) {
                         height: calc(100vh - 160px);
                       }
+
+                      .tunnel-steps-contents {
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        align-items: center;
+                        margin-top: -50px;
+                      }
                     }
 
                     .timer {
@@ -1042,6 +1046,13 @@
                       font-size: 16px;
                       font-weight: 600;
                       display: block;
+                      position: absolute;
+                      width: 100%;
+                      bottom: 60px;
+
+                      @media (max-width: 767px) {
+                        bottom: 15px;
+                      }
 
                       span {
                         font-size: 14px;

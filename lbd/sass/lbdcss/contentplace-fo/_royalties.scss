@@ -723,7 +723,6 @@
                       @include clearfix;
 
                       width: calc(100% - 5px);
-                      margin-top: -50px;
 
                       @media (max-width: 767px) {
                         // width: 100%;
@@ -790,7 +789,7 @@
                     }
 
                     .tab-navigation {
-                      padding: 0 30px;
+                      /* padding: 0 30px; */
                     }
                   }
 
