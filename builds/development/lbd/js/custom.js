@@ -1010,10 +1010,6 @@ if($(window).width() < 767){
             scrollTop: $(this).offset().top
         }, 'slow');
     });
-
-    //Remove datepicker for Mobile
-    $("input[class*='datepicker']").removeClass("datepicker").attr('type', 'date');
-
 }
 
 
