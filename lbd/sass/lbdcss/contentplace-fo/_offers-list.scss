@@ -55,6 +55,25 @@
             .offers-content {
                 .tab-step {
                     padding: 0 15px;
+                    .tab-step-content{
+                        ul.nav{
+                            &:before{
+                                bottom: 1px;
+                            }
+                            margin-bottom: 15px;
+                            li{
+                                margin-bottom: 10px;
+                                /* @media (max-width: 767px){
+                                    width: 100%;
+                                    &.active{
+                                        &:before{
+                                            content: none;
+                                        }
+                                    }
+                                } */
+                            }
+                        }
+                    }
                 }
 
                 .offers-list-container {
@@ -173,6 +192,9 @@
                                     }
                                 }
                             }
+                        }
+                        &:last-child{
+                            padding-bottom: 60px;
                         }
                     }
 
