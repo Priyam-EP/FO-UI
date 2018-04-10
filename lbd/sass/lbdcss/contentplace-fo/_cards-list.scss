@@ -190,6 +190,21 @@
                                         width: 40px;
                                         height: 40px;
 
+                                        &.ongoing{
+                                            &:before{
+                                                content: '';
+                                                position: absolute;
+                                                right: -0px;
+                                                top: -2px;
+                                                width: 12px;
+                                                height: 12px;
+                                                border-radius: 50%;
+                                                border: 2px solid #fff;
+                                                background: #F01817;
+                                                z-index: 1;
+                                            }
+                                        }
+
                                         img {
                                             width: 40px;
                                         }
@@ -241,16 +256,41 @@
                                         display: -ms-flex;
                                         display: -o-flex;
                                         display: flex;
-                                        padding: 12px;
+                                        padding: 8px 12px;
                                         border-radius: 4px;
                                         margin-bottom: 5px;
                                         justify-content: center;
                                         align-items: center;
                                         color: $selected;
                                         font-weight: 600;
+                                        flex-flow: row wrap;
                                     }
                                 }
                             }
+                        }
+
+                        &.ongoing-cards{
+
+                            .cards-item {
+                                .card {
+                                    .card-content {
+                                        .time-left{
+                                            color: $main;
+                                            span{
+                                                text-transform: uppercase;
+                                                color: $helper;
+                                                width: 100%;
+                                                text-align: center;
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.delivered-cards{
+
                         }
 
                         &.upcoming-cards {
@@ -314,7 +354,7 @@
                                                     background: none;
                                                 }
 
-                                                .aricle-time-price {
+                                                .article-time-price {
                                                     display: block;
                                                     padding: 0;
                                                     margin: 5px 0 0 0;
@@ -345,9 +385,9 @@
                                             }
                                         }
 
-                                        .time-left, .card-pricing {
+                                        /* .time-left, .card-pricing {
                                             display: none;
-                                        }
+                                        } */
                                     }
                                 }
                             }
@@ -363,9 +403,34 @@
                             }
                         }
                     }
+                    .card-preheader{
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                    }
+                    .card-pricing {
+                        i {
+                            font-size: 12px;
+                            position: relative;
+
+                            i.fa-database {
+                                position: absolute;
+                                top: 3px;
+                                left: 8px;
+                                width: 10px;
+                                font-size: 10px;
+                                background: #ffffff;
+                            }
+                        }
+                    }
                 }
 
-                #archivedCards {
+                #archivedCards, #deliveredJobs {
                     .cards-list-container {
                         .card-header {
                             .card-pricing {

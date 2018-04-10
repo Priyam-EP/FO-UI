@@ -2579,6 +2579,9 @@ em.error {
     &.delete {
         background: #ee0a5f;
     }
+    &.rework{
+        background: $rework;
+    }
 
     &.not-started {
         background: #9A9FA9;
