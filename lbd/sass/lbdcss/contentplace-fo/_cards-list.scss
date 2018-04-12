@@ -59,6 +59,30 @@
                     .tab-content {
                         padding-top: 1px;
                     }
+                    .tab-step-content{
+                        ul.nav{
+                            &:before{
+                                bottom: 1px;
+                            }
+                            margin-bottom: 15px;
+                            li{
+                                margin-bottom: 10px;
+                                /* @media (max-width: 767px){
+                                    width: 100%;
+                                    &.active{
+                                        &:before{
+                                            content: none;
+                                        }
+                                    }
+                                } */
+                            }
+                        }
+                        .tab-pane{
+                            &.active{
+                                padding-bottom: 60px;
+                            }
+                        }
+                    }
                 }
 
         /* .tab-panel-search {
@@ -224,17 +248,17 @@
                                         display: -o-flex;
                                         display: flex;
                                         align-items: center;
-                                        height: 60px;
+                                        // height: 60px;
 
                                         .card-title {
                                             font-weight: 700;
                                             color: $main;
 
-                                            span.article-name {
+                                            span {
                                                 display: block;
                                                 font-weight: 400;
                                                 color: $dark-gray;
-                                                font-weight: 14px;
+                                                font-weight: normal;
                                             }
 
                                             /* max-height: 40px; */
@@ -281,7 +305,13 @@
                                                 color: $helper;
                                                 width: 100%;
                                                 text-align: center;
-                                                font-size: 10px;
+                                                font-size: 12px;
+                                                &.df-ac-jc{
+                                                    i{
+                                                        margin-right: 5px;
+                                                        font-size: 14px;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
