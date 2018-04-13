@@ -446,10 +446,16 @@
 
             &.ongoing {
               color: $selected;
+              font-weight: 600;
             }
 
             &.upcoming {
               color: $helper;
+            }
+
+            &.failed {
+              color: $rework;
+              font-weight: 600;
             }
 
             &:last-child {
