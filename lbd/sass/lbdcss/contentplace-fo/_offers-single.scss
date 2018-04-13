@@ -1124,6 +1124,29 @@
                         font-weight: normal;
                       }
                     }
+
+                    .completion-list {
+                      p {
+                        font-size: 14px;
+                        color: $main;
+                      }
+
+                      ul {
+                        padding: 0 0 0 20px;
+                        margin: 0;
+
+                        li {
+                          list-style-type: disc;
+                          font-size: 14px;
+                          color: $main;
+                          margin-bottom: 5px;
+
+                          &:last-child {
+                            margin-bottom: 0;
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
