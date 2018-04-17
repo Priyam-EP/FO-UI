@@ -312,6 +312,13 @@
                                                         font-size: 14px;
                                                     }
                                                 }
+                                                &.countdown-timer{
+                                                    color: $main;
+                                                    font-size: 14px;
+                                                    span{
+                                                        color: $main;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
