@@ -333,6 +333,50 @@
                             <div class="offers-single-content-aside col-md-4 hidden-xs">
                               <div class="sticky-section customScroll outside">
                                 <div class="col-md-12 card">
+                                    <div class="row" id="job-tracking-container">
+                                        <div class="col-md-12 job-tracking-container">
+                                            <div class="row">
+                                                <div class="col-md-12 offer-info-title">
+                                                    <div class="row">
+                                                        <div class="col-md-2 col-sm-2 hidden-xs user-image mr-15">
+                                                            <img src="lbd/img/default-avatar.png" class="img-circle" />
+                                                        </div>
+                                                        <div class="col-md-10 col-sm-8 col-xs-12 title">
+                                                            <span>Complete your application (10/10)</span>
+                                                            <a href="javascript:;" onclick='swal("Sorry!", "See you soon!", "success")'>I want to withdraw</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-2 col-sm-2 hidden-xs user-image mr-15">
+                                                            <img src="lbd/img/default-avatar.png" class="img-circle" />
+                                                        </div>
+                                                        <div class="col-md-10 col-sm-8 col-xs-12 title completed">
+                                                           <span> <i class="material-icons">check</i> Application Completed (10/10)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 job-tracking mt-15">
+                                                    <ul>
+                                                        <li class="completed"><i class="material-icons">check</i>Application: Complete your informations</li>
+                                                        <li class="completed"><i class="material-icons">check</i>Survey: Tell us more</li>
+                                                        <li class="completed"><i class="material-icons">check</i>Quizz: Let's check your skills</li>
+                                                        <li class="ongoing"><i class="material-icons">radio_button_checked</i>Test Article: Show us how you work!</li>
+                                                        <li class="failed"><i class="material-icons">close</i>Test Article: Failed!</li>
+                                                        <li class="upcoming"><i class="material-icons">radio_button_unchecked</i>Keep an eye on your mail box!</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mt-15">
+                                                    <button class="btn btn-yes">Start Test Article!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 card">
                                   <div class="row bidding-info">
                                     <div class="col-sm-12">
                                       <ul class="language-to medium full">
@@ -1284,20 +1328,30 @@
                                                 Application submitted
                                             </div>
                                             <div class="modal-sub-title">
-                                                <span class="fw700">You will receive an invitation</span> if your profile is selected.
+                                                <span class="fw700">Your profile will now be reviewd by our team.</span> We will send you assessments to learn more about you and your skills.
                                             </div>
                                             <div class="tunnel-steps-content-container">
                                               <div class="tunnel-steps-contents">
-                                                <div class="confirmation-tick">
-                                                  <i class="fa fa-check" aria-hidden="true"></i>
+                                                <div class="confirmation-content">
+                                                    <div class="confirmation-tick">
+                                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="completion-list mt-30">
+                                                        <p class="fw600">Please note that you must complete the following assessement to confirm your application :</p>
+                                                        <ul>
+                                                            <li><span class="fw600">Survey:</span> Tell us more about you.</li>
+                                                            <li><span class="fw600">Quizz:</span> Lets's check your skills.</li>
+                                                            <li><span class="fw600">test Article:</span> Show us how you work!</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                                 <!-- <div class="col-xs-12 request-sent">
                                                   <span class="request-sent-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
-                                                </div> -->
+                                                </div>
                                                 <span class="timer" data-toggle="" data-container="" data-placement="" title="">
                                                   <span class="d-block">Selection phase starting in :</span>
                                                   <i aria-hidden="true" class="fa fa-clock-o"></i> 3 days - 17:28:02
-                                                </span>
+                                                </span>-->
                                               </div>
                                             </div>
                                           </div>
@@ -1305,11 +1359,17 @@
                                             <div class="row step-actions">
                                                 <div class="col-xs-12 tab-navigation">
                                                     <div class="row">
-                                                     <div class="col-sm-12">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                            <button class="btn btn-yes">Start Survey now!</button>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                            <button class="btn btn-confirm btn-finish">later</button>
+                                                        </div>
+                                                     <!-- <div class="col-sm-12">
                                                        <button class="btn btn-fill full-width pull-right btn-finish btn-confirm" onclick="onFinishWizard()" type="button" data-dismiss="modal">
                                                           Back to Offer
                                                       </button>
-                                                     </div>
+                                                     </div> -->
                                                    </div>
                                                 </div>
                                             </div>
@@ -1946,6 +2006,7 @@ if($(window).width() < 767){
       biddingInfoBlockMobile = $('.offer-content .bidding-info-container');
   console.log(biddingInfoBlock[0]);
   biddingInfoBlockMobile[0].append(biddingInfoBlock[0]);
+  $('#job-tracking-container').insertBefore('.offer-content .bidding-info-container').addClass('mb-15')
 
 /*Scrolling function for navigation toggle*/
   // Hide Header on on scroll down
