@@ -471,7 +471,7 @@
       }
 
       .client-details {
-        // @extend %client-details;
+        /* @extend %client-details; */
 
         display: -webkit-flex;
         display: -moz-flex;
@@ -479,7 +479,7 @@
         display: -o-flex;
         display: flex;
 
-        // padding: 0;
+        /* padding: 0; */
         margin: 0;
 
         .client-image {
@@ -851,7 +851,7 @@
                         border-radius: 4px;
                         padding: 10px;
 
-                        // display: block;
+                        /* display: block; */
                         display: -webkit-flex;
                         display: -moz-flex;
                         display: -ms-flex;

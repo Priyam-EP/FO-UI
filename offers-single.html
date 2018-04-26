@@ -39,6 +39,8 @@
 <!-- @include _partials/_sign-in-modal.html -->
 <!-- Sign-up modal starts -->
 <!-- @include _partials/_sign-up-modal.html -->
+<!-- Test Articles starts -->
+<!-- @include _partials/_cards-testarticle-assignation.html -->
 <!-- Withdraw Modal Starts -->
 <!-- @include  _partials/_modal-offers-withdraw.html -->
 <!-- Withdraw Modal Ends -->
@@ -227,6 +229,14 @@ $(window).on("load resize",function(){
         $('.sticky-section.customScroll').mCustomScrollbar("destroy");
     }
 });
+
+
+/*Card Assignation Confirm modal open in step 2*/
+$('[id*="assignTestArticleModal"]').click(function(e) {
+  e.preventDefault();
+  $('#wizardCard').bootstrapWizard('show',1)
+});
+/*Card Assignation Confirm modal open in step 2 ends*/
 
 });
 
