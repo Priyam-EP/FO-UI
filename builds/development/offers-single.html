@@ -370,7 +370,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 mt-15">
-                                                    <button class="btn btn-yes">Start Test Article!</button>
+                                                    <button class="btn btn-yes" data-toggle="modal" data-target="#assignTestArticle" id="assignTestArticleModal">Start Test Article!</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1720,6 +1720,259 @@
 
 
 
+<!-- Test Articles starts -->
+<div aria-labelledby="" class="modal fade" data-keyboard="false" data-backdrop="static" id="assignTestArticle" role="dialog" tabindex="-1" style="">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">close</i>
+                    </a>
+                </span>
+                <!-- First login content Starts -->
+                <div class="modal-container">
+                  <div class="row">
+                    <div class="col-md-12 first-login-content">
+                      <div class="col-md-12 progress-steps">
+                        <div id="wizardCard">
+                            <form id="wizardForm" method="" action="">
+                                <div class="tab-links">
+                                    <ul class="nav">
+                                        <li><a href="#declineAssign" data-toggle="tab"></a></li>
+                                        <li><a href="#assign" data-toggle="tab"></a></li>
+                                        <li><a href="#confirmAssign" data-toggle="tab"></a></li>
+                                        <li><a href="#oopsError" data-toggle="tab"></a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="declineAssign">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <div class="modal-title df-ac">
+                                                  <a href="javascript:;" class="back btn-next" id="back" data-dismiss="">
+                                                      <i class="material-icons">arrow_back</i>
+                                                  </a>
+                                                  <div class="col-md-11 pl-0">
+                                                      Decline this job
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-12 contract-owner-box">
+                                                    <div class="col-md-12 contract-owner pl-0">
+                                                        <div class="user-image">
+                                                            <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                            <!-- <div class="card-user-empty user">
+                                                                PC
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="user-name-block">
+                                                            <div class="user-name">
+                                                                Webedia Group <span>Blog articles - Lot 1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-panel-content-scroll">
+                                                  <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                      <label for="">What is wrong with this job</label>
+                                                      <select id="" class="selectpicker" data-live-search="" title="">
+                                                        <option value="2">I want to withdraw from this job.</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row form-group">
+                                                    <div class="col-md-12 form-group">
+                                                      <label>Tell us why?</label>
+                                                      <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I have emergency on the defined period."></textarea>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="bottom-fixed-modal-actions">
+                                              <div class="row">
+                                                <div class="col-sm-3 col-xs-6">
+                                                   <button class="btn btn-no btn-fill pull-left btn-next" type="button">
+                                                       Back
+                                                   </button>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6 pull-right">
+                                                   <button class="btn btn-fill btn-confirm pull-right" type="button" data-dismiss="modal">
+                                                       Decline
+                                                   </button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="assign">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title df-ac">
+                                                Start your test article
+                                                <!-- <div class="col-md-11 pl-0">
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12 contract-owner-box">
+                                                  <div class="col-md-9 contract-owner pl-0">
+                                                      <div class="user-image">
+                                                          <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                          <!-- <div class="card-user-empty user">
+                                                              PC
+                                                          </div> -->
+                                                      </div>
+                                                      <div class="user-name-block">
+                                                          <div class="user-name">
+                                                              Webedia Group <span>Blog articles - Lot 1</span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-3 download-brief pull-right">
+                                                      <button class="btn btn-download btn-fill" type="button">
+                                                          <span class="btn-label">
+                                                              <i class="material-icons">
+                                                                  file_download
+                                                              </i>
+                                                          </span> Download brief
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <div class="row form-group">
+                                                  <div class="col-md-12">
+                                                    <span><b>We want to test you in a real situation!</b> Here is what you have to do:<br /><i>Your test article will be reviewed and strictly used for selection purpose. This will never be used for commercial purpose.</i></span>
+                                                  </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                  <div class="card-info-container">
+                                                    <div class="col-md-4">
+                                                      <div class="card-info-content">
+                                                        <div class="row">
+                                                          <div class="col-md-12 col-xs-4">
+                                                            <div class="user-image">
+                                                                <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                                <!-- <div class="card-user-empty user">
+                                                                    PC
+                                                                </div> -->
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-md-12 col-xs-8">
+                                                            <div class="job-info-box">
+                                                              <div class="checkbox">
+                                                                <div class="job-info-content">
+                                                                  <span class="info-title">Your Objective</span>
+                                                                   <div class="df-ac">
+                                                                      <i class="material-icons">insert_drive_file</i> 1 articles
+                                                                   </div>
+                                                                   <span>Writing</span>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-xs-12 offer-translation">
+                                                            <ul class="language-to small full">
+                                                                <li>
+                                                                  <a href="javascript:;" data-toggle="tooltip" data-container="body" data-placement="bottom" title="French">
+                                                                    <img src="lbd/img/flag/fr.gif"> <span>FR</span>
+                                                                  </a>
+                                                                </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-xs-12 offer-translation">
+                                                            <ul class="language-to small full">
+                                                                <li>
+                                                                  <a href="javascript:;" data-toggle="tooltip" data-container="body" data-placement="bottom" title="French">
+                                                                    <img src="lbd/img/flag/fr.gif"> <span>FR</span>
+                                                                  </a>
+                                                                </li>
+                                                                <li>
+                                                                  <a href="javascript:;" data-toggle="tooltip" data-container="body" data-placement="bottom" title="English (UK)">
+                                                                    <img src="lbd/img/flag/uk.gif"> <span>EN (UK)</span>
+                                                                  </a>
+                                                                </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                      <div class="card-info-content mb-15">
+                                                        <div class="job-info-box">
+                                                            <div class="checkbox">
+                                                              <div class="job-info-content">
+                                                                <span class="info-title">You Timing</span>
+                                                                <div class="df-ac">
+                                                                    <i class="material-icons">date_range</i> 4 hours
+                                                                </div>
+                                                                <span>Starting at your confirmation</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="card-info-content">
+                                                        <div class="job-info-box">
+                                                            <div class="checkbox">
+                                                              <div class="job-info-content">
+                                                                <span class="info-title">You'll Earn</span>
+                                                                <div class="df-ac">
+                                                                  <i class="fa fa-database" aria-hidden="true"><i class="fa fa-database" aria-hidden="true"></i></i> 8.50 &#8364;*
+                                                                </div>
+                                                                <span><b>*only if you passed test +</b> the opportunity to be selected on your mission !</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="card-info-content">
+                                                        <div class="job-info-box">
+                                                            <div class="checkbox">
+                                                              <div class="job-info-content">
+                                                                <span class="info-title">Result</span>
+                                                                <div class="df-ac">
+                                                                  <i class="material-icons">casino</i> A chance to be selected
+                                                                </div>
+                                                                <span>if you get one of the higher score.</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-sm-3 col-xs-6">
+                                                 <button class="btn btn-confirm btn-fill pull-left btn-back" type="button">
+                                                     Decline
+                                                 </button>
+                                              </div>
+                                              <div class="col-sm-3 col-xs-6 pull-right">
+                                                 <button class="btn btn-fill btn-yes pull-right" type="button" data-dismiss="modal">
+                                                     Confirm
+                                                 </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- First Login content Ends -->
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Withdraw Modal Starts -->
 <div aria-labelledby="" class="modal fade" id="offersWithdraw" role="dialog" tabindex="-1" style="">
     <div class="modal-dialog" role="modal">
@@ -2058,6 +2311,14 @@ $(window).on("load resize",function(){
         $('.sticky-section.customScroll').mCustomScrollbar("destroy");
     }
 });
+
+
+/*Card Assignation Confirm modal open in step 2*/
+$('[id*="assignTestArticleModal"]').click(function(e) {
+  e.preventDefault();
+  $('#wizardCard').bootstrapWizard('show',1)
+});
+/*Card Assignation Confirm modal open in step 2 ends*/
 
 });
 
