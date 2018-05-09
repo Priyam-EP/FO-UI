@@ -209,6 +209,12 @@
         color: $main;
         cursor: pointer;
       }
+      &.tt-none{
+        text-transform: none;
+      }
+      span.hint{
+        font-weight: normal;
+      }
     }
 
     .form-group {

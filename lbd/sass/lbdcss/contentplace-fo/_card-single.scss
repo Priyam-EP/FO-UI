@@ -141,20 +141,6 @@
                         }
 
                         .assessment-user-image {
-              /* position: relative;
-              padding: 0;
-              width: 50px;
-
-              img {
-                max-width: 100%;
-                width: 46px;
-                height: 46px;
-                object-fit: cover;
-              }
-
-              .card-user-empty {
-                height: 46px;
-              } */
                             @extend %user-image;
 
                             height: 46px;
@@ -208,6 +194,27 @@
                             font-size: 12px;
                             font-weight: 400;
                             font-style: italic;
+                        }
+
+                        span.notification {
+                            position: absolute;
+                            background-color: $default-bg;
+                            text-align: center;
+                            border-radius: 15px;
+                            min-width: 15px;
+                            padding: 0 5px;
+                            height: 15px;
+                            font-size: 12px;
+                            color: #fff;
+                            font-weight: bold;
+                            line-height: 20px;
+                            top: -5px;
+                            right: 0px;
+                            border: 2px solid #fff;
+
+                            &.writing {
+                                background-color: $delete;
+                            }
                         }
                     }
 
@@ -1060,6 +1067,665 @@
 
 /* Job List Ends */
 
+.middle-column-container {
+    .middle-column {
+        padding: 15px;
+
+        .middle-column-card-container {
+            .feed-card-container {
+                .feed-card {
+                    color: $main;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
+
+                    .feed-card-status {
+                        float: right;
+                        text-align: right;
+
+                        i {
+                            font-size: 18px;
+                            position: relative;
+                            top: 1px;
+                        }
+
+                        &.pending {
+                            color: $helper;
+                            font-weight: 700;
+                        }
+
+                        &.rework {
+                            color: $delete;
+                            font-weight: 700;
+                        }
+
+                        &.reported {
+                            color: $main;
+                            font-weight: 700;
+                        }
+
+                        &.validated {
+                            color: $closed;
+                            font-weight: 700;
+                        }
+                        @media (max-width: 767px){
+                            float: left;
+                            font-size: 14px;
+                            padding-bottom: 15px;
+                            text-align: left;
+                        }
+                    }
+
+                    .feed-card-user-container {
+                        float: left;
+
+                        .user-image {
+                            width: 40px;
+                            padding: 0;
+                            // margin-left: 15px;
+
+                            img {
+                                max-width: 100%;
+                                width: 40px;
+                                height: 40px;
+                                object-fit: cover;
+                            }
+
+                            i {
+                                color: $highlight-02;
+                            }
+
+                            .card-user-empty {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+
+                        .user-desc {
+                            padding-right: 0;
+                            span.sub {
+                                display: block;
+                                color: $highlight-06;
+                                font-size: 12px;
+                            }
+                            @media (max-width: 767px){
+                                font-size: 14px;
+                                line-height: normal;
+                            }
+                        }
+
+                        .plagiarism-index {
+                            color: $highlight-06;
+                            font-size: 14px;
+
+                            span {
+                                font-weight: 600;
+                                margin-right: 5px;
+
+                                i {
+                                    position: relative;
+                                    font-size: 16px;
+                                    top: 2px;
+                                    margin-right: 5px;
+                                }
+
+                                &.low {
+                                    color: $main;
+                                }
+
+                                &.medium {
+                                    color: $selected;
+                                }
+
+                                &.high {
+                                    color: $delete;
+                                }
+                            }
+                        }
+
+                        .rating-container {
+                            font-size: 14px;
+                            span {
+                                margin-left: 5px;
+                                background: #000;
+                                border-radius: 6px;
+                                color: #fff;
+                                font-weight: 400;
+                                text-align: center;
+                                padding: 0 10px;
+
+                                i {
+                                    position: relative;
+                                    top: 1px;
+                                    font-size: 12px;
+                                    color: $default-bg;
+                                }
+                            }
+                        }
+
+                        .attached-files-list {
+                            font-size: 14px;
+                            label {
+                                text-transform: uppercase;
+                                color: $helper;
+                            }
+
+                            .attached-files {
+                                background: $highlight-01;
+                                padding: 0px 15px 7px;
+                                border-radius: 4px;
+                                margin-bottom: 10px;
+
+                                i {
+                                    color: $cta-icons;
+                                    position: relative;
+                                    top: 6px;
+                                    margin-left: -5px;
+                                }
+
+                                a {
+                                    color: $selected;
+                                    text-decoration: underline;
+
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+
+                        .user-comment {
+                            color: $helper;
+                            font-size: 14px;
+                        }
+
+                        .brief-doc{
+                                display: -webkit-flex;
+                                display: -moz-flex;
+                                display: -ms-flex;
+                                display: -o-flex;
+                                display: flex;
+                                align-items: center;
+
+                                .file-name {
+                                    margin-bottom: 10px;
+
+                                    span.sub {
+                                        display: block;
+                                        color: $highlight-06;
+                                        font-size: 12px;
+                                    }
+                                }
+                                a.brief-cta{
+                                    position: absolute;
+                                    right: 20px;
+                                    color: $highlight-02;
+                                }
+                                @media (max-width: 767px){
+                                    background: $highlight-01;
+                                    padding: 5px;
+                                    margin-bottom: 15px;
+                                    .brief-image{
+                                        align-items: center;
+                                        height: auto;
+                                        margin-right: 10px;
+                                        border-radius: 0;
+                                        .file-type{
+                                            &:before{
+                                                width: 25px;
+                                                height: 15px;
+                                            }
+                                            &:after{
+                                                font-size: 12px;
+                                            }
+                                            i{
+                                                font-size: 35px;
+                                            }
+                                        }
+                                    }
+                                    .file-name{
+                                        font-size: 14px;
+                                        margin: 0;
+                                        padding: 0 30px 0 0;
+                                    }
+                                }
+                            }
+                    }
+
+                    .feed-card-action-container {
+                        .brief-image {
+                            @extend .df-ac;
+
+                            justify-content: center;
+                            background: $highlight-01;
+                            border-radius: 4px;
+                            height: 100px;
+
+                            span.file-type {
+                                position: relative;
+
+                                i {
+                                    font-size: 50px;
+                                }
+
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    right: -3px;
+                                    bottom: 2px;
+                                    width: 30px;
+                                    height: 18px;
+                                    border-radius: 3px;
+                                }
+
+                                &:after {
+                                    content: '';
+                                    position: absolute;
+                                    right: 1px;
+                                    bottom: 2px;
+                                    font-size: 14px;
+                                    color: #fff;
+                                }
+
+                                &.doc {
+                                    &:before {
+                                        background: $selected;
+                                    }
+
+                                    &:after {
+                                        content: 'doc';
+                                    }
+                                }
+
+                                &.docx {
+                                    &:before {
+                                        background: $selected;
+                                        right: -8px;
+                                        width: 34px;
+                                    }
+
+                                    &:after {
+                                        content: 'docx';
+                                        right: -5px;
+                                    }
+                                }
+
+                                &.zip {
+                                    &:before {
+                                        background: $default-bg;
+                                    }
+
+                                    &:after {
+                                        content: 'zip';
+                                    }
+                                }
+
+                                &.pdf {
+                                    &:before {
+                                        background: $delete;
+                                    }
+
+                                    &:after {
+                                        content: 'pdf';
+                                    }
+                                }
+
+                                &.xls {
+                                    &:before {
+                                        background: $closed;
+                                    }
+
+                                    &:after {
+                                        content: 'xls';
+                                    }
+                                }
+
+                                &.xlsx {
+                                    &:before {
+                                        background: $closed;
+                                        right: -8px;
+                                        width: 30px;
+                                    }
+
+                                    &:after {
+                                        content: 'xlsx';
+                                        right: -5px;
+                                    }
+                                }
+
+                                i {
+                                    color: $cta-icons;
+                                }
+                            }
+                        }
+
+                        .brief-desc {
+                            .brief-doc{
+                                display: -webkit-flex;
+                                display: -moz-flex;
+                                display: -ms-flex;
+                                display: -o-flex;
+                                display: flex;
+                                align-items: center;
+
+                                .file-name {
+                                    margin-bottom: 10px;
+
+                                    span.sub {
+                                        display: block;
+                                        color: $highlight-06;
+                                        font-size: 12px;
+                                    }
+                                }
+                                a.brief-cta{
+                                    position: absolute;
+                                    right: 20px;
+                                }
+                                @media (max-width: 767px){
+                                    background: $highlight-01;
+                                    padding: 5px;
+                                    margin-bottom: 15px;
+                                    .brief-image{
+                                        align-items: center;
+                                        height: auto;
+                                        margin-right: 10px;
+                                        border-radius: 0;
+                                        .file-type{
+                                            &:before{
+                                                width: 25px;
+                                                height: 15px;
+                                            }
+                                            &:after{
+                                                font-size: 12px;
+                                            }
+                                            i{
+                                                font-size: 35px;
+                                            }
+                                        }
+                                    }
+                                    .file-name{
+                                        font-size: 14px;
+                                        margin: 0;
+                                        padding: 0 30px 0 0;
+                                    }
+                                }
+                            }
+                            .brief-actions{
+                                button.btn{
+                                    margin: 5px 0;
+                                    &.btn-default{
+                                        background-color: transparent;
+                                        color: #71798a;
+                                        border-color: #797979;
+                                    }
+                                }
+                            }
+                        }
+
+                        a.brief-cta {
+                            color: $highlight-02;
+                        }
+                    }
+
+                    .feed-card-feed-container {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rightside-column-container {
+    padding: 15px 0 0 0;
+
+    .rightside-column {
+        .notify-action-container {
+            background: $main;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            border-radius: 4px;
+
+            .user-image {
+                width: 40px;
+
+                img {
+                    border: 2px solid #fff;
+                    max-width: 100%;
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                }
+
+                .card-user-empty {
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                }
+            }
+
+            .notify-action-summary {
+                color: #fff;
+            }
+
+            .notify-action-button {
+                .btn-confirm {
+                    border: 1px solid #fff !important;
+
+                    &:hover {
+                        border: 1px solid $no !important;
+                    }
+                }
+            }
+        }
+
+        h4.title {
+            padding: 0;
+            margin: 0;
+            color: $main;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .add-files-container {
+            a.add-file-droppable, a.add-file {
+                @extend .df-ac;
+
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 15px;
+                width: 100%;
+                height: 50px;
+                color: $body;
+                text-align: center;
+                border: 2px dashed $border-color;
+                border-radius: 4px;
+                transition: all .3s ease;
+
+                &:hover {
+                    border: 2px solid $selected;
+                }
+            }
+
+            a.add-file-droppable {
+                height: 100px;
+            }
+
+            ul.dropdown-menu {
+                margin: 0;
+                width: 60%;
+                left: 20%;
+                text-align: center;
+
+                &:before {
+                    left: 45%;
+                }
+
+                &:after {
+                    left: 45%;
+                }
+            }
+        }
+
+        .files-list-container {
+            .files-list {
+                margin-bottom: 10px;
+
+                > .row {
+                    @extend .df-ac;
+
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    .file-img {
+                        position: relative;
+                    }
+
+                    .file-name {
+                        color: $main;
+                        font-weight: 600;
+                        word-break: break-all;
+
+                        span.sub {
+                            display: block;
+                            color: $highlight-02;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .file-cta {
+                        a {
+                            color: $highlight-02;
+                        }
+
+                        ul.dropdown-menu {
+                            &:before {
+                                right: 9px;
+                                left: auto;
+                            }
+
+                            &:after {
+                                right: 10px;
+                                left: auto;
+                            }
+
+                            li {
+                                padding-bottom: 0;
+
+                                a {
+                                    width: 100%;
+                                    display: block;
+                                    color: $main;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* File image and type starts */
+
+span.file-type {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: -3px;
+        bottom: -3px;
+        width: 20px;
+        height: 15px;
+        border-radius: 3px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -2px;
+        font-size: 10px;
+        color: #fff;
+    }
+
+    &.doc {
+        &:before {
+            background: $selected;
+        }
+
+        &:after {
+            content: 'doc';
+        }
+    }
+
+    &.docx {
+        &:before {
+            background: $selected;
+            right: -8px;
+            width: 25px;
+        }
+
+        &:after {
+            content: 'docx';
+            right: -5px;
+        }
+    }
+
+    &.zip {
+        &:before {
+            background: $default-bg;
+        }
+
+        &:after {
+            content: 'zip';
+        }
+    }
+
+    &.pdf {
+        &:before {
+            background: $delete;
+        }
+
+        &:after {
+            content: 'pdf';
+        }
+    }
+
+    &.xls {
+        &:before {
+            background: $closed;
+        }
+
+        &:after {
+            content: 'xls';
+        }
+    }
+
+    &.xlsx {
+        &:before {
+            background: $closed;
+            right: -8px;
+            width: 25px;
+        }
+
+        &:after {
+            content: 'xlsx';
+            right: -5px;
+        }
+    }
+
+    i {
+        color: $cta-icons;
+    }
+}
+
+/* File image and type ends */
+
 /* Modal styles */
 /* Modal Styles starts */
 #assignCardsSingle {
@@ -1718,5 +2384,154 @@
 }
 
 /* Card single card job report problem modal ends */
+/* Report file modal starts */
+.card-single-report-file {
+    @extend #assignCardsSingle;
+
+    .modal-dialog {
+        label {
+            font-size: 14px;
+        }
+
+        .modal-content {
+            .modal-body {
+                .modal-container {
+                    @media (max-width: 767px){
+                        padding-top: 20px;
+                    }
+                    .modal-title{
+                        .title-text{
+                            flex:1;
+                        }
+                    }
+                    .content-scroll{
+                        padding-bottom: 100px;
+                    }
+                    .client-image-container {
+                        @extend %user-image;
+
+                        margin-right: 10px;
+                        height: 50px;
+                        width: 50px;
+                    }
+
+                    .add-files-container {
+                        a.add-file-droppable, a.add-file {
+                            @extend .df-ac;
+
+                            justify-content: center;
+                            text-align: center;
+                            margin-bottom: 15px;
+                            width: 100%;
+                            height: 50px;
+                            color: $body;
+                            text-align: center;
+                            border: 2px dashed $border-color;
+                            border-radius: 4px;
+                            transition: all .3s ease;
+
+                            &:hover {
+                                border: 2px solid $selected;
+                            }
+                        }
+
+                        a.add-file-droppable {
+                            height: 100px;
+                        }
+
+                        ul.dropdown-menu {
+                            margin: 0;
+                            width: 60%;
+                            left: 20%;
+                            text-align: center;
+
+                            &:before {
+                                left: 45%;
+                            }
+
+                            &:after {
+                                left: 45%;
+                            }
+                        }
+                    }
+                    .files-list-container {
+                      .files-list {
+                        margin-bottom: 10px;
+
+                        > .row {
+                          @extend .df-ac;
+
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+
+                          .file-img {
+                            position: relative;
+                          }
+
+                          .file-name {
+                            color: $main;
+                            font-weight: 600;
+                            word-break: break-all;
+
+                            span.sub {
+                              display: block;
+                              color: $highlight-02;
+                              font-size: 12px;
+                            }
+                          }
+
+                          .file-cta {
+                            text-align: center;
+                            a {
+                              color: $highlight-02;
+                            }
+
+                            ul.dropdown-menu {
+                              &:before {
+                                right: 9px;
+                                left: auto;
+                              }
+
+                              &:after {
+                                right: 10px;
+                                left: auto;
+                              }
+
+                              li {
+                                padding-bottom: 0;
+
+                                a {
+                                  width: 100%;
+                                  display: block;
+                                  color: $main;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .modal-actions-fixed-bottom{
+                        .button-left{
+                            padding-left: 0;
+                            @media (max-width: 767px){
+                                padding: 0;
+                            }
+                        }
+                        .button-right{
+                            padding-right: 0;
+                            float: right;
+                            @media (max-width: 767px){
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Report file modal ends */
 
 /* Modal styles ends*/
