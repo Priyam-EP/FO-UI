@@ -2272,7 +2272,7 @@ em.error {
 
                                         a {
                                             cursor: pointer;
-                                            color: #DFE1E3;
+                                            color: $cta-icons;
                                             display: flex;
                                             align-items: center;
 
@@ -2281,7 +2281,7 @@ em.error {
                                             }
 
                                             &:hover, &:focus {
-                                                color: #485262;
+                                                color: $sub-heading;
                                             }
                                         }
                                     }
@@ -2463,14 +2463,14 @@ em.error {
 
                                         a {
                                             cursor: pointer;
-                                            color: #DFE1E3;
+                                            color: $cta-icons;
 
                                             span {
                                                 cursor: pointer;
                                             }
 
                                             &:hover, &:focus {
-                                                color: #485262;
+                                                color: $sub-heading;
                                             }
                                         }
                                     }
@@ -3812,7 +3812,7 @@ span.more {
             height: 60px;
 
             .user-name {
-                color: #485262;
+                color: $sub-heading;
                 font-size: 14px;
                 font-weight: 600;
 
@@ -3994,7 +3994,7 @@ span.more {
             .numbers {
                 a {
                     font-weight: 600;
-                    color: #485262;
+                    color: $sub-heading;
                     font-size: 14px;
 
                     span {
@@ -4526,14 +4526,14 @@ span.more {
 
                                 a {
                                     cursor: pointer;
-                                    color: #DFE1E3;
+                                    color: $cta-icons;
 
                                     span {
                                         cursor: pointer;
                                     }
 
                                     &:hover, &:focus {
-                                        color: #485262;
+                                        color: $sub-heading;
                                     }
                                 }
                             }
@@ -5915,7 +5915,7 @@ span.more {
 
                             a {
                                 cursor: pointer;
-                                color: #DFE1E3;
+                                color: $cta-icons;
 
                                 i {
                                     font-size: 20px;
@@ -5934,7 +5934,7 @@ span.more {
                                 }
 
                                 &:hover, &:focus {
-                                    color: #485262;
+                                    color: $sub-heading;
                                 }
                             }
                         }
@@ -7066,14 +7066,14 @@ span.more {
 
                             a {
                                 cursor: pointer;
-                                color: #DFE1E3;
+                                color: $cta-icons;
 
                                 span {
                                     cursor: pointer;
                                 }
 
                                 &:hover, &:focus {
-                                    color: #485262;
+                                    color: $sub-heading;
                                 }
                             }
                         }
@@ -7130,14 +7130,14 @@ span.more {
 
                     a {
                         cursor: pointer;
-                        color: #DFE1E3;
+                        color: $cta-icons;
 
                         span {
                             cursor: pointer;
                         }
 
                         &:hover, &:focus {
-                            color: #485262;
+                            color: $sub-heading;
                         }
                     }
                 }

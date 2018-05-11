@@ -3,7 +3,12 @@
         .page-wrap {
             .main-panel-wrap {
                 .main-panel {
+                    @include clearfix;
+                    width: 100%;
                     .main-panel-page {
+                        @include clearfix;
+                        width: 100%;
+
                         .card-single-main-page{
 
                             @include clearfix;
@@ -1270,15 +1275,18 @@
                             font-size: 14px;
 
                             label {
+                                display: block;
                                 text-transform: uppercase;
                                 color: $helper;
                             }
 
                             .attached-files {
+                                display: inline-block;
                                 background: $highlight-01;
                                 padding: 0px 15px 7px;
                                 border-radius: 4px;
                                 margin-bottom: 10px;
+                                margin-right: 10px;
 
                                 i {
                                     color: $cta-icons;
@@ -1594,65 +1602,75 @@
 
     }
 }
-        .files-list-container {
-            .files-list {
-                margin-bottom: 10px;
+.files-list-container {
+    .files-list {
+        margin-bottom: 10px;
 
-                > .row {
-                    @extend .df-ac;
+        > .row {
+            @extend .df-ac;
 
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
 
-                    .file-img {
-                        position: relative;
+            .file-img {
+                position: relative;
+            }
+
+            .file-name {
+                color: $main;
+                font-weight: 600;
+                word-break: break-all;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                span.sub {
+                    display: block;
+                    color: $highlight-02;
+                    font-size: 12px;
+                }
+            }
+
+            .file-cta {
+                a {
+                    color: $highlight-02;
+                }
+
+                ul.dropdown-menu {
+                    &:before {
+                        right: 9px;
+                        left: auto;
                     }
 
-                    .file-name {
-                        color: $main;
-                        font-weight: 600;
-                        word-break: break-all;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-
-                        span.sub {
-                            display: block;
-                            color: $highlight-02;
-                            font-size: 12px;
-                        }
+                    &:after {
+                        right: 10px;
+                        left: auto;
                     }
 
-                    .file-cta {
+                    li {
+                        padding-bottom: 0;
+
                         a {
-                            color: $highlight-02;
-                        }
-
-                        ul.dropdown-menu {
-                            &:before {
-                                right: 9px;
-                                left: auto;
-                            }
-
-                            &:after {
-                                right: 10px;
-                                left: auto;
-                            }
-
-                            li {
-                                padding-bottom: 0;
-
-                                a {
-                                    width: 100%;
-                                    display: block;
-                                    color: $main;
-                                }
-                            }
+                            width: 100%;
+                            display: block;
+                            color: $main;
                         }
                     }
                 }
             }
+
+            @media (max-width: 767px) {
+                .file-name{
+                    padding-right: 35px;
+                }
+                .file-cta{
+                    position: absolute;
+                    right: 0;
+                }
+            }
         }
+    }
+}
 span.file-type {
     @extend %file-types;
 }
@@ -2511,6 +2529,14 @@ span.file-type {
 
                             @media (max-width: 767px) {
                                 padding: 0;
+                            }
+                        }
+                    }
+                    .uploaded-drop-files-container{
+                        .user-image{
+                            i {
+                                font-size: 24px;
+                                color: $cta-icons;
                             }
                         }
                     }
