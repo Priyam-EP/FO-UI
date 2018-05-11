@@ -1204,7 +1204,7 @@
         color: #fff;
     }
 
-    &.doc, &.docx, &.zip{
+    &.doc, &.docx{
         &:before{
             background: $selected;
         }
@@ -1251,11 +1251,6 @@
         }
     }
 
-    &.zip {
-        &:after {
-            content: 'zip';
-        }
-    }
 
     &.pdf {
         &:before {
@@ -1267,16 +1262,23 @@
         }
     }
 
-    &.gsl {
+    &.gsl, &.zip {
         &:before {
             background: $default-bg;
         }
+    }
 
+    &.zip {
+        &:after {
+            content: 'zip';
+        }
+    }
+
+    &.gsl {
         &:after {
             content: 'gsl';
         }
     }
-
 
 }
 
