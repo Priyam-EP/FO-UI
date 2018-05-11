@@ -1,4 +1,4 @@
-<div aria-labelledby="" class="modal fade card-single-report-file" id="cardSingleReportFile" role="dialog" tabindex="-1" style="">
+<div aria-labelledby="" class="modal fade rate-review-modal" id="rateReviewCard" role="dialog" tabindex="-1" style="">
     <div class="modal-dialog modal-lg" role="modal">
         <div class="modal-content clearfix">
             <div class="modal-body">
@@ -15,95 +15,20 @@
                             <img class="img-circle img-responsive mCS_img_loaded" src="lbd/img/default-avatar.png">
                             <!-- <div class="card-user-empty user">PC</div> -->
                         </div>
-                        <div class="title-text">Report Michael Martin's Delivery</div>
+                        <div class="title-text">Rate & Review Michael Martin's Delivery</div>
                       </div>
                   </div>
                   <form action="" class="form clearfix content-scroll">
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="alert alert-info warning">
-                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert">×</button>
-                                    <p><i class="material-icons">warning</i> <strong>Report this delivery implies another proofreading iteration and will delay this job timings.</strong> Check your availabilities and contact a project manager if you have any trouble or questions.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-12">
                                 <div class="edit-overview">
                                     <label class="tt-none">
-                                        Why do you report this delivery? <span class="hint">(slect at least one answer)</span> <span class="required">*</span>
+                                        Rate delivery <span class="required">*</span>
                                     </label>
                                     <div class="row">
-                                        <div class="col-xs-12">
-                                            <ul class="reasons-list-container">
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            Insufficient / Irrelevent Content
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            Bad Spelling / Grammar
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            Wrong Toneof Voice / Style
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            Plagiarism
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            Brief : Size, Structure, etc...
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            SEO : Keywords, links, etc...
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            Pictures
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="list-item">
-                                                    <div class="card">
-                                                        <label class="checkbox tt-none">
-                                                            <input data-toggle="checkbox" type="checkbox"/>
-                                                            Wrong files / Missing files
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                        <div class="col-xs-8 col-md-3 rating-container">
+                                            <input type="number" class="form-control" value="15.0" /> / <span class="max-rating">20</span>
                                         </div>
                                     </div>
                                 </div>
@@ -115,9 +40,9 @@
                             <div class="col-md-12">
                                 <div class="edit-overview">
                                     <label class="tt-none">
-                                        Describe your problem <span class="hint">(will be visible)</span> <span class="required">*</span>
+                                        Review delivery
                                     </label>
-                                    <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="Write your Message..."></textarea>
+                                    <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="Write your Review..."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -196,15 +121,14 @@
                   </form>
                   <div class="col-xs-12 modal-actions-fixed-bottom">
                       <div class="row">
-                          <div class="col-md-8 col-xs-12 button-left">
-                                <label class="checkbox text-none">
-                                    <input type="checkbox" data-toggle="checkbox" value=""/>
-                                    I understand the consequences of this action on the timings of this job. <span class="required">*</span>
-                                </label>
-                          </div>
-                          <div class="col-md-3 col-xs-12 pull-right button-right">
+                          <div class="col-md-3 col-xs-6 button-left">
                               <button class="btn btn-default btn-fill full-width btn-confirm pull-right form-control" type="button">
-                              Report
+                              Cancel
+                              </button>
+                          </div>
+                          <div class="col-md-3 col-xs-6 pull-right button-right">
+                              <button class="btn btn-default btn-fill full-width btn-yes pull-right form-control" type="button">
+                              Send Review
                               </button>
                           </div>
                       </div>
