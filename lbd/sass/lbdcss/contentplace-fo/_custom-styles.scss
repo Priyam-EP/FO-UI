@@ -2597,6 +2597,9 @@ em.error {
     &.closed {
         background: #78b414;
     }
+    &.completed {
+        background: #2eb1ae;
+    }
 
     &.delete {
         background: #ee0a5f;
