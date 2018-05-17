@@ -1,4 +1,4 @@
-<div aria-labelledby="" class="modal fade card-single-job-view-modal" data-keyboard="false" data-backdrop="static" id="cardSingleJobView" role="dialog" tabindex="-1" style="">
+<div aria-labelledby="" class="modal fade" data-keyboard="false" data-backdrop="static" id="assignTestArticle" role="dialog" tabindex="-1" style="">
     <div class="modal-dialog modal-lg" role="modal">
         <div class="modal-content">
             <div class="modal-body">
@@ -18,19 +18,19 @@
                                     <ul class="nav">
                                         <li><a href="#declineAssign" data-toggle="tab"></a></li>
                                         <li><a href="#assign" data-toggle="tab"></a></li>
-                                        <!-- <li><a href="#confirmAssign" data-toggle="tab"></a></li> -->
-                                        <!-- <li><a href="#oopsError" data-toggle="tab"></a></li> -->
+                                        <li><a href="#confirmAssign" data-toggle="tab"></a></li>
+                                        <li><a href="#oopsError" data-toggle="tab"></a></li>
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane" id="declineAssign">
                                             <div class="row">
                                               <div class="col-md-12">
                                                 <div class="modal-title df-ac">
-                                                  <a href="javascript:;" class="back btn-next" id="back">
+                                                  <a href="javascript:;" class="back btn-next" id="back" data-dismiss="">
                                                       <i class="material-icons">arrow_back</i>
                                                   </a>
                                                   <div class="col-md-11 pl-0">
-                                                      Report a problem with my job
+                                                      Decline this job
                                                   </div>
                                                 </div>
                                                 <div class="col-md-12 contract-owner-box">
@@ -49,74 +49,20 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-panel-content-scroll">
-                                                    <div class="row form-group">
-                                                        <div class="col-md-12">
-                                                          <label for="">What is wrong with this job ?</label>
-                                                          <select id="" class="selectpicker" data-live-search="" title="">
-                                                            <!-- <option value="1">One or several of the provided informations are not correct.</option> -->
-                                                            <option value="2">I want to withdraw from this job.</option>
-                                                          </select>
-                                                        </div>
+                                                  <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                      <label for="">What is wrong with this job</label>
+                                                      <select id="" class="selectpicker" data-live-search="" title="">
+                                                        <option value="2">I want to withdraw from this job.</option>
+                                                      </select>
                                                     </div>
-                                                    <div class="row problem-01 form-group" style="display: none;">
-                                                        <div class="col-md-12 form-group">
-                                                      <label>Select the incorrect information(s)</label>
-                                                      <ul class="job-info-list">
-                                                        <li class="list-item">
-                                                          <div class="job-info-box">
-                                                              <label class="checkbox">
-                                                                <input type="checkbox" data-toggle="checkbox" value="" />
-                                                                <div class="job-info-content">
-                                                                  <span class="info-title">Your Goal</span>
-                                                                   <div class="df-ac">
-                                                                      <i class="material-icons">insert_drive_file</i> Write 100 articles
-                                                                   </div>
-                                                                   <span>Your work will be revied by our team.</span>
-                                                                </div>
-                                                              </label>
-                                                          </div>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <div class="job-info-box">
-                                                              <label class="checkbox">
-                                                                <input type="checkbox" data-toggle="checkbox" value="" />
-                                                                <div class="job-info-content">
-                                                                  <span class="info-title">Timing</span>
-                                                                  <div class="df-ac">
-                                                                      <i class="material-icons">date_range</i> Jul 01 - Jul 29, 2019
-                                                                  </div>
-                                                                  <span>30 Days</span>
-                                                                </div>
-                                                              </label>
-                                                          </div>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <div class="job-info-box">
-                                                              <label class="checkbox">
-                                                                <input type="checkbox" data-toggle="checkbox" value="" />
-                                                                <div class="job-info-content">
-                                                                  <span class="info-title">Royalties</span>
-                                                                  <div class="df-ac">
-                                                                    <i class="fa fa-database" aria-hidden="true"><i class="fa fa-database" aria-hidden="true"></i></i> 1210.00€
-                                                                  </div>
-                                                                  <span>12.10 € per article</span>
-                                                                </div>
-                                                              </label>
-                                                          </div>
-                                                        </li>
-                                                      </ul>
-                                                        </div>
-                                                        <div class="col-md-12 form-group">
-                                                      <label>Describe the issue</label>
-                                                      <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I was assigned 100 articles instead of 50."></textarea>
-                                                        </div>
+                                                  </div>
+                                                  <div class="row form-group">
+                                                    <div class="col-md-12 form-group">
+                                                      <label>Tell us why?</label>
+                                                      <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I have emergency on the defined period."></textarea>
                                                     </div>
-                                                    <div class="row problem-02 form-group">
-                                                        <div class="col-md-12 form-group">
-                                                          <label>Tell us why?</label>
-                                                          <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I have emergency on the defined period."></textarea>
-                                                        </div>
-                                                    </div>
+                                                  </div>
                                                 </div>
                                               </div>
                                             </div>
@@ -129,7 +75,7 @@
                                                 </div>
                                                 <div class="col-sm-3 col-xs-6 pull-right">
                                                    <button class="btn btn-fill btn-confirm pull-right" type="button" data-dismiss="modal">
-                                                       Report
+                                                       Decline
                                                    </button>
                                                 </div>
                                               </div>
@@ -139,7 +85,7 @@
                                           <div class="row">
                                             <div class="col-md-12">
                                               <div class="modal-title df-ac">
-                                                Your job
+                                                Start your test article
                                                 <!-- <div class="col-md-11 pl-0">
                                                 </div> -->
                                               </div>
@@ -153,7 +99,7 @@
                                                       </div>
                                                       <div class="user-name-block">
                                                           <div class="user-name">
-                                                              Webedia Group <span>Blog articles in Italian - 2</span>
+                                                              Webedia Group <span>Blog articles - Lot 1</span>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -168,6 +114,11 @@
                                                   </div>
                                               </div>
                                               <div class="tab-panel-content-scroll">
+                                                <div class="row form-group">
+                                                  <div class="col-md-12">
+                                                    <span><b>We want to test you in a real situation!</b> Here is what you have to do:<br /><i>Your test article will be reviewed and strictly used for selection purpose. This will never be used for commercial purpose.</i></span>
+                                                  </div>
+                                                </div>
                                                 <div class="row form-group">
                                                   <div class="card-info-container">
                                                     <div class="col-md-4">
@@ -187,12 +138,23 @@
                                                                 <div class="job-info-content">
                                                                   <span class="info-title">Your Objective</span>
                                                                    <div class="df-ac">
-                                                                      <i class="material-icons">insert_drive_file</i> 100 articles
+                                                                      <i class="material-icons">insert_drive_file</i> 1 articles
                                                                    </div>
-                                                                   <span>Translation</span>
+                                                                   <span>Writing</span>
                                                                 </div>
                                                               </div>
                                                             </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-xs-12 offer-translation">
+                                                            <ul class="language-to small full">
+                                                                <li>
+                                                                  <a href="javascript:;" data-toggle="tooltip" data-container="body" data-placement="bottom" title="French">
+                                                                    <img src="lbd/img/flag/fr.gif"> <span>FR</span>
+                                                                  </a>
+                                                                </li>
+                                                            </ul>
                                                           </div>
                                                         </div>
                                                         <div class="row">
@@ -220,9 +182,9 @@
                                                               <div class="job-info-content">
                                                                 <span class="info-title">You Timing</span>
                                                                 <div class="df-ac">
-                                                                    <i class="material-icons">date_range</i> 30 Days
+                                                                    <i class="material-icons">date_range</i> 4 hours
                                                                 </div>
-                                                                <span> Jul 01 - Jul 29, 2019</span>
+                                                                <span>Starting at your confirmation</span>
                                                               </div>
                                                             </div>
                                                         </div>
@@ -233,9 +195,22 @@
                                                               <div class="job-info-content">
                                                                 <span class="info-title">You'll Earn</span>
                                                                 <div class="df-ac">
-                                                                  <i class="fa fa-database" aria-hidden="true"><i class="fa fa-database" aria-hidden="true"></i></i> 1210.00€
+                                                                  <i class="fa fa-database" aria-hidden="true"><i class="fa fa-database" aria-hidden="true"></i></i> 8.50 &#8364;*
                                                                 </div>
-                                                                <span>12.10 € per article</span>
+                                                                <span><b>*only if you passed test +</b> the opportunity to be selected on your mission !</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="card-info-content">
+                                                        <div class="job-info-box">
+                                                            <div class="checkbox">
+                                                              <div class="job-info-content">
+                                                                <span class="info-title">Result</span>
+                                                                <div class="df-ac">
+                                                                  <i class="material-icons">casino</i> A chance to be selected
+                                                                </div>
+                                                                <span>if you get one of the higher score.</span>
                                                               </div>
                                                             </div>
                                                         </div>
@@ -243,12 +218,20 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                                <div class="row form-group">
-                                                  <div class="col-md-12 mb-10">
-                                                    <!-- <a class="report-a-problem" href="javascript:;" data-toggle="modal" data-target="#cardSingleReportProblem">Report a problem with my job</a> -->
-                                                    <a class="report-a-problem btn-back" href="javascript:;">Report a problem with my job</a>
-                                                  </div>
-                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-sm-3 col-xs-6">
+                                                 <button class="btn btn-confirm btn-fill pull-left btn-back" type="button">
+                                                     Decline
+                                                 </button>
+                                              </div>
+                                              <div class="col-sm-3 col-xs-6 pull-right">
+                                                 <button class="btn btn-fill btn-yes pull-right" type="button" data-dismiss="modal">
+                                                     Confirm
+                                                 </button>
                                               </div>
                                             </div>
                                           </div>

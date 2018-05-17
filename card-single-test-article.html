@@ -1093,7 +1093,7 @@
                                                                                 </i>
                                                                             </div>
                                                                             <div class="col-md-12 card assessment-card">
-                                                                                <a href="javascript:;" id="">
+                                                                                <a href="javascript:;" id="myJobOverview-01" data-toggle="modal" data-target="#cardSingleJobView">
                                                                                     <div class="col-md-2 assessment-user-image">
                                                                                         <img class="img-circle" src="lbd/img/default-avatar.png" />
                                                                                         <!-- <div class="card-user-empty user">PC</div> -->
@@ -2252,7 +2252,7 @@
                                                                                                 </i>
                                                                                             </div>
                                                                                             <div class="col-md-12 card assessment-card">
-                                                                                                <a href="javascript:;" id="">
+                                                                                                <a href="javascript:;" id="myJobOverview-01" data-toggle="modal" data-target="#cardSingleJobView">
                                                                                                     <div class="col-md-2 assessment-user-image">
                                                                                                         <img class="img-circle" src="lbd/img/default-avatar.png" />
                                                                                                         <!-- <div class="card-user-empty user">PC</div> -->
@@ -2578,14 +2578,21 @@ $('div').delegate('.card-section-list ul li .card', 'click', function(e){
       });
 
 /*Destroy customScroll for mobile*/
-  $(window).on("load resize",function(){
+    $(window).on("load resize",function(){
       if(window.matchMedia("(min-width: 992px)").matches){
           $('.tab-panel-container .tab-panel').mCustomScrollbar();
       }else{
           $('.tab-panel-container .tab-panel').mCustomScrollbar("destroy");
       }
-  });
+    });
 /*Destroy customScroll for mobile ends*/
+
+/*Card Assignation Confirm modal open in step 2*/
+    $('[id*="myJobOverview-"]').click(function(e) {
+      e.preventDefault();
+      $('#wizardCard').bootstrapWizard('show',1)
+    });
+/*Card Assignation Confirm modal open in step 2 ends*/
 
 </script>
 </body>

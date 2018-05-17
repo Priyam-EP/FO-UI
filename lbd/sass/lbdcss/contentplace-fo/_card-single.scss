@@ -1963,7 +1963,7 @@ span.file-type {
                 #declineAssign {
                     .tab-panel-content-scroll {
                         @media (max-width: 767px) {
-                            height: calc(100vh - 210px);
+                            height: calc(100vh - 230px);
                         }
                     }
                 }
@@ -2314,6 +2314,11 @@ span.file-type {
 
                             .rate-task-container {
                                 margin-bottom: 10px;
+                            }
+                        }
+                        @media (max-width: 767px){
+                            .tab-panel-content-scroll{
+                                height: calc(100vh - 210px);
                             }
                         }
                     }
@@ -2670,5 +2675,11 @@ span.file-type {
 
 }
 /* Rate Review modal starts */
+
+/* My job overview modal starts */
+.withdraw-from-my-job-modal{
+    @extend #assignCardsSingle;
+}
+/* My job overview modal ends */
 
 /* Modal styles ends*/

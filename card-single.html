@@ -425,7 +425,7 @@
                                                                                 </i>
                                                                             </div>
                                                                             <div class="col-md-12 card assessment-card">
-                                                                                <a href="javascript:;" id="">
+                                                                                <a href="javascript:;" id="myJobOverview-01" data-toggle="modal" data-target="#cardSingleJobView">
                                                                                     <div class="col-md-2 assessment-user-image">
                                                                                         <img class="img-circle" src="lbd/img/default-avatar.png" />
                                                                                         <!-- <div class="card-user-empty user">PC</div> -->
@@ -1584,7 +1584,7 @@
                                                                                                 </i>
                                                                                             </div>
                                                                                             <div class="col-md-12 card assessment-card">
-                                                                                                <a href="javascript:;" id="">
+                                                                                                <a href="javascript:;" id="myJobOverview-01mob" data-toggle="modal" data-target="#cardSingleJobView">
                                                                                                     <div class="col-md-2 assessment-user-image">
                                                                                                         <img class="img-circle" src="lbd/img/default-avatar.png" />
                                                                                                         <!-- <div class="card-user-empty user">PC</div> -->
@@ -1676,6 +1676,7 @@
         <!-- Rate & Review modal Starts -->
         <!-- @include  _partials/_card-single-rate-review-modal.html -->
 
+
 <!--   Core JS Files   -->
 
 <!-- @include _partials/_all-js-files.html -->
@@ -1683,8 +1684,10 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
+//Tab Wizard
 
-        //Plagiarism Progress
+//Tab Wizard end
+//Plagiarism Progress
         var bar = new ProgressBar.Line("[id*='plagiarismProgressBar']", {
             strokeWidth: 15,
             easing: 'easeInOut',
@@ -1916,6 +1919,19 @@ $('div').delegate('.card-section-list ul li .card', 'click', function(e){
       }
   });
 /*Destroy customScroll for mobile ends*/
+
+
+$(document).on('click', '#declineAssign label.checkbox', function(e){
+  e.preventDefault();
+  $(this).parents('.list-item').toggleClass('selected');
+});
+
+/*Card Assignation Confirm modal open in step 2*/
+$('[id*="myJobOverview-"]').click(function(e) {
+  e.preventDefault();
+  $('#wizardCard').bootstrapWizard('show',1)
+});
+/*Card Assignation Confirm modal open in step 2 ends*/
 
 </script>
 </body>
