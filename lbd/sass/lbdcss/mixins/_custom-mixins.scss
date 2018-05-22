@@ -1279,6 +1279,15 @@
             content: 'gsl';
         }
     }
+    &.rar {
+      &:before {
+        background: $validate;
+      }
+
+      &:after {
+        content: 'rar';
+      }
+    }
 
 }
 

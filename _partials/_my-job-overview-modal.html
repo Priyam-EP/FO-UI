@@ -1,4 +1,4 @@
-<div aria-labelledby="" class="modal fade card-single-job-view-modal" data-keyboard="false" data-backdrop="static" id="cardSingleJobView" role="dialog" tabindex="-1" style="">
+<div aria-labelledby="" class="modal fade withdraw-from-my-job-modal" data-keyboard="false" data-backdrop="static" id="myJobOverview" role="dialog" tabindex="-1" style="">
     <div class="modal-dialog modal-lg" role="modal">
         <div class="modal-content">
             <div class="modal-body">
@@ -18,19 +18,19 @@
                                     <ul class="nav">
                                         <li><a href="#declineAssign" data-toggle="tab"></a></li>
                                         <li><a href="#assign" data-toggle="tab"></a></li>
-                                        <!-- <li><a href="#confirmAssign" data-toggle="tab"></a></li> -->
-                                        <!-- <li><a href="#oopsError" data-toggle="tab"></a></li> -->
+                                        <li><a href="#confirmAssign" data-toggle="tab"></a></li>
+                                        <li><a href="#oopsError" data-toggle="tab"></a></li>
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane" id="declineAssign">
                                             <div class="row">
                                               <div class="col-md-12">
                                                 <div class="modal-title df-ac">
-                                                  <a href="javascript:;" class="back btn-next" id="back">
+                                                  <a href="javascript:;" class="back btn-next" id="back" data-dismiss="">
                                                       <i class="material-icons">arrow_back</i>
                                                   </a>
                                                   <div class="col-md-11 pl-0">
-                                                      Report a problem with my job
+                                                      Decline this job
                                                   </div>
                                                 </div>
                                                 <div class="col-md-12 contract-owner-box">
@@ -49,17 +49,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-panel-content-scroll">
-                                                    <div class="row form-group">
-                                                        <div class="col-md-12">
-                                                          <label for="">What is wrong with this job ?</label>
-                                                          <select id="" class="selectpicker" data-live-search="" title="">
-                                                            <!-- <option value="1">One or several of the provided informations are not correct.</option> -->
-                                                            <option value="2">I want to withdraw from this job.</option>
-                                                          </select>
-                                                        </div>
+                                                  <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                      <label for="">What is wrong with this job</label>
+                                                      <select id="" class="selectpicker" data-live-search="" title="">
+                                                        <option value="1">One or several of the provided informations are not correct.</option>
+                                                        <option value="2">I want to withdraw from this job.</option>
+                                                      </select>
                                                     </div>
-                                                    <div class="row problem-01 form-group" style="display: none;">
-                                                        <div class="col-md-12 form-group">
+                                                  </div>
+                                                  <div class="row problem-01 form-group">
+                                                    <div class="col-md-12 form-group">
                                                       <label>Select the incorrect information(s)</label>
                                                       <ul class="job-info-list">
                                                         <li class="list-item">
@@ -105,18 +105,18 @@
                                                           </div>
                                                         </li>
                                                       </ul>
-                                                        </div>
-                                                        <div class="col-md-12 form-group">
+                                                    </div>
+                                                    <div class="col-md-12 form-group">
                                                       <label>Describe the issue</label>
                                                       <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I was assigned 100 articles instead of 50."></textarea>
-                                                        </div>
                                                     </div>
-                                                    <div class="row problem-02 form-group">
-                                                        <div class="col-md-12 form-group">
-                                                          <label>Tell us why?</label>
-                                                          <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I have emergency on the defined period."></textarea>
-                                                        </div>
+                                                  </div>
+                                                  <div class="row problem-02 form-group" style="display: none;">
+                                                    <div class="col-md-12 form-group">
+                                                      <label>Tell us why?</label>
+                                                      <textarea name="" id="" cols="" rows="3" class="form-control" placeholder="ex : I have emergency on the defined period."></textarea>
                                                     </div>
+                                                  </div>
                                                 </div>
                                               </div>
                                             </div>
@@ -129,7 +129,7 @@
                                                 </div>
                                                 <div class="col-sm-3 col-xs-6 pull-right">
                                                    <button class="btn btn-fill btn-confirm pull-right" type="button" data-dismiss="modal">
-                                                       Report
+                                                       Decline
                                                    </button>
                                                 </div>
                                               </div>
@@ -139,7 +139,7 @@
                                           <div class="row">
                                             <div class="col-md-12">
                                               <div class="modal-title df-ac">
-                                                Your job
+                                                Confirm your assignation?
                                                 <!-- <div class="col-md-11 pl-0">
                                                 </div> -->
                                               </div>
@@ -153,7 +153,7 @@
                                                       </div>
                                                       <div class="user-name-block">
                                                           <div class="user-name">
-                                                              Webedia Group <span>Blog articles in Italian - 2</span>
+                                                              Webedia Group <span>Blog articles - Lot 1</span>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -168,6 +168,11 @@
                                                   </div>
                                               </div>
                                               <div class="tab-panel-content-scroll">
+                                                <div class="row form-group">
+                                                  <div class="col-md-12">
+                                                    <span><span class="fw600">You have been selected to work on this job !</span> Here is a reminder of your mission :</span>
+                                                  </div>
+                                                </div>
                                                 <div class="row form-group">
                                                   <div class="card-info-container">
                                                     <div class="col-md-4">
@@ -245,10 +250,136 @@
                                                 </div>
                                                 <div class="row form-group">
                                                   <div class="col-md-12 mb-10">
-                                                    <!-- <a class="report-a-problem" href="javascript:;" data-toggle="modal" data-target="#cardSingleReportProblem">Report a problem with my job</a> -->
-                                                    <a class="report-a-problem btn-back" href="javascript:;">Report a problem with my job</a>
+                                                    <div class="fw600">Here is a message of the owner :</div>
+                                                  </div>
+                                                  <div class="col-md-12">
+                                                    <div class="job-message">
+                                                      <div class="user-image pull-left hidden-xs">
+                                                          <img class="img-circle" src="lbd/img/default-avatar.png">
+                                                          <!-- <div class="card-user-empty user">
+                                                              PC
+                                                          </div> -->
+                                                      </div>
+                                                      <div class="col-md-9">
+                                                          <p>
+                                                            Hello Michael, here is the Webedia job we talked about yesterday.<br>
+                                                            Are you still available in the next 30 days to work on these articles? Click on confirm if you are OK :)
+                                                            <br><br>
+                                                            Yours,
+                                                            <br><br>
+                                                            <span class="fw600">Clarisse</span>
+                                                          </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-sm-3 col-xs-6">
+                                                 <button class="btn btn-confirm btn-fill pull-left btn-back" type="button">
+                                                     Decline
+                                                 </button>
+                                              </div>
+                                              <div class="col-sm-3 col-xs-6 pull-right">
+                                                 <button class="btn btn-fill btn-yes pull-right btn-next" type="button">
+                                                     Confirm
+                                                 </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="confirmAssign">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title df-ac">
+                                                <a href="javascript:;" class="back btn-back" id="back" data-dismiss="">
+                                                    <i class="material-icons">arrow_back</i>
+                                                </a>
+                                                <div class="col-md-11 pl-0">
+                                                    Please read our terms and conditions
+                                                </div>
+                                              </div>
+                                              <div class="tab-panel-content-scroll">
+                                                <!-- Terms and conditions contents starts -->
+                                                <div class="row">
+                                                  <div class="col-md-12">
+                                                    <div class="tagline terms-title">Edit-Place contributor agreement</div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p class="terms-sub-title">1. Terms and condtitions sub-title</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro quasi natus ratione ullam placeat quas <b>obcaecati, numquam</b>. Consectetur quia fugiat architecto iure ut, iusto dolore similique nesciunt. Esse, aspernatur.</p>
+                                                    <p>We will keep you informed when new offers from the selected clients will be published.</p>
                                                   </div>
                                                 </div>
+                                                <!-- Terms and conditions contents ends -->
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <label class="checkbox text-none">
+                                                    <input type="checkbox" data-toggle="checkbox" value=""/>
+                                                    I have read and agree with Edit-Place terms and conditions. <span class="required">*</span>
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-sm-3 col-xs-6">
+                                                 <a href="javascript:;" class="btn btn-no btn-fill pull-left btn-back" type="button">
+                                                     Back
+                                                 </a>
+                                              </div>
+                                              <div class="col-sm-3 col-xs-6 pull-right">
+                                                 <a href="javascript:;" class="btn btn-fill btn-yes pull-right btn-next" type="button">
+                                                     Confirm
+                                                 </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="oopsError">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="modal-title df-ac">
+                                                Oops, too late! :(
+                                              </div>
+                                              <div class="col-md-12 contract-owner-box">
+                                                  <div class="col-md-12 contract-owner pl-0">
+                                                      <div class="user-image">
+                                                          <img class="img-circle" src="lbd/img/webedia.jpg">
+                                                          <!-- <div class="card-user-empty user">
+                                                              PC
+                                                          </div> -->
+                                                      </div>
+                                                      <div class="user-name-block">
+                                                          <div class="user-name">
+                                                              Webedia Group <span>Blog articles - Lot 1</span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12 mb-15">
+                                                <span><span class="fw600">This job have already been filled by another contributor.</span> Please check our other offers.</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bottom-fixed-modal-actions">
+                                            <div class="row">
+                                              <div class="col-xs-12">
+                                                 <button class="btn btn-confirm btn-fill pull-left" type="button" data-dismiss="modal">
+                                                     Close
+                                                 </button>
                                               </div>
                                             </div>
                                           </div>
