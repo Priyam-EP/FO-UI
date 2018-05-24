@@ -247,16 +247,8 @@
         padding: 0px;
 
         .modal-container {
-          box-sizing: border-box;
-
           @media (max-width: 767px) {
             height: calc(100vh - 32px);
-
-            /* @supports (-webkit-appearance: none) {
-              .os-android & {
-                min-height: calc(100vh - 32px);
-              }
-            } */
           }
 
           @media (max-width: 540px) {
