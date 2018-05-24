@@ -1229,18 +1229,7 @@
     }
   }
 
-  &.docx, &.xlsx {
-    &:before {
-      right: -8px;
-      width: 25px;
-    }
-
-    &:after {
-      right: -5px;
-    }
-  }
-
-  &.xls, &.xlsx {
+  &.xls, &.xlsx, &.csv {
     &:before {
       background: $closed;
     }
@@ -1249,6 +1238,12 @@
   &.xls {
     &:after {
       content: 'xls';
+    }
+  }
+
+  &.csv {
+    &:after {
+      content: 'csv';
     }
   }
 
@@ -1287,12 +1282,113 @@
   }
 
   &.rar {
+    &:after {
+      content: 'rar';
+    }
+  }
+
+  &.ppt, &.pptx {
     &:before {
       background: $validate;
     }
 
     &:after {
       content: 'rar';
+    }
+  }
+
+  &.ppt {
+    &:after {
+      content: 'ppt';
+    }
+  }
+
+  &.pptx {
+    &:after {
+      content: 'pptx';
+    }
+  }
+
+  &.json, &.xml {
+    &:before {
+      background: $beginner;
+    }
+  }
+
+  &.json {
+    &:after {
+      content: 'json';
+    }
+  }
+
+  &.xml {
+    &:after {
+      content: 'xml';
+    }
+  }
+
+  &.txt {
+    &:before {
+      background: $sub-heading;
+    }
+
+    &:after {
+      content: 'txt';
+    }
+  }
+
+  &.odt {
+    &:before {
+      background: $sub-heading;
+    }
+
+    &:after {
+      content: 'odt';
+    }
+  }
+
+  &.jpg, &.jpeg, &.png {
+    &:before {
+      background: $delivered;
+    }
+  }
+
+  &.jpg {
+    &:after {
+      content: 'jpg';
+    }
+  }
+
+  &.png {
+    &:after {
+      content: 'png';
+    }
+  }
+
+  &.jpeg {
+    &:after {
+      content: 'jpeg';
+    }
+  }
+
+  &.psd {
+    &:before {
+      background: $junior;
+    }
+
+    &:after {
+      content: 'psd';
+    }
+  }
+
+  &.docx, &.xlsx, &.jpeg, &.pptx, &.json {
+    &:before {
+      right: -8px;
+      width: 25px;
+    }
+
+    &:after {
+      right: -5px;
     }
   }
 }
