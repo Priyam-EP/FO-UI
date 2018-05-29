@@ -85,11 +85,6 @@
 
               label {
                 cursor: pointer;
-                border-bottom: 1px solid transparent;
-
-                &:hover {
-                  border-bottom: 1px solid $highlight-02;
-                }
               }
 
               &:last-child {
@@ -211,7 +206,7 @@
   width: 100%;
   height: 100px;
   position: fixed;
-  background: transperent;
+  background: transparent;
   z-index: 9;
   left: 0;
   right: auto;
