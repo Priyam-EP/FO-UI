@@ -1074,6 +1074,8 @@
         .offer-pricing {
           font-size: 14px;
           color: $main;
+          float: right;
+          text-align: right;
 
           @media (max-width: 767px) {
             font-size: 12px;
@@ -1112,12 +1114,12 @@
         }
 
         .offer-translation {
-          padding-left: 0;
+          padding-right: 0;
 
           .language-to {
             @extend %language-breadcrum;
 
-            justify-content: flex-end;
+            justify-content: flex-start;
 
             li {
               a, span {

@@ -1319,6 +1319,9 @@ em.error {
                                                 }
                                             }
                                         }
+                                        &.active {
+                                            display: block;
+                                        }
                                     }
                                 }
                             }
@@ -1373,6 +1376,14 @@ em.error {
     span {
         font-weight: 600;
     }
+
+  &.failed {
+    background: $delete;
+
+    &:before {
+      content: '\f06a';
+    }
+  }
 }
 
 /* Steps Timeline Ends */
@@ -2621,12 +2632,24 @@ em.error {
         background: #000;
     }
 
-    &.elite, &.senior, &.junior, &.beginner, &.tags, &.file-version {
+    &.new, &.bronze, &.silver, &.gold,&.elite, &.senior, &.junior, &.beginner, &.tags, &.file-version {
         border-radius: 30px;
+    }
+    &.new{
+        background: $rank-new;
+    }
+    &.bronze{
+        background: $rank-bronze;
+    }
+    &.silver{
+        background: $rank-silver;
+    }
+    &.gold{
+        background: $rank-gold;
     }
 
     &.elite {
-        background: #164b8a;
+        background: $rank-elite;
     }
 
     &.senior {
