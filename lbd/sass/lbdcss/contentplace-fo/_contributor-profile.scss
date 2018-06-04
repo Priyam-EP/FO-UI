@@ -522,6 +522,35 @@
                                                                         }
                                                                     }
                                                                 }
+                                                                a {
+                                                                    display: inline-block;
+                                                                    margin-left: 20px;
+                                                                    color: $selected;
+                                                                    font-size: 14px;
+                                                                    font-weight: 600;
+                                                                    text-decoration: underline;
+
+                                                                    &:hover {
+                                                                        text-decoration: none;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .user-language{
+                                                                width: 40%;
+                                                                padding: 8px 15px;
+                                                                box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(63,63,68,0.1);
+                                                                border-radius: 4px;
+                                                                .language-to{
+                                                                    @extend %language-breadcrum;
+                                                                    display: -webkit-inline-flex;
+                                                                    display: -moz-inline-flex;
+                                                                    display: -ms-inline-flex;
+                                                                    display: -o-inline-flex;
+                                                                    display: inline-flex;
+                                                                    align-items: center;
+                                                                    margin-right: 20px;
+                                                                    width: 30%;
+                                                                }
                                                             }
 
                                                             .sub-sec-content {
@@ -559,8 +588,32 @@
                                                                         margin-bottom: 0;
                                                                     }
                                                                 }
+                                                                .no-data-container{
+                                                                    width: 40%;
+                                                                    margin: 0 auto;
+                                                                    height: 100%;
+                                                                    text-align: center;
+                                                                    padding: 30px;
+                                                                    .no-data-placeholder{
+                                                                        > i {
+                                                                            font-size: 60px;
+                                                                        }
+                                                                        a.add-card{
+                                                                            width: 210px;
+                                                                        }
+                                                                    }
+                                                                }
 
-                                                                .language-to-container {
+                                                                .subsec-content-container{
+                                                                    padding: 0;
+                                                                   [class$='-title']{
+                                                                        font-size: 16px;
+                                                                        font-weight: 600;
+                                                                        color: $main;
+                                                                    }
+                                                                }
+
+                                                                .skills-contianer {
                                                                     display: -webkit-flex;
                                                                     display: -moz-flex;
                                                                     display: -ms-flex;
@@ -574,8 +627,7 @@
 
                                                                     .language-to {
                                                                         @extend %language-breadcrum;
-
-                                                                        width: auto;
+                                                                        width: 40%;
                                                                         margin-right: 15px;
 
                                                                         li {

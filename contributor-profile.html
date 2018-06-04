@@ -574,13 +574,15 @@
           $(".content > .tab-content").not(tab).css('display', 'none');
           $(tab).fadeIn();
           // $(".tab-content").css({'display':'block'});
-          $('.no-data-container').css('position', 'absolute');
+          $('.no-data-containe, .ranks-content').css('position', 'absolute');
+          // $('.ranks-content').css('position', 'absolute');
         });
 
         $(document).on('click', '.tab-content.active [class*="-content-container"] >.close, .settings-fixed-bottom .btn-no', function(e){
           e.preventDefault();
           $(this).closest('.tab-content').removeClass('active').hide();
           $('.profile-info-navs a').removeClass('active');
+          $('.ranks-content').css('position', 'unset');
           $('.sidebar-mobile, .tab-panel-container, .main-panel-container').removeClass('tab-open');
         });
 
@@ -771,6 +773,23 @@
               }
           });
       /*review rate Ends*/
+
+      /*My Skills rating starts*/
+        $('[id^="skillRate"]').each(function() {
+            $(this).rateYo({
+                rating: 2,
+                spacing: "2px",
+                numStars: 3,
+                fullStar: true,
+                normalFill: "#d4d6dc",
+                ratedFill: "#fec500",
+                readOnly: true,
+                starWidth: "16px"
+            });
+        });
+
+      /*My Skills rating starts ends*/
+
 
       $(function () {
           $("#candidateTaskRating").rateYo({
