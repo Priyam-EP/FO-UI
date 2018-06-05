@@ -1037,10 +1037,10 @@
             position: absolute;
 
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100&1+0,0+100 */
-            background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 50%, rgba(68, 68, 68, 1) 85%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 50%, rgba(68, 68, 68, 1) 85%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(68, 68, 68, 1) 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+            background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0, 0, 0, 0.5) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0, 0, 0, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0, 0, 0, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24251f', endColorstr='#141411',GradientType=0 ); /* IE6-9 */
           }
 
           img {
@@ -1056,7 +1056,7 @@
             position: absolute;
             bottom: 15px;
             left: 15px;
-            text-shadow: 2px 2px 4px $main;
+            // text-shadow: 2px 2px 4px $main;
           }
 
           .timer {

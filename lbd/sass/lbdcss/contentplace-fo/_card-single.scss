@@ -243,7 +243,6 @@
 
                         span.notification {
                             position: absolute;
-                            background-color: $default-bg;
                             text-align: center;
                             border-radius: 15px;
                             min-width: 15px;
@@ -257,8 +256,12 @@
                             right: 0px;
                             border: 2px solid #fff;
 
-                            &.writing {
-                                background-color: $delete;
+                            &.ongoing {
+                                background-color: $default-bg;
+                            }
+
+                            &.rework {
+                                background-color: $rework;
                             }
                         }
                     }
