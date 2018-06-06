@@ -112,6 +112,16 @@
                             border: 2px solid #ee0a5f;
                         }
                     }
+
+                    &.disapprove {
+                        i {
+                            color: $main;
+                        }
+
+                        &:before {
+                            border: 2px solid $main;
+                        }
+                    }
                 }
 
                 .assessment-card {
@@ -262,6 +272,10 @@
 
                             &.rework {
                                 background-color: $rework;
+                            }
+
+                            &.disapprove {
+                                background-color: $main;
                             }
                         }
                     }

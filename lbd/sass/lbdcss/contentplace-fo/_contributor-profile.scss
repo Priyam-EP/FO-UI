@@ -417,9 +417,10 @@
                                         .content {
                                             height: 100vh;
                                             padding: 0;
+                                            background: #fff;
 
                                             > .tab-content, .ranks-content {
-                                                height: 100%;
+                                                // height: 100%;
                                                 padding: 30px 30px 15px;
                                                 background: #fff;
 
@@ -610,6 +611,16 @@
                                                                         font-size: 16px;
                                                                         font-weight: 600;
                                                                         color: $main;
+                                                                        display: -webkit-flex;
+                                                                        display: -moz-flex;
+                                                                        display: -ms-flex;
+                                                                        display: -o-flex;
+                                                                        display: flex;
+                                                                        align-items: center;
+                                                                        i{
+                                                                            color: $not-started;
+                                                                            margin-right: 15px;
+                                                                        }
                                                                     }
                                                                 }
 
@@ -621,8 +632,8 @@
                                                                     display: flex;
                                                                     align-items: center;
                                                                     padding: 0;
-                                                                    font-size: 16px;
-                                                                    color: $main;
+                                                                    font-size: 14px;
+                                                                    color: $body;
                                                                     font-weight: 600;
 
                                                                     .language-to {
@@ -649,6 +660,15 @@
                                                                             width: 20px;
                                                                         }
                                                                     }
+                                                                }
+
+                                                                .expert-level{
+                                                                    display: -webkit-flex;
+                                                                    display: -moz-flex;
+                                                                    display: -ms-flex;
+                                                                    display: -o-flex;
+                                                                    display: flex;
+                                                                    justify-content: flex-end;
                                                                 }
 
                                                                 @media (max-width: 767px){
@@ -1527,6 +1547,239 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.edit-contributor-profile-myskills{
+    @extend .edit-contributor-profile-overview;
+    section {
+        h5{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        ul.add-skills-container{
+            list-style-type: none;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+            margin: 0 -5px;
+            li{
+                display: -webkit-inline-flex;
+                display: -moz-inline-flex;
+                display: -ms-inline-flex;
+                display: -o-inline-flex;
+                display: inline-flex;
+                padding: 5px;
+                a{
+                    display: -webkit-inline-flex;
+                    display: -moz-inline-flex;
+                    display: -ms-inline-flex;
+                    display: -o-inline-flex;
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 7px 40px 7px 12px;
+                    border-radius: 20px;
+                    position: relative;
+                    border: 2px solid $border-color;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    i{
+                        position: absolute;
+                        right: 10px;
+                        color: $selected;
+                    }
+                    &.active, &:hover{
+                        background: $main;
+                        color: #fff;
+                        border-color: $main;
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .section-header{
+            font-size: 12px;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $border-color-02;
+            margin-bottom: 8px;
+        }
+        .section-content{
+            .skills-container{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+                @media (max-width: 767px){
+                    flex-flow: column;
+                    justify-content: center;
+                }
+            }
+            .skills-title{
+                font-size: 16px;
+                font-weight: 600;
+                color: $main;
+            }
+            .lang-list-container{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                > li{
+                    display: -webkit-inline-flex;
+                    display: -moz-inline-flex;
+                    display: -ms-inline-flex;
+                    display: -o-inline-flex;
+                    display: inline-flex;
+                    width: calc(100% / 2);
+                    padding: 8px 10px;
+                    position: relative;
+                    align-items: center;
+                    .user-language{
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                        padding: 5px;
+                        border-radius: 4px;
+                        box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(63,63,68,0.1);
+                    }
+                    .bootstrap-select{
+                        color: #000;
+                        button {
+                            padding: 7px 8px;
+                            padding-right: 25px;
+                            min-height: 45px;
+                            @media (max-width: 767px){
+                                padding-right: 8px;
+                            }
+                        }
+                        &.disabled{
+                            button{
+                                background: $highlight-01 !important;
+                                &:hover{
+                                    color: #000 !important;
+                                }
+                            }
+                            .bs-caret{
+                                display: none;
+                            }
+                        }
+                        .filter-option {
+                            img {
+                                padding: 7px 8px;
+                                border-radius: 4px;
+                                border: 2px solid $border-color;
+                                background: $highlight-01;
+                            }
+                        }
+                        li{
+                            &.disabled{
+                                border-radius: 0 !important;
+                            }
+                            &:last-child{
+                                a{
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    &:after{
+                        font-family: 'FontAwesome';
+                        content: '\f105';
+                        font-size: 16px;
+                        position: absolute;
+                        // top: calc(50% - 10px);
+                        right: -3px;
+                    }
+                    &:last-child{
+                        &:after{
+                            content: none;
+                        }
+                        .user-language{
+                        }
+                    }
+                    &:only-child, &:last-child{
+                        .user-language{
+                            background: #f3f5f7;
+                        }
+                    }
+                }
+                @media (max-width: 767px){
+                    flex-flow: column;
+                    > li{
+                        width: 100%;
+                        padding: 10px 0;
+                        &:after{
+                            font-family: 'FontAwesome';
+                            content: '\f107';
+                            font-size: 16px;
+                            position: absolute;
+                            left: calc(50% - 10px);
+                            bottom: -10px;
+                        }
+                    }
+                }
+            }
+            .expert-level{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                .star-rating-label{
+                    // padding-right: 10px;
+                    text-transform: uppercase;
+                    color: $selected;
+                    font-size: 10px;
+                }
+            }
+            .language-to{
+                @extend %language-breadcrum;
+                width: auto;
+                margin-right: 10px;
+            }
+            > .row{
+                transition: all .3s ease;
+                .cta{
+                    display: none;
+                    a{
+                        color: $cta-icons;
+                    }
+                }
+                &:hover{
+                    .cta{
+                        display: block;
+                        a{
+                            &:hover{
+                                color: $main;
+                            }
+                        }
+                    }
+                }
+                @media (max-width: 767px){
+                    .cta{
+                        display: block;
                     }
                 }
             }

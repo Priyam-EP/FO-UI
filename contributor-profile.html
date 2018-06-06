@@ -525,6 +525,7 @@
 
 <!-- Modals Starts -->
 <!-- @include _partials/_contributor-profile-edit-overview-modal.html -->
+<!-- @include _partials/_contributor-profile-edit-myskills-modal.html -->
 <!-- Modals Ends -->
 
 <!--   Core JS Files   -->
@@ -755,6 +756,7 @@
                   readOnly: true,
                   starWidth: "16px"
               });
+
               var rating = $rateYo.rateYo('rating');
               if (rating <= 1) {
                   $('.star-rating-label').text(rating + " / 5");
@@ -774,21 +776,66 @@
           });
       /*review rate Ends*/
 
-      /*My Skills rating starts*/
+    /*My Skills rating starts*/
         $('[id^="skillRate"]').each(function() {
             $(this).rateYo({
+                numStars: 3,
+                maxValue: 3,
                 rating: 2,
                 spacing: "2px",
-                numStars: 3,
                 fullStar: true,
                 normalFill: "#d4d6dc",
-                ratedFill: "#fec500",
+                ratedFill: "#353f54",
                 readOnly: true,
                 starWidth: "16px"
             });
         });
+    /*My Skills rating ends*/
+    /*Edit My Skills rating starts*/
+        $('[id^="editSkillRate"]').each(function() {
+            var $rateYo = $(this).rateYo({
+                numStars: 3,
+                maxValue: 3,
+                rating: 2,
+                spacing: "10px",
+                fullStar: true,
+                normalFill: "#d4d6dc",
+                ratedFill: "#353f54",
+                starWidth: "16px"
+            });
+            var rating = $rateYo.rateYo('rating');
+                  if (rating == 1) {
+                      $('.star-rating-label').text("Beginner");
+                  }
+                  else if ((rating == 2)) {
+                      $('.star-rating-label').text("Intermediate");
+                  }
+                  else if ((rating == 3)) {
+                      $('.star-rating-label').text("Expert!");
+                  }
+                  else{
+                      $('.star-rating-label').text("");
+                  }
+            $(this).click(function(){
+                var rating = $rateYo.rateYo('rating');
+                  if (rating == 1) {
+                      $(this).parent('.expert-level').find('.star-rating-label').text("Beginner");
+                  }
+                  else if ((rating == 2)) {
+                      $(this).parent('.expert-level').find('.star-rating-label').text("Intermediate");
+                  }
+                  else if ((rating == 3)) {
+                      $(this).parent('.expert-level').find('.star-rating-label').text("Expert!");
+                  }
+                  else{
+                      $(this).parent('.expert-level').find('.star-rating-label').text("");
+                  }
+            });
+        });
+    /*Edit My Skills rating ends*/
 
-      /*My Skills rating starts ends*/
+
+
 
 
       $(function () {
