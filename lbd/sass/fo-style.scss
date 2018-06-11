@@ -61,6 +61,7 @@
 @import 'lbdcss/tabs-navs-pagination';
 
 // layout styles
+@import 'lbdcss/contentplace-fo/layout-1';
 @import 'lbdcss/contentplace-fo/layout-2';
 @import 'lbdcss/contentplace-fo/layout-3';
 @import 'lbdcss/contentplace-fo/layout-4';
@@ -86,10 +87,12 @@
 // @import 'lbdcss/contentplace-fo/cards-single';
 @import 'lbdcss/contentplace-fo/offers-single';
 @import 'lbdcss/contentplace-fo/offers-list';
-@import 'lbdcss/contentplace-fo/job-deck-cards';
+
+/* @import 'lbdcss/contentplace-fo/job-deck-cards'; */
 @import 'lbdcss/contentplace-fo/card-single';
 @import 'lbdcss/contentplace-fo/contributor-profile';
 @import 'lbdcss/contentplace-fo/quizz';
+@import 'lbdcss/contentplace-fo/homepage';
 
 //New contentplace-fo media Queries
 @import 'lbdcss/contentplace-fo/media-queries';
