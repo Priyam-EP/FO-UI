@@ -58,7 +58,7 @@
                                                                   <span class="label beginner">
                                                                       Beginner
                                                                   </span> -->
-                                                                  <span class="hidden-xs"> <span class="time-spent"> - Contributor for <span class="fw600">3 Years and 10 months</span></span></span>
+                                                                  <span class="hidden-xs"> <span class="time-spent"> - Freelancer for <span class="fw600">3 Years and 10 months</span></span></span>
                                                               </div>
                                                           </div>
                                                       </div>
@@ -360,42 +360,6 @@
                                                       </li>
                                                   </ul>
                                               </div>
-                                              <!-- <div class="col-md-12 profile-info-navs-mob">
-                                                  <ul class="btn-group btn-group-justified" data-toggle="buttons">
-                                                      <li>
-                                                          <a href="#my-skills" class="btn btn-default" data-toggle="tab">
-                                                              <input type="radio" id="mySkills" name="profile-tabs" value="mySkills" />
-                                                              <i class="fa fa-edit"></i>
-                                                              <p>My Skills</p>
-                                                              <span class="pull-right"><i class="fa fa-caret-right"></i></span>
-                                                          </a>
-                                                      </li>
-                                                      <li>
-                                                          <a href="#job-history" class="btn btn-default" data-toggle="tab">
-                                                              <input type="radio" id="jobHistory" name="profile-tabs" value="jobHistory" />
-                                                              <i class="material-icons">work</i>
-                                                              <p>Job History</p>
-                                                              <span class="pull-right"><i class="fa fa-caret-right"></i></span>
-                                                          </a>
-                                                      </li>
-                                                      <li>
-                                                          <a href="#paused-mission" class="btn btn-default" data-toggle="tab">
-                                                              <input type="radio" id="paused" name="profile-tabs" value="paused" />
-                                                              <i class="fa fa-ellipsis-h"></i>
-                                                              <p>CV &amp; External Links</p>
-                                                              <span class="pull-right"><i class="fa fa-caret-right"></i></span>
-                                                          </a>
-                                                      </li>
-                                                      <li>
-                                                          <a href="#closed-mission" class="btn btn-default" data-toggle="tab">
-                                                              <input type="radio" id="closed" name="profile-tabs" value="closed" />
-                                                              <i class="fa fa-cog"></i>
-                                                              <p>Account settings</p>
-                                                              <span class="pull-right"><i class="fa fa-caret-right"></i></span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </div> -->
                                             </div>
                                           </div>
                                         </div>
@@ -480,7 +444,7 @@
                                                               <span>23 972.55 €</span>
                                                           </div>
                                                           <div class="col-lg-4 royalty-value df-ac">
-                                                            <a href="javascript:;" class="btn btn-default">More informations</a>
+                                                            <a href="javascript:;" class="btn btn-default">More information</a>
                                                           </div>
                                                         </div>
                                                       </div>
@@ -491,7 +455,7 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="row">
+                                        <!-- <div class="row">
                                           <div class="col-md-12">
                                             <div class="profile-overview-footer">
                                               <span class="d-inline-block">Any questions about your profile ?</span>
@@ -499,7 +463,7 @@
                                               <span class="d-block"><a href="javascript:;" class="support-email">hell@edit-place.com</a></span>
                                             </div>
                                           </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-8 main-panel-container">
@@ -525,7 +489,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-xs-12 sec-title">
-                                                        Your profile Rank <span class="helper-text">- since December 21, 2013</span>
+                                                        Your profile rank <span class="helper-text">- since December 21, 2013</span>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -752,7 +716,14 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-
+                                                <div class="row">
+                                                    <div class="col-xs-12 ranks-footer">
+                                                        <div class="sec-title divider">
+                                                            Got a question about your rank? Please contact our Editorial committee at: <a href="mailto:rank@edit-place.com" class="contact-rank">rank@edit-place.com</a>
+                                                        </div>
+                                                        <div class="helper-text text-01">Your message will be reviewed by the committee who meet every two months. Made up of Project and Quality Managers, they decide your rank based on your recent work and the quality of your collaboration with us over the past two months. Ranks are reviewed every two months.</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -771,6 +742,11 @@
 <!-- @include _partials/_contributor-profile-edit-overview-modal.html -->
 <!-- @include _partials/_contributor-profile-edit-myskills-modal.html -->
 <!-- @include _partials/_contributor-profile-edit-myareas-modal.html -->
+<!-- @include _partials/_contributor-profile-edit-websites-modal.html -->
+<!-- @include _partials/_contributor-profile-edit-website-settings-modal.html -->
+<!-- @include _partials/_contributor-profile-edit-social-medias-modal.html -->
+<!-- @include _partials/_contributor-profile-edit-myaddress-info-modal.html -->
+<!-- @include _partials/_contributor-profile-change-password-modal.html -->
 
 <!-- Modals Ends -->
 
@@ -834,7 +810,7 @@
         });
 
         /*My skills add new section*/
-           $(document).on('click', 'a.add-new-to-list', function(e){
+           /*$(document).on('click', 'a.add-new-to-list', function(e){
               e.preventDefault();
               $(this).closest('.sub-section').find('.add-new-section').fadeIn('fast');
             });
@@ -842,7 +818,7 @@
               e.preventDefault();
               $(this).closest('.add-new-section').fadeOut('fast');
             });
-/*           $(document).on('click', '#cv-external-links a.add-new-to-list', function(e){
+           $(document).on('click', '#cv-external-links a.add-new-to-list', function(e){
               e.preventDefault();
               $(this).closest('.df-ac').fadeOut('fast');
               $(this).closest('.sub-section').find('.add-new-section').fadeIn('fast');
@@ -1028,7 +1004,7 @@
                 numStars: 3,
                 maxValue: 3,
                 rating: 2,
-                spacing: "2px",
+                spacing: "10px",
                 fullStar: true,
                 normalFill: "#d4d6dc",
                 ratedFill: "#353f54",

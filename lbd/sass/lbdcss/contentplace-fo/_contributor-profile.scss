@@ -102,7 +102,7 @@
                                         display: -o-flex;
                                         display: flex;
                                         padding: 0;
-                                        margin: 30px -5px;
+                                        margin: 30px -5px 0;
                                         list-style-type: none;
                                         flex-flow: row wrap;
                                         > li{
@@ -162,6 +162,18 @@
                                                 width: 100%;
                                             }
 
+                                        }
+                                    }
+
+                                    .ranks-footer{
+                                        margin-bottom: 30px;
+                                        a.contact-rank{
+                                            color: $selected;
+                                            font-weight: 600;
+                                            text-decoration: underline;
+                                            &:hover{
+                                                text-decoration: none;
+                                            }
                                         }
                                     }
 
@@ -658,10 +670,9 @@
 
                                                             .sub-sec-header {
                                                                 border-bottom: solid 2px $divider;
-                                                                padding: 0px;
-
-                                                                // margin-bottom: 15px;
+                                                                padding: 0px 0 10px 0;
                                                                 .sec-title {
+                                                                    margin-bottom: 0;
                                                                     a {
                                                                         display: inline-block;
                                                                         margin-left: 20px;
@@ -690,6 +701,9 @@
                                                                         text-decoration: none;
                                                                     }
                                                                 }
+                                                                &.no-border{
+                                                                    border-bottom: none;
+                                                                }
                                                             }
                                                             .user-language{
                                                                 width: 40%;
@@ -706,6 +720,9 @@
                                                                     align-items: center;
                                                                     margin-right: 20px;
                                                                     width: 30%;
+                                                                }
+                                                                @media (max-width: 767px){
+                                                                    width: 70%;
                                                                 }
                                                             }
 
@@ -763,21 +780,48 @@
                                                                     }
                                                                 }
 
+                                                               [class$='-title']{
+                                                                    font-size: 16px;
+                                                                    font-weight: 600;
+                                                                    color: $main;
+                                                                    display: -webkit-flex;
+                                                                    display: -moz-flex;
+                                                                    display: -ms-flex;
+                                                                    display: -o-flex;
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    padding: 0;
+                                                                    i{
+                                                                        color: $not-started;
+                                                                        margin-right: 15px;
+                                                                        width: 24px;
+                                                                        font-size: 24px;
+                                                                    }
+                                                                }
                                                                 .subsec-content-container{
                                                                     padding: 0;
-                                                                   [class$='-title']{
-                                                                        font-size: 16px;
-                                                                        font-weight: 600;
-                                                                        color: $main;
+                                                                    width: 100%;
+                                                                    display: -webkit-flex;
+                                                                    display: -moz-flex;
+                                                                    display: -ms-flex;
+                                                                    display: -o-flex;
+                                                                    display: flex;
+                                                                    .skills-content{
+                                                                        padding: 0;
                                                                         display: -webkit-flex;
                                                                         display: -moz-flex;
                                                                         display: -ms-flex;
                                                                         display: -o-flex;
                                                                         display: flex;
                                                                         align-items: center;
-                                                                        i{
-                                                                            color: $not-started;
-                                                                            margin-right: 15px;
+                                                                    }
+                                                                    @media (max-width: 767px){
+                                                                        flex-flow: column;
+                                                                        // width: 100%;
+                                                                        .skills-content{
+                                                                            padding: 10px 15px 0 0;
+                                                                            flex-flow: column;
+                                                                            align-items: flex-start;
                                                                         }
                                                                     }
                                                                 }
@@ -789,7 +833,7 @@
                                                                     display: -o-flex;
                                                                     display: flex;
                                                                     align-items: center;
-                                                                    padding: 0;
+                                                                    padding: 15px 0 0;
                                                                     font-size: 14px;
                                                                     color: $body;
                                                                     font-weight: 600;
@@ -808,6 +852,10 @@
                                                                                 }
                                                                             }
                                                                         }
+                                                                        @media (max-width: 767px){
+                                                                            width: 100%;
+                                                                            margin: 0 0 10px 0;
+                                                                        }
                                                                     }
 
                                                                     i {
@@ -818,6 +866,9 @@
                                                                             width: 20px;
                                                                         }
                                                                     }
+                                                                    @media (max-width: 767px){
+                                                                        flex-flow: column;
+                                                                    }
                                                                 }
 
                                                                 .expert-level{
@@ -827,6 +878,7 @@
                                                                     display: -o-flex;
                                                                     display: flex;
                                                                     justify-content: flex-end;
+                                                                    padding: 0;
                                                                 }
 
                                                                 @media (max-width: 767px){
@@ -839,6 +891,32 @@
                                                                             }
                                                                         }
                                                                     }
+                                                                }
+                                                            }
+                                                            &.website-settings{
+                                                                .subscribtion-list{
+                                                                    list-style-type: none;
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                    font-weight: 600;
+                                                                    li{
+                                                                        margin-bottom: 5px;
+                                                                        position: relative;
+                                                                        padding-left: 20px;
+                                                                        &.selected{
+                                                                            color: $selected;
+                                                                            &:before{
+                                                                                font-family: 'FontAwesome';
+                                                                                content: '\f00c';
+                                                                                position: absolute;
+                                                                                left: 0;
+                                                                            }
+                                                                        }
+                                                                        &:last-child{
+                                                                            margin-bottom: 0;
+                                                                        }
+                                                                    }
+
                                                                 }
                                                             }
                                                         }
@@ -1106,7 +1184,7 @@
                                                     bottom: 15px;
                                                     width: 98%;
                                                     background: #fff;
-                                                    z-index: 5;
+                                                    z-index: 12;
 
                                                     .modal-actions-fixed-bottom {
                                                         padding-top: 15px;
@@ -1212,17 +1290,46 @@
                                                         }
                                                     }
 
+                                                    .sub-sec-content{
+                                                        .row.df-ac{
+                                                            a{
+                                                                color: $main;
+                                                                display: block;
+                                                                &.website-links{
+                                                                    text-decoration: underline;
+                                                                    &:hover{
+                                                                        text-decoration: none;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .remove-from-list{
+                                                                a{
+                                                                    color: $cta-icons;
+                                                                    &:hover{
+                                                                        color: $main;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
                                                     .personal-websites{
                                                         .sub-sec-content{
                                                             .row.df-ac{
+                                                                a{
+                                                                    color: $main;
+                                                                    &.website-links{
+                                                                        text-decoration: underline;
+                                                                        &:hover{
+                                                                            text-decoration: none;
+                                                                        }
+                                                                    }
+                                                                }
                                                                 .remove-from-list{
                                                                     a{
-                                                                        display: -webkit-flex;
-                                                                        display: -moz-flex;
-                                                                        display: -ms-flex;
-                                                                        display: -o-flex;
-                                                                        display: flex;
-                                                                        align-items: center;
+                                                                        color: $cta-icons;
+                                                                        &:hover{
+                                                                            color: $main;
+                                                                        }
                                                                     }
                                                                 }
                                                             }
@@ -1567,7 +1674,12 @@
     section {
         h5{
             font-size: 16px;
-            margin-bottom: 10px;
+            padding-bottom: 10px;
+            @media (max-width: 767px){
+                /* font-size: 18px;
+                border-bottom: 2px solid $border-color;
+                margin-bottom: 10px; */
+            }
         }
         ul.add-skills-container{
             list-style-type: none;
@@ -1664,6 +1776,9 @@
                 font-weight: 600;
                 color: $main;
                 padding: 15px;
+                @media (max-width: 767px){
+                    padding: 0px 15px 0 15px;
+                }
             }
             .lang-list-container{
                 display: -webkit-flex;
@@ -1756,7 +1871,7 @@
                         }
                     }
                 }
-                @media (max-width: 767px){
+                @media (max-width: 991px){
                     flex-flow: column;
                     > li{
                         width: 100%;
@@ -1813,29 +1928,166 @@
                 @media (max-width: 767px){
                     .cta{
                         display: block;
+                        text-align: center;
                     }
                 }
             }
+        }
+    }
+    @media (max-width: 767px){
+        .modal-dialog .modal-content .modal-body .modal-container .content-scroll{
+            height: calc(100vh - 120px);
+            padding-bottom: 0;
         }
     }
 }
 
 .edit-contributor-profile-myareas{
     @extend .edit-contributor-profile-myskills;
-    .section-content{
-        .skills-title{
+    section {
+        .section-content{
+            .skills-title{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+                padding: 15px;
+                i{
+                    margin-right: 15px;
+                    color: $not-started;
+                    width: 24px;
+                    font-size: 24px;
+                    @media (max-width: 767px){
+                        width: 18px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.edit-contributor-profile-websites{
+    @extend .edit-contributor-profile-myareas;
+    .add-website, .add-social-media{
+        .input-group{
+            button{
+                display: -webkit-inline-flex;
+                display: -moz-inline-flex;
+                display: -ms-inline-flex;
+                display: -o-inline-flex;
+                display: inline-flex;
+                padding: 8px 20px;
+                align-items: center;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                width: auto !important;
+                text-align: center;
+                i{
+                    // margin-right: 10px;
+                }
+            }
+        }
+    }
+    .websites-list{
+        // list-style-type: none;
+        padding: 0;
+        margin: 0;
+        counter-reset: my-list-counter;
+        li{
+            @include clearfix;
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flex;
             display: -o-flex;
             display: flex;
             align-items: center;
-            i{
-                margin-right: 15px;
-                color: $not-started;
+            margin-bottom: 15px;
+
+            &:before{
+                content: counter(my-list-counter);
+                counter-increment: my-list-counter;
+                display: inline-flex;
+                padding: 8px 16px;
+                border-radius: 4px;
+                border: 1px solid #EAEBED;
+            }
+
+            .remove-from-list{
+                a{
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $cta-icons;
+                    &:hover{
+                        color: $main;
+                    }
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
             }
         }
     }
 }
-
+.edit-contributor-profile-website-settings{
+    @extend .edit-contributor-profile-websites;
+    .check-list{
+        label{
+            font-size: 14px;
+            color: $main;
+            cursor: pointer;
+        }
+    }
+}
+.edit-contributor-profile-social-medias{
+    @extend .edit-contributor-profile-website-settings;
+        .bootstrap-select{
+            @extend %bootstrap-select;
+            @media (max-width: 767px){
+                &.social-media{
+                    button{
+                        &.dropdown-toggle{
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .add-social-media{
+            .input-group{
+                input{
+                    border-top-left-radius: 0;
+                }
+                button{
+                    border-top-right-radius: 0;
+                }
+            }
+        }
+    .websites-list{
+        li{
+            &:before{
+                content: none;
+            }
+        }
+    }
+}
+.edit-contributor-profile-myaddress-info{
+    @extend .edit-contributor-profile-social-medias;
+}
+.edit-contributor-profile-change-password{
+    @extend .edit-contributor-profile-myaddress-info;
+    @media (max-width: 767px){
+        .new-password{
+            margin-bottom: 15px;
+        }
+    }
+}
 /* Modal Styles ends */
