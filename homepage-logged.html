@@ -14,9 +14,79 @@
                             <div class="container-fluid main-panel-page">
                                 <div class="content-container">
                                     <div class="homepage-page col-md-12">
-                                        <div class="row">
+                                        <div class="row logged-header">
                                             <div class="col-md-12 logged-banner-wrap">
-
+                                                <div class="logged-banner-content">
+                                                    <div class="col-md-6 col-xs-12 info-container pl-0">
+                                                        <div class="user-info-details">
+                                                            <div class="col-md-3 user-image-container">
+                                                                <div class="user-image">
+                                                                    <img class="img-circle img-responsive mCS_img_loaded" src="lbd/img/default-avatar.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9 welcome-message">
+                                                                <h2>Bonjure Michael</h2>
+                                                                <p>Bienvenue sur votre espace personnel</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-xs-12 status-container pr-0">
+                                                        <div class="user-profile-status">
+                                                            <div class="col-md-8 col-xs-12 profile-completion p-0">
+                                                                <div class="completion-text">
+                                                                    <h5>Votre profil est a <span class="competion-range">80</span>% complet</h5>
+                                                                </div>
+                                                                <div id="circles-slider"></div>
+                                                                <div class="helper-text text-01">
+                                                                    Un profil complet a <b>plus de chances detre selectionne.</b>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-xs-12 complete-profile">
+                                                                <a href="javascript:;" class="btn btn-yes btn-fill">Complete mon profil</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 pending-applications-container">
+                                                <div class="pending-applications">
+                                                    <h5>5 pending applications</h5>
+                                                    <ul class="list-container">
+                                                        <li class="list-item">
+                                                            <div class="application-details">
+                                                                <div class="col-md-3 col-xs-12 app-link">
+                                                                    <a href="javascript:;">Become our translator on BUT's product descriptions</a>
+                                                                </div>
+                                                                <div class="col-md-5 hidden-xs app-client">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-5 client-name">
+                                                                            BUT
+                                                                        </div>
+                                                                        <div class="col-sm-5 job-name">
+                                                                            Traducteur
+                                                                        </div>
+                                                                        <div class="col-sm-2 job-price">
+                                                                            <i class="fa fa-database" aria-hidden="true"><i class="fa fa-database" aria-hidden="true"></i></i>
+                                                                            6,20 €
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 col-xs-12 app-status">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-8 col-xs-12">
+                                                                            Article test en cours...
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">
+                                                                            <span class="timer">
+                                                                                <i aria-hidden="true" class="fa fa-clock-o"></i> 06:28:01
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -509,6 +579,22 @@
                 }
 
             });
+
+            $("#circles-slider")
+              .slider({
+                  min: 0,
+                  max: 100,
+                  value: 80,
+                  range: "min",
+                  step: 20
+              })
+              .slider({
+                slide: function(e, ui){
+                  return false
+                }
+              })
+              .slider("pips");
+
         });
         </script>
         <!-- Custom scripts ends -->

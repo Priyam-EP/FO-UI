@@ -1086,10 +1086,11 @@
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24251f', endColorstr='#141411',GradientType=0 ); /* IE6-9 */
           }
 
-    li {
-        // @include clearfix;
-        padding: 10px;
-        width: 50%;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
 
           h3 {
             span {
@@ -1104,6 +1105,7 @@
             position: absolute;
             top: 67px;
             left: 15px;
+
             // text-shadow: 2px 2px 4px $main;
 
           }
@@ -1120,133 +1122,72 @@
           }
         }
 
-        @media (max-width: 767px) {
-            width: 100%;
-        }
+        .offer-pricing {
+          font-size: 14px;
+          color: $main;
+          float: right;
+          text-align: right;
 
-        &[class*='-item'] {
-            .card {
-                @include clearfix;
+          @media (max-width: 767px) {
+            font-size: 12px;
 
-                padding: 0;
-                margin: 0;
-                height: 100%;
-                flex: 1;
-
-                .offer-banner {
-                    height: 140px;
-                    padding: 0px;
-                    overflow: hidden;
-                    background: $white-bg;
-
-                    .offer-banner-overlay {
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-
-                        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100&1+0,0+100 */
-                        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%); /* FF3.6-15 */
-                        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24251f', endColorstr='#141411',GradientType=0 ); /* IE6-9 */
-                    }
-
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-
-                    h3 {
-                        font-size: 16px;
-                        font-weight: 600;
-                        color: #fff;
-                        position: absolute;
-                        bottom: 15px;
-                        left: 15px;
-
-                        // text-shadow: 2px 2px 4px $main;
-
-                    }
-
-                    .timer {
-                        background: #fff;
-                        border-radius: 4px;
-                        position: absolute;
-                        right: 15px;
-                        top: 15px;
-                        padding: 2px 16px;
-                        color: $delete;
-                        font-weight: 600;
-                    }
-                }
-
-                .offer-pricing {
-                    font-size: 14px;
-                    color: $main;
-                    float: right;
-                    text-align: right;
-
-                    @media (max-width: 767px) {
-                        font-size: 12px;
-
-                        i.fa-database {
-                            width: 12px;
-                        }
-                    }
-
-                    span {
-                        font-size: 20px;
-                        font-weight: 700;
-                    }
-
-                    .fa-database {
-                        display: -webkit-inline-flex;
-                        display: -moz-inline-flex;
-                        display: -ms-inline-flex;
-                        display: -o-inline-flex;
-                        display: inline-flex;
-                        margin-right: 10px;
-                        position: relative;
-                        width: 14px;
-
-                        .fa-database {
-                            position: absolute;
-                            left: 0.5em;
-                            width: 0.8em;
-
-                            /* height: 0.8em; */
-                            top: 0.5em;
-                            font-size: 0.8em;
-                            background: white;
-                        }
-                    }
-                }
-
-                .offer-translation {
-                    padding-right: 0;
-
-                    .language-to {
-                        @extend %language-breadcrum;
-
-                        justify-content: flex-start;
-
-                        li {
-                            a, span {
-                                &:after {
-                                    border-left-color: #fff !important;
-                                }
-                            }
-
-                            &:only-child {
-                                width: 50% !important;
-                            }
-                        }
-                    }
-                }
+            i.fa-database {
+              width: 12px;
             }
+          }
+
+          span {
+            font-size: 20px;
+            font-weight: 700;
+          }
+
+          .fa-database {
+            display: -webkit-inline-flex;
+            display: -moz-inline-flex;
+            display: -ms-inline-flex;
+            display: -o-inline-flex;
+            display: inline-flex;
+            margin-right: 10px;
+            position: relative;
+            width: 14px;
+
+            .fa-database {
+              position: absolute;
+              left: 0.5em;
+              width: 0.8em;
+
+              /* height: 0.8em; */
+              top: 0.5em;
+              font-size: 0.8em;
+              background: white;
+            }
+          }
         }
+
+        .offer-translation {
+          padding-right: 0;
+
+          .language-to {
+            @extend %language-breadcrum;
+
+            justify-content: flex-start;
+
+            li {
+              a, span {
+                &:after {
+                  border-left-color: #fff !important;
+                }
+              }
+
+              &:only-child {
+                width: 50% !important;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* FO Offers list ends */
