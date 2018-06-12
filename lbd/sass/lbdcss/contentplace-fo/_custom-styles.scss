@@ -206,8 +206,10 @@ em.error {
       }
 
       .logo {
-        padding: 10px 12px;
-        margin: 17px 0 0px;
+        padding: 0;
+        margin: 17px auto 17px;
+        width: 37px;
+        height: 47px;
 
         &:after {
           display: block;
@@ -1348,6 +1350,13 @@ em.error {
   -webkit-box-shadow: 0px -5px 5px 0px rgba(197, 197, 197, 0.2);
   -moz-box-shadow: 0px 5px -5px 0px rgba(197, 197, 197, 0.2);
   box-shadow: 0px -5px 5px 0px rgba(197, 197, 197, 0.2);
+
+  .signup-tag {
+    @extend %df-ac;
+
+    height: 38px;
+    color: #9CA0AA;
+  }
 
   a {
     margin: 0;
