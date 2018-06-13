@@ -95,6 +95,44 @@
             }
         }
     }
+}
+
+.center .slick-center img {
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.center img {
+    opacity: 0.4;
+    transition: all 300ms ease;
+}
+
+.offers-container {
+    margin: 50px 0;
+
+    &.offers-logged {
+        margin: -20px 0 50px;
+
+        @media (max-width: 767px) {
+            margin: -20px 0 20px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin: 20px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+
+        @media screen and (max-width: 540px) {
+            font-size: 20px;
+        }
+    }
 
     .logo-strip {
         background: #EEF2F5;
@@ -401,16 +439,16 @@
             }
         }
 
-        .tab-content-progress{
-            .tab-pane{
+        .tab-content-progress {
+            .tab-pane {
                 display: none;
                 padding: 0;
-                &.active{
+
+                &.active {
                     display: block;
                 }
             }
         }
-
     }
 
     .page-middle-login-container {
@@ -426,9 +464,10 @@
             min-height: 340px;
         }
 
-        > .row{
+        > .row {
             width: 100%;
-            @media (max-width: 767px){
+
+            @media (max-width: 767px) {
                 width: auto;
             }
         }
@@ -617,396 +656,288 @@
             @media screen and (max-width: 540px) {
                 font-size: 20px;
                 margin-bottom: 15px;
-            }
-        }
-
-        .card {
-            padding: 15px;
-
-            .accredition-content {
-                @extend %df-ac-jcc;
-
-                color: #353F55;
-                font-size: 16px;
-                font-weight: 600;
-                text-align: center;
-                height: 70px;
-
-                span {
-                    font-size: 12px;
-                }
-            }
-
-            .accreditor {
-                .user-image {
-                    @extend .d-flex;
-
-                    float: left;
-                    margin-right: 15px;
-                    width: 40px;
-                    height: 40px;
-
-                    @media screen and (max-width: 540px) {
-                        width: 52px;
-                        height: 52px;
-                    }
-
-                    img {
-                        width: 40px;
-                        height: 40;
-                        object-fit: cover;
-
-                        @media screen and (max-width: 540px) {
-                            width: 52px;
-                            height: 52px;
-                        }
-                    }
-
-                    .card-user-empty {
-                        top: 0;
-                        left: 0;
-                    }
-                }
-
-                .user-desc {
-                    @extend .d-flex;
-
-                    flex-direction: column;
-                    justify-content: center;
-                    height: 40px;
-                    color: #9A9FA9;
-                    font-size: 14px;
-
-                    @media screen and (max-width: 540px) {
-                        height: 52px;
-                    }
-
-                    span {
-                        display: block;
-                        color: #353F55;
-                        font-weight: 600;
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    }
-
-    .register-container {
-        @extend %df-ac-jcc;
-
-        background: url(../img/Last-call.jpg) no-repeat bottom center;
-        background-size: cover;
-        height: 332px;
-        text-align: center;
-
-        @media screen and (max-width: 540px) {
-            height: 499px;
-        }
-
-        h2 {
-            color: #fff;
-            font-size: 32px;
-            margin-bottom: 5px;
-
-            @media screen and (max-width: 540px) {
-                font-size: 25px;
-            }
-        }
-
-        p {
-            color: #fff;
-            font-size: 20px;
-            margin-bottom: 50px;
-
-            @media screen and (max-width: 540px) {
-                font-size: 18px;
-            }
-        }
-
-        a {
-            width: 50% !important;
-
-            @media screen and (max-width: 540px) {
                 width: 100% !important;
             }
         }
     }
+}
 
-    .logged-header {
-        .logged-banner-wrap {
-            background: url(../img/fo-bg.jpg) no-repeat bottom center;
-            background-size: cover;
-            height: 160px;
-            padding: 0;
+.logged-header {
+    .logged-banner-wrap {
+        background: url(../img/fo-bg.jpg) no-repeat bottom center;
+        background-size: cover;
+        height: 160px;
+        padding: 0;
 
-            @media (max-width: 540px) {
-                height: 420px;
+        @media (max-width: 540px) {
+            height: 420px;
+        }
+
+        .logged-banner-content {
+            @include clearfix;
+
+            width: 100%;
+            height: 100%;
+            padding: 25px 30px;
+            background: rgba(0, 0, 0, 0.15);
+
+            .info-container, .status-container, .user-info-details, .user-profile-status {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 767px) {
+                    flex-flow: column;
+                    justify-content: center;
+                    padding: 0;
+                }
             }
 
-            .logged-banner-content {
-                @include clearfix;
-
+            .user-info-details, .user-profile-status {
                 width: 100%;
-                height: 100%;
-                padding: 25px 30px;
-                background: rgba(0, 0, 0, 0.15);
+            }
 
-                .info-container, .status-container, .user-info-details, .user-profile-status {
-                    display: -webkit-flex;
-                    display: -moz-flex;
-                    display: -ms-flex;
-                    display: -o-flex;
-                    display: flex;
-                    align-items: center;
-
-                    @media (max-width: 767px) {
-                        flex-flow: column;
-                        justify-content: center;
-                        padding: 0;
-                    }
+            .user-info-details {
+                h2 {
+                    color: #fff;
+                    font-size: 18px;
                 }
 
-                .user-info-details, .user-profile-status {
-                    width: 100%;
+                p {
+                    color: #fff;
+                    font-size: 14px;
                 }
 
-                .user-info-details {
-                    h2 {
-                        color: #fff;
-                        font-size: 18px;
-                    }
+                .user-image-container {
+                    width: auto;
+                    padding: 0;
 
-                    p {
-                        color: #fff;
-                        font-size: 14px;
-                    }
+                    .user-image {
+                        @extend %user-image;
 
-                    .user-image-container {
-                        width: auto;
-                        padding: 0;
+                        width: 45px;
+                        height: 45px;
 
-                        .user-image {
-                            @extend %user-image;
+                        @media (max-width: 540px) {
+                            width: 70px;
+                            height: 70px;
+                        }
 
+                        img {
+                            border: 3px solid #fff;
                             width: 45px;
                             height: 45px;
+                            object-fit: cover;
 
                             @media (max-width: 540px) {
                                 width: 70px;
                                 height: 70px;
                             }
-
-                            img {
-                                border: 3px solid #fff;
-                                width: 45px;
-                                height: 45px;
-                                object-fit: cover;
-
-                                @media (max-width: 540px) {
-                                    width: 70px;
-                                    height: 70px;
-                                }
-                            }
-                        }
-                    }
-
-                    @media (max-width: 767px) {
-                        flex-flow: column;
-                        justify-content: center;
-
-                        .welcome-message {
-                            text-align: center;
-
-                            h2 {
-                                margin-top: 15px;
-                            }
-
-                            p {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-                }
-
-                .user-profile-status {
-                    padding: 15px;
-                    background: #fff;
-                    border-radius: 4px;
-
-                    #circles-slider {
-                        &.ui-slider {
-                            margin: 5px 0;
-                        }
-                    }
-
-                    .complete-profile {
-                        padding-right: 0;
-                    }
-
-                    @media (max-width: 767px) {
-                        h5 {
-                            text-align: center;
-                        }
-
-                        .complete-profile {
-                            padding: 0;
-                            margin-top: 15px;
                         }
                     }
                 }
 
                 @media (max-width: 767px) {
                     flex-flow: column;
-                    padding: 30px 15px;
+                    justify-content: center;
+
+                    .welcome-message {
+                        text-align: center;
+
+                        h2 {
+                            margin-top: 15px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
-        }
 
-        .pending-applications-container {
-            position: relative;
-            margin-top: -70px;
-
-            @media (max-width: 767px) {
-                margin-top: -160px;
-            }
-
-            @media (max-width: 540px) {
-                margin-top: -212px;
-            }
-
-            .pending-applications {
+            .user-profile-status {
+                padding: 15px;
+                background: #fff;
                 border-radius: 4px;
-                box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(63,63,68,0.1);
-                h4 {
-                    font-size: 16px;
-                    margin-bottom: 10px;
 
-                    @media (max-width: 767px) {
+                #circles-slider {
+                    &.ui-slider {
+                        margin: 5px 0;
+                    }
+                }
+
+                .complete-profile {
+                    padding-right: 0;
+                }
+
+                @media (max-width: 767px) {
+                    h5 {
                         text-align: center;
                     }
-                }
 
-                .panel-body {
-                    padding-bottom: 0;
-
-                    .list-container {
-                        list-style-type: none;
+                    .complete-profile {
                         padding: 0;
-                        margin: 0;
+                        margin-top: 15px;
+                    }
+                }
+            }
 
-                        li {
-                            @include clearfix;
+            @media (max-width: 767px) {
+                flex-flow: column;
+                padding: 30px 15px;
+            }
+        }
+    }
 
-                            display: none;
+    .pending-applications-container {
+        position: relative;
+        margin-top: -70px;
 
-                            .application-details {
-                                @extend %df-ac;
+        @media (max-width: 767px) {
+            margin-top: -160px;
+        }
 
-                                border-bottom: 1px solid #f5f5f6;
-                                min-height: 60px;
+        @media (max-width: 540px) {
+            margin-top: -212px;
+        }
 
-                                @media (max-width: 540px) {
-                                    flex-direction: column;
-                                    margin-bottom: 10px;
-                                    padding-bottom: 10px;
+        .pending-applications {
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
+
+            h4 {
+                font-size: 16px;
+                margin-bottom: 10px;
+
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
+            }
+
+            .panel-body {
+                padding-bottom: 0;
+
+                .list-container {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        @include clearfix;
+
+                        display: none;
+
+                        .application-details {
+                            @extend %df-ac;
+
+                            border-bottom: 1px solid #f5f5f6;
+                            min-height: 60px;
+
+                            @media (max-width: 540px) {
+                                flex-direction: column;
+                                margin-bottom: 10px;
+                                padding-bottom: 10px;
+                            }
+
+                            .app-link {
+                                a {
+                                    color: #447DF7;
+                                    text-decoration: underline;
+
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
                                 }
+                            }
 
-                                .app-link {
-                                    a {
-                                        color: #447DF7;
-                                        text-decoration: underline;
+                            .app-client {
+                                color: #353F54;
+                                font-weight: 600;
 
-                                        &:hover {
-                                            text-decoration: none;
-                                        }
+                                .job-name {
+                                    span {
+                                        margin-right: 15px;
+                                    }
+
+                                    img {
+                                        margin-right: 10px;
                                     }
                                 }
 
-                                .app-client {
+                                .job-price {
+                                    .fa-database {
+                                        display: -webkit-inline-flex;
+                                        display: -moz-inline-flex;
+                                        display: -ms-inline-flex;
+                                        display: -o-inline-flex;
+                                        display: inline-flex;
+                                        margin-right: 10px;
+                                        position: relative;
+                                        width: 14px;
+
+                                        .fa-database {
+                                            position: absolute;
+                                            left: 0.5em;
+                                            width: 0.8em;
+
+                                            /* height: 0.8em; */
+                                            top: 0.5em;
+                                            font-size: 0.8em;
+                                            background: white;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .app-status {
+                                .time-left {
+                                    text-align: right;
                                     color: #353F54;
                                     font-weight: 600;
-
-                                    .job-name {
-                                        span {
-                                            margin-right: 15px;
-                                        }
-
-                                        img {
-                                            margin-right: 10px;
-                                        }
-                                    }
-
-                                    .job-price {
-                                        .fa-database {
-                                            display: -webkit-inline-flex;
-                                            display: -moz-inline-flex;
-                                            display: -ms-inline-flex;
-                                            display: -o-inline-flex;
-                                            display: inline-flex;
-                                            margin-right: 10px;
-                                            position: relative;
-                                            width: 14px;
-
-                                            .fa-database {
-                                                position: absolute;
-                                                left: 0.5em;
-                                                width: 0.8em;
-
-                                                /* height: 0.8em; */
-                                                top: 0.5em;
-                                                font-size: 0.8em;
-                                                background: white;
-                                            }
-                                        }
-                                    }
                                 }
 
-                                .app-status {
-                                    .time-left {
-                                        text-align: right;
-                                        color: #353F54;
-                                        font-weight: 600;
-                                    }
-
-                                    span.notify {
-                                        color: #ee0a5f;
-                                        text-decoration: underline;
-                                    }
+                                span.notify {
+                                    color: #ee0a5f;
+                                    text-decoration: underline;
                                 }
                             }
                         }
                     }
                 }
+            }
 
-                .show-more-application {
-                    // background: #fff;
-                    text-align: center;
-                    padding: 0 10px 10px;
+            .show-more-application {
+                // background: #fff;
+                text-align: center;
+                padding: 0 10px 10px;
 
-                    a {
-                        font-size: 14px;
+                a {
+                    font-size: 14px;
+                    color: #7d889a;
+                    display: -webkit-inline-flex;
+                    display: -moz-inline-flex;
+                    display: -ms-inline-flex;
+                    display: -o-inline-flex;
+                    display: inline-flex;
+                    align-items: center;
+                    font-weight: 600;
+
+                    i {
+                        margin-left: 5px;
+                    }
+
+                    &:hover {
                         color: #7d889a;
-                        display: -webkit-inline-flex;
-                        display: -moz-inline-flex;
-                        display: -ms-inline-flex;
-                        display: -o-inline-flex;
-                        display: inline-flex;
-                        align-items: center;
-                        font-weight: 600;
 
-                        i {
-                            margin-left: 5px;
+                        span {
+                            text-decoration: underline;
                         }
 
-                        &:hover {
-                            color: #7d889a;
-                            span{
-                                text-decoration: underline;
-                            }
-                            i{
-                                text-decoration: none;
-                            }
+                        i {
+                            text-decoration: none;
                         }
                     }
                 }
