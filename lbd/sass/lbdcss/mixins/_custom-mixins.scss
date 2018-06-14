@@ -1098,6 +1098,7 @@
               font-size: 16px;
               font-weight: 600;
               text-transform: uppercase;
+              margin-bottom: 3px;
             }
 
             font-size: 14px;
@@ -1105,6 +1106,7 @@
             position: absolute;
             top: 67px;
             left: 15px;
+            width: calc(100% - 30px);
 
             // text-shadow: 2px 2px 4px $main;
 
