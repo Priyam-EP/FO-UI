@@ -111,28 +111,6 @@
                                 <div class="content-container">
                                     <div class="homepage-page col-md-12">
                                         <div class="row">
-                                            <!-- <div class="col-md-12 logo-strip">
-                                                <ul>
-                                                    <li><img src="lbd/img/Logo-1.svg" alt="LVMH"></li>
-                                                    <li><img src="lbd/img/Logo-2.svg" alt="Europcar"></li>
-                                                    <li><img src="lbd/img/Logo-3.svg" alt="Trainline"></li>
-                                                    <li><img src="lbd/img/Logo-4.svg" alt="Michelin"></li>
-                                                    <li><img src="lbd/img/Logo-5.svg" alt="Direct Energie"></li>
-                                                    <li><img src="lbd/img/Logo-6.svg" alt="Accor Hotels"></li>
-                                                </ul>
-                                            </div> -->
-                                            <div class="col-md-12 logo-strip-mobile">
-                                                <ul class="slider center">
-                                                    <li><img src="lbd/img/Logo-1.svg" alt="LVMH"></li>
-                                                    <li><img src="lbd/img/Logo-2.svg" alt="Europcar"></li>
-                                                    <li><img src="lbd/img/Logo-3.svg" alt="Trainline"></li>
-                                                    <li><img src="lbd/img/Logo-4.svg" alt="Michelin"></li>
-                                                    <li><img src="lbd/img/Logo-5.svg" alt="Direct Energie"></li>
-                                                    <li><img src="lbd/img/Logo-6.svg" alt="Accor Hotels"></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row">
                                             <div class="col-md-12 banner-wrap">
                                                 <div class="col-md-6 banner-container">
                                                     <img src="lbd/img/cp-logo-banner.svg" width="40" height="55" alt="ContentPlace">
@@ -149,6 +127,28 @@
                                                     <p class="secure"><i class="material-icons">lock</i> Paiement 100% sécurisé</p>
                                                     <a href="javascript:;" class="scroll-down">Voir nos offres <span><i class="material-icons">keyboard_arrow_down</i></span></a>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 logo-strip">
+                                                <ul>
+                                                    <li><img src="lbd/img/Logo-1.svg" alt="LVMH"></li>
+                                                    <li><img src="lbd/img/Logo-2.svg" alt="Europcar"></li>
+                                                    <li><img src="lbd/img/Logo-3.svg" alt="Trainline"></li>
+                                                    <li><img src="lbd/img/Logo-4.svg" alt="Michelin"></li>
+                                                    <li><img src="lbd/img/Logo-5.svg" alt="Direct Energie"></li>
+                                                    <li><img src="lbd/img/Logo-6.svg" alt="Accor Hotels"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-12 logo-strip-mobile">
+                                                <ul class="slider center">
+                                                    <li><img src="lbd/img/Logo-1.svg" alt="LVMH"></li>
+                                                    <li><img src="lbd/img/Logo-2.svg" alt="Europcar"></li>
+                                                    <li><img src="lbd/img/Logo-3.svg" alt="Trainline"></li>
+                                                    <li><img src="lbd/img/Logo-4.svg" alt="Michelin"></li>
+                                                    <li><img src="lbd/img/Logo-5.svg" alt="Direct Energie"></li>
+                                                    <li><img src="lbd/img/Logo-6.svg" alt="Accor Hotels"></li>
+                                                </ul>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -170,7 +170,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-12 offers-navigation-mobile nav-scroll">
-                                                        <ul>
+                                                        <ul class="slider center">
                                                             <li class="nav-item active"><a data-toggle="tab" href="#filter1" role="tab">Rédaction</a></li>
                                                             <li class="nav-item"><a data-toggle="tab" href="#filter2" role="tab">Correction</a></li>
                                                             <li class="nav-item"><a data-toggle="tab" href="#filter3" role="tab">Traduction</a></li>
@@ -1218,6 +1218,16 @@
                     });
                 }
             });
+            /* Mobile nav scroll effects */
+            /*Offers Role filter scroll with slick slider*/
+                $(document).on('click', '.offers-navigation-mobile .slick-track li', function(e){
+                    e.stopPropagation();
+                    $(this).siblings('li').removeClass('active');
+                    $(this).addClass('active');
+                });
+            /*Offers Role filter scroll with slick slider*/
+
+
         });
         </script>
         <!-- Custom scripts ends -->
