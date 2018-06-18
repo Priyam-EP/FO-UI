@@ -70,6 +70,37 @@
     border: 1px solid $color !important;
 }
 
+/* mixin for multiline */
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+.block-with-text {
+  @include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 3, $bgColor: white);
+}
+
 /* Social-media icon colors */
 %social-media-colors{
     @each $key, $value in $social-media-colors {
@@ -1093,23 +1124,48 @@
           }
 
           h3 {
-            span {
+            font-size: 14px;
+            color: #fff;
+            position: absolute;
+            text-transform: none;
+            top: 67px;
+            left: 15px;
+            width: calc(100% - 30px);
+            // height: 100%;
+            overflow: hidden;
+
+            > span {
               display: block;
               font-size: 16px;
               font-weight: 600;
               text-transform: uppercase;
               margin-bottom: 3px;
             }
+            /* &:before{
+              content: '...';
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              right: 0;
+              width: 1em;
+              height: 1em;
+              margin-top: 0.2em;
+              background: #45464b;
+            } */
 
-            font-size: 14px;
-            color: #fff;
-            position: absolute;
-            top: 67px;
-            left: 15px;
-            width: calc(100% - 30px);
+          }
 
-            // text-shadow: 2px 2px 4px $main;
+          .offer-title{
+            h4{
+              padding: 0;
+              margin-bottom: 5px;
+              font-size: 16px;
 
+            }
           }
 
           .timer {
@@ -1121,6 +1177,10 @@
             padding: 2px 16px;
             color: $delete;
             font-weight: 600;
+          }
+
+          @media (max-width: 767px){
+            // height: auto;
           }
         }
 
@@ -1239,7 +1299,6 @@
 
 /* List image container ends */
 /* File image and type starts */
-
 %file-types {
     position: relative;
 
@@ -1447,13 +1506,12 @@
         }
     }
 }
-
 /* File image and type ends */
 
 
 
-/* Select picker Bootstrap select */
 
+/* Select picker Bootstrap select */
 %bootstrap-select {
     &.social-media {
         svg {
@@ -1474,7 +1532,6 @@
         }
     }
 }
-
 /* Select picker Bootstrap select ends*/
 
 span.edit {
