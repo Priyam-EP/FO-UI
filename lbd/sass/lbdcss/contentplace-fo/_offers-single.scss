@@ -48,6 +48,131 @@
   .offers-single {
     width: 100%;
 
+    .job-completion-tracker-container {
+      .job-completion-tracker {
+        .panel-body {
+          ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            @extend .d-flex;
+
+            li {
+              flex: 1 1 auto;
+
+              .job-completion-tracker {
+                text-align: center;
+
+                .tracker-icon {
+                  i {
+                    position: relative;
+                    font-size: 20px;
+                    z-index: 9;
+                    color: #d7d9dc;
+                    background: #fff;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50%;
+                  }
+
+                  position: relative;
+
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                    width: 50%;
+                    height: 7px;
+                    background: #d7d9dc;
+                    z-index: 1;
+                  }
+
+                  &:after {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    right: 0;
+                    width: 50%;
+                    height: 7px;
+                    background: #d7d9dc;
+                    z-index: 1;
+                  }
+                }
+
+                .tracker-status {
+                  color: #d7d9dc;
+                  margin-top: 15px;
+
+                  .status-head {
+                    font-size: 16px;
+                    font-weight: 600;
+                  }
+
+                  .status-desc {
+                    font-size: 14px;
+                  }
+                }
+
+                &.completed {
+                  .tracker-icon {
+                    i {
+                      color: #447DF7;
+                    }
+
+                    &:before, &:after {
+                      background: #447DF7;
+                    }
+                  }
+
+                  .tracker-status {
+                    color: #447DF7;
+                  }
+                }
+
+                &.current {
+                  .tracker-icon {
+                    i {
+                      color: #353F54;
+                    }
+
+                    &:before {
+                      background: #447DF7;
+                    }
+                  }
+
+                  .tracker-status {
+                    color: #353F54;
+                  }
+                }
+
+                &.done {
+                  .tracker-icon {
+                    i {
+                      color: #447DF7;
+                    }
+
+                    &:before, &:after {
+                      background: #447DF7;
+                    }
+                  }
+
+                  .tracker-status {
+                    color: #353F54;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .panel-footer {
+          background: #fff;
+        }
+      }
+    }
+
     [class*='-content-main'] {
       @include clearfix;
 
