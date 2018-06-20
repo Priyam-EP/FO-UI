@@ -60,6 +60,7 @@
 
             li {
               flex: 1 1 auto;
+              width: 20%;
 
               .job-completion-tracker {
                 text-align: center;
@@ -147,6 +148,27 @@
                   }
                 }
 
+                &.pending {
+                  .tracker-icon {
+                    i {
+                      color: #353F54;
+                    }
+
+                    &:before {
+                      background: #447DF7;
+                    }
+
+                    &:after {
+                      background-image: linear-gradient(90deg, #9a9fa9 25%, #d7d9dc 25%, #d7d9dc 50%, #9a9fa9 50%, #9a9fa9 75%, #d7d9dc 75%, #d7d9dc 100%);
+                      background-size: 60.00px 60.00px;
+                    }
+                  }
+
+                  .tracker-status {
+                    color: #353F54;
+                  }
+                }
+
                 &.done {
                   .tracker-icon {
                     i {
@@ -162,6 +184,27 @@
                     color: #353F54;
                   }
                 }
+
+                &.failed {
+                  .tracker-icon {
+                    i {
+                      color: #ee0a5f;
+                    }
+
+                    &:before {
+                      background: #447DF7;
+                    }
+
+                    &:after {
+                      background-image: linear-gradient(90deg, #ee0a5f 25%, #d7d9dc 25%, #d7d9dc 50%, #ee0a5f 50%, #ee0a5f 75%, #d7d9dc 75%, #d7d9dc 100%);
+                      background-size: 60.00px 60.00px;
+                    }
+                  }
+
+                  .tracker-status {
+                    color: #353F54;
+                  }
+                }
               }
             }
           }
@@ -169,6 +212,15 @@
 
         .panel-footer {
           background: #fff;
+
+          .job-completion-status {
+            span {
+              color: #353F54;
+              font-weight: 600;
+              font-size: 16px;
+              margin-left: 5px;
+            }
+          }
         }
       }
     }
