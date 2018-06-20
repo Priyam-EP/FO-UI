@@ -207,7 +207,7 @@ em.error {
 
       .logo {
         padding: 0;
-        margin: 17px auto 17px;
+        margin: 17px auto 30px;
         width: 37px;
         height: 47px;
 
@@ -2728,7 +2728,7 @@ em.error {
 .delete-undo-container {
   position: fixed;
   right: 15px;
-  bottom: 42px;
+  // bottom: 42px;
   z-index: 9;
   padding: 10px;
   background: $selected;

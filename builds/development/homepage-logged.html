@@ -384,7 +384,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-12 offers-navigation-mobile nav-scroll">
-                                                        <ul>
+                                                        <ul class="slider center">
                                                             <li class="nav-item active"><a data-toggle="tab" href="#filter1" role="tab">Rédaction</a></li>
                                                             <li class="nav-item"><a data-toggle="tab" href="#filter2" role="tab">Correction</a></li>
                                                             <li class="nav-item"><a data-toggle="tab" href="#filter3" role="tab">Traduction</a></li>
@@ -1460,7 +1460,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <!-- <div class="col-md-12 logo-strip">
+                                            <div class="col-md-12 logo-strip">
                                                 <ul>
                                                     <li><img src="lbd/img/Logo-1.svg" alt="LVMH"></li>
                                                     <li><img src="lbd/img/Logo-2.svg" alt="Europcar"></li>
@@ -1469,7 +1469,7 @@
                                                     <li><img src="lbd/img/Logo-5.svg" alt="Direct Energie"></li>
                                                     <li><img src="lbd/img/Logo-6.svg" alt="Accor Hotels"></li>
                                                 </ul>
-                                            </div> -->
+                                            </div>
                                             <div class="col-md-12 logo-strip-mobile">
                                                 <ul class="slider center">
                                                     <li><img src="lbd/img/Logo-1.svg" alt="LVMH"></li>
@@ -1722,6 +1722,7 @@
             /* Slick Slider */
             $('.slider').slick({
                 centerMode:true,
+                focusOnSelect: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 dots: false,
@@ -1796,11 +1797,17 @@
                 }
               })
               .slider("pips");*/
-            /*Offers filtering tabs*/
-                $(document).on('click', '[class*="offers-navigation"] a', function(e){
-                    e.stopPropogation();
+
+            /*Offers Role filter scroll with slick slider*/
+                $(document).on('click', '.offers-navigation-mobile .slick-track li', function(e){
+                    e.stopPropagation();
+                    // e.stopImediatePropagation();
+                    $(this).removeClass('active');
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+                    $(this).parents('.slick-track').find('.slick-current').addClass('active');
                 });
-            /*Offers filtering tabs ends*/
+            /*Offers Role filter scroll with slick slider*/
 
 
 
