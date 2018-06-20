@@ -8,7 +8,7 @@
     .banner-wrap {
         @extend %df-ac-jcc;
 
-        height: calc(100vh - 123.69px);
+        height: calc(100vh - 105.77px);
         background: url(../img/hp-immersive.png) no-repeat top center;
         background-size: cover;
         overflow: hidden;
@@ -118,7 +118,7 @@
                     margin-top: 30px;
                 }
                 @media (max-width: 540px) {
-                    margin-top: 10px;
+                    margin-top: 20px;
                 }
             }
 
@@ -131,7 +131,7 @@
             height: calc(100vh - 91.69px);
         }
         @media (max-width: 540px){
-            height: calc(100vh - 71.69px);
+            height: calc(100vh - 43.02px);
         }
     }
 
@@ -158,7 +158,7 @@
                 list-style-type: none;
 
                 img {
-                    width: 200px;
+                    width: 150px;
                     max-width: 100%;
                     display: block;
                 }
@@ -176,7 +176,7 @@
             margin: 0;
 
             li {
-                width: 200px !important;
+                width: 120px !important;
 
                 img {
                     margin: 0 auto;
@@ -185,16 +185,21 @@
         }
 
         .center .slick-center img {
-            -moz-transform: scale(1.08);
-            -ms-transform: scale(1.08);
-            -o-transform: scale(1.08);
-            -webkit-transform: scale(1.08);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            -webkit-transform: scale(1);
+            transform: scale(1);
             opacity: 1;
-            transform: scale(1.08);
         }
 
         .center img {
             opacity: 0.4;
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
             transition: all 300ms ease;
         }
 
@@ -373,6 +378,10 @@
                         display: -ms-inline-flex;
                         display: -o-inline-flex;
                         display: inline-flex;
+
+                        @media (max-width: 1199px) {
+                            width: calc(100% / 3);
+                        }
 
                         @media (max-width: 991px) {
                             width: calc(100% / 2);
@@ -563,6 +572,79 @@
                     color: #9A9FA9;
                     font-size: 14px;
                     margin-bottom: 0;
+                }
+            }
+        }
+        .community-content-list{
+            @extend %offers-list;
+            li {
+                &.list-item {
+                    width: calc(100% / 4);
+                    display: -webkit-inline-flex;
+                    display: -moz-inline-flex;
+                    display: -ms-inline-flex;
+                    display: -o-inline-flex;
+                    display: inline-flex;
+
+                    @media (max-width: 1199px) {
+                        width: calc(100% / 3);
+                    }
+
+                    @media (max-width: 991px) {
+                        width: calc(100% / 2);
+                    }
+
+                    @media (max-width: 767px) {
+                        width: calc(100% / 1);
+                    }
+
+                    > a {
+                        flex: 1;
+                    }
+
+                    .offer-banner {
+                        // background: url('../img/fo-bg.jpg') no-repeat center center;
+                        // background-size: cover;
+                        border-radius: 4px 4px 0 0;
+                    }
+
+                    .client-infos {
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: -o-flex;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-flow: column;
+
+                        .client-logo {
+                            @extend %user-image;
+
+                            width: 60px;
+                            height: 60px;
+                        }
+
+                        .client-name {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: $main;
+                        }
+
+                        .btn {
+                            margin: 15px 0;
+                        }
+
+                        .more-offers-link {
+                            color: $selected;
+                            text-decoration: underline;
+                            font-weight: 600;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1055,6 +1137,9 @@
                                         text-align: right;
                                         color: #353F54;
                                         font-weight: 600;
+                                        @media (max-width: 540px){
+                                            text-align: left;
+                                        }
                                     }
 
                                     span.notify {
