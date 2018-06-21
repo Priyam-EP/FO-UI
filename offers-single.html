@@ -14,9 +14,9 @@
                     <div class="container-fluid main-panel-page">
                         <div class="content-container">
                           <div class="offers-single">
-                            <div class="row">
+                            <div class="row hidden-xs">
                                 <div class="col-md-12 job-completion-tracker-container pl-30">
-                                    <div class="panel panel-default job-completion-tracker">
+                                    <div class="panel panel-default job-completion-tracker-panel">
                                       <div class="panel-body">
                                           <ul>
                                               <li>
@@ -86,9 +86,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row hidden-xs">
                                 <div class="col-md-12 job-completion-tracker-container pl-30">
-                                    <div class="panel panel-default job-completion-tracker">
+                                    <div class="panel panel-default job-completion-tracker-panel">
                                       <div class="panel-body">
                                           <ul>
                                               <li>
@@ -158,9 +158,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row hidden-xs">
                                 <div class="col-md-12 job-completion-tracker-container pl-30">
-                                    <div class="panel panel-default job-completion-tracker">
+                                    <div class="panel panel-default job-completion-tracker-panel">
                                       <div class="panel-body">
                                           <ul>
                                               <li>
@@ -434,6 +434,11 @@ $('[id*="assignTestArticleModal"]').click(function(e) {
   $('#wizardCard').bootstrapWizard('show',1)
 });
 /*Card Assignation Confirm modal open in step 2 ends*/
+
+/* Height for main and aside content offers single*/
+var divHeight = $('.offers-single-content-main').height();
+$('.offers-single-content-aside .sticky-section').css('height', divHeight+'px');
+/* Height for main and aside content offers single*/
 
 });
 

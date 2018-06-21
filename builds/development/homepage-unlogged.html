@@ -125,7 +125,7 @@
                                                         </div>
                                                     </div>
                                                     <p class="secure"><i class="material-icons">lock</i> Paiement 100% sécurisé</p>
-                                                    <a href="javascript:;" class="scroll-down">Voir nos offres <span><i class="material-icons">keyboard_arrow_down</i></span></a>
+                                                    <a href="javascript:;" class="scroll-down" id="scrollToOffer">Voir nos offres <span><i class="material-icons">keyboard_arrow_down</i></span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1237,6 +1237,12 @@
                 });
             /*Offers Role filter scroll with slick slider*/
 
+            /* Scroll to Offers */
+            $("#scrollToOffer").click(function() {
+                $('html,body').animate({
+                  scrollTop: $(".offers-container").parent('.row').offset().top - 13}, 'slow');
+              });
+            /* Scroll to Offers */
 
         });
         </script>

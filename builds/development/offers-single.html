@@ -134,9 +134,9 @@
                     <div class="container-fluid main-panel-page">
                         <div class="content-container">
                           <div class="offers-single">
-                            <div class="row">
+                            <div class="row hidden-xs">
                                 <div class="col-md-12 job-completion-tracker-container pl-30">
-                                    <div class="panel panel-default job-completion-tracker">
+                                    <div class="panel panel-default job-completion-tracker-panel">
                                       <div class="panel-body">
                                           <ul>
                                               <li>
@@ -206,9 +206,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row hidden-xs">
                                 <div class="col-md-12 job-completion-tracker-container pl-30">
-                                    <div class="panel panel-default job-completion-tracker">
+                                    <div class="panel panel-default job-completion-tracker-panel">
                                       <div class="panel-body">
                                           <ul>
                                               <li>
@@ -278,9 +278,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row hidden-xs">
                                 <div class="col-md-12 job-completion-tracker-container pl-30">
-                                    <div class="panel panel-default job-completion-tracker">
+                                    <div class="panel panel-default job-completion-tracker-panel">
                                       <div class="panel-body">
                                           <ul>
                                               <li>
@@ -538,10 +538,10 @@
                                     
                                     <div class="offers-single-content-aside col-md-4 hidden-xs">
                                       <div class="sticky-section customScroll outside">
-                                        <div class="col-md-12 card">
+                                        <div class="col-md-12 card hidden-lg hidden-md visible-sm visible-xs">
                                             <div class="row" id="job-tracking-container">
                                                 <div class="col-md-12 job-tracking-container">
-                                                    <div class="row">
+                                                    <!-- <div class="row">
                                                         <div class="col-md-12 offer-info-title">
                                                             <div class="row">
                                                                 <div class="col-md-2 col-sm-2 hidden-xs user-image mr-15">
@@ -577,6 +577,59 @@
                                                     <div class="row">
                                                         <div class="col-md-12 mt-15">
                                                             <button class="btn btn-yes" data-toggle="modal" data-target="#assignTestArticle" id="assignTestArticleModal">Start Test Article!</button>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="row">
+                                                        <div class="col-md-12 tracking-line">
+                                                            <ul>
+                                                              <li>
+                                                                  <div class="job-completion-tracker completed">
+                                                                      <div class="tracker-icon"><i class="fa fa-check-circle-o" aria-hidden="true"></i></div>
+                                                                  </div>
+                                                              </li>
+                                                              <li>
+                                                                  <div class="job-completion-tracker current">
+                                                                      <div class="tracker-icon"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></div>
+                                                                  </div>
+                                                              </li>
+                                                              <li>
+                                                                  <div class="job-completion-tracker pending">
+                                                                      <div class="tracker-icon"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></div>
+                                                                  </div>
+                                                              </li>
+                                                              <li>
+                                                                  <div class="job-completion-tracker failed">
+                                                                      <div class="tracker-icon"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></div>
+                                                                  </div>
+                                                              </li>
+                                                              <li>
+                                                                  <div class="job-completion-tracker done">
+                                                                      <div class="tracker-icon"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></div>
+                                                                  </div>
+                                                              </li>
+                                                          </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 tracking-status">
+                                                            Application status: <span>Waiting for your Survey (2/5)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 tracking-action">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                                    <button class="btn btn-default full-width">Withdraw</button>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                                    <button class="btn btn-yes">Start Survey</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="divider"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2428,6 +2481,11 @@ $('[id*="assignTestArticleModal"]').click(function(e) {
   $('#wizardCard').bootstrapWizard('show',1)
 });
 /*Card Assignation Confirm modal open in step 2 ends*/
+
+/* Height for main and aside content offers single*/
+var divHeight = $('.offers-single-content-main').height();
+$('.offers-single-content-aside .sticky-section').css('height', divHeight+'px');
+/* Height for main and aside content offers single*/
 
 });
 
