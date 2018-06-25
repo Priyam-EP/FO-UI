@@ -129,6 +129,10 @@
 
                   .tracker-status {
                     color: #447DF7;
+
+                    .status-desc {
+                      color: #9da2ac;
+                    }
                   }
                 }
 
@@ -202,7 +206,7 @@
                   }
 
                   .tracker-status {
-                    color: #353F54;
+                    color: #ee0a5f;
                   }
                 }
               }
@@ -703,7 +707,7 @@
                 }
 
                 .tracker-status {
-                  color: #447DF7;
+                  color: #9da2ac;
                 }
               }
 
@@ -714,7 +718,7 @@
                   }
 
                   &:after {
-                    background: #447DF7;
+                    background: #d7d9dc;
                   }
                 }
 
@@ -769,7 +773,7 @@
                 }
 
                 .tracker-status {
-                  color: #353F54;
+                  color: #ee0a5f;
                 }
               }
             }
