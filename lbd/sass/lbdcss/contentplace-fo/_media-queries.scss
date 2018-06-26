@@ -138,8 +138,12 @@
   }
 
   .bottom-signup-container {
-    /* display: block; */
+    display: block;
     z-index: 9;
+
+    &.homepage-bottom-signup {
+      display: none;
+    }
   }
 
   #signUpModal .sign-up-form .social-connect .social-buttons a {
