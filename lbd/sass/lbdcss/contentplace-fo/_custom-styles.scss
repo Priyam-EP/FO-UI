@@ -216,6 +216,7 @@ em.error {
           content: '';
           margin: 20px auto 0;
           width: 85%;
+
           // height: 1px;
           background-color: $divider;
         }
@@ -2728,6 +2729,7 @@ em.error {
 .delete-undo-container {
   position: fixed;
   right: 15px;
+
   // bottom: 42px;
   z-index: 9;
   padding: 10px;
@@ -2829,6 +2831,20 @@ em.error {
 }
 
 /* Multiple Select Search Box Starts*/
+
+/* Preview Document Modal Starts */
+.preview-document-modal {
+  @extend %modal;
+
+  .modal-title {
+    font-size: 20px;
+    color: #353f53;
+    font-weight: 600;
+    margin-bottom: 0px !important;
+  }
+}
+
+/* Preview Document Modal Ends */
 
 /* Logout Modal Starts Starts */
 
