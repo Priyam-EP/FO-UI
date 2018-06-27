@@ -21,7 +21,7 @@
 
               @media (max-width: 991px) {}
 
-              @media (max-width: 767px) {}
+              @media (max-width: 768px) {}
             }
           }
         }
@@ -188,7 +188,7 @@
               height: 46px;
               width: 46px;
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 width: 34px;
                 height: 34px;
               }
@@ -212,7 +212,7 @@
 
               }
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 width: 34px;
                 height: 34px;
               }
@@ -405,7 +405,7 @@
             }
           }
 
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             padding: 10px;
 
             &:before, &:after {
@@ -423,7 +423,7 @@
               left: 9px;
               height: calc(100% + 22px + 170% + 13px);
 
-              @media (min-width: 323px) and (max-width: 767px) {
+              @media (min-width: 323px) and (max-width: 768px) {
                 height: calc(100% + 5px + 170% + 13px);
               }
             }
@@ -479,7 +479,7 @@
           }
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           padding-left: 30px;
         }
       }
@@ -497,7 +497,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 0 15px 0px;
     z-index: 1;
 
@@ -1186,7 +1186,7 @@
               font-weight: 700;
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               float: left;
               font-size: 14px;
               padding-bottom: 15px;
@@ -1238,7 +1238,7 @@
                 word-break: break-word;
               }
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 font-size: 14px;
                 line-height: normal;
               }
@@ -1385,7 +1385,7 @@
                 }
               }
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 background: $highlight-01;
                 padding: 5px;
 
@@ -1516,7 +1516,7 @@
                   }
                 }
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                   background: $highlight-01;
                   padding: 5px;
 
@@ -1565,7 +1565,7 @@
                   }
                 }
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                   margin-top: 15px;
                 }
               }
@@ -1677,6 +1677,9 @@
       }
     }
   }
+  @media (max-width: 1200px){
+    padding: 15px 0 0 15px;
+  }
 }
 
 .files-list-container {
@@ -1736,7 +1739,7 @@
         }
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .file-name {
           padding-right: 35px;
         }
@@ -1786,7 +1789,7 @@ span.file-type {
               .tab-panel-content-scroll {
                 padding-bottom: 50px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                   padding-bottom: 0;
                 }
               }
@@ -1817,7 +1820,7 @@ span.file-type {
             }
           }
 
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             flex-flow: column;
             height: auto;
 
@@ -1957,7 +1960,7 @@ span.file-type {
             }
           }
 
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             flex-flow: column;
 
             li {
@@ -1999,7 +2002,7 @@ span.file-type {
 
         #declineAssign {
           .tab-panel-content-scroll {
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               height: calc(100vh - 230px);
             }
           }
@@ -2009,7 +2012,7 @@ span.file-type {
           .tab-panel-content-scroll {
             padding-bottom: 60px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               height: calc(100vh - 290px);
 
               // padding-bottom: 0;
@@ -2023,7 +2026,7 @@ span.file-type {
             display: -o-flex;
             display: flex;
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               flex-flow: column;
             }
 
@@ -2038,7 +2041,7 @@ span.file-type {
               &:first-child {
                 padding-right: 0;
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                   padding-right: 15px;
                   margin-bottom: 15px;
                 }
@@ -2065,7 +2068,7 @@ span.file-type {
                 height: 50px;
               }
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 .col-xs-8 {
                   padding-left: 0;
                 }
@@ -2141,7 +2144,7 @@ span.file-type {
                     font-size: 14px;
                   }
 
-                  @media (max-width: 767px) {
+                  @media (max-width: 768px) {
                     padding: 0;
                   }
                 }
@@ -2155,7 +2158,7 @@ span.file-type {
             padding-bottom: 90px;
             height: calc(100vh - 154px);
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               padding-bottom: 70px;
             }
           }
@@ -2163,7 +2166,7 @@ span.file-type {
           .bottom-fixed-modal-actions {
             height: 90px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               height: 110px;
             }
           }
@@ -2199,12 +2202,12 @@ span.file-type {
     .tab-panel-content-scroll {
       padding: 0px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         padding-bottom: 0;
       }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       height: calc(100vh - 32px);
     }
   }
@@ -2354,7 +2357,7 @@ span.file-type {
               }
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               .tab-panel-content-scroll {
                 height: calc(100vh - 210px);
               }
@@ -2414,7 +2417,7 @@ span.file-type {
     .modal-content {
       .modal-body {
         .modal-container {
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             padding-top: 20px;
           }
 
@@ -2590,7 +2593,7 @@ span.file-type {
                 }
               }
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 width: calc(100%);
               }
             }
@@ -2618,7 +2621,7 @@ span.file-type {
             .button-left {
               padding-left: 0;
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 padding: 0;
               }
             }
@@ -2627,7 +2630,7 @@ span.file-type {
               padding-right: 0;
               float: right;
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 padding: 0;
               }
             }
@@ -2715,7 +2718,7 @@ span.file-type {
       .modal-body {
         .modal-container {
           .modal-actions-fixed-bottom {
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               .button-left {
                 padding-right: 15px;
               }

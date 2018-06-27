@@ -17,7 +17,7 @@
       font-weight: 700;
       margin-bottom: 20px;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 768px) {
         margin-bottom: 15px;
       }
     }
@@ -44,7 +44,7 @@
           }
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           position: absolute;
           right: 0;
           top: -40px;
@@ -71,7 +71,7 @@
               li {
                 margin-bottom: 10px;
 
-                /* @media (max-width: 767px){
+                /* @media (max-width: 768px){
                     width: 100%;
                     &.active{
                         &:before{
@@ -158,7 +158,7 @@
             }
           }
 
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             margin-top: 0;
           }
 
@@ -184,7 +184,7 @@
                 width: 33.3333%;
               }
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 width: 50%;
 
                 .card {
@@ -538,7 +538,7 @@
               .tab-panel-content-scroll {
                 padding-bottom: 50px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                   padding-bottom: 0;
                 }
               }
@@ -571,7 +571,7 @@
             }
           }
 
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             flex-flow: column;
             height: auto;
 
@@ -711,7 +711,7 @@
             }
           }
 
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             flex-flow: column;
 
             li {
@@ -753,7 +753,7 @@
 
         #declineAssign {
           .tab-panel-content-scroll {
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               height: calc(100vh - 210px);
             }
           }
@@ -763,7 +763,7 @@
           .tab-panel-content-scroll {
             padding-bottom: 60px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               height: calc(100vh - 210px);
 
               // padding-bottom: 0;
@@ -777,7 +777,7 @@
             display: -o-flex;
             display: flex;
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               flex-flow: column;
             }
 
@@ -792,7 +792,7 @@
               &:first-child {
                 padding-right: 0;
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                   padding-right: 15px;
                   margin-bottom: 15px;
                 }
@@ -821,7 +821,7 @@
                 }
               }
 
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 .col-xs-8 {
                   padding-left: 0;
                 }
@@ -897,7 +897,7 @@
                     font-size: 14px;
                   }
 
-                  @media (max-width: 767px) {
+                  @media (max-width: 768px) {
                     padding: 0;
                   }
                 }

@@ -526,6 +526,10 @@ em.error {
                   overflow-x: hidden;
                   padding: 16px 7px 0 16px;
 
+                  @media (max-width: 1199px){
+                    // width: 38%;
+                  }
+
                   .navbar-default {
                     background: none;
                     padding: 0;
@@ -872,7 +876,7 @@ em.error {
                         height: 2px;
                         background: #edeff1;
 
-                        @media (max-width: 767px) {
+                        @media (max-width: 768px) {
                           height: 0;
                         }
                       }
@@ -1379,6 +1383,7 @@ em.error {
   font-size: 14px;
   text-align: center;
   position: relative;
+  padding-left: 35px;
 
   &:before {
     font-family: FontAwesome;
@@ -2854,14 +2859,14 @@ em.error {
   .modal-dialog {
     width: 400px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       width: 100%;
     }
 
     .modal-content {
       .modal-body {
         .modal-container {
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             height: calc(100vh - 32px);
             position: relative;
 
@@ -2886,7 +2891,7 @@ em.error {
               }
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               .client-image-container {
                 img {
                   width: 56px;

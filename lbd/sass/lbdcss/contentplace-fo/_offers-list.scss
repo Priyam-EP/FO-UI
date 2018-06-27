@@ -17,7 +17,7 @@
             font-weight: 700;
             margin-bottom: 20px;
 
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 768px) {
                 margin-bottom: 15px;
             }
         }
@@ -44,7 +44,7 @@
                     }
                 }
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                     position: absolute;
                     right: 0;
                     top: -40px;
@@ -63,7 +63,7 @@
                             margin-bottom: 15px;
                             li{
                                 margin-bottom: 10px;
-                                /* @media (max-width: 767px){
+                                /* @media (max-width: 768px){
                                     width: 100%;
                                     &.active{
                                         &:before{
@@ -79,7 +79,7 @@
                 .offers-list-container {
                     margin-top: 20px;
 
-                    @media (max-width: 767px) {
+                    @media (max-width: 768px) {
                         margin-top: 0;
                     }
 
@@ -140,7 +140,7 @@
                                     width: calc(100% / 2);
                                 }
 
-                                @media (max-width: 767px) {
+                                @media (max-width: 768px) {
                                     width: calc(100% / 1);
                                 }
 
@@ -206,7 +206,7 @@
                                 width: calc(100% / 3);
                             }
 
-                            @media (max-width: 767px) {
+                            @media (max-width: 768px) {
                                 width: calc(100% / 1);
                             }
                         }
