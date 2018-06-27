@@ -1168,6 +1168,12 @@
                   }
                 }
               }
+
+              &:last-child {
+                .application-details {
+                  border-bottom: none;
+                }
+              }
             }
           }
         }
