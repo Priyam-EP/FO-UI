@@ -1010,6 +1010,24 @@
     .total-payment {
       color: $main;
     }
+
+    .form-group {
+      .row {
+        &:last-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    @-moz-document url-prefix() {
+      .form-group {
+        .row {
+          &:last-child {
+            margin-bottom: 100px;
+          }
+        }
+      }
+    }
   }
 }
 
