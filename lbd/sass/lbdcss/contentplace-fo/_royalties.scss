@@ -954,6 +954,10 @@
       padding: 30px;
 
       .modal-container {
+        .modal-title {
+          word-break: break-word;
+        }
+
         .content-scroll {
           height: calc(100vh - 300px);
           padding-bottom: 70px;
