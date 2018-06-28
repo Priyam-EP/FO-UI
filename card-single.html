@@ -1944,7 +1944,7 @@ $('div').delegate('.card-section-list ul li .card', 'click', function(e){
 
 /*Destroy customScroll for mobile*/
   $(window).on("load resize",function(){
-      if(window.matchMedia("(min-width: 992px)").matches){
+      if(window.matchMedia("(min-width: 768px)").matches){
           $('.tab-panel-container .tab-panel').mCustomScrollbar();
       }else{
           $('.tab-panel-container .tab-panel').mCustomScrollbar("destroy");

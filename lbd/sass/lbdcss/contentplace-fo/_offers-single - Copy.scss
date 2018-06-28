@@ -5,7 +5,7 @@
         .page-wrap {
             .main-panel-wrap {
                 .main-panel {
-                    @media (max-width: 768px) {
+                    @media (max-width: 767px) {
                         padding-bottom: 70px;
 
                         .content-container {
@@ -338,7 +338,7 @@
                   max-width: 100%;
                 }
 
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     // padding: 0px;
                     height: 180px;
 
@@ -363,7 +363,7 @@
                 word-break: break-all;
                 color: $main;
 
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     padding: 15px;
                 }
 
@@ -458,7 +458,7 @@
             .more-offers {
                 padding: 0;
 
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     margin-top: 15px;
 
                     h2 {
@@ -525,7 +525,7 @@
         }
 
         .client-details-container {
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 padding: 0 15px;
             }
 
@@ -567,7 +567,7 @@
         }
 
         [class*='-info'] {
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 > div {
                     .offer-bidding {
                         padding: 15px;
@@ -849,7 +849,7 @@
                                         height: calc(100vh - 270px);
                                         padding-bottom: 70px;
 
-                                        @media (max-width: 768px) {
+                                        @media (max-width: 767px) {
                                             padding-bottom: 20px;
                                         }
 
@@ -958,7 +958,7 @@
                                                     display: flex;
                                                     justify-content: space-between;
 
-                                                    @media (max-width: 768px) {
+                                                    @media (max-width: 767px) {
                                                         justify-content: unset;
                                                         flex-flow: row wrap;
 
@@ -1080,7 +1080,7 @@
                                             position: relative;
                                             height: calc(100vh - 270px);
 
-                                            @media (max-width: 768px) {
+                                            @media (max-width: 767px) {
                                                 height: calc(100vh - 210px);
                                             }
 
@@ -1101,7 +1101,7 @@
                                         .tunnel-steps-content-container {
                                             height: calc(100vh - 290px);
 
-                                            @media (max-width: 768px) {
+                                            @media (max-width: 767px) {
                                                 height: calc(100vh - 230px);
                                             }
                                         }
@@ -1111,7 +1111,7 @@
                                         .tunnel-steps-content-container {
                                             overflow: visible;
 
-                                            @media (max-width: 768px) {
+                                            @media (max-width: 767px) {
                                                 overflow: auto;
                                                 overflow-x: hidden;
                                             }
@@ -1130,7 +1130,7 @@
                                         .tunnel-steps-content-container {
                                             height: calc(100vh - 217px);
 
-                                            @media (max-width: 768px) {
+                                            @media (max-width: 767px) {
                                                 height: calc(100vh - 130px);
                                             }
                                         }
@@ -1142,7 +1142,7 @@
                                     }
 
                                     &#applicationSubmision {
-                                        @media (max-width: 768px) {
+                                        @media (max-width: 767px) {
                                             height: calc(100vh - 32px);
                                         }
 
@@ -1151,7 +1151,7 @@
                                             padding-bottom: 35px;
                                             height: calc(100vh - 247px);
 
-                                            @media (max-width: 768px) {
+                                            @media (max-width: 767px) {
                                                 height: calc(100vh - 160px);
                                             }
                                         }
@@ -1188,7 +1188,7 @@
     .tab-pane {
         padding-bottom: 60px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             height: calc(100vh - 32px);
         }
     }

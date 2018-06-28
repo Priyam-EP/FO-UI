@@ -26,7 +26,7 @@
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .col-sm-6 {
           &:nth-child(2) {
             margin-top: 10px;
@@ -160,7 +160,7 @@
         z-index: 2;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         width: calc(100%);
         margin: 0;
         padding: 15px 0;
@@ -227,7 +227,7 @@
         flex-grow: unset;
         width: calc(50% - 8px);
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           margin: 0;
           width: calc(100%);
           border: none;
@@ -240,7 +240,7 @@
           border: 2px dashed $border-color;
           text-decoration: underline;
 
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 767px) {
             flex-grow: unset;
             padding: 0;
             margin-top: 15px;
@@ -278,7 +278,7 @@
   .fo-royalties {
     @include clearfix;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 100%;
     }
 
@@ -307,7 +307,7 @@
               @extend %user-image;
 
 <<<<<<< HEAD
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             width: 100%;
         }
 =======
@@ -378,7 +378,7 @@
         }
 >>>>>>> 8541521d1b559722a7cc10f45c17506aefc3430a
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           display: block;
 
           .payment-actions {
@@ -417,7 +417,7 @@
             flex-grow: unset;
             width: calc(50% - 8px);
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
               margin: 0;
               width: calc(100%);
               border: none;
@@ -431,7 +431,7 @@
               border: 2px dashed $border-color;
               text-decoration: underline;
 
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 767px) {
                 text-align: left;
                 flex-grow: unset;
                 padding: 0;
@@ -576,7 +576,7 @@
     }
 
     .modal-container {
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         height: calc(100vh - 32px);
       }
 
@@ -585,7 +585,7 @@
       .content-scroll {
         height: calc(100vh - 230px);
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           height: calc(100vh - 140px);
         }
 
@@ -608,7 +608,7 @@
     }
 
     .my-account-country {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         margin-top: 15px;
         float: none !important;
       }
@@ -632,7 +632,7 @@
         }
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         display: block;
 
         .remove-account {
@@ -734,7 +734,7 @@
           .tunnel-right-column {
             padding: 15px;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
               padding: 15px;
             }
 
@@ -786,7 +786,7 @@
 
                                             width: calc(100% - 5px);
 
-                                            @media (max-width: 768px) {
+                                            @media (max-width: 767px) {
                                                 // width: 100%;
                                             }
 
@@ -845,7 +845,7 @@
                                     .step-actions {
                                         margin: 0 -15px;
 
-                                        @media screen and (max-width: 768px) {
+                                        @media screen and (max-width: 767px) {
                                             margin: 0 -15px;
                                         }
 
@@ -906,7 +906,7 @@
                                             .step-actions {
                                                 margin: 0 -15px;
 
-                                                @media (max-width: 768px) {
+                                                @media (max-width: 767px) {
                                                     margin: 0 -15px;
                                                 }
                                             }
@@ -915,7 +915,7 @@
 
                                     &#confirmation {
                                         .tunnel-steps-content-container {
-                                            @media (max-width: 768px) {
+                                            @media (max-width: 767px) {
                                                 height: calc(100vh - 170px);
                                             }
                                         }
@@ -937,7 +937,7 @@
 
                                             .my-accounts-list {
                                                 > li {
-                                                    @media screen and (max-width: 768px) {
+                                                    @media screen and (max-width: 767px) {
                                                         border: none !important;
                                                         padding: 0 !important;
                                                     }
@@ -947,7 +947,7 @@
                                     }
 
                                     &#requestSent, &#applicationSubmision {
-                                        @media screen and (max-width: 768px) {
+                                        @media screen and (max-width: 767px) {
                                             height: calc(100vh - 92px);
                                         }
 
@@ -960,7 +960,7 @@
                                             padding: 20px 0 0;
                                             border-top: 2px solid $divider;
 
-                                            @media screen and (max-width: 768px) {
+                                            @media screen and (max-width: 767px) {
                                                 border: none;
 
                                                 .tab-navigation {
@@ -990,7 +990,7 @@
                     }
                   }
 
-                  @media screen and (max-width: 768px) {
+                  @media screen and (max-width: 767px) {
                     padding: 15px !important;
                     border: 1px solid $divider !important;
                   }
@@ -1034,7 +1034,7 @@
                       width: calc(100% - 5px);
                       margin-top: -50px;
 
-                      @media (max-width: 768px) {
+                      @media (max-width: 767px) {
                         // width: 100%;
                         margin-top: 0;
                       }
@@ -1094,7 +1094,7 @@
                   .step-actions {
                     margin: 0 -15px;
 
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 767px) {
                       margin: 0 -15px;
                     }
 
@@ -1155,7 +1155,7 @@
                       .step-actions {
                         margin: 0 -15px;
 
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                           margin: 0 -15px;
                         }
                       }
@@ -1164,7 +1164,7 @@
 
                   &#confirmation {
                     .tunnel-steps-content-container {
-                      @media (max-width: 768px) {
+                      @media (max-width: 767px) {
                         height: calc(100vh - 170px);
                       }
                     }
@@ -1186,7 +1186,7 @@
 
                       .my-accounts-list {
                         > li {
-                          @media screen and (max-width: 768px) {
+                          @media screen and (max-width: 767px) {
                             border: none !important;
                             padding: 0 !important;
                           }
@@ -1196,7 +1196,7 @@
                   }
 
                   &#requestSent, &#applicationSubmision {
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 767px) {
                       height: calc(100vh - 92px);
                     }
 
@@ -1216,7 +1216,7 @@
                       padding: 20px 0 0;
                       border-top: 2px solid $divider;
 
-                      @media screen and (max-width: 768px) {
+                      @media screen and (max-width: 767px) {
                         border: none;
 
                         .tab-navigation {
@@ -1252,7 +1252,7 @@
     display: flex;
     justify-content: flex-end;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       justify-content: flex-start;
       padding: 0;
       margin-top: 15px;
@@ -1281,7 +1281,7 @@
       border-bottom: 2px $border-color-02 solid;
       padding: 10px 0;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         &:nth-child(2) {
           border-top: 2px $border-color-02 solid;
         }
