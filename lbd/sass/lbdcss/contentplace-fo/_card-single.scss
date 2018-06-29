@@ -1677,6 +1677,9 @@
       }
     }
   }
+  @media (max-width: 1200px){
+    padding: 15px 0 0 15px;
+  }
 }
 
 .files-list-container {
@@ -1691,6 +1694,7 @@
 
       .file-img {
         position: relative;
+        width: 40px;
       }
 
       .file-name {

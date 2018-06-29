@@ -40,7 +40,7 @@
                         .contract {
                             padding: 0;
                             margin: 0px 0 0 20px;
-                            width: 26%;
+                            width: 25%;
                             height: 100%;
                             display: -webkit-flex;
                             display: -moz-flex;
@@ -371,7 +371,58 @@
             .main-panel-wrap {
                 .main-panel {
                     .main-panel-page {
+                        .main-panel-page-header{
+                            @media (max-width: 1200px){
+                                .contract{
+                                    width: 23%;
+                                }
+                                .right{
+                                    width: 65%;
+                                }
+                            }
+                            @media (max-width: 991px){
+                                width: 100%;
+                                .contract{
+                                    width: 26%;
+                                    margin: 0;
+                                    padding-right: 10px;
+                                }
+                                .right{
+                                    width: 74%;
+                                }
+                            }
+
+                        }
                         .main-container {
+                            height: calc(100vh - 81px);
+                            overflow: hidden;
+
+                            .main-panel-container{
+                                    height: auto;
+                                    overflow-y: auto;
+                                    min-height: auto;
+                                }
+
+                            @media (max-width: 1199px){
+                                .main-panel-container{
+                                    padding-bottom: 85px;
+                                }
+                            }
+
+                            @media (max-width: 991px){
+                                .tab-panel-container{
+                                    .tab-panel{
+                                        width: 41.6%;
+                                        .mCustomScrollBox{
+                                            height: auto;
+                                        }
+                                    }
+                                }
+                                .main-panel-container{
+
+                                }
+                            }
+
                             @media (max-width: 767px) {
                                 @include clearfix;
 
@@ -402,6 +453,7 @@
                                     }
                                 }
                             }
+
                         }
                     }
                 }
