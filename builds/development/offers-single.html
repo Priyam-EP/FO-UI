@@ -1134,7 +1134,7 @@
                               <div class="tunnel-steps-timeline step-1 completed">
                                 <div class="row">
                                   <div class="col-sm-3 timeline-dot">
-                                    <i class="material-icons">radio_button_checked</i>
+                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                                   </div>
                                   <div class="col-sm-9 timeline-content">
                                     <div class="col-sm-12 card timeline-content-card">
@@ -1148,7 +1148,7 @@
                               <div class="tunnel-steps-timeline step-02 completed">
                                 <div class="row">
                                   <div class="col-sm-3 timeline-dot">
-                                    <i class="material-icons">radio_button_checked</i>
+                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                                   </div>
                                   <div class="col-sm-9 timeline-content">
                                     <div class="col-sm-12 card timeline-content-card">
@@ -1162,7 +1162,7 @@
                               <div class="tunnel-steps-timeline step-03 current">
                                 <div class="row">
                                   <div class="col-sm-3 timeline-dot">
-                                    <i class="material-icons">radio_button_checked</i>
+                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
                                   </div>
                                   <div class="col-sm-9 timeline-content">
                                     <div class="col-sm-12 card timeline-content-card">
@@ -1172,12 +1172,11 @@
                                 </div>
                               </div>
                             </li>
-
                             <li>
                               <div class="tunnel-steps-timeline step-04 dormant">
                                 <div class="row">
                                   <div class="col-sm-3 timeline-dot">
-                                    <i class="material-icons">radio_button_checked</i>
+                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
                                   </div>
                                   <div class="col-sm-9 timeline-content">
                                     <div class="col-sm-12 card timeline-content-card">
@@ -1377,75 +1376,59 @@
                                             </div>
                                             <div class="tunnel-steps-content-container">
                                               <div class="tunnel-steps-contents">
-                                                <div class="col-md-12 p-0">
-                                                  <label for="">Time Range</label>
-                                                  <div class="bidding-price-range highlight-bg">
-                                                      <div class="bidding-price form-group">
-                                                        <i class="material-icons">date_range</i> Jul 01, 2019 - Aug 04, 2019
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-30">
+                                                      <div class="bidding-price-range highlight-bg">
+                                                        <label>Estimated dates</label>
+                                                          <div class="bidding-price form-group">
+                                                            <i class="material-icons">date_range</i> Jul 01, 2019 - Aug 04, 2019
+                                                          </div>
                                                       </div>
-                                                  </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-12 divider">
-                                                  <div class="col-md-12 p-0 form-group">
-                                                    <label for="" class="d-block">Your Availabilities <span class="required">*</span></label>
-                                                    <div class="row">
-                                                      <div class="col-md-6 col-xs-12 mb-10">
-                                                          <input class="form-control datepicker" data-container="body" placeholder="Start Date" type="text">
-                                                      </div>
-                                                      <div class="col-md-6 col-xs-12">
-                                                          <input class="form-control datepicker" data-container="body" placeholder="End Date" type="text">
-                                                      </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 availabilities-requirements">
+                                                        <p class="title">I am available from...</p>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <input type="text" class="form-control datepicker-start" data-container="body" placeholder="Start Date" />
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input type="text" class="form-control datepicker-end" data-container="body" placeholder="End Date" />
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <label class="checkbox">
+                                                                    <input type="checkbox" data-toggle="checkbox" value=""/>All available
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 mt-15">
+                                                                <p class="error">Please indicate your availabilities <b>within the estimated period</b></p>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-md-12 p-0 form-group">
-                                                    <label for="" class="d-block">Working Days</label>
-                                                    <div class="working-days-container">
-                                                      <ul class="working-days">
-                                                        <li class="list-item">
-                                                          <label class="checkbox text-none">
-                                                              <input type="checkbox" data-toggle="checkbox" value=""/>
-                                                              Sun
-                                                          </label>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <label class="checkbox text-none">
-                                                              <input type="checkbox" data-toggle="checkbox" value=""/>
-                                                              Mon
-                                                          </label>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <label class="checkbox text-none">
-                                                              <input type="checkbox" data-toggle="checkbox" value=""/>
-                                                              Tue
-                                                          </label>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <label class="checkbox text-none">
-                                                              <input type="checkbox" data-toggle="checkbox" value=""/>
-                                                              Wed
-                                                          </label>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <label class="checkbox text-none">
-                                                              <input type="checkbox" data-toggle="checkbox" value=""/>
-                                                              Thu
-                                                          </label>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <label class="checkbox text-none">
-                                                              <input type="checkbox" data-toggle="checkbox" value=""/>
-                                                              Fri
-                                                          </label>
-                                                        </li>
-                                                        <li class="list-item">
-                                                          <label class="checkbox text-none">
-                                                              <input type="checkbox" data-toggle="checkbox" value=""/>
-                                                              Sat
-                                                          </label>
-                                                        </li>
-                                                      </ul>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 divider"></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 availabilities-requirements">
+                                                        <p class="title">I am able to produce...</p>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <input type="text" class="form-control" />
+                                                            </div>
+                                                            <div class="col-md-4 pt-5">
+                                                                <b>articles</b> in <b>1 week</b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 mt-15">
+                                                                <p class="warning"><b>Warning :</b> you are about to declare a high production capacity.</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                  </div>
                                                 </div>
                                               </div>
                                             </div>
@@ -2198,7 +2181,7 @@
 <!-- Withdraw Modal Ends -->
 <!-- Logout Modal Starts -->
 <div aria-labelledby="" class="modal fade" id="logoutModal" role="dialog" tabindex="-1">
-  <div class="modal-dialog modal-sm" role="modal">
+  <div class="modal-dialog" role="modal">
     <div class="modal-content">
       <div class="modal-body">
         <span class="close">

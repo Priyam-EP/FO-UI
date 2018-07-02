@@ -526,7 +526,7 @@ em.error {
                   overflow-x: hidden;
                   padding: 16px 7px 0 16px;
 
-                  @media (max-width: 1199px){
+                  @media (max-width: 1199px) {
                     // width: 38%;
                   }
 
@@ -2847,6 +2847,8 @@ em.error {
     color: #353f53;
     font-weight: 600;
     margin-bottom: 0px !important;
+    margin-bottom: 20px !important;
+    word-wrap: break-word;
   }
 }
 
