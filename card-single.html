@@ -1948,8 +1948,12 @@ $('div').delegate('.card-section-list ul li .card', 'click', function(e){
           $('.tab-panel-container .tab-panel').mCustomScrollbar();
       }else{
           $('.tab-panel-container .tab-panel').mCustomScrollbar("destroy");
+          $('.tab-panel-container .tab-panel').css({
+              height: 'calc(100vh - 80px)'
+          });;
       }
   });
+
 /*Destroy customScroll for mobile ends*/
 
 

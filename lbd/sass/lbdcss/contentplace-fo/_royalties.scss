@@ -1055,6 +1055,11 @@
           i {
             color: #d7d9dc;
             z-index: 9;
+            font-size: 22px;
+            height: 22px;
+            width: 22px;
+            position: relative;
+            top: -2px;
           }
 
           &:before {
@@ -1062,7 +1067,7 @@
             position: absolute;
             bottom: 40px;
             left: 48%;
-            height: 62px;
+            height: 63px;
             width: 1px;
             border: 2px solid #d7d9dc;
           }
