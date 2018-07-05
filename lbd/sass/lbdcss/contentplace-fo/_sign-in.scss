@@ -204,8 +204,8 @@
   .modal-dialog {
     width: 400px;
 
-    @media (max-width: 540px) {
-      width: auto;
+    @media (max-width: 767px) {
+      width: 100%;
     }
   }
 
