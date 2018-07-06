@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+    <meta charset="utf-8" />
+    <link href="lbd/img/favicon.ico" rel="icon" type="image/png" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- Fonts, Theme and Bootstrap styles -->
+    <!-- <link href="lbd/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lbd/css/jquery-ui.theme.min.css" rel="stylesheet" />
+    <link href="lbd/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lbd/css/material-icons.css" rel="stylesheet" />
+    <link href="lbd/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" /> -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" />
+    <link href="lbd/css/lbd-bundle.css" rel="stylesheet" />
+    
+    
+    <!-- Plugin styles -->
+    <!-- <link href="lbd/lib/chosen/chosen.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/chosen/ImageSelect.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="lbd/lib/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="lbd/lib/slick-1.6.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="lbd/lib/rateyo/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="lbd/lib/croppie/croppie.css" />
+    <link href="lbd/lib/jquery-slider-pipe/jquery-ui-slider-pips.css" rel="stylesheet" type="text/css" /> -->
+    
+    <link href="lbd/lib/plugins-bundle.css" rel="stylesheet" />
+    
+    <!--  Light Bootstrap Dashboard core CSS    -->
+    <link href="lbd/css/fo-style.css" rel="stylesheet" />
+    <!-- Temporary css for Layouts -->
+    
+    
+</head>
+<body class="wp-app cp-fo layout-1">
+    <div class="wrapper">
+        <!-- Sidebar desktop starts -->
+        <div class="sidebar">
+            <div class="logo">
+                <a href="/">
+                    <img src="lbd/img/cp-logo.svg" alt="ContentPlace" />
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <!-- Sidebar  destktop upper nav starts -->
+                <ul class="nav">
+                    <li>
+                        <a href="javascript:;" class="nav-link">
+                            <i class="material-icons">mode_edit</i>
+                            <p>Offers</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="material-icons">card_travel</i>
+                            <p>My cards</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="nav-link">
+                            <i class="material-icons">data_usage</i>
+                            <p>Royalties</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Sidebar  destktop upper nav ends -->
+                <!-- Sidebar  destktop lower nav starts -->
+                <div class="sidebar-footer">
+                    <a href="javascript:;" class="switch-workplace" >
+                        <i class="material-icons">notifications_none</i>
+                        <p>Invitations</p>
+                        <span class="notification">3</span>
+                    </a>
+                    <a class="profile clearfix" href="javascript:;" data-toggle="modal" data-target="#logoutModal">
+                        <div class="profile_pic">
+                            <img src="lbd/img/default-avatar.png" alt="..." class="img-circle profile_img" />
+                        </div>
+                        <div class="profile_info">
+                            <p>Clarrise</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Sidebar  destktop lower nav ends -->
+            </div>
+        </div>
+        <!-- Sidebar desktop ends -->
+        <!-- Sidebar mobile starts -->
+        <div class="col-sm-12 col-xs-12 sidebar-mobile">
+            <div class="row">
+                <div class="col-sm-12 sidebar-mobile-container">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="material-icons">mode_edit</i>
+                                <p>Offers</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="material-icons">card_travel</i>
+                                <p>My cards</p>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:;">
+                                <i class="material-icons">data_usage</i>
+                                <p>Royalties</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="material-icons">notifications_none</i>
+                                <p>Invitations</p>
+                                <span class="notification">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-toggle="modal" data-target="#logoutModal">
+                                <img src="lbd/img/default-avatar.png" class="img-circle">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar mobile ends -->
+        
+        <div class="container-fluid page-wrap">
+            <div class="row">
+                <div class="col-xs-12 main-panel-wrap">
+                    <div class="main-panel">
+                        <div class="container-fluid main-panel-page">
+                            <div class="notification-page clearfix">
+                                <div class="col-md-12 content-container">
+                                    <div class="row">
+                                        <div class="col-md-12 page-title">
+                                            <h1>Your notifications</h1>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 main-content">
+                                            <div class="row">
+                                                <div class="col-md-3 nav-content">
+                                                    <div class="col-md-12">
+                                                        <div class="row">
+                                                            <div class="col-md-12 side-navigation card">
+                                                                <ul class="nav nav-stacked">
+                                                                    <li class="active">
+                                                                        <a href="javascript:;">
+                                                                            <div class="row">
+                                                                                <div class="col-md-10 col-sm-11 col-xs-10 notification-item">All notifications</div>
+                                                                                <div class="col-md-2 col-sm-1 col-xs-2 text-right notification-number">3</div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:;">
+                                                                            <div class="row">
+                                                                                <div class="col-md-10 col-sm-11 col-xs-10 notification-item">Assignation</div>
+                                                                                <div class="col-md-2 col-sm-1 col-xs-2 text-right notification-number">1</div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 notification-content">
+                                                    <div class="row">
+                                                        <div class="col-md-12 unread-notif notifications-container">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card assign-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <span class="notification"></span>
+                                                                                    <img src="lbd/img/adobe.jpg" alt="Adobe" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title">Congratulations, you have been assigned as <b>Writer</b> on <span class="page-link">Tradauction de DP en Francais</span></div>
+                                                                                        <div class="comment-desc"><b>Do you accept the job ?</b></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon mention"><i class="fa fa-play tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <span class="notification"></span>
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><b>Lucie Zvanovec</b> mentioned you on <span class="hashTag">#But Quote V2</span> :</div>
+                                                                                        <div class="comment-desc"><< <span class="atMention">@ClarisseCourtois</span>, Please make sure to adjust clients quote according to out last meeting... >></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon mention"><i class="fa fa-at tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <span class="notification"></span>
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><b>Lucie Zvanovec</b> commented on <span class="hashTag">#But Quote V2</span> :</div>
+                                                                                        <div class="comment-desc"><< Ending date changed to 26/10/2019 >></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon create"><i class="fa fa-comment tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <span class="notification"></span>
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title">Last delivery has been disapproved on <span class="page-link">50 articles pour une grande marque d'electromanager</span> :</div>
+                                                                                        <div class="comment-desc"><< I found several mistakes in the first two paragraphs, Please check your delivery and send it... >></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon delete"><i class="fa fa-times tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <span class="notification"></span>
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><span class="page-link">Articles 10-20</span> is to be delivered.</div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon ready"><i class="fa fa-check-square-o tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <span class="notification"></span>
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><b>Lucie Zvanovec</b> has created a new quote <span class="hasTag">#But Quote V2</span></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon create"><i class="fa fa-plus tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="divider"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 read-notif notifications-container">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><b>Lucie Zvanovec</b> mentioned you on <span class="hashTag">#But Quote V2</span> :</div>
+                                                                                        <div class="comment-desc"><< <span class="atMention">@ClarisseCourtois</span>, Please make sure to adjust clients quote according to out last meeting... >></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon mention"><i class="fa fa-at tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><b>Lucie Zvanovec</b> commented on <span class="hashTag">#But Quote V2</span> :</div>
+                                                                                        <div class="comment-desc"><< Ending date changed to 26/10/2019 >></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon create"><i class="fa fa-comment tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title">Last delivery has been disapproved on <span class="page-link">50 articles pour une grande marque d'electromanager</span> :</div>
+                                                                                        <div class="comment-desc"><< I found several mistakes in the first two paragraphs, Please check your delivery and send it... >></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon delete"><i class="fa fa-times tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><span class="page-link">Articles 10-20</span> is to be delivered.</div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon ready"><i class="fa fa-check-square-o tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" class="col-md-12 card notif-card">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 col-sm-1 col-xs-2 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img src="lbd/img/webedia.jpg" alt="Webedia" class="img-circle">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-11 col-sm-11 col-xs-10 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="comment-title"><b>Lucie Zvanovec</b> has created a new quote <span class="hasTag">#But Quote V2</span></div>
+                                                                                        <div class="tag-timing">
+                                                                                            <span class="tag-icon create"><i class="fa fa-plus tag" aria-hidden="true"></i></span> <span class="date">Sept 05, 2018</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modals starts -->
+<!-- Logout Modal Starts -->
+<div aria-labelledby="" class="modal fade" id="logoutModal" role="dialog" tabindex="-1">
+  <div class="modal-dialog" role="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <span class="close">
+          <a data-dismiss="modal" href="javascript:;">
+            <i class="material-icons">
+            close
+            </i>
+          </a>
+        </span>
+        <div class="modal-container">
+          <div class="row">
+            <div class="user-details col-md-12 form-group">
+              <div class="df-ac">
+                <div class="col-md-2 client-image p-0">
+                  <div class="client-image-container logout">
+                    <img src="https://ep-test.edit-place.com/FO/profiles/bo/149434160844583/logo.jpg?123" alt="pchakraborty" title="pchakraborty" class="img-circle">
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="row d-flex">
+                    <div class="col-md-9 pull-left list-head-container">
+                      <div class="row">
+                        <div class="col-md-12 user-name d-flex">
+                          <label class="primary-font">Priyam Chakraborty</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mt-10">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-10">
+                  <a href="contributor-profile.html" class="btn btn-default full-width">Profile</a>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <a href="javascript:;" class="btn btn-confirm full-width">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Logout Modal Ends -->
+<!-- Modals ends -->
+
+<!--   Core JS Files   -->
+<!-- <script src="lbd/js/jquery.min.js" type="text/javascript"></script>
+<script src="lbd/js/underscore-min.js" type="text/javascript"></script>
+<script src="lbd/js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="lbd/js/jquery-ui-slider.min.js" type="text/javascript"></script>
+<script src="lbd/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="lbd/js/bootstrap-show-password.min.js" type="text/javascript"></script>
+<script src="lbd/js/jquery.validate.min.js"></script>
+<script src="lbd/js/moment.min.js"></script>
+<script src="lbd/js/bootstrap-datetimepicker.js"></script>
+<script src="lbd/js/bootstrap-selectpicker.js"></script>
+<script src="lbd/js/bootstrap-checkbox-radio-switch-tags.js"></script>
+<script src="lbd/js/bootstrap-notify.js"></script>
+<script src="lbd/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="lbd/js/bootstrap-table.js"></script>
+<script src="lbd/js/fullcalendar.min.js"></script>
+<script src="lbd/js/light-bootstrap-dashboard.js"></script>
+<script src="lbd/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="lbd/js/bootstrap-select.js" type="text/javascript"></script>
+<script src="lbd/js/jquery-ns-autogrow.min.js"></script> -->
+
+<!-- Bundled theme js files -->
+<script src="lbd/js/lbd-bundle.js" type="text/javascript"></script>
+
+<!-- js plugins in libs -->
+<!-- <script src="lbd/lib/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="lbd/lib/jquery-slider-pipe/jquery-ui-slider-pips.js" type="text/javascript"></script>
+<script src="lbd/lib/progressbarjs/progressbar.js"></script>
+<script src="lbd/lib/chosen/chosen.jquery.js" type="text/javascript"></script>
+<script src="lbd/lib/chosen/ImageSelect.jquery.js" type="text/javascript"></script>
+<script charset="utf-8" src="lbd/lib/slick-1.6.0/slick/slick.js" type="text/javascript"></script>
+<script type="text/javascript" src="lbd/lib/rateyo/jquery.rateyo.js"></script>
+<script type="text/javascript" src="lbd/lib/shorten/jquery.shorten.1.0.js"></script>
+<script type="text/javascript" src="lbd/lib/read-more/readmore.js"></script>
+<script src="lbd/lib/croppie/croppie.min.js"></script>
+<script src="lbd/lib/matchmedia/matchMedia.js"></script> -->
+
+<!-- Bundled plugin js files -->
+<script type="text/javascript" src="lbd/lib/plugins-bundle.js"></script>
+
+
+
+<script src="lbd/lib/tinymce_4.2.5/js/tinymce/tinymce.min.js" type="text/javascript"></script>
+<!-- Custom JS -->
+<script src="lbd/js/custom.js"></script>
+
+<!-- reCaptcha Code -->
+<!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
+
+
+
+
+
+
+
+<!-- Custom scripts -->
+
+<!-- Custom scripts ends -->
+</body>
+</html>
