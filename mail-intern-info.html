@@ -67,9 +67,7 @@ strong { font-weight: bold; }
 td { -webkit-text-size-adjust: none; }
 th { font-weight: normal; }
 .ms-font-color-themePrimary, .AppleLinks, .AppleLinks > a { color: inherit !important; text-decoration: none !important; }
-.hide-nogmail{
-    display: none;
-}
+*[class=hide-nogmail] { display: none !important; }
 
 @media screen and (max-width: 480px) {
 /**** Shared Styles ****/
@@ -84,9 +82,10 @@ th { font-weight: normal; }
 
 *[class~=mobileshow] { display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: none !important; line-height: normal
 !important; }
-*[class~=mob-shadow] {box-shadow: 0px 1px 4px 1px #ccc;border-radius: 5px;overflow: hidden;}
+*[class~=mob-shadow] {box-shadow: 0px 1px 4px 1px #cccccc;border-radius: 5px;overflow: hidden; border:1px solid #cccccc;}
+*[class=mob-shadow] {border:none;}
 *[class~=nobgimg] { background-color: #dee4e8; background-image: none !important; }
-*[class=mob-bg-white] { background-color: #ffffff !important; }
+*[class~=hide] { background-color: #ffffff !important; }
 
 *[class~=mobileFont14] { font-size: 14px !important; }
 *[class~=mobileFont15] { font-size: 15px !important; }
@@ -155,24 +154,15 @@ line-height:1px;
                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td valign="top" align="center" bgcolor="#f7f9fa" style="font-family: Arial;">
-                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content-table">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content-table" style="border-collapse: separate;">
                                         <tr>
                                             <td valign="top" align="center">
                                                 <!-- top shadow blcok -->
                                                 <tr class="hide">
                                                     <td align="left" valign="top" style="color:#000001;font-family:Arial, Helvetica, sans-serif;font-size:1px; line-height: 1px; vertical-align:top;">
-                                                        <div style="font-size: 1px; line-height: 1px;">
+                                                        <div class="hide" style="font-size: 1px; line-height: 1px;">
                                                             <img width="776" height="16" class="imgfull" style="font-size:1px; line-height:1px; display:block; border:none; outline: none;" src="https://admin-test.edit-place.com/webapp-theme/fo/lbd/img/mail-images/shadow-top.png" />
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="hide-nogmail">
-                                                    <td valign="top" align="center">
-                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
-                                                            <tr><td height="1" style="background-color:#f6f8f9;" valign="top" bgcolor="#f6f8f9"></td></tr>
-                                                            <tr><td height="1" style="background-color:#f4f6f7;" valign="top" bgcolor="#f4f6f7"></td></tr>
-                                                            <tr><td height="5" style="background-color:#ffffff;" valign="top" bgcolor="#ffffff"></td></tr>
-                                                        </table>
                                                     </td>
                                                 </tr>
                                                 <!-- top shadow blcok ends -->
@@ -181,11 +171,11 @@ line-height:1px;
                                                     <td valign="top" align="center" bgcolor="#ffffff" class="mob-shadow">
                                                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                                             <tr>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#f6f8f9" style="background-color: #f6f8f9;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#f4f6f7" style="background-color: #f4f6f7;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#f1f3f4" style="background-color: #f1f3f4;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#eceeef" style="background-color: #eceeef;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="5" bgcolor="#fffffe" style="background-color: #fffffe;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#f6f8f9" style="background-color: #f6f8f9;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#f4f6f7" style="background-color: #f4f6f7;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#f1f3f4" style="background-color: #f1f3f4;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#eceeef" style="background-color: #eceeef;"></td>
+                                                                <td class="hide" valign="top" width="5" bgcolor="#fffffe" style="background-color: #fffffe;"></td>
                                                                 <td class="pad15" valign="top" bgcolor="#ffffff" align="center" style="padding-top: 16px; padding-right: 30px; padding-bottom: 20px; padding-left: 30px;">
                                                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                                                                         <tr>
@@ -330,11 +320,11 @@ line-height:1px;
                                                                         </tr>
                                                                     </table>
                                                                 </td>
-                                                                <td class="mob-bg-white" valign="top" width="5" bgcolor="#fffffe" style="background-color: #fffffe;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#eceeef" style="background-color: #eceeef;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#f1f3f4" style="background-color: #f1f3f4;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#f4f6f7" style="background-color: #f4f6f7;"></td>
-                                                                <td class="mob-bg-white" valign="top" width="1" bgcolor="#f6f8f9" style="background-color: #f6f8f9;"></td>
+                                                                <td class="hide" valign="top" width="5" bgcolor="#fffffe" style="background-color: #fffffe;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#eceeef" style="background-color: #eceeef;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#f1f3f4" style="background-color: #f1f3f4;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#f4f6f7" style="background-color: #f4f6f7;"></td>
+                                                                <td class="hide" valign="top" width="1" bgcolor="#f6f8f9" style="background-color: #f6f8f9;"></td>
                                                             </tr>
                                                         </table>
                                                     </td>
@@ -346,19 +336,6 @@ line-height:1px;
                                                         <div style="font-size: 1px; line-height: 1px;">
                                                             <img width="776" height="16" class="imgfull" style="font-size:1px; line-height:1px; display:block; border:none; outline: none;" src="https://admin-test.edit-place.com/webapp-theme/fo/lbd/img/mail-images/shadow-bottom.png" />
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="hide-nogmail">
-                                                    <td valign="top" align="center">
-                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
-                                                            <tr><td height="5" style="background-color:#ffffff;" valign="top" bgcolor="#ffffff"></td></tr>
-                                                            <tr><td height="1" style="background-color:#e2e4e5;" valign="top" bgcolor="#e2e4e5"></td></tr>
-                                                            <tr><td height="1" style="background-color:#e7e9ea;" valign="top" bgcolor="#e7e9ea"></td></tr>
-                                                            <tr><td height="1" style="background-color:#eceeef;" valign="top" bgcolor="#eceeef"></td></tr>
-                                                            <tr><td height="1" style="background-color:#f1f3f4;" valign="top" bgcolor="#f1f3f4"></td></tr>
-                                                            <tr><td height="1" style="background-color:#f4f6f7;" valign="top" bgcolor="#f4f6f7"></td></tr>
-                                                            <tr><td height="1" style="background-color:#f6f8f9;" valign="top" bgcolor="#f6f8f9"></td></tr>
-                                                        </table>
                                                     </td>
                                                 </tr>
                                                 <!-- bottom shadow blcok ends -->

@@ -67,26 +67,32 @@ strong { font-weight: bold; }
 td { -webkit-text-size-adjust: none; }
 th { font-weight: normal; }
 .ms-font-color-themePrimary, .AppleLinks, .AppleLinks > a { color: inherit !important; text-decoration: none !important; }
+*[class=hide-nogmail] { display: none !important; }
 
 @media screen and (max-width: 480px) {
 /**** Shared Styles ****/
-*[class=fullgmail] { width: 100% !important; min-width: 100% !important; }
+*[class~=fullgmail] { width: 100% !important; min-width: 100% !important; }
 *[class~=content-table] { width: 94% !important; min-width: 94% !important; margin: 0 auto;}
 *[class~=full] { width: 100% !important; }
 *[class~=top-logo] { width: 40% !important; }
 
 *[class~=imgfull] { width: 100% !important; height: auto !important; }
-*[class=hide] { display: none !important; }
-*[class=mobileshow] { display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: none !important; line-height: normal
+*[class~=hide] { display: none !important; }
+*[class=hide-nogmail] { display: none !important; }
+
+*[class~=mobileshow] { display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: none !important; line-height: normal
 !important; }
-*[class=mob-shadow] {box-shadow: 0px 1px 4px 1px #ccc;border-radius: 5px;overflow: hidden;}
-*[class=nobgimg] { background-color: #dee4e8; background-image: none !important; }
-*[class=mobileFont14] { font-size: 14px !important; }
+*[class~=mob-shadow] {box-shadow: 0px 1px 4px 1px #cccccc;border-radius: 5px;overflow: hidden; border:1px solid #cccccc;}
+*[class=mob-shadow] {border:none;}
+*[class~=nobgimg] { background-color: #dee4e8; background-image: none !important; }
+*[class~=hide] { background-color: #ffffff !important; }
+
+*[class~=mobileFont14] { font-size: 14px !important; }
 *[class~=mobileFont15] { font-size: 15px !important; }
-*[class=mobileFont16] { font-size: 16px !important; }
+*[class~=mobileFont16] { font-size: 16px !important; }
 *[class~=text-left] { text-align: left !important; }
 
-*[class=padLeft15] { padding-left: 15px !important; }
+*[class~=padLeft15] { padding-left: 15px !important; }
 *[class~=padRight15] { padding-right: 15px !important; }
 *[class~=pad15] { padding: 15px !important; }
 *[class~=noborder] { border: none !important; }
@@ -104,7 +110,7 @@ th { font-weight: normal; }
 }
 
 @media screen and (max-width: 400px) {
-*[class=mobileshow2] { display: block !important; width: auto !important; overflow: visible !important; float: none !important; line-height: normal !important; }
+*[class~=mobileshow2] { display: block !important; width: auto !important; overflow: visible !important; float: none !important; line-height: normal !important; }
 }
 </style>
 <!--[if mso]>
@@ -132,7 +138,7 @@ line-height:1px;
     <tr>
         <td align="center" style="background-color: #f7f9fa;">
             <!-- Gmail Wrapper -->
-            <table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="fullgmail" style="min-width:776px;">
+            <table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="fullgmail" style="">
                 <tr>
                     <td valign="top" height="30" class="h-15"></td>
                 </tr>
@@ -144,11 +150,11 @@ line-height:1px;
                 </tr> -->
                 <!-- View in Browser ends -->
                 <tr>
-                    <td align="center" style="vertical-align: top; padding: 0px 0px 24px 0px;min-width:776px;" class="fullgmail">
+                    <td align="center" style="vertical-align: top; padding: 0px 0px 24px 0px;" class="fullgmail">
                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td valign="top" align="center" bgcolor="#f7f9fa" style="font-family: Arial;">
-                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content-table">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="content-table" style="border-collapse: separate;">
                                         <tr>
                                             <td valign="top" align="center">
                                                 <!-- top shadow blcok -->
