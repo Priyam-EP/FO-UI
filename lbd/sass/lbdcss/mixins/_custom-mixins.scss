@@ -224,9 +224,9 @@
 %modal {
   text-align: center;
 
-  &.in{
-        padding: 0 !important;
-    }
+  &.in {
+    padding: 0 !important;
+  }
 
   .divider {
     @include divider;
@@ -1383,7 +1383,7 @@
     }
   }
 
-  &.gsl, &.zip {
+  &.gsl, &.zip, &.rar {
     &:before {
       background: $default-bg;
     }
