@@ -964,7 +964,7 @@
           min-height: 103px;
 
           @media (max-width: 767px) {
-            min-height: 220px;
+            min-height: 235px;
           }
 
           @media (max-width: 540px) {
@@ -998,10 +998,10 @@
             width: 100%;
             margin-left: 15px;
 
-            a {}
+            @media (max-width: 767px) {
+              margin: 0;
+            }
           }
-
-          @media (max-width: 767px) {}
         }
 
         .info-container, .status-container, .user-info-details, .user-profile-status {
