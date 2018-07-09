@@ -479,6 +479,10 @@ em.error {
       -ms-transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
       transition: all 0.33s cubic-bezier(0.685, 0.047, 0.346, 1);
 
+      &.no-sidebar {
+        margin-left: 0;
+      }
+
       .main-panel-wrap {
         padding: 0;
 
