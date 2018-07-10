@@ -481,6 +481,12 @@ em.error {
 
       &.no-sidebar {
         margin-left: 0;
+
+        .main-panel-wrap {
+          .main-panel {
+            padding-bottom: 0;
+          }
+        }
       }
 
       .main-panel-wrap {
