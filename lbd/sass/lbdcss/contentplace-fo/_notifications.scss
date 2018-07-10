@@ -193,6 +193,24 @@
                   font-weight: 700;
                 }
 
+                span.ratings {
+                  margin: 0 5px;
+                  background: #000;
+                  border-radius: 6px;
+                  color: #fff;
+                  font-weight: 400;
+                  text-align: center;
+                  padding: 0 10px;
+                  font-size: 12px;
+
+                  i {
+                    position: relative;
+                    top: 1px;
+                    font-size: 12px;
+                    color: #fec500;
+                  }
+                }
+
                 .tag-timing {
                   margin-top: 5px;
 
@@ -244,6 +262,14 @@
                         background: $delivered;
                       }
                     }
+                  }
+                }
+
+                .confirmation-container {
+                  min-height: 65px;
+
+                  .confirmation-actions {
+                    width: 100%;
                   }
                 }
               }
