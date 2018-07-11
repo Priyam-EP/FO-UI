@@ -610,9 +610,15 @@ $.watch([dest + '**/*.css'], $.batch(function (events, done) {
 });
 
 
-// chokidar.watch(html.watch).on('all', function(){
-//   return ['html', reload];
-// });
+var exec = require('child_process').exec;
+
+gulp.task('testemail', function (cb) {
+  exec('node sendmail', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+})
 
 gulp.task('watch', function() {
 
