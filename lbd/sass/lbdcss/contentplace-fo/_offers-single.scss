@@ -1095,9 +1095,9 @@
 }
 
 #tunnelOffersSingle {
-/*     &.in{
-    padding: 0 !important;
-} */
+  /*     &.in{
+      padding: 0 !important;
+  } */
   .modal-dialog {
     .modal-content {
       .modal-body {
@@ -1395,7 +1395,10 @@
                           }
 
                           &.error {
-                            color: $rework;
+                            text-transform: none;
+                            color: #ee0a5f;
+                            font-weight: 600;
+                            font-size: 12px;
                           }
 
                           &.warning {
