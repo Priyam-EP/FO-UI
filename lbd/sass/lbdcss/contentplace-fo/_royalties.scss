@@ -941,6 +941,7 @@
     display: -o-flex;
     display: flex;
     justify-content: flex-end;
+    word-break: keep-all;
 
     @media (max-width: 767px) {
       justify-content: flex-start;
@@ -955,7 +956,7 @@
 
       .modal-container {
         .modal-title {
-          word-break: break-word;
+          word-break: break-all;
         }
 
         .content-scroll {
