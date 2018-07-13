@@ -119,7 +119,7 @@
 
       a.scroll-down {
         display: block;
-        width: 115px;
+        width: 200px;
         margin: 0 auto;
         margin-top: 30px;
         color: #fff;
@@ -1070,6 +1070,10 @@
                   width: 70px;
                   height: 70px;
                 }
+              }
+
+              .card-user-empty.user {
+                border: 2px solid #fff;
               }
             }
           }
