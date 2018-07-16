@@ -363,6 +363,7 @@
 
     .offers-list-container {
       // margin-top: 20px;
+      margin-bottom: 30px;
 
       @media (max-width: 767px) {
         margin-top: 0;
@@ -483,9 +484,9 @@
           }
         }
 
-        &:last-child {
+        /* &:last-child {
           padding-bottom: 60px;
-        }
+        } */
       }
 
       .clients-list {
@@ -518,6 +519,7 @@
   .page-middle-login-container {
     @extend %df-ac;
 
+    margin-top: 30px;
     margin-bottom: 40px;
     min-height: 100px;
     background: url(../img/call-to-action.jpg) no-repeat bottom center;
