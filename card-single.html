@@ -1708,7 +1708,32 @@
         <!-- Preview Document modal Starts -->
         <!-- @include  _partials/_preview-document.html -->
 
-
+        <!-- Google Analytics Feedback Starts -->
+        <a href="javascript:;" id="feedback-button" class="btn btn-disapprove feedback-button">Feedback</a>
+        <div id="show-feedback">
+            <div class="feedback-container">
+                <div class="feedback-overlay"></div>
+                <div id="feedback-dialog" class="feedback-dialog">
+                    <h5>We would love to hear your thoughts!</h5>
+                    <form>
+                        <a id="feedback-dialog-close" class="feedback-dialog-close" href="#">
+                            <i class="material-icons">close</i>
+                        </a>
+                        <div id="feedback-type" class="feedback-type" data-type="Problem">
+                            <ul>
+                                <li><a class="active" href="javascript:;">Bug</a></li>
+                                <li><a href="javascript:;">Suggestion</a></li>
+                                <li><a href="javascript:;">Compliment</a></li>
+                                <li><a href="javascript:;">Others</a></li>
+                            </ul>
+                        </div>
+                        <textarea class="form-control mb-15" id="feedback-text" placeholder="Please enter your feedback here…" maxlength="500"></textarea>
+                        <a href="havascript:;" id="feedback-submit" class="btn btn-fill btn-yes">Send</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Google Analytics Feedback Ends -->
 <!--   Core JS Files   -->
 
 <!-- @include _partials/_all-js-files.html -->
@@ -1974,6 +1999,19 @@ $(document).on('click', '#gaf-dialog-close', function(e){
   e.preventDefault();
   $('.tab-panel').mCustomScrollbar("update");
 });*/
+
+/* Google Analytics Feedback click start*/
+$('#feedback-button').click(function(e) {
+    $("#feedback-button").hide();
+    $('#show-feedback').show();
+});
+$('#feedback-dialog-close').click(function(e) {
+    $('#feedback-button').show();
+    $('#show-feedback').hide();
+    location.reload(true);
+});
+
+/* Google Analytics Feedback click end*/
 
 </script>
 </body>
