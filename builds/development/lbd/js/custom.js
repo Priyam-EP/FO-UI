@@ -82,6 +82,7 @@ $(document).ready(function(){
 		// mouseWheel:{ deltaFactor: 50 }
 		// scrollInertia: 1000
 		autoHideScrollbar: true
+        // advanced:{ updateOnContentResize: true }
 	});
 // custom scrollbar outside positioned
 	$('.tab-panel.outside').mCustomScrollbar({

@@ -40,7 +40,8 @@ var htmlPaths = [dest + 'mail-guest-confirm.html',
              kathirr007@aol.com, \
              kathirr007@hotmail.com, \
              kathirr007@yahoo.com, \
-             kathirr007@yandex.com',
+             kathirr007@yandex.com, \
+             pchakraborty@edit-place.com',
         subject: 'Test ' + i,
         text: 'Hello World!!',
         html: {path:''+path+''}

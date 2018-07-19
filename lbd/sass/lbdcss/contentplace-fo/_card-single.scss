@@ -2431,6 +2431,15 @@ span.file-type {
 
           .content-scroll {
             padding-bottom: 100px;
+            @-moz-document url-prefix() {
+              padding-bottom: 0px;
+              >.form-group{
+                &:last-child{
+                    padding-bottom: 100px;
+                }
+              }
+            }
+
           }
 
           .client-image-container {
