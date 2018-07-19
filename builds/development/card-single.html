@@ -5012,8 +5012,8 @@
         isTouch: false};
 </script>
 
-<!-- <script src="https://ep-test.contentplace.io/BO/theme/lbd/js/site-feedback.js"></script> -->
-<script type="text/javascript">
+<script src="https://ep-test.contentplace.io/BO/theme/lbd/js/site-feedback.js"></script>
+<!-- <script type="text/javascript">
     Namespace = Namespace || {};
     (function(e, t) {
         "use strict";
@@ -5034,13 +5034,13 @@
             },
             loadButton: function() {
                 e.body.innerHTML += this.buttonHtml;
-
                 e.getElementById("gaf-button").addEventListener("click", function(e) {
                     t.gaf.loadDialog();
                     e.preventDefault()
                 }, !1)
             },
             loadDialog: function() {
+                $('.tab-panel, .sticky-section.customScroll').mCustomScrollbar("destroy");
                 e.getElementById("gaf-button").removeEventListener("click", function() {}, !1);
                 e.body.removeChild(e.getElementById("gaf-button"));
                 e.body.innerHTML += this.dialogHtml;
@@ -5059,11 +5059,13 @@
                 }, !1)
             },
             closeDialog: function() {
+
                 e.getElementById("gaf-dialog-close").removeEventListener("click", function() {}, !1);
                 e.getElementById("gaf-submit").removeEventListener("click", function() {}, !1);
                 e.getElementById("gaf-type").removeEventListener("click", function() {}, !1);
                 e.body.removeChild(e.getElementById("gaf-dialog"));
                 this.loadButton()
+                $(".tab-panel, .sticky-section.customScroll").mCustomScrollbar();
             },
             changeType: function(t) {
                 var n = document.querySelectorAll("#gaf-type a");
@@ -5098,7 +5100,7 @@
             }
         }
     })(document, Namespace);
-</script>
+</script> -->
 
 <script>
     var feedbackLang='en';
@@ -5111,15 +5113,12 @@
         'option4': 'Other',
         'placeholder': 'Please enter your feedback here&hellip;',
         'send': 'Send',
-        'thankyou': 'Thank you for your feedback!',
-        'test':function(){
-            alert('hello');
-        }
+        'thankyou': 'Thank you for your feedback!'
     } );
 
-//     Namespace.gaf.loadDialog({
-//         callbac
-//     });
+/*    Namespace.gaf.loadDialog(function(){
+        alert('hello');
+    });*/
 </script>
 
 
@@ -5382,20 +5381,14 @@ $('[id*="myJobOverview-"]').click(function(e) {
   $('#wizardCard').bootstrapWizard('show',1)
 });
 /*Card Assignation Confirm modal open in step 2 ends*/
-$(document).on('click', '#gaf-button', function(e){
+/*$(document).on('click', '#gaf-button', function(e){
   e.preventDefault();
-//     $('.mCustomScrollBox').css({'max-height':'none'});
-   // var status = Namespace.gaf.loadDialog();
-   // $('.tab-panel').mCustomScrollbar();
-   // alert(status);
-
+    $('.mCustomScrollBox').css({'max-height':'none'});
 });
 $(document).on('click', '#gaf-dialog-close', function(e){
   e.preventDefault();
-  //var status =  Namespace.gaf.closeDialog();
-  //$('.tab-panel').mCustomScrollbar();
-  //alert(status);
-});
+  $('.tab-panel').mCustomScrollbar("update");
+});*/
 
 </script>
 </body>
