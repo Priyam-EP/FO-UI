@@ -7419,7 +7419,7 @@ span.more {
   position: fixed;
   right: -17px;
   top: 50%;
-  z-index: 999999;
+  z-index: 99;
   max-width: 80px;
   padding: 6px 0;
   opacity: 1;
@@ -7435,98 +7435,28 @@ span.more {
   font-weight: 700;
 }
 
-#show-feedback {
-  display: none;
+.feedback-modal {
+  @extend %modal;
 
-  .feedback-container {
-    @extend .df-ac;
-
-    justify-content: center;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-
-    .feedback-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 9999;
-    }
-
-    .feedback-dialog {
-      position: relative;
-      width: 600px;
-      background: #fff;
-      border-radius: 6px;
-      padding: 15px;
-      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-      z-index: 999999;
-
-      h5 {
+  form.feedback-form {
+    .gaf-type {
+      a.problem-type {
+        display: block;
+        font-weight: 700;
+        font-weight: 16px;
+        border-bottom: 2px solid transparent;
         text-align: center;
-        font-size: 24px;
-        margin: 0;
-        color: $main;
-        padding: 0 30px;
+        padding-bottom: 5px;
 
-        @media screen and (max-width: 540px) {
-          font-size: 18px;
+        &:hover {
+          color: $selected;
+          text-decoration: none;
         }
-      }
 
-      .feedback-dialog-close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-      }
-
-      .feedback-type {
-        ul {
-          padding: 0;
-          margin: 15px 0;
-          list-style-type: none;
-
-          @extend .df-ac;
-
-          @media screen and (max-width: 540px) {
-            display: block;
-          }
-
-          li {
-            width: 25%;
-
-            @media screen and (max-width: 540px) {
-              width: 50%;
-              float: left;
-              margin-bottom: 10px;
-            }
-
-            a {
-              display: block;
-              padding: 5px 0;
-              text-align: center;
-              font-weight: 700;
-              text-decoration: none;
-              border-bottom: 2px solid transparent;
-
-              &:hover {
-                color: $selected;
-                text-decoration: none;
-              }
-
-              &.active {
-                border-bottom: 2px solid $selected;
-                text-decoration: none;
-                color: $selected;
-              }
-            }
-          }
+        &.active {
+          color: $selected;
+          border-bottom: 2px solid $selected;
+          text-decoration: none;
         }
       }
     }
