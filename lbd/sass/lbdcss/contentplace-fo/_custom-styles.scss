@@ -7460,6 +7460,12 @@ span.more {
         }
       }
     }
+
+    textarea {
+      @media (max-width: 540px) {
+        margin-top: 15px;
+      }
+    }
   }
 }
 
