@@ -321,6 +321,14 @@
               i {
                 margin-right: 5px;
               }
+
+              &.with-days {
+                @extend .df-ac;
+
+                line-height: 1.2;
+                height: 60px;
+                justify-content: center;
+              }
             }
           }
 
