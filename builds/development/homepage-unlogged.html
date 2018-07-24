@@ -1195,6 +1195,32 @@
 
         });
         </script>
+
+        <script>
+    $(document).ready(function() {
+        Notification.requestPermission().then(function(result) {
+          if (result === 'denied') {
+            return;
+          }
+          if (result === 'default') {
+            return;
+          }
+          var data = {
+            msg: "you have been assigned as Writer on Tradauction de DP en Francais",
+            date: "Sep 05, 2018"
+            }
+            var e = new Notification("Content Place",{
+                body: data.msg + "\n" + data.date,
+                icon: "https://ep-test.contentplace.io/BO/theme/lbd/img/cp-logo.png"
+            });
+
+            e.onclick = function(){
+                location.href = "https://www.ep.contentplace.io"
+            }
+            setTimeout(e.close.bind(e), 4000);
+        });
+    });
+</script>
         <!-- Custom scripts ends -->
     </body>
 </html>
