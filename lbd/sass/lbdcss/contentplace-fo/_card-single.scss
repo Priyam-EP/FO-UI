@@ -534,7 +534,22 @@
               line-height: normal;
               padding: 5px 10px;
 
-              &.timer {}
+              &.timer {
+                &.with-days {
+                  display: flex;
+                  align-items: center;
+                  line-height: 1.2;
+                  height: 60px;
+                  justify-content: center;
+
+                  .timershow {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 15px;
+                  }
+                }
+              }
             }
 
             a {
