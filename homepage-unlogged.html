@@ -887,9 +887,20 @@
 
         });
         </script>
+        <script>
+            Push.create("Hello world!", {
+                body: "How's it hangin'?",
+                icon: 'lbd/img/cp-logo.png',
+                timeout: 4000,
+                onClick: function () {
+                    window.focus();
+                    this.close();
+                }
+            });
+        </script>
 
         <script>
-    $(document).ready(function() {
+    /*$(document).ready(function() {
         Notification.requestPermission().then(function(result) {
           if (result === 'denied') {
             return;
@@ -911,7 +922,7 @@
             }
             setTimeout(e.close.bind(e), 4000);
         });
-    });
+    });*/
 </script>
         <!-- Custom scripts ends -->
     </body>

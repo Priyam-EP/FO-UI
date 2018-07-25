@@ -49,7 +49,7 @@ var
       in: [source + 'lbd/css/**/*', './node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss'],
       liveIn: ['./node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss', source + 'lbd/css/font-awesome.min.css',
                 source + 'lbd/css/jquery.ui.theme.min.css', source + 'lbd/css/jquery.mCustomScrollbar.min.css',
-                source + 'lbd/css/material-icons.css', source + 'lbd/css/jquery-ui-1.8.20.custom.css', source + 'lbd/css/*images/**/*'],
+                source + 'lbd/css/material-icons.css', source + 'lbd/css/jquery-ui-1.8.20.custom.css', source + 'lbd/css/cookieconsent.css' , source + 'lbd/css/*images/**/*'],
       watch: ['lbd/css/**/*.css'],
       out: dest + 'lbd/css/'
     },
@@ -92,6 +92,8 @@ var
           source + 'lbd/js/ggdrive.js',
           source + 'lbd/js/jquery.MultiFileQuote.js',
           source + 'lbd/js/bootstrap-show-password.min.js',
+          source + 'lbd/js/push.min.js',
+          source + 'lbd/js/cookieconsent.min.js',
           source + 'lbd/js/custom.js'],
     out: dest + 'lbd/js/'
     // filename: 'main.js'
@@ -242,7 +244,8 @@ gulp.task('css', ['fonts'], function() {
         'font-awesome.min.css',
         'material-icons.css',
         'jquery.mCustomScrollbar.min.css',
-        'jquery-ui-1.8.20.custom.css'
+        'jquery-ui-1.8.20.custom.css',
+        'cookieconsent.css'
       ]))
     .pipe($.concatCss('lbd-bundle.css', {rebaseUrls: false}))
     .pipe($.cleanCss({rebase:false}))
@@ -274,7 +277,7 @@ gulp.task('sass', ['fonts'], function() {
 
 // js tasks
 gulp.task('js', function() {
-  var jsFilter = $.filter(['**/*.js', '!**/*custom.js'], {restore: true});
+  var jsFilter = $.filter(['**/*.js', '!**/*custom.js' , '!**/*cookieconsent.min.js'], {restore: true});
   if (devBuild) {
     return gulp.src(js.liveIn)
 
@@ -311,6 +314,7 @@ gulp.task('js', function() {
           "jquery.MultiFileQuote.js",
           // "bootstrap-select.js",
           "bootstrap-show-password.min.js",
+          "push.min.js",
           "countdown.js"
           // "lbd/js/custom.js"
           ]))

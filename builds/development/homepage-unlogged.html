@@ -32,6 +32,31 @@
         <link href="lbd/css/fo-style.css" rel="stylesheet" />
         <!-- Temporary css for Layouts -->
         
+        <!-- Cookie Consent Plugin -->
+        <script src="lbd/js/cookieconsent.min.js"></script>
+        <script>
+            window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "palette": {
+                "popup": {
+                  "text": "#353f54"
+                },
+                "button": {
+                  "background": "#353f54",
+                  "text": "#ffffff"
+                }
+              },
+              "theme": "classic",
+              "position": "bottom-right",
+              "content": {
+                "message": "En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour nous permettre de mesurer l’audience et vous proposer des offres plus qualifiées",
+                "dismiss": "J'accepte",
+                "link": "Gérer les cookies sur ce site",
+                "href": "https://www.edit-place.fr/politique-cookies/"
+              }
+            })});
+        </script>
+        
         
     </head>
     <body class="cp-fo layout-1">
@@ -1195,9 +1220,20 @@
 
         });
         </script>
+        <script>
+            Push.create("Hello world!", {
+                body: "How's it hangin'?",
+                icon: 'lbd/img/cp-logo.png',
+                timeout: 4000,
+                onClick: function () {
+                    window.focus();
+                    this.close();
+                }
+            });
+        </script>
 
         <script>
-    $(document).ready(function() {
+    /*$(document).ready(function() {
         Notification.requestPermission().then(function(result) {
           if (result === 'denied') {
             return;
@@ -1219,7 +1255,7 @@
             }
             setTimeout(e.close.bind(e), 4000);
         });
-    });
+    });*/
 </script>
         <!-- Custom scripts ends -->
     </body>
