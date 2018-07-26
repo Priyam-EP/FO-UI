@@ -231,7 +231,7 @@ gulp.task('css', ['fonts'], function() {
     .pipe($.size({title: 'CSS in '}))
     // .pipe($.pleeease(css.pleeeaseOpts))
     // .pipe($.sourcemaps.write('./maps'))
-    .pipe($.newer(css.pluginCSS.out))
+    // .pipe($.newer(css.pluginCSS.out))
     .pipe(bootstrapFilter)
     .pipe($.plumber())
     .pipe($.sass(css.sassOpts))
@@ -636,7 +636,10 @@ gulp.task('watch', function() {
   gulp.watch(fonts.in, ['fonts']);
 
   // sass changes
-  gulp.watch([css.watch], ['sass']);
+  // gulp.watch([css.watch], ['sass']);
+  $.watch(css.watch, $.batch(function (events, done) {
+    gulp.start(['sass'], done);
+  }));
 
   // pluginCSS changes
   gulp.watch([css.pluginCSS.watch], ['css']);
