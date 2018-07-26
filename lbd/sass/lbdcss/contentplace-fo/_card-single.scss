@@ -1265,7 +1265,7 @@
                 /* white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis; */
-                word-break: break-word;
+                word-break: break-all;
               }
 
               @media (max-width: 767px) {
