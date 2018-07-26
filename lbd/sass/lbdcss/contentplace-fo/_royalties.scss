@@ -318,6 +318,10 @@
         }
 
         .payment-actions {
+          .alert {
+            margin-bottom: 15px;
+          }
+
           button {
             &:last-child {
               margin: 0 !important;

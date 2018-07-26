@@ -170,12 +170,18 @@ $responsive-breaks: 'xs, sm, md, lg';
 } */
 
 .df-ac {
-  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
 }
 
 .df-ac-jc {
-  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
   justify-content: center;
 }

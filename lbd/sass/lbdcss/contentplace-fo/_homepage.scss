@@ -524,6 +524,11 @@
     min-height: 100px;
     background: url(../img/call-to-action.jpg) no-repeat bottom center;
     background-size: cover;
+    height: 100px;
+
+    @media (max-width: 767px) {
+      height: auto;
+    }
 
     > .row {
       width: 100%;
@@ -552,7 +557,7 @@
       }
     }
 
-    a.btn {
+    .btn {
       @media screen and (max-width: 767px) {
         margin-bottom: 15px;
       }
@@ -860,9 +865,9 @@
           @extend .d-flex;
 
           float: left;
-          margin-right: 15px;
-          width: 40px;
-          height: 40px;
+          margin-right: 0;
+          width: 55px;
+          height: 55px;
           padding-right: 0;
 
           @media screen and (max-width: 540px) {

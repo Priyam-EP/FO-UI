@@ -408,7 +408,7 @@
       .offer-content {
         padding: 30px;
         position: relative;
-        word-break: break-all;
+        word-wrap: break-word;
         color: $main;
 
         @media (max-width: 767px) {
