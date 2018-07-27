@@ -222,6 +222,7 @@ gulp.task('fonts', function() {
 // copy plugin css
 gulp.task('css', ['fonts'], function() {
   var cssFilter = $.filter(['**/*.css'], {restore: true}),
+  bootstrapFilter = $.filter(['**/bootstrap-custom.scss'], {restore: true}),
   imageFilter = $.filter(['**/*.+(jpg|png|gif|svg)'], {restore: true}),
   imageFilter2 = $.filter(['**/*.+(jpg|png|tiff|webp)'], {restore: true});
 
@@ -265,6 +266,7 @@ gulp.task('css', ['fonts'], function() {
 // compile Sass
 gulp.task('sass', ['fonts'], function() {
   return gulp.src(css.in)
+    .pipe($.newer(css.out))
     .pipe($.sourcemaps.init())
     .pipe($.plumber())
     .pipe($.sass(css.sassOpts))
@@ -549,8 +551,8 @@ gulp.task('connect', function() {
     });
 });
 
-gulp.task('stream', function(){
-
+gulp.task('test', function(){
+  console.log('Runs the test task');
 });
 
 // browser sync
@@ -581,9 +583,9 @@ gulp.task('serve', [], function() {
 // browserSync.watch(html.out + '*.html').on('change', reload);
 
 
-$.watch([dest + '**/*.css'], $.batch(function (events, done) {
-  gulp.start(browserSync.stream(), done);
-}));
+// $.watch([dest + '**/*.css'], $.batch(function (events, done) {
+//   gulp.start(browserSync.stream(), done);
+// }));
 
 // browserSync.watch(dest + 'lbd/js/custom.js').on('change', reload);
 
@@ -600,8 +602,6 @@ $.watch([dest + '**/*.css'], $.batch(function (events, done) {
   // sass changes
   gulp.watch([css.watch], ['sass']);
 
-  // pluginCSS changes
-  gulp.watch([css.pluginCSS.watch], ['css']);
 
   // javascript changes
   // gulp.watch(js.in, ['js', reload]);
@@ -642,7 +642,10 @@ gulp.task('watch', function() {
   }));
 
   // pluginCSS changes
-  gulp.watch([css.pluginCSS.watch], ['css']);
+  // gulp.watch([css.pluginCSS.watch], ['css']);
+  $.watch('lbd/css/**/*.css', $.batch(function (events, done) {
+    gulp.start(['css'], done);
+  }));
 
   // javascript changes
   gulp.watch(js.in, ['js', reload]);
