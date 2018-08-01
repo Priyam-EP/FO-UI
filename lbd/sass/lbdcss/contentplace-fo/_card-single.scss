@@ -1455,6 +1455,8 @@
           }
 
           .feed-card-action-container {
+            word-wrap: break-word;
+
             .brief-image {
               @extend .df-ac;
 
