@@ -350,13 +350,16 @@ em.error {
           .profile {
             .profile_pic {
               width: 44px;
+              height: 44px;
               margin: 0 auto;
+              background: $main;
+              border-radius: 50%;
 
               .profile_img {
                 max-width: 100%;
                 width: 44px;
                 height: 44px;
-                object-fit: cover;
+                object-fit: contain;
               }
 
               .card-user-empty {
@@ -3839,12 +3842,15 @@ span.more {
 
 .user-image {
   width: 40px;
+  height: 40px;
+  background: $main;
+  border-radius: 50%;
 
   img {
     // max-width: 100%;
     width: 40px;
     height: 40px;
-    object-fit: cover;
+    object-fit: contain;
 
     &.img-responsive {
       width: 100%;
@@ -3884,6 +3890,8 @@ span.more {
     .user-image {
       float: left;
       margin: 0 20px 0 0;
+      background: $main;
+      border-radius: 50%;
 
       .card-user-empty {
         width: 40px;
@@ -5150,13 +5158,16 @@ span.more {
 
     .user-image {
       width: 30px;
+      height: 30px;
       margin-right: 10px;
+      background: $main;
+      border-radius: 50%;
 
       img {
         max-width: 100%;
         width: 30px;
         height: 30px;
-        object-fit: cover;
+        object-fit: contain;
       }
 
       .card-user-empty {
@@ -7065,12 +7076,14 @@ span.more {
     width: 40px;
     padding: 0;
     margin-right: 5px;
+    background: transparent;
+    border-radius: 50%;
 
     img {
       max-width: 100%;
       width: 40px;
       height: 40px;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     .card-user-empty {
@@ -7417,7 +7430,7 @@ span.more {
 /* Google Analytics Feedback Starts */
 .feedback-button {
   position: fixed;
-  right: -17px;
+  right: -22px;
   top: 50%;
   z-index: 99;
   max-width: 80px;

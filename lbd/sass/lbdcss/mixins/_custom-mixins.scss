@@ -818,6 +818,8 @@
   width: 40px;
   padding: 0;
   position: relative;
+  background: $main;
+  border-radius: 50%;
 
   .card-user-empty, img {
     width: 100%;
@@ -825,7 +827,7 @@
   }
 
   img {
-    object-fit: cover;
+    object-fit: contain;
     max-width: 100%;
     display: block;
   }
@@ -1099,13 +1101,14 @@
             width: 40px;
             height: 40px;
             border: 2px solid #fff;
+            background: $main;
             border-radius: 50%;
 
             img {
               display: block;
               width: 35px;
               height: 35px;
-              object-fit: cover;
+              object-fit: contain;
             }
           }
 

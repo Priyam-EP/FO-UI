@@ -288,6 +288,7 @@
         .royalty-info {
           .user-image {
             width: 25%;
+            background: transparent;
 
             .user-image-container {
               @extend %user-image;
