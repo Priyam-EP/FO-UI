@@ -185,7 +185,7 @@ gulp.task('clean-bundle', function(){
 // build HTML files
 gulp.task('html', function() {
   var page = gulp.src(html.in)
-             .pipe($.newer(html.out))
+             // .pipe($.newer(html.out))
              .pipe($.preprocess({ context: html.context }))
              /*.pipe($.replace(/.\jpg|\.png|\.tiff/g, '.webp'))*/;
   if (!devBuild) {
@@ -583,9 +583,9 @@ gulp.task('serve', [], function() {
 // browserSync.watch(html.out + '*.html').on('change', reload);
 
 
-// $.watch([dest + '**/*.css'], $.batch(function (events, done) {
-//   gulp.start(browserSync.stream(), done);
-// }));
+$.watch([dest + '**/*.css'], $.batch(function (events, done) {
+  gulp.start(browserSync.stream(), done);
+}));
 
 // browserSync.watch(dest + 'lbd/js/custom.js').on('change', reload);
 
@@ -622,9 +622,9 @@ gulp.task('testemail', function (cb) {
     console.log(stderr);
     cb(err);
   });
-})
+});
 
-gulp.task('watch', function() {
+gulp.task('watch', ['serve'], function() {
 
   // html changes
   gulp.watch([html.watch], ['html', reload]);
@@ -636,10 +636,10 @@ gulp.task('watch', function() {
   gulp.watch(fonts.in, ['fonts']);
 
   // sass changes
-  // gulp.watch([css.watch], ['sass']);
-  $.watch(css.watch, $.batch(function (events, done) {
+  gulp.watch([css.watch], ['sass']);
+  /*$.watch(css.watch, $.batch(function (events, done) {
     gulp.start(['sass'], done);
-  }));
+  }));*/
 
   // pluginCSS changes
   // gulp.watch([css.pluginCSS.watch], ['css']);
