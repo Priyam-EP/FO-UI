@@ -1,1 +1,1 @@
-function XHR(n){return new Promise(function(r,e){var o=new XMLHttpRequest;o.open("GET",n),o.onload=function(){200===o.status?r(o.responseText):e(new Error(o.statusText))},o.onerror=function(){e(new Error("Network Error"))},o.send()})}
+function XHR(o){return new Promise(function(n,r){var e=new XMLHttpRequest;e.open("GET",o),e.onload=function(){200===e.status?n(e.responseText):r(new Error(e.statusText))},e.onerror=function(){r(new Error("Network Error"))},e.send()})}
