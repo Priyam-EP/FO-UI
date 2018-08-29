@@ -1332,21 +1332,9 @@
                 }
               }
 
-              &--translation {
+              /* &--translation {
                 &:before {
                   background-image: url('../img/icons/icon-translation.svg');
-                }
-              }
-
-              &--assessment {
-                &:before {
-                  background-image: url('../img/icons/icon-assessment.svg');
-                }
-              }
-
-              &--testarticle {
-                &:before {
-                  background-image: url('../img/icons/icon-testarticle.svg');
                 }
               }
 
@@ -1365,6 +1353,42 @@
               &--writ-proof {
                 &:before {
                   background-image: url('../img/icons/icon-writ-proof.svg');
+                }
+              } */
+
+              &--assessment {
+                &:before {
+                  background-image: url('../img/icons/icon-assessment.svg');
+                }
+              }
+
+              &--testarticle {
+                &:before {
+                  background-image: url('../img/icons/icon-testarticle.svg');
+                }
+              }
+
+              &--writer {
+                &:before {
+                  background-image: url('../img/icons/icon-writing.svg');
+                }
+              }
+
+              &--proofreader {
+                &:before {
+                  background-image: url('../img/icons/icon-writ-proof.svg');
+                }
+              }
+
+              &--translator {
+                &:before {
+                  background-image: url('../img/icons/icon-translation.svg');
+                }
+              }
+
+              &--translation_proofreader, &--translator_proofreader {
+                &:before {
+                  background-image: url('../img/icons/icon-trans-proof.svg');
                 }
               }
 
