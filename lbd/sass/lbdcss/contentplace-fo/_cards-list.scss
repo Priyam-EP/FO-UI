@@ -370,11 +370,29 @@
                       }
                     }
 
-                    &--translation {
-                      &:before {
-                        background-image: url('../img/icons/icon-translation.svg');
+                    /* &--translation {
+                        &:before {
+                          background-image: url('../img/icons/icon-translation.svg');
+                        }
                       }
-                    }
+
+                      &--trans-proof {
+                        &:before {
+                          background-image: url('../img/icons/icon-trans-proof.svg');
+                        }
+                      }
+
+                      &--writing {
+                        &:before {
+                          background-image: url('../img/icons/icon-writing.svg');
+                        }
+                      }
+
+                      &--writ-proof {
+                        &:before {
+                          background-image: url('../img/icons/icon-writ-proof.svg');
+                        }
+                      } */
 
                     &--assessment {
                       &:before {
@@ -388,21 +406,27 @@
                       }
                     }
 
-                    &--trans-proof {
-                      &:before {
-                        background-image: url('../img/icons/icon-trans-proof.svg');
-                      }
-                    }
-
-                    &--writing {
+                    &--writer {
                       &:before {
                         background-image: url('../img/icons/icon-writing.svg');
                       }
                     }
 
-                    &--writ-proof {
+                    &--proofreader {
                       &:before {
                         background-image: url('../img/icons/icon-writ-proof.svg');
+                      }
+                    }
+
+                    &--translator {
+                      &:before {
+                        background-image: url('../img/icons/icon-translation.svg');
+                      }
+                    }
+
+                    &--translation_proofreader, &--translator_proofreader {
+                      &:before {
+                        background-image: url('../img/icons/icon-trans-proof.svg');
                       }
                     }
 
