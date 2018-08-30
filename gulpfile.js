@@ -46,8 +46,8 @@ var
     watch: ['lbd/sass/**/*.scss'],
     out: dest + 'lbd/css/',
     pluginCSS: {
-      in: [source + 'lbd/css/**/*', './node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss'],
-      liveIn: ['./node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom.scss', source + 'lbd/css/font-awesome.min.css',
+      in: [source + 'lbd/css/**/*', './node_modules/bootstrap-sass/assets/stylesheets/*_bootstrap.scss'],
+      liveIn: [source + 'lbd/css/bootstrap.css', source + 'lbd/css/font-awesome.min.css',
                 source + 'lbd/css/jquery.ui.theme.min.css', source + 'lbd/css/jquery.mCustomScrollbar.min.css',
                 source + 'lbd/css/material-icons.css', source + 'lbd/css/jquery-ui-1.8.20.custom.css', source + 'lbd/css/cookieconsent.css' , source + 'lbd/css/*images/**/*'],
       watch: ['lbd/css/**/*.css'],
@@ -222,7 +222,7 @@ gulp.task('fonts', function() {
 // copy plugin css
 gulp.task('css', ['fonts'], function() {
   var cssFilter = $.filter(['**/*.css'], {restore: true}),
-  bootstrapFilter = $.filter(['**/bootstrap-custom.scss'], {restore: true}),
+  bootstrapFilter = $.filter(['**/bootstrap.css'], {restore: true}),
   imageFilter = $.filter(['**/*.+(jpg|png|gif|svg)'], {restore: true}),
   imageFilter2 = $.filter(['**/*.+(jpg|png|tiff|webp)'], {restore: true});
 
@@ -643,7 +643,7 @@ gulp.task('watch', ['serve'], function() {
 
   // pluginCSS changes
   // gulp.watch([css.pluginCSS.watch], ['css']);
-  $.watch('lbd/css/**/*.css', $.batch(function (events, done) {
+  $.watch(['lbd/css/**/*.css', './node_modules/bootstrap-sass/assets/stylesheets/*_bootstrap.scss'], $.batch(function (events, done) {
     gulp.start(['css'], done);
   }));
 
