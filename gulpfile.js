@@ -1,3 +1,4 @@
+/* eslint-disable */
  // Include gulp and plugins
  var
   gulp = require('gulp'),
@@ -660,3 +661,4 @@ gulp.task('default', ['html', 'images', 'fonts', 'css', 'sass', 'jslib', 'jslibl
 gulp.task('bundle', ['css', 'js', 'jsliblive']);
 
 // gulp.task('default', ['serve']);
+/* eslint-enable */
