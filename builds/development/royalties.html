@@ -2222,6 +2222,12 @@ $(document).on('click', "#myaccountRoyalty .my-accounts-list li .account-details
     $(this).parent('li').addClass('selected');
 /*    $('.contact-info-edit').slideDown();*/
 });
+var viewportHeight = 
+$(window).resize(function() {
+    console.log("Window resized...");
+//     console.log(100vh);
+    console.log($('.content-scroll').outerHeight());
+});
 
 
 /*$(".content-scroll").focusin('input', function(e) {
